@@ -1,8 +1,19 @@
+import Header from "./components/header/Header";
+import GlobalStyles from "./components/styles/globalStyle.styled";
+import Banner from "./components/banner/Banner";
+import Subscribe from "./components/subscribe/Subscribe";
+import CountDown from "./components/countdown/CountDown";
+import HeroBanner from "./components/banner/HeroBanner";
 function App() {
   return (
-    <div>
-      <h1>Vefi Website</h1>
-    </div>
+    <>
+      <GlobalStyles />
+      <Header />
+      <Banner />
+      <Subscribe />
+      <CountDown />
+      <HeroBanner />
+    </>
   );
 }
 
