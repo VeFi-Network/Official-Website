@@ -7,24 +7,39 @@ import HeroBanner from "./components/banner/HeroBanner";
 import Features from "./components/banner/Features";
 import Exchange from "./components/exchange/Exchange";
 import HowItWorks from "./components/exchange/HowItWorks";
-import Footer from "./components/Footer/Footer";
-import CallToAction from "./components/Footer/CallToAction";
-import Newsletter from "./components/banner/newsletter/Newsletter";
+import Footer from "./components/footer/Footer";
+import CallToAction from "./components/footer/CallToAction";
+import Newsletter from "./components/newsletter/Newsletter";
+import { Switch, Route } from "react-router-dom";
+import SmartChain from "./components/smartchain/SmartChain";
 function App() {
   return (
     <>
-      <GlobalStyles />
-      <Header />
-      <Banner />
-      <Subscribe />
-      <CountDown />
-      <HeroBanner />
-      <Features />
-      <Exchange />
-      <HowItWorks />
-      <Newsletter />
-      <CallToAction />
-      <Footer />
+      <Switch>
+        <Route path="/about-us">
+          <GlobalStyles />
+          <Header />
+          <CountDown />
+          <Newsletter />
+          <CallToAction />
+          <Footer />
+        </Route>
+        <Route path="/" exact>
+          <GlobalStyles />
+          <Header />
+          <Banner />
+          <Subscribe />
+          <CountDown />
+          <HeroBanner />
+          <Features />
+          <Exchange />
+          <HowItWorks />
+          <SmartChain />
+          <Newsletter />
+          <CallToAction />
+          <Footer />
+        </Route>
+      </Switch>
     </>
   );
 }

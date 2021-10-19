@@ -20,19 +20,19 @@ export const CountDownCenter = styled.div`
 `;
 
 export const HeadingThree = styled.h3`
-  font-size: 30px;
+  font-size: ${({ FontSize }) => FontSize || "30px"};
   font-weight: 600;
   color: ${({ color }) => color || ""};
 `;
 
 export const HeadingOne = styled.h1`
-  font-size: 80px;
+  font-size: ${({ FontSize }) => FontSize || "100px"};
   font-weight: 600;
   color: ${({ color }) => color || ""};
 `;
 
 export const Paragraph = styled.p`
-  font-size: 24px;
+  font-size: ${({ FontSize }) => FontSize || "24px"};
   font-weight: 500;
   color: ${({ color }) => color || ""};
 `;

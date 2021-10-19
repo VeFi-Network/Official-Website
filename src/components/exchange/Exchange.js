@@ -13,7 +13,9 @@ const Exchange = () => {
         <ExchangeContainer>
           <Left size="0.4"></Left>
           <Right size="0.6">
-            <HeadingOne color="#fbf6b4">VEFI exchange</HeadingOne>
+            <HeadingOne color="#fbf6b4" FontSize="80px">
+              VEFI exchange
+            </HeadingOne>
             <Paragraph>VEFI exchange is a unified cryptocurrency</Paragraph>
             <Paragraph>
               exchange platform built to enable users navigate

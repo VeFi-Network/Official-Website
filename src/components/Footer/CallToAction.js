@@ -5,7 +5,7 @@ import { Paragraph } from "../countdown/CountDown.styled";
 
 export const StyledCallToAction = styled.div`
   display: flex;
-  background: red;
+  background: ${({ bg }) => bg || "#fbf6b4"};
   height: 50px;
   padding: 20px 0px;
   color: #000;
@@ -18,7 +18,7 @@ export const StyledCallToAction = styled.div`
 `;
 const CallToAction = () => {
   return (
-    <StyledCallToAction>
+    <StyledCallToAction bg="#fbf6b4">
       <Container>
         <Paragraph>
           Need help? Call our support team @ +234 000 000 000

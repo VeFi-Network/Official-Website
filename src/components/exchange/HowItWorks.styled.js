@@ -1,15 +1,16 @@
 import styled from "styled-components";
 import bg from "../../assets/images/bg_dark.svg";
 import double_coin from "../../assets/images/double_coin.svg";
+import rectangle from "../../assets/images/rectangle.svg";
 export const StyledHowItWorks = styled.section`
   width: 100%;
   display: flex;
-  background: url(${double_coin}) no-repeat, #fbf6b4;
+  background: url(${double_coin}) no-repeat, url(${rectangle});
   display: flex;
   flex-direction: column;
   background-position: right;
   background-size: contain;
-  background-blend-mode: lighten;
+  background-blend-mode: darken;
   color: #fff;
   padding-bottom: 60px;
 `;
