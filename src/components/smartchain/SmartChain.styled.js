@@ -1,15 +1,13 @@
 import styled from "styled-components";
-import rectangle from "../../assets/images/rectangle.svg";
 import map from "../../assets/images/double_coin.svg";
 export const StyledSmartChain = styled.section`
   width: 100%;
+  background: url(${map}) no-repeat, #fefcea;
   display: flex;
-  background: url(${rectangle});
-  display: flex;
-
+  color: #000;
   background-position: right;
   background-size: contain;
-  background-blend-mode: ligten;
+  background-blend-mode: screen;
 `;
 
 export const SmartChainContainer = styled.div`

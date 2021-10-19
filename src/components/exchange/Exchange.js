@@ -6,12 +6,15 @@ import { Box } from "../banner/Features.styled";
 import { HeadingOne, Paragraph } from "../countdown/CountDown.styled";
 import { Left, Right } from "../styles/Position.styled";
 import { ExchangeContainer, StyledExchange } from "./Exchange.styled";
+import app_1 from "../../assets/images/app_2.svg";
 const Exchange = () => {
   return (
     <StyledExchange>
       <Container>
         <ExchangeContainer>
-          <Left size="0.4"></Left>
+          <Left size="0.4">
+            <img src={app_1} alt="app" />
+          </Left>
           <Right size="0.6">
             <HeadingOne color="#fbf6b4" FontSize="80px">
               VEFI exchange
@@ -30,6 +33,8 @@ const Exchange = () => {
               <Feature Icon={<BiCheckCircle />} Text="P2P trading" />
               <Feature Icon={<BiCheckCircle />} Text="Features trading" />
               <Feature Icon={<BiCheckCircle />} Text="Spot trading" />
+              <Feature Icon={<BiCheckCircle />} Text="NFT" />
+              <Feature Icon={<BiCheckCircle />} Text="DEX" />
             </Box>
           </Right>
         </ExchangeContainer>

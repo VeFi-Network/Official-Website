@@ -23,30 +23,29 @@ const Footer = () => {
         <StyledFooterContainer>
           <StyledFooterNav>
             <HeadingThree color="white">Company</HeadingThree>
-            <Link>About us</Link>
-            <Link>About us</Link>
-            <Link>About us</Link>
-            <Link>About us</Link>
+            <Link to="/about-us">About us</Link>
+            <Link to="/contact-us">Contact us</Link>
+            <Link to="/team">Our Team</Link>
+            <Link to="/investors">Investor Relations</Link>
           </StyledFooterNav>
           <StyledFooterNav>
             <HeadingThree color="white">Product</HeadingThree>
-            <Link>Wallet</Link>
-            <Link>Exchange</Link>
-            <Link>Smart Chain</Link>
-            <Link>Network</Link>
+            <Link to="/product/wallet">Wallet</Link>
+            <Link to="/product/exchange">Exchange</Link>
+            <Link to="/product/smart-chain">Smart Chain</Link>
+            <Link to="/product/network">Network</Link>
           </StyledFooterNav>
           <StyledFooterNav>
             <HeadingThree color="white">Support</HeadingThree>
-            <Link>FAQ</Link>
-            <Link>Support center</Link>
+            <Link to="/faq">FAQ</Link>
+            <Link to="/support">Support center</Link>
           </StyledFooterNav>
           <StyledFooterNav>
             <HeadingThree color="white">Legal</HeadingThree>
-            <Link>Privacy Policy</Link>
-            <Link>Terms &amp; Condition</Link>
+            <Link to="/legal/privacy-policy">Privacy Policy</Link>
+            <Link to="/legal/terms">Terms &amp; Condition</Link>
             <HeadingThree color="white">Community</HeadingThree>
-            <Link>About us</Link>
-            <Link>About us</Link>
+            <Link to="/">Telegram</Link>
           </StyledFooterNav>
         </StyledFooterContainer>
         <hr />
@@ -58,8 +57,8 @@ const Footer = () => {
           </StyledFooterNav>
           <StyledFooterNav>
             <HeadingThree color="white">Contact</HeadingThree>
-            <Link>info@vefi.com</Link>
-            <Link>support@vefi.com</Link>
+            <Link to="/">info@vefi.com</Link>
+            <Link to="/">support@vefi.com</Link>
             <SocialIcons>
               <span>
                 <AiFillFacebook />

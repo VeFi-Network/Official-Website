@@ -3,10 +3,17 @@ import React from "react";
 import { HeadingOne, Paragraph } from "../countdown/CountDown.styled";
 import { Left, Right } from "../styles/Position.styled";
 import { StyledHeroBanner } from "./HeroBanner.styled";
-import { Box, StyledFeatureRight, StyledFeatures } from "./Features.styled";
+import {
+  AppMockUp,
+  Box,
+  FeaturedRightImage,
+  StyledFeatureRight,
+  StyledFeatures,
+} from "./Features.styled";
 import Feature from "./Feature";
 import { BiCheckCircle } from "react-icons/bi";
-
+import map from "../../assets/images/map.png";
+import app_1 from "../../assets/images/app_1.svg";
 const Features = () => {
   return (
     <StyledHeroBanner>
@@ -39,7 +46,14 @@ const Features = () => {
             </Box>
           </Left>
           <Right size="0.4">
-            <StyledFeatureRight>ok</StyledFeatureRight>
+            <StyledFeatureRight>
+              <FeaturedRightImage>
+                <img src={map} alt="app" />
+              </FeaturedRightImage>
+              <AppMockUp>
+                <img src={app_1} alt="app" />
+              </AppMockUp>
+            </StyledFeatureRight>
           </Right>
         </StyledFeatures>
       </Container>

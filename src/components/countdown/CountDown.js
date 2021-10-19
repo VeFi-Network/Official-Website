@@ -6,12 +6,8 @@ import {
   HeadingThree,
   HeadingOne,
   Paragraph,
-  CounterContainer,
-  CounterTimerBox,
-  Timer,
-  WaitList,
-  Btn,
 } from "./CountDown.styled";
+import CountDownTimer from "./CountDownTimer";
 
 const CountDown = () => {
   return (
@@ -29,36 +25,7 @@ const CountDown = () => {
           <Paragraph>
             transaction fees under large volumnes of transaction.
           </Paragraph>
-          <CounterContainer>
-            <div>
-              <Paragraph>Pre-Sale ICO starts in</Paragraph>
-              <CounterTimerBox>
-                <Timer>
-                  <HeadingOne>46</HeadingOne>
-                  <span>Days</span>
-                </Timer>
-                <span>:</span>
-                <Timer>
-                  <HeadingOne>12</HeadingOne>
-                  <span>Hours</span>
-                </Timer>
-                <span>:</span>
-                <Timer>
-                  <HeadingOne>05</HeadingOne>
-                  <span>Min</span>
-                </Timer>
-                <span>:</span>
-                <Timer>
-                  <HeadingOne>56</HeadingOne>
-                  <span>Sec</span>
-                </Timer>
-              </CounterTimerBox>
-              <WaitList>
-                <Btn bg="#fbf6b4">read more</Btn>
-                <Btn bg="#fbf6b4">join the waitlist</Btn>
-              </WaitList>
-            </div>
-          </CounterContainer>
+          <CountDownTimer />
         </CountDownCenter>
       </Container>
     </StyledCountDown>

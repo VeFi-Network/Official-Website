@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ImageMap from "../../assets/images/double_coin.svg";
 export const StyledFeatures = styled.div`
   margin-top: 40px;
   display: flex;
@@ -26,9 +25,25 @@ export const Box = styled.div`
 
 export const StyledFeatureRight = styled.div`
   width: 100%;
-  background: url(${ImageMap}) no-repeat, red;
   display: flex;
-  background-position: left;
-  background-size: contain;
-  background-blend-mode: screen;
+`;
+
+export const FeaturedRightImage = styled.div`
+  margin-top: -180px;
+  position: absolute;
+  top: 0;
+`;
+
+export const AppMockUp = styled.div`
+  position: relative;
+  height: 400px;
+
+  img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    position: relative;
+    margin-top: -10px;
+    margin-left: 30px;
+  }
 `;

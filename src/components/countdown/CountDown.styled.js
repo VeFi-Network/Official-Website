@@ -3,7 +3,7 @@ import double_coin from "../../assets/images/double_coin.svg";
 
 export const StyledCountDown = styled.section`
   width: 100%;
-  background: url(${double_coin}) no-repeat, #fbf6b4;
+  background: url(${double_coin}) no-repeat, #fefcea;
   display: flex;
   color: #000;
   background-position: left;
@@ -26,7 +26,7 @@ export const HeadingThree = styled.h3`
 `;
 
 export const HeadingOne = styled.h1`
-  font-size: ${({ FontSize }) => FontSize || "100px"};
+  font-size: ${({ FontSize }) => FontSize || "80px"};
   font-weight: 600;
   color: ${({ color }) => color || ""};
 `;
@@ -42,7 +42,7 @@ export const CounterContainer = styled.div`
   display: flex;
   color: #fbf6b4;
   justify-content: center;
-  background: black;
+  background: ${({ bg }) => bg || "black"};
   height: 200px;
   margin-top: 40px;
 
@@ -66,20 +66,6 @@ export const CounterTimerBox = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin: 10px 0px;
-`;
-
-export const Timer = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-
-  h1 {
-    font-size: 40px;
-  }
-  span {
-    font-size: 14px;
-    color: #fbf6b4;
-  }
 `;
 
 export const WaitList = styled.div``;

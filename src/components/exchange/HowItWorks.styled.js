@@ -1,16 +1,15 @@
 import styled from "styled-components";
-import bg from "../../assets/images/bg_dark.svg";
+import bg from "../../assets/images/steps_bg.png";
 import double_coin from "../../assets/images/double_coin.svg";
-import rectangle from "../../assets/images/rectangle.svg";
 export const StyledHowItWorks = styled.section`
   width: 100%;
   display: flex;
-  background: url(${double_coin}) no-repeat, url(${rectangle});
+  background: url(${double_coin}) no-repeat, #fefcea;
   display: flex;
   flex-direction: column;
   background-position: right;
   background-size: contain;
-  background-blend-mode: darken;
+  background-blend-mode: screen;
   color: #fff;
   padding-bottom: 60px;
 `;
@@ -23,10 +22,9 @@ export const HowItWorksContainer = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 50px 30px;
-  background: url(${bg}) repeat, blue;
-  background-position: left;
+  background: url(${bg}) no-repeat;
+  background-position: right;
   background-size: contain;
-  background-blend-mode: darken;
 
   hr {
     background-color: #fff !important;

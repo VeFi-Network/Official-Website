@@ -3,8 +3,38 @@ import styled from "styled-components";
 export const StyledHeroBanner = styled.section`
   width: 100%;
   display: flex;
-  background: ${({ bg }) => bg || "#fbf6b4"};
-  overflow-x: hidden;
+  position: relative;
+  background: ${({ bg }) => bg || "#FEFCEA"};
+`;
+
+export const QuoteLeft = styled.div`
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: -40px;
+    margin-left: 10px;
+  }
+`;
+
+export const QuoteRight = styled.div`
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: 460px;
+    margin-left: -600px;
+  }
 `;
 
 export const HeroBannerContainer = styled.div`
