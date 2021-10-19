@@ -8,10 +8,8 @@ import {
   HeaderRight,
 } from "./HeaderTop.styled";
 import { Link } from "react-router-dom";
-import { Button } from "@material-ui/core";
 import Logo from "../../assets/images/logo.svg";
-import CloudUpload from "@material-ui/icons/CloudUpload";
-
+import { Register } from "./Register";
 const Header = () => {
   return (
     <>
@@ -29,13 +27,7 @@ const Header = () => {
               <Link to="/contact-us">Contact us</Link>
             </HeaderCenter>
             <HeaderRight>
-              <Button
-                variant="contained"
-                color="primary"
-                endIcon={<CloudUpload />}
-              >
-                join our community
-              </Button>
+              <Register />
             </HeaderRight>
           </HeaderContainer>
         </Container>

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import banner from "../../assets/images/banner.svg";
-import circle from "../../assets/images/circle.svg";
 export const StyledBanner = styled.div`
   background: url(${banner});
   padding-top: 60px;
@@ -21,12 +20,5 @@ export const Left = styled.div`
     margin-left: 40px;
     color: #333;
     letter-spacing: 1.5px;
-  }
-
-  span {
-    background: url(${circle});
-    background-size: contain;
-    padding: 20px 10px;
-    background-position: left;
   }
 `;
