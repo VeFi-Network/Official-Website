@@ -9,7 +9,9 @@ import {
 } from "./HeaderTop.styled";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.svg";
-import { Register } from "./Register";
+import { StyledButton } from "./Register";
+
+import { BiSend } from "react-icons/bi";
 const Header = () => {
   return (
     <>
@@ -27,7 +29,7 @@ const Header = () => {
               <Link to="/contact-us">Contact us</Link>
             </HeaderCenter>
             <HeaderRight>
-              <Register />
+              <StyledButton icon={<BiSend />} text="Join our community" />
             </HeaderRight>
           </HeaderContainer>
         </Container>

@@ -5,6 +5,7 @@ export const StyledCountDown = styled.section`
   width: 100%;
   background: url(${double_coin}) no-repeat, #fbf6b4;
   display: flex;
+  color: #000;
   background-position: left;
   background-size: contain;
   background-blend-mode: screen;
@@ -21,16 +22,19 @@ export const CountDownCenter = styled.div`
 export const HeadingThree = styled.h3`
   font-size: 30px;
   font-weight: 600;
+  color: ${({ color }) => color || ""};
 `;
 
 export const HeadingOne = styled.h1`
   font-size: 80px;
   font-weight: 600;
+  color: ${({ color }) => color || ""};
 `;
 
 export const Paragraph = styled.p`
   font-size: 24px;
   font-weight: 500;
+  color: ${({ color }) => color || ""};
 `;
 
 export const CounterContainer = styled.div`

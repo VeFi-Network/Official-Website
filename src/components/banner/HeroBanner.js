@@ -11,7 +11,8 @@ import {
 } from "../countdown/CountDown.styled";
 import Image from "../../assets/images/guy_2.png";
 import { CircleStyled, Left, Right } from "../styles/Position.styled";
-import { Register } from "../header/Register";
+import { StyledButton } from "../header/Register";
+import { BiSend } from "react-icons/bi";
 const HeroBanner = () => {
   return (
     <StyledHeroBanner>
@@ -28,7 +29,7 @@ const HeroBanner = () => {
             <Paragraph>The next big thing in Blockchain when </Paragraph>
             <Paragraph>high speed meets Scalability from Africa</Paragraph>
             <Paragraph>to the world.</Paragraph>
-            <Register />
+            <StyledButton icon={<BiSend />} text="Join our community" />
           </HeroBannerJoinCommunity>
         </Right>
       </HeroBannerContainer>
