@@ -39,7 +39,7 @@ const Features = () => {
             </Box>
           </Left>
           <Right size="0.4">
-            <StyledFeatureRight></StyledFeatureRight>
+            <StyledFeatureRight>ok</StyledFeatureRight>
           </Right>
         </StyledFeatures>
       </Container>
