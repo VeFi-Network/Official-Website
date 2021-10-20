@@ -11,21 +11,30 @@ import Footer from "./components/footer/Footer";
 import CallToAction from "./components/footer/CallToAction";
 import Newsletter from "./components/newsletter/Newsletter";
 import SmartChain from "./components/smartchain/SmartChain";
+import { Route, Switch } from "react-router";
+import AboutUs from "./pages/about/AboutUs";
 function App() {
   return (
     <>
       <GlobalStyles />
       <Header />
-      <Banner />
-      <Subscribe />
-      <CountDown />
-      <HeroBanner />
-      <Features />
-      <Exchange />
-      <HowItWorks />
-      <SmartChain />
-      <Newsletter />
-      <CallToAction />
+      <Switch>
+        <Route path="/about-us">
+          <AboutUs />
+        </Route>
+        <Route path="/" exact>
+          <Banner />
+          <Subscribe />
+          <CountDown />
+          <HeroBanner />
+          <Features />
+          <Exchange />
+          <HowItWorks />
+          <SmartChain />
+          <Newsletter />
+          <CallToAction />
+        </Route>
+      </Switch>
       <Footer />
     </>
   );

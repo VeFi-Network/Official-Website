@@ -37,27 +37,6 @@ export const Paragraph = styled.p`
   color: ${({ color }) => color || ""};
 `;
 
-export const CounterContainer = styled.div`
-  width: 50%;
-  display: flex;
-  color: #fbf6b4;
-  justify-content: center;
-  background: ${({ bg }) => bg || "black"};
-  height: 200px;
-  margin-top: 40px;
-
-  > div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-
-    p {
-      margin-top: 15px;
-    }
-  }
-`;
-
 export const CounterTimerBox = styled.div`
   width: 100%;
   color: #fff;

@@ -23,17 +23,15 @@ export const QuoteLeft = styled.div`
 `;
 
 export const QuoteRight = styled.div`
-  width: 200px;
-  position: absolute;
-  left: 50%;
+  width: 100px;
   z-index: 1;
-
   img {
-    width: 100%;
-    height: 100%;
+    width: 300px;
+    height: 300px;
     object-fit: contain;
-    margin-top: 460px;
-    margin-left: -600px;
+    margin-top: 440px;
+    margin-left: -800px;
+    position: absolute;
   }
 `;
 

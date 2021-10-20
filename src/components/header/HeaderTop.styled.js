@@ -45,13 +45,3 @@ export const HeaderRight = styled.div`
     text-transform: capitalize;
   }
 `;
-
-export const Button = styled.button`
-  background-color: ${({ bg }) => bg || "blue"};
-  border: none;
-  padding: 10px;
-  color: #fff;
-  border-radius: 5px;
-  display: flex;
-  align-item: center;
-`;

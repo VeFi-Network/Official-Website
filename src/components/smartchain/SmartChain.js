@@ -4,7 +4,6 @@ import arrow_right from "../../assets/images/arrow_right.svg";
 import arrow_left from "../../assets/images/arrow_left.svg";
 import { HeadingOne, Paragraph } from "../countdown/CountDown.styled";
 import { AiOutlineArrowDown } from "react-icons/ai";
-import { StyledButton } from "../header/Register";
 import {
   SmartChainContainer,
   StyledSmartChain,
@@ -14,6 +13,7 @@ import {
   SmartChainListItemLeft,
   MoveUp,
 } from "./SmartChain.styled";
+import { Button } from "../Button";
 
 const SmartChain = () => {
   return (
@@ -40,10 +40,7 @@ const SmartChain = () => {
                 </Paragraph>
                 <Paragraph>near instant processing time.</Paragraph>
                 <div>
-                  <StyledButton
-                    text="show more"
-                    icon={<AiOutlineArrowDown />}
-                  />
+                  <Button text="show more" icon={<AiOutlineArrowDown />} />
                 </div>
               </SmartChainListItemLeft>
               <SmartChainListItemRight>
@@ -87,10 +84,7 @@ const SmartChain = () => {
                 </Paragraph>
                 <Paragraph>DApps.</Paragraph>
                 <div>
-                  <StyledButton
-                    text="show more"
-                    icon={<AiOutlineArrowDown />}
-                  />
+                  <Button text="show more" icon={<AiOutlineArrowDown />} />
                 </div>
               </SmartChainListItemLeft>
             </SmartChainListContainer>
