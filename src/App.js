@@ -35,6 +35,7 @@ function App() {
           <SmartChain />
           <Newsletter />
           <CallToAction />
+    {/*testing netlify preview*/}
         </Route>
       </Switch>
       <Footer />
