@@ -21,6 +21,8 @@ function App() {
       <Switch>
         <Route path="/about-us">
           <AboutUs />
+          <Newsletter />
+          <CallToAction />
         </Route>
         <Route path="/" exact>
           <Banner />
