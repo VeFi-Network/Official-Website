@@ -13,32 +13,42 @@ import Newsletter from "./components/newsletter/Newsletter";
 import SmartChain from "./components/smartchain/SmartChain";
 import { Route, Switch } from "react-router";
 import AboutUs from "./pages/about/AboutUs";
+import { ThemeProvider } from "styled-components";
+
+const theme = {
+  iphone_x: "375px",
+  iPhone_11: "390px",
+  iphone_12_pro_max: "428px",
+  andriod: "",
+};
 function App() {
   return (
-    <>
-      <GlobalStyles />
-      <Header />
-      <Switch>
-        <Route path="/about-us">
-          <AboutUs />
-          <Newsletter />
-          <CallToAction />
-        </Route>
-        <Route path="/" exact>
-          <Banner />
-          <Subscribe />
-          <CountDown />
-          <HeroBanner />
-          <Features />
-          <Exchange />
-          <HowItWorks />
-          <SmartChain />
-          <Newsletter />
-          <CallToAction />
-        </Route>
-      </Switch>
-      <Footer />
-    </>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyles />
+        <Header />
+        <Switch>
+          <Route path="/about-us">
+            <AboutUs />
+            <Newsletter />
+            <CallToAction />
+          </Route>
+          <Route path="/" exact>
+            <Banner />
+            <Subscribe />
+            <CountDown />
+            <HeroBanner />
+            <Features />
+            <Exchange />
+            <HowItWorks />
+            <SmartChain />
+            <Newsletter />
+            <CallToAction />
+          </Route>
+        </Switch>
+        <Footer />
+      </>
+    </ThemeProvider>
   );
 }
 

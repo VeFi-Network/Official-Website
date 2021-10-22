@@ -8,25 +8,31 @@ import {
 } from "../styles/RightAlign.styled";
 import { StyledSubscribe, SubscribeContainer } from "./Subscribe.styled";
 import Image from "../../assets/images/double_coin.svg";
+import { H1, P } from "../Typography";
+import { Space } from "../Divider";
+import Input from "../Input";
 const Subscribe = () => {
   return (
     <StyledSubscribe>
       <Container>
         <SubscribeContainer>
-          <LeftAlign>
+          <LeftAlign className="hideOnMobile">
             <img src={Image} alt="double coin" />
           </LeftAlign>
           <RightAlign>
+            <Space />
             <RightAlignText>
-              <p>We are building the fastest</p>
-              <p>Blockchain platform which can</p>
-              <p>process over 1 Million</p>
-              <p>transactions per second.</p>
+              <P>We are building the fastest</P>
+              <P>Blockchain platform which can</P>
+              <P>Process over 1 Million</P>
+              <P>transactions Per second.</P>
             </RightAlignText>
             <RightAlignForm>
-              <h3>Stay Updated!</h3>
-              <div>
-                <input type="text" placeholder="example@gmail.com" />
+              <H1 FontWeight="400" size="30px">
+                Stay Updated!
+              </H1>
+              <div className="inputFormContainer">
+                <Input type="text" placeholder="example@gmail.com" />
                 <Button>Submit</Button>
               </div>
             </RightAlignForm>

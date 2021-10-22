@@ -6,16 +6,13 @@ import {
   QuoteRight,
   StyledHeroBanner,
 } from "./HeroBanner.styled";
-import {
-  HeadingOne,
-  HeadingThree,
-  Paragraph,
-} from "../countdown/CountDown.styled";
+
 import Image from "../../assets/images/guy_2.png";
 import { CircleStyled, Left, Right } from "../styles/Position.styled";
 import { BiSend } from "react-icons/bi";
 import asset1 from "../../assets/images/asset1.svg";
 import { Button } from "../Button";
+import { H1, H3, P } from "../Typography";
 
 const HeroBanner = () => {
   return (
@@ -32,13 +29,13 @@ const HeroBanner = () => {
         </QuoteRight>
         <Right>
           <HeroBannerJoinCommunity>
-            <HeadingOne>
+            <H1>
               From<CircleStyled>Africa</CircleStyled>
-            </HeadingOne>
-            <HeadingThree>to the World</HeadingThree>
-            <Paragraph>The next big thing in Blockchain when </Paragraph>
-            <Paragraph>high speed meets Scalability from Africa</Paragraph>
-            <Paragraph>to the world.</Paragraph>
+            </H1>
+            <H3>to the World</H3>
+            <P>The next big thing in Blockchain when </P>
+            <P>high speed meets Scalability from Africa</P>
+            <P>to the world.</P>
             <Button icon={<BiSend />} text="Join our community" />
           </HeroBannerJoinCommunity>
         </Right>

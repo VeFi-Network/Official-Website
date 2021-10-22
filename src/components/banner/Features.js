@@ -14,26 +14,21 @@ import Feature from "./Feature";
 import { BiCheckCircle } from "react-icons/bi";
 import map from "../../assets/images/map.png";
 import app_1 from "../../assets/images/app_1.svg";
+import { H1, P } from "../Typography";
 const Features = () => {
   return (
     <StyledHeroBanner>
       <Container>
         <StyledFeatures>
           <Left size="1">
-            <HeadingOne>
+            <H1>
               VEFI <span>Wallet</span>
-            </HeadingOne>
+            </H1>
             <Box>
-              <Paragraph>
-                VEFI NETWORK native wallet, VEFI ensure that this wallet
-              </Paragraph>
-              <Paragraph>
-                is flexible, secure,easy and simple t use whereby enabling
-              </Paragraph>
-              <Paragraph>
-                users to store, send,spend,receive,swap and exchange
-              </Paragraph>
-              <Paragraph>thier crypto assets instantly.</Paragraph>
+              <P>VEFI NETWORK native wallet, VEFI ensure that this wallet</P>
+              <P>is flexible, secure,easy and simple t use whereby enabling</P>
+              <P>users to store, send,spend,receive,swap and exchange</P>
+              <P>thier crypto assets instantly.</P>
             </Box>
             <Box width="70%">
               <Feature Icon={<BiCheckCircle />} Text="Store Crypto" />

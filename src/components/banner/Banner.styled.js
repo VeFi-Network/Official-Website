@@ -10,6 +10,12 @@ export const StyledBanner = styled.div`
   background-size: cover;
   display: flex;
   position: relative;
+
+  @media screen and (max-width: ${({ theme }) => theme.iPhone_11}) {
+    height: 100vh;
+    background-position: right; /* Center the image */
+    background-size: cover;
+  }
 `;
 
 export const Left = styled.div`
@@ -20,5 +26,17 @@ export const Left = styled.div`
     margin-left: 40px;
     color: #333;
     letter-spacing: 1.5px;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.iPhone_11}) {
+    width: 100%;
+
+    padding-left: 10px;
+    h1 {
+      font-size: 50px;
+      margin-left: 0px;
+      overflow-wrap: break-word;
+      line-height: 1.5em;
+    }
   }
 `;

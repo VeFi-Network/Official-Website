@@ -9,6 +9,9 @@ export const HeaderTop = styled.div`
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
   position: fixed;
   z-index: 10;
+
+  @media() {
+  }
 `;
 
 export const HeaderContainer = styled.div`
@@ -35,13 +38,22 @@ export const HeaderCenter = styled.div`
     font-size: 16px;
     text-transform: capitalize;
   }
+
+  @media screen and (max-width: ${({ theme }) => theme.iPhone_11}) {
+    display: none;
+  }
 `;
 
 export const HeaderRight = styled.div`
   flex: 0.3;
 
   button {
-    font-size: 12px !important;
     text-transform: capitalize;
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.iPhone_11}) {
+    flex: 1;
+    margin-left: 40px;
+    margin-right: 20px;
   }
 `;

@@ -2,6 +2,7 @@ import { Container } from "@material-ui/core";
 import React from "react";
 import Arrow from "../styles/Arrow";
 import { CircleStyled } from "../styles/Position.styled";
+import { H1 } from "../Typography";
 import { StyledBanner, Left } from "./Banner.styled";
 
 const Banner = () => {
@@ -9,17 +10,14 @@ const Banner = () => {
     <StyledBanner>
       <Container>
         <Left>
-          <h1>
-            Revolutionizing <br />
-            Innvation in <br />
-            Blockchain
-            <br />
-            Technology from
-            <br />
-            <CircleStyled>Africa</CircleStyled> to the
-            <br />
-            World.
-          </h1>
+          <H1 size="50px">Revolutionizing</H1>
+          <H1 size="50px">Inovation in</H1>
+          <H1 size="50px">Blockchain</H1>
+          <H1 size="50px">Technology</H1>
+          <H1 size="50px">
+            from <CircleStyled>Africa</CircleStyled>
+          </H1>
+          <H1 size="50px">to the World.</H1>
         </Left>
         <Arrow />
       </Container>

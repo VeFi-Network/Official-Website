@@ -3,10 +3,10 @@ import React from "react";
 import { BiCheckCircle } from "react-icons/bi";
 import Feature from "../banner/Feature";
 import { Box } from "../banner/Features.styled";
-import { HeadingOne, Paragraph } from "../countdown/CountDown.styled";
 import { Left, Right } from "../styles/Position.styled";
 import { ExchangeContainer, StyledExchange } from "./Exchange.styled";
 import app_1 from "../../assets/images/app_2.svg";
+import { H1, P } from "../Typography";
 const Exchange = () => {
   return (
     <StyledExchange>
@@ -16,18 +16,14 @@ const Exchange = () => {
             <img src={app_1} alt="app" />
           </Left>
           <Right size="0.6">
-            <HeadingOne color="#fbf6b4" FontSize="80px">
+            <H1 color="#fbf6b4" size="80px">
               VEFI exchange
-            </HeadingOne>
-            <Paragraph>VEFI exchange is a unified cryptocurrency</Paragraph>
-            <Paragraph>
-              exchange platform built to enable users navigate
-            </Paragraph>
-            <Paragraph>and control all crypto related products and </Paragraph>
-            <Paragraph>
-              services on a single platform without goggling
-            </Paragraph>
-            <Paragraph>between platforms and apps.</Paragraph>
+            </H1>
+            <P>VEFI exchange is a unified cryptocurrency</P>
+            <P>exchange platform built to enable users navigate</P>
+            <P>and control all crypto related products and </P>
+            <P>services on a single platform without goggling</P>
+            <P>between platforms and apps.</P>
             <Box width="70%">
               <Feature Icon={<BiCheckCircle />} Text="Margin trading" />
               <Feature Icon={<BiCheckCircle />} Text="P2P trading" />

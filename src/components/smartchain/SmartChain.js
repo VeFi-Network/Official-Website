@@ -14,6 +14,7 @@ import {
   MoveUp,
 } from "./SmartChain.styled";
 import { Button } from "../Button";
+import { H1, P } from "../Typography";
 
 const SmartChain = () => {
   return (
@@ -23,22 +24,18 @@ const SmartChain = () => {
           <SmartChainDiv>
             <SmartChainListContainer>
               <SmartChainListItemLeft>
-                <HeadingOne FontSize="40px">VEFI Smart Chain</HeadingOne>
-                <Paragraph>
-                  VEFI Smart Chain is a new generation High performance
-                </Paragraph>
-                <Paragraph>
-                  Blockchain based on a unique consensus algorithm (V-DPoS)
-                </Paragraph>
-                <Paragraph>
+                <H1 size="40px">VEFI Smart Chain</H1>
+                <P>VEFI Smart Chain is a new generation High performance</P>
+                <P>Blockchain based on a unique consensus algorithm (V-DPoS)</P>
+                <P>
                   with the unique ability of processing over{" "}
                   <strong>1 million</strong>
-                </Paragraph>
-                <Paragraph>
+                </P>
+                <P>
                   <strong>Transaction per second</strong> with almost zero
                   transaction fees at a
-                </Paragraph>
-                <Paragraph>near instant processing time.</Paragraph>
+                </P>
+                <P>near instant processing time.</P>
                 <div>
                   <Button text="show more" icon={<AiOutlineArrowDown />} />
                 </div>
@@ -55,34 +52,22 @@ const SmartChain = () => {
                   </div>
                 </SmartChainListItemRight>
                 <SmartChainListItemLeft>
-                  <Paragraph>
-                    VEFI Smart chain is a Climate Neutral Blockain
-                  </Paragraph>
-                  <Paragraph>
-                    whereby making VEFI the latest infrastructure for
-                  </Paragraph>
-                  <Paragraph>
-                    innovation and development. VEFI Smart Chain is
-                  </Paragraph>
-                  <Paragraph>
-                    EVM-compatible which supports DApps built on
-                  </Paragraph>
-                  <Paragraph>
-                    Ethereum. This promotes faster transaction.
-                  </Paragraph>
+                  <P>VEFI Smart chain is a Climate Neutral Blockain</P>
+                  <P>whereby making VEFI the latest infrastructure for</P>
+                  <P>innovation and development. VEFI Smart Chain is</P>
+                  <P>EVM-compatible which supports DApps built on</P>
+                  <P>Ethereum. This promotes faster transaction.</P>
                 </SmartChainListItemLeft>
               </SmartChainListContainer>
             </MoveUp>
             <SmartChainListContainer>
               <SmartChainListItemLeft>
-                <HeadingOne color="#0062AF" FontSize="30px">
+                <H1 color="#0062AF" size="30px">
                   Interoperability:
-                </HeadingOne>
-                <Paragraph>VEFI Smart Chain enables multi-chain</Paragraph>
-                <Paragraph>
-                  Interoperability, which makes it easier to scale
-                </Paragraph>
-                <Paragraph>DApps.</Paragraph>
+                </H1>
+                <P>VEFI Smart Chain enables multi-chain</P>
+                <P>Interoperability, which makes it easier to scale</P>
+                <P>DApps.</P>
                 <div>
                   <Button text="show more" icon={<AiOutlineArrowDown />} />
                 </div>

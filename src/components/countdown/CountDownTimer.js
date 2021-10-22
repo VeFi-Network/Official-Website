@@ -20,6 +20,9 @@ export const Timer = styled.div`
     font-size: 14px;
     color: #fbf6b4;
   }
+
+  @media screen and (max-width: ${({ theme }) => theme.iPhone_11}) {
+  }
 `;
 
 export const CounterContainer = styled.div`
@@ -40,6 +43,10 @@ export const CounterContainer = styled.div`
     p {
       margin-top: 15px;
     }
+  }
+
+  @media screen and (max-width: ${({ theme }) => theme.iPhone_11}) {
+    width: 100%;
   }
 `;
 
