@@ -1,8 +1,6 @@
 import { Button, Container } from "@material-ui/core";
 import React from "react";
 import { BiCheckCircle } from "react-icons/bi";
-import Feature from "../banner/Feature";
-import { Box } from "../banner/Features.styled";
 import { Left, Right } from "../styles/Position.styled";
 import { ExchangeContainer, StyledExchange } from "./Exchange.styled";
 import app_1 from "../../assets/images/app_2.svg";

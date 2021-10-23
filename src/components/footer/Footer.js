@@ -78,8 +78,8 @@ const Footer = () => {
           <StyledFooterNav>
             <H3 color="white">USA</H3>
             <P>
-              No 11 address lane, USA <br />
-              Town State
+              +234 9066809425 <br />
+              12109 bethel dr Frisco tx 75033 USA
             </P>
           </StyledFooterNav>
           <StyledFooterNav>
