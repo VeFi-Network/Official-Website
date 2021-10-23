@@ -13,8 +13,8 @@ export const StyledSmartChain = styled.section`
   ${media.mobile`
     width:100%;
     flex:1;
-    margin-bottom:400px;
-
+    padding-bottom:350px;
+    
     img{
       display:none;
     }
@@ -77,9 +77,11 @@ export const SmartChainListItemLeft = styled.div`
   ${media.mobile`
   width:100%;
   flex:1;
-
+  h1{
+    font-size:30px;
+  }
   p{
-    font-size:24px;
+    font-size:20px;
     line-height:1.5em;
   }
   button{

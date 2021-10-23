@@ -7,6 +7,7 @@ import { Left, Right } from "../styles/Position.styled";
 import { ExchangeContainer, StyledExchange } from "./Exchange.styled";
 import app_1 from "../../assets/images/app_2.svg";
 import { H1, P } from "../Typography";
+import { Display } from "../Grid";
 const Exchange = () => {
   return (
     <StyledExchange>
@@ -25,14 +26,7 @@ const Exchange = () => {
               and services on a single platform without goggling between
               platforms and apps.
             </P>
-            <Box width="70%">
-              <Feature Icon={<BiCheckCircle />} Text="Margin trading" />
-              <Feature Icon={<BiCheckCircle />} Text="P2P trading" />
-              <Feature Icon={<BiCheckCircle />} Text="Features trading" />
-              <Feature Icon={<BiCheckCircle />} Text="Spot trading" />
-              <Feature Icon={<BiCheckCircle />} Text="NFT" />
-              <Feature Icon={<BiCheckCircle />} Text="DEX" />
-            </Box>
+            <Display>OK</Display>
           </Right>
         </ExchangeContainer>
       </Container>

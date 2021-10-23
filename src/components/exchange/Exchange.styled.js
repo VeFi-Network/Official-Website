@@ -49,11 +49,11 @@ export const ExchangeContainer = styled.div`
     flex-direction:column-reverse;
 
     h1{
-      font-size:50px;
+      font-size:35px;
       margin-left:20px;
     }
     p{
-      font-size:26px;
+      font-size:20px;
       line-height:1.5em;
     }
     div > img{

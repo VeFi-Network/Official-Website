@@ -61,11 +61,7 @@ export const HeroBannerContainer = styled.div`
   }
 
   ${media.mobile`
-  > div:nth-child(1) {
-    > img {
-      background:red;
-    }
-  }
+  
   `}
 `;
 

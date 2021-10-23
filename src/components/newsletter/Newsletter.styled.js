@@ -61,10 +61,10 @@ export const NewsletterGetStarted = styled.div`
 
   h1{
     margin-top:10px;
-    font-size:34px;
+    font-size:30px;
   }
   p{
-    font-size:26px;
+    font-size:20px;
   }
 `}
 `;

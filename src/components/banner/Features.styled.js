@@ -16,12 +16,11 @@ export const StyledFeatures = styled.div`
     width:100%;
     display:flex;
     flex-direction:column;
+
+    h1{
+      margin-left:3px;
+    }
   `};
-  ${media.tablet`
-  
-  `};
-  ${media.desktop``};
-  ${media.uhd``};
 `;
 
 export const Box = styled.div`
@@ -39,18 +38,12 @@ export const Box = styled.div`
     width:100%;
     white-space:wrap;
     >p{
-      font-size:30px;
+      font-size:20px;
       text-align:left;
       font-weight:500;
       line-height:1.5em;
     }
   `};
-
-  ${media.tablet`
-    > p{
-      font-size:45px;
-    }
-  `}
 `;
 
 export const StyledFeature = styled.div`

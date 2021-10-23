@@ -34,7 +34,7 @@ export const StyledStepsHeading = styled.div`
     font-weight: 600;
   }
   ${media.mobile`
-    height:80px;
+    height:70px;
 
     h3{
       font-size:30px;
@@ -49,7 +49,7 @@ export const StyledStepsDesc = styled.div`
   }
   ${media.mobile`
  p{
-   font-size:24px;
+   font-size:20px;
    font-weight:400;
    padding-bottom:20px;
  }

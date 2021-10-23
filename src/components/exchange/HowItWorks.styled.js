@@ -15,8 +15,6 @@ export const StyledHowItWorks = styled.section`
   padding-bottom: 60px;
 
   ${media.mobile`
-    height:100vh;
-    margin-bottom:calc(100% + 200px);
     display:flex;
     width:100%;
     background-position:center;

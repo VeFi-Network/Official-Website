@@ -5,12 +5,12 @@ const sizes = {
   widscreen: 1366,
   desktop: 1024,
   tablet: 768,
-  mobile: 380,
+  mobile: 500,
 };
 
 export default Object.keys(sizes).reduce((acc, label) => {
   acc[label] = (...args) => css`
-    @media (max-width: ${sizes[label]}px) {
+    @media only screen and (max-width: ${sizes[label]}px) {
       ${css(...args)};
     }
   `;
