@@ -15,7 +15,6 @@ import { BiCheckCircle } from "react-icons/bi";
 import map from "../../assets/images/map.png";
 import app_1 from "../../assets/images/app_1.svg";
 import { H1, P } from "../Typography";
-import { Display } from "../Grid";
 const Features = () => {
   return (
     <StyledHeroBanner>
@@ -33,7 +32,17 @@ const Features = () => {
                 instantly.
               </P>
             </Box>
-            <Display>OK</Display>
+            <Box width="70%">
+              <StyledFeature>
+                <Feature Icon={<BiCheckCircle />} Text="Store Crypto" />
+                <Feature Icon={<BiCheckCircle />} Text="Send Crypto" />
+                <Feature Icon={<BiCheckCircle />} Text="Spend Crypto" />
+                <Feature Icon={<BiCheckCircle />} Text="Swap Crypto" />
+                <Feature Icon={<BiCheckCircle />} Text="Receive Crypto" />
+                <Feature Icon={<BiCheckCircle />} Text="Exchange Crypto" />
+                <Feature Icon={<BiCheckCircle />} Text="Stake assets" />
+              </StyledFeature>
+            </Box>
           </Left>
           <Right size="0.4">
             <StyledFeatureRight>
