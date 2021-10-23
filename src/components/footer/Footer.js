@@ -1,18 +1,8 @@
 import { Container } from "@material-ui/core";
 import React from "react";
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillTwitterCircle,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
+import { AiFillFacebook, AiFillInstagram, AiFillTwitterCircle, AiOutlineLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import {
-  SocialIcons,
-  StyledFooter,
-  StyledFooterContainer,
-  StyledFooterNav,
-} from "./Footer.styled";
+import { SocialIcons, StyledFooter, StyledFooterContainer, StyledFooterNav } from "./Footer.styled";
 import logo from "../../assets/images/logo.svg";
 import { H3, P } from "../Typography";
 import { Divider } from "../Divider";
