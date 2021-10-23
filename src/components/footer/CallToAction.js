@@ -1,11 +1,11 @@
 import { Container } from "@material-ui/core";
 import React from "react";
 import styled from "styled-components";
-import { Paragraph } from "../countdown/CountDown.styled";
-
+import { P } from "../Typography";
+import media from "../../utility/Media";
 export const StyledCallToAction = styled.div`
   display: flex;
-  background: red;
+  background: ${({ bg }) => bg || "#fbf6b4"};
   height: 50px;
   padding: 20px 0px;
   color: #000;
@@ -15,14 +15,21 @@ export const StyledCallToAction = styled.div`
   p {
     font-weight: 600;
   }
+
+  ${media.mobile`
+    margin-top:10px;
+    margin-bottom:10px;
+    padding:40px 0px;
+    p{
+      font-size:20px;
+    }
+  `}
 `;
 const CallToAction = () => {
   return (
-    <StyledCallToAction>
+    <StyledCallToAction bg="#fbf6b4">
       <Container>
-        <Paragraph>
-          Need help? Call our support team @ +234 000 000 000
-        </Paragraph>
+        <P>Need help? Call our support team @ +234 000 000 000</P>
       </Container>
     </StyledCallToAction>
   );

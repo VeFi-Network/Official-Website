@@ -7,25 +7,48 @@ import HeroBanner from "./components/banner/HeroBanner";
 import Features from "./components/banner/Features";
 import Exchange from "./components/exchange/Exchange";
 import HowItWorks from "./components/exchange/HowItWorks";
-import Footer from "./components/Footer/Footer";
-import CallToAction from "./components/Footer/CallToAction";
-import Newsletter from "./components/banner/newsletter/Newsletter";
+import Footer from "./components/footer/Footer";
+import CallToAction from "./components/footer/CallToAction";
+import Newsletter from "./components/newsletter/Newsletter";
+import SmartChain from "./components/smartchain/SmartChain";
+import { Route, Switch } from "react-router";
+import AboutUs from "./pages/about/AboutUs";
+import { ThemeProvider } from "styled-components";
+
+const theme = {
+  iphone_x: "375px",
+  iPhone_11: "390px",
+  iphone_12_pro_max: "428px",
+  andriod: "480px",
+};
 function App() {
   return (
-    <>
-      <GlobalStyles />
-      <Header />
-      <Banner />
-      <Subscribe />
-      <CountDown />
-      <HeroBanner />
-      <Features />
-      <Exchange />
-      <HowItWorks />
-      <Newsletter />
-      <CallToAction />
-      <Footer />
-    </>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyles />
+        <Header />
+        <Switch>
+          <Route path="/about-us">
+            <AboutUs />
+            <Newsletter />
+            <CallToAction />
+          </Route>
+          <Route path="/" exact>
+            <Banner />
+            <Subscribe />
+            <CountDown />
+            <HeroBanner />
+            <Features />
+            <Exchange />
+            <HowItWorks />
+            <SmartChain />
+            <Newsletter />
+            <CallToAction />
+          </Route>
+        </Switch>
+        <Footer />
+      </>
+    </ThemeProvider>
   );
 }
 

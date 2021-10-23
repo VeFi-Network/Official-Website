@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { HeadingThree, Paragraph } from "../countdown/CountDown.styled";
+import media from "../../utility/Media";
+import { H3, P } from "../Typography";
 
 export const StyledSteps = styled.div`
   flex: 1;
@@ -8,9 +9,23 @@ export const StyledSteps = styled.div`
   justify-content: center;
   margin-left: 10px;
   margin-right: 10px;
+
+  ${media.mobile`
+    background:white;
+    box-shadow:0px 0px 8px rgba(0,0,0,0.15);
+    color:#000;
+    padding:20px;
+    width:100%;
+    margin:20px 0px;
+  `}
 `;
+
 export const StyledStepsLogo = styled.div`
   font-size: 50px;
+  ${media.mobile`
+    font-size:80px;
+    font-weight:600;
+  `}
 `;
 export const StyledStepsHeading = styled.div`
   height: 100px;
@@ -18,12 +33,27 @@ export const StyledStepsHeading = styled.div`
     font-size: 28px;
     font-weight: 600;
   }
+  ${media.mobile`
+    height:70px;
+
+    h3{
+      font-size:30px;
+      line-height:1em;
+    }
+`}
 `;
 export const StyledStepsDesc = styled.div`
   p {
     font-size: 16px;
     font-weight: 400;
   }
+  ${media.mobile`
+ p{
+   font-size:20px;
+   font-weight:400;
+   padding-bottom:20px;
+ }
+`}
 `;
 
 const Steps = ({ icon, title, desc }) => {
@@ -31,10 +61,10 @@ const Steps = ({ icon, title, desc }) => {
     <StyledSteps>
       <StyledStepsLogo>{icon}</StyledStepsLogo>
       <StyledStepsHeading>
-        <HeadingThree>{title}</HeadingThree>
+        <H3>{title}</H3>
       </StyledStepsHeading>
       <StyledStepsDesc>
-        <Paragraph>{desc}</Paragraph>
+        <P>{desc}</P>
       </StyledStepsDesc>
     </StyledSteps>
   );

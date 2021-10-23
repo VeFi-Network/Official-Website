@@ -7,7 +7,6 @@ import {
   AiOutlineLinkedin,
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { HeadingThree } from "../countdown/CountDown.styled";
 import {
   SocialIcons,
   StyledFooter,
@@ -15,41 +14,42 @@ import {
   StyledFooterNav,
 } from "./Footer.styled";
 import logo from "../../assets/images/logo.svg";
+import { H3, P } from "../Typography";
+import { Divider } from "../Divider";
 const Footer = () => {
   return (
     <StyledFooter>
       <Container>
-        <hr />
+        <Divider className="mobile" />
         <StyledFooterContainer>
           <StyledFooterNav>
-            <HeadingThree color="white">Company</HeadingThree>
-            <Link>About us</Link>
-            <Link>About us</Link>
-            <Link>About us</Link>
-            <Link>About us</Link>
+            <H3 color="white">Company</H3>
+            <Link to="/about-us">About us</Link>
+            <Link to="/contact-us">Contact us</Link>
+            <Link to="/team">Our Team</Link>
+            <Link to="/investors">Investor Relations</Link>
           </StyledFooterNav>
           <StyledFooterNav>
-            <HeadingThree color="white">Product</HeadingThree>
-            <Link>Wallet</Link>
-            <Link>Exchange</Link>
-            <Link>Smart Chain</Link>
-            <Link>Network</Link>
+            <H3 color="white">Product</H3>
+            <Link to="/product/wallet">Wallet</Link>
+            <Link to="/product/exchange">Exchange</Link>
+            <Link to="/product/smart-chain">Smart Chain</Link>
+            <Link to="/product/network">Network</Link>
           </StyledFooterNav>
           <StyledFooterNav>
-            <HeadingThree color="white">Support</HeadingThree>
-            <Link>FAQ</Link>
-            <Link>Support center</Link>
+            <H3 color="white">Support</H3>
+            <Link to="/faq">FAQ</Link>
+            <Link to="/support">Support center</Link>
           </StyledFooterNav>
           <StyledFooterNav>
-            <HeadingThree color="white">Legal</HeadingThree>
-            <Link>Privacy Policy</Link>
-            <Link>Terms &amp; Condition</Link>
-            <HeadingThree color="white">Community</HeadingThree>
-            <Link>About us</Link>
-            <Link>About us</Link>
+            <H3 color="white">Legal</H3>
+            <Link to="/legal/privacy-policy">Privacy Policy</Link>
+            <Link to="/legal/terms">Terms &amp; Condition</Link>
+            <H3 color="white">Community</H3>
+            <Link to="/">Telegram</Link>
           </StyledFooterNav>
         </StyledFooterContainer>
-        <hr />
+        <Divider className="mobile" />
         <StyledFooterContainer>
           <StyledFooterNav>
             <img src={logo} alt="" />
@@ -57,9 +57,9 @@ const Footer = () => {
             <p>All Rights Reserved</p>
           </StyledFooterNav>
           <StyledFooterNav>
-            <HeadingThree color="white">Contact</HeadingThree>
-            <Link>info@vefi.com</Link>
-            <Link>support@vefi.com</Link>
+            <H3 color="white">Contact</H3>
+            <Link to="/">info@vefi.com</Link>
+            <Link to="/">support@vefi.com</Link>
             <SocialIcons>
               <span>
                 <AiFillFacebook />
@@ -76,18 +76,18 @@ const Footer = () => {
             </SocialIcons>
           </StyledFooterNav>
           <StyledFooterNav>
-            <HeadingThree color="white">USA</HeadingThree>
-            <p>
-              No 11 address lane, USA <br />
-              Town State
-            </p>
+            <H3 color="white">USA</H3>
+            <P>
+              +234 9066809425 <br />
+              12109 bethel dr Frisco tx 75033 USA
+            </P>
           </StyledFooterNav>
           <StyledFooterNav>
-            <HeadingThree color="white">Nigeria</HeadingThree>
-            <p>
+            <H3 color="white">Nigeria</H3>
+            <P>
               No 11 address lane, USA <br />
               Town State
-            </p>
+            </P>
           </StyledFooterNav>
         </StyledFooterContainer>
       </Container>

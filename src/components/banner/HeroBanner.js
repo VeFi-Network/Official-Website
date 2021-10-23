@@ -2,34 +2,42 @@ import React from "react";
 import {
   HeroBannerContainer,
   HeroBannerJoinCommunity,
+  QuoteLeft,
+  QuoteRight,
   StyledHeroBanner,
 } from "./HeroBanner.styled";
-import {
-  HeadingOne,
-  HeadingThree,
-  Paragraph,
-} from "../countdown/CountDown.styled";
+
 import Image from "../../assets/images/guy_2.png";
 import { CircleStyled, Left, Right } from "../styles/Position.styled";
-import { StyledButton } from "../header/Register";
 import { BiSend } from "react-icons/bi";
+import asset1 from "../../assets/images/asset1.svg";
+import { Button } from "../Button";
+import { H1, H3, P } from "../Typography";
+
 const HeroBanner = () => {
   return (
     <StyledHeroBanner>
-      <HeroBannerContainer>
+      <QuoteLeft className="hideOnMobile">
+        <img src={asset1} alt="" />
+      </QuoteLeft>
+      <HeroBannerContainer className="phone">
         <Left>
           <img src={Image} alt="" />
         </Left>
+        <QuoteRight className="hideOnMobile">
+          <img src={asset1} alt="" />
+        </QuoteRight>
         <Right>
           <HeroBannerJoinCommunity>
-            <HeadingOne>
+            <H1>
               From<CircleStyled>Africa</CircleStyled>
-            </HeadingOne>
-            <HeadingThree>to the World</HeadingThree>
-            <Paragraph>The next big thing in Blockchain when </Paragraph>
-            <Paragraph>high speed meets Scalability from Africa</Paragraph>
-            <Paragraph>to the world.</Paragraph>
-            <StyledButton icon={<BiSend />} text="Join our community" />
+            </H1>
+            <H3>to the World</H3>
+            <P>
+              The next big thing in Blockchain when high speed meets Scalability
+              from Africa to the world.
+            </P>
+            <Button icon={<BiSend />} text="Join our community" />
           </HeroBannerJoinCommunity>
         </Right>
       </HeroBannerContainer>

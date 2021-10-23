@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import media from "../../utility/Media";
 export const HeaderTop = styled.div`
   width: 100%;
   height: 60px;
@@ -9,6 +9,10 @@ export const HeaderTop = styled.div`
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
   position: fixed;
   z-index: 10;
+
+  ${media.mobile`
+  height:80px;
+`}
 `;
 
 export const HeaderContainer = styled.div`
@@ -35,23 +39,21 @@ export const HeaderCenter = styled.div`
     font-size: 16px;
     text-transform: capitalize;
   }
+
+  ${media.mobile`
+    display:none;
+  `}
 `;
 
 export const HeaderRight = styled.div`
   flex: 0.3;
 
   button {
-    font-size: 12px !important;
     text-transform: capitalize;
   }
-`;
-
-export const Button = styled.button`
-  background-color: ${({ bg }) => bg || "blue"};
-  border: none;
-  padding: 10px;
-  color: #fff;
-  border-radius: 5px;
-  display: flex;
-  align-item: center;
+  ${media.mobile`
+    flex: 1;
+    margin-left: 40px;
+    margin-right: 20px;
+`}
 `;

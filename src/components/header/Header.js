@@ -9,9 +9,9 @@ import {
 } from "./HeaderTop.styled";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.svg";
-import { StyledButton } from "./Register";
 
 import { BiSend } from "react-icons/bi";
+import { Button } from "../Button";
 const Header = () => {
   return (
     <>
@@ -24,12 +24,12 @@ const Header = () => {
             <HeaderCenter>
               <Link to="/">Home</Link>
               <Link to="/products">Products</Link>
-              <Link to="about-us">About us</Link>
+              <Link to="/about-us">About us</Link>
               <Link to="/faq">FAQ</Link>
               <Link to="/contact-us">Contact us</Link>
             </HeaderCenter>
             <HeaderRight>
-              <StyledButton icon={<BiSend />} text="Join our community" />
+              <Button icon={<BiSend />} text="Join our community" bg="" />
             </HeaderRight>
           </HeaderContainer>
         </Container>

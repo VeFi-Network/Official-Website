@@ -1,45 +1,99 @@
-import { Container } from "@material-ui/core";
+import { Button, Container } from "@material-ui/core";
 import React from "react";
-import { HeadingOne, Paragraph } from "../countdown/CountDown.styled";
 import { Left, Right } from "../styles/Position.styled";
 import { StyledHeroBanner } from "./HeroBanner.styled";
-import { Box, StyledFeatureRight, StyledFeatures } from "./Features.styled";
-import Feature from "./Feature";
+import {
+  AppMockUp,
+  Box,
+  FeaturedRightImage,
+  StyledFeatureRight,
+  StyledFeatures,
+} from "./Features.styled";
 import { BiCheckCircle } from "react-icons/bi";
-
+import map from "../../assets/images/map.png";
+import app_1 from "../../assets/images/app_1.svg";
+import { H1, P } from "../Typography";
+import { Paper } from "../Grid";
 const Features = () => {
   return (
     <StyledHeroBanner>
       <Container>
         <StyledFeatures>
           <Left size="1">
-            <HeadingOne>
+            <H1>
               VEFI <span>Wallet</span>
-            </HeadingOne>
+            </H1>
             <Box>
-              <Paragraph>
-                VEFI NETWORK native wallet, VEFI ensure that this wallet
-              </Paragraph>
-              <Paragraph>
-                is flexible, secure,easy and simple t use whereby enabling
-              </Paragraph>
-              <Paragraph>
-                users to store, send,spend,receive,swap and exchange
-              </Paragraph>
-              <Paragraph>thier crypto assets instantly.</Paragraph>
+              <P>
+                VEFI NETWORK native wallet, VEFI ensure that this wallet is
+                flexible, secure,easy and simple t use whereby enabling users to
+                store, send,spend,receive,swap and exchange their crypto assets
+                instantly.
+              </P>
             </Box>
-            <Box width="70%">
-              <Feature Icon={<BiCheckCircle />} Text="Store Crypto" />
-              <Feature Icon={<BiCheckCircle />} Text="Send Crypto" />
-              <Feature Icon={<BiCheckCircle />} Text="Spend Crypto" />
-              <Feature Icon={<BiCheckCircle />} Text="Swap Crypto" />
-              <Feature Icon={<BiCheckCircle />} Text="Receive Crypto" />
-              <Feature Icon={<BiCheckCircle />} Text="Exchange Crypto" />
-              <Feature Icon={<BiCheckCircle />} Text="Stake assets" />
-            </Box>
+            <Paper>
+              <div>
+                <Button
+                  variant="contained"
+                  startIcon={<BiCheckCircle />}
+                  className="button"
+                >
+                  Store Crypto
+                </Button>
+                <Button
+                  variant="contained"
+                  startIcon={<BiCheckCircle />}
+                  className="button"
+                >
+                  Send Cypto
+                </Button>
+                <Button
+                  variant="contained"
+                  startIcon={<BiCheckCircle />}
+                  className="button"
+                >
+                  Spend Cypto
+                </Button>
+                <Button
+                  variant="contained"
+                  startIcon={<BiCheckCircle />}
+                  className="button"
+                >
+                  Swap Cypto
+                </Button>
+                <Button
+                  variant="contained"
+                  startIcon={<BiCheckCircle />}
+                  className="button"
+                >
+                  Receive Cypto
+                </Button>
+                <Button
+                  variant="contained"
+                  startIcon={<BiCheckCircle />}
+                  className="button"
+                >
+                  Exchange Cypto
+                </Button>
+                <Button
+                  variant="contained"
+                  startIcon={<BiCheckCircle />}
+                  className="button"
+                >
+                  Stake Cypto
+                </Button>
+              </div>
+            </Paper>
           </Left>
           <Right size="0.4">
-            <StyledFeatureRight></StyledFeatureRight>
+            <StyledFeatureRight>
+              <FeaturedRightImage>
+                <img src={map} alt="app" />
+              </FeaturedRightImage>
+              <AppMockUp>
+                <img src={app_1} alt="app" />
+              </AppMockUp>
+            </StyledFeatureRight>
           </Right>
         </StyledFeatures>
       </Container>

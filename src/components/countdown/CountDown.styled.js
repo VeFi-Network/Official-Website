@@ -1,14 +1,21 @@
 import styled from "styled-components";
 import double_coin from "../../assets/images/double_coin.svg";
-
+import media from "../../utility/Media";
 export const StyledCountDown = styled.section`
   width: 100%;
-  background: url(${double_coin}) no-repeat, #fbf6b4;
+  background: url(${double_coin}) no-repeat, #fefcea;
   display: flex;
   color: #000;
   background-position: left;
   background-size: contain;
   background-blend-mode: screen;
+
+  ${media.mobile`
+
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: lighten;
+  `}
 `;
 
 export const CountDownCenter = styled.div`
@@ -17,47 +24,25 @@ export const CountDownCenter = styled.div`
   justify-content: center;
   margin: 80px 0px;
   flex-direction: column;
-`;
+  text-align: center;
 
-export const HeadingThree = styled.h3`
-  font-size: 30px;
-  font-weight: 600;
-  color: ${({ color }) => color || ""};
-`;
+  ${media.mobile`
+  margin: 30px 0px;
 
-export const HeadingOne = styled.h1`
-  font-size: 80px;
-  font-weight: 600;
-  color: ${({ color }) => color || ""};
-`;
-
-export const Paragraph = styled.p`
-  font-size: 24px;
-  font-weight: 500;
-  color: ${({ color }) => color || ""};
-`;
-
-export const CounterContainer = styled.div`
-  width: 50%;
-  display: flex;
-  color: #fbf6b4;
-  justify-content: center;
-  background: black;
-  height: 200px;
-  margin-top: 40px;
-
-  > div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-
-    p {
-      margin-top: 15px;
-    }
+  h3 {
+    font-size: 26px;
   }
+  h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3em;
+  }
+  `}
 `;
-
 export const CounterTimerBox = styled.div`
   width: 100%;
   color: #fff;
@@ -66,20 +51,6 @@ export const CounterTimerBox = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin: 10px 0px;
-`;
-
-export const Timer = styled.div`
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-
-  h1 {
-    font-size: 40px;
-  }
-  span {
-    font-size: 14px;
-    color: #fbf6b4;
-  }
 `;
 
 export const WaitList = styled.div``;

@@ -1,64 +1,26 @@
 import { Container } from "@material-ui/core";
 import React from "react";
-import {
-  CountDownCenter,
-  StyledCountDown,
-  HeadingThree,
-  HeadingOne,
-  Paragraph,
-  CounterContainer,
-  CounterTimerBox,
-  Timer,
-  WaitList,
-  Btn,
-} from "./CountDown.styled";
+import { H1, H3, P } from "../Typography";
+import { CountDownCenter, StyledCountDown } from "./CountDown.styled";
+import CountDownTimer from "./CountDownTimer";
 
 const CountDown = () => {
   return (
     <StyledCountDown>
       <Container>
         <CountDownCenter>
-          <HeadingThree>The next big thing in</HeadingThree>
-          <HeadingOne>Blockchain</HeadingOne>
-          <Paragraph>
+          <H3 size="30px">The next big thing in</H3>
+          <H1 size="80px">Blockchain</H1>
+          <P size="24px">
             The next big thing in Blockchain when high speed meets
-          </Paragraph>
-          <Paragraph>
+          </P>
+          <P size="24px">
             Scalability. VSC ensures high speed and more than lower
-          </Paragraph>
-          <Paragraph>
+          </P>
+          <P size="24px">
             transaction fees under large volumnes of transaction.
-          </Paragraph>
-          <CounterContainer>
-            <div>
-              <Paragraph>Pre-Sale ICO starts in</Paragraph>
-              <CounterTimerBox>
-                <Timer>
-                  <HeadingOne>46</HeadingOne>
-                  <span>Days</span>
-                </Timer>
-                <span>:</span>
-                <Timer>
-                  <HeadingOne>12</HeadingOne>
-                  <span>Hours</span>
-                </Timer>
-                <span>:</span>
-                <Timer>
-                  <HeadingOne>05</HeadingOne>
-                  <span>Min</span>
-                </Timer>
-                <span>:</span>
-                <Timer>
-                  <HeadingOne>56</HeadingOne>
-                  <span>Sec</span>
-                </Timer>
-              </CounterTimerBox>
-              <WaitList>
-                <Btn bg="#fbf6b4">read more</Btn>
-                <Btn bg="#fbf6b4">join the waitlist</Btn>
-              </WaitList>
-            </div>
-          </CounterContainer>
+          </P>
+          <CountDownTimer />
         </CountDownCenter>
       </Container>
     </StyledCountDown>

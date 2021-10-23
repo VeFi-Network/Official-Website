@@ -1,10 +1,53 @@
 import styled from "styled-components";
-
+import media from "../../utility/Media";
 export const StyledHeroBanner = styled.section`
   width: 100%;
   display: flex;
-  background: ${({ bg }) => bg || "#fbf6b4"};
-  overflow-x: hidden;
+  position: relative;
+  background: ${({ bg }) => bg || "#FEFCEA"};
+
+  ${media.mobile`
+    width:100%;
+    flex-direction:column;
+  
+    .hideOnMobile{
+      display:none
+    }
+  `}
+`;
+
+export const QuoteLeft = styled.div`
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-top: -40px;
+    margin-left: 10px;
+  }
+
+  ${media.mobile`
+    width:100%;
+    flex-direction:column;
+    background:none;
+  `}
+`;
+
+export const QuoteRight = styled.div`
+  width: 100px;
+  z-index: 1;
+  img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-top: 440px;
+    margin-left: -800px;
+    position: absolute;
+  }
 `;
 
 export const HeroBannerContainer = styled.div`
@@ -20,6 +63,20 @@ export const HeroBannerContainer = styled.div`
       max-width: none !important;
     }
   }
+
+  ${media.mobile`
+    margin:0px;
+    flex-direction:column;
+
+    > div:nth-child(1) {
+      > img {
+        object-fit: cover;
+        width:100%;
+        height: 200px;
+        max-width: none !important;
+      }
+    }
+  `}
 `;
 
 export const HeroBannerJoinCommunity = styled.div`
@@ -51,4 +108,29 @@ export const HeroBannerJoinCommunity = styled.div`
   button {
     margin-top: 30px;
   }
+  ${media.mobile`
+    width:100%;
+    margin-left:0px;
+    border-radius:0px;
+    margin-top: 0px;
+    padding: 40px;
+    height:100%;
+    h1 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    p {
+      line-height: 1.3em;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    > h1 > span {
+      margin-left:5px;
+      padding: 15px 5px !important;
+      color: #fbf6b4;
+    }
+  `}
 `;
