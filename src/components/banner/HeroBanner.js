@@ -4,7 +4,7 @@ import {
   HeroBannerJoinCommunity,
   QuoteLeft,
   QuoteRight,
-  StyledHeroBanner,
+  StyledHeroBanner
 } from "./HeroBanner.styled";
 
 import Image from "../../assets/images/guy_2.png";
@@ -33,10 +33,7 @@ const HeroBanner = () => {
               From<CircleStyled>Africa</CircleStyled>
             </H1>
             <H3>to the World</H3>
-            <P>
-              The next big thing in Blockchain when high speed meets Scalability
-              from Africa to the world.
-            </P>
+            <P>The next big thing in Blockchain when high speed meets Scalability from Africa to the world.</P>
             <Button icon={<BiSend />} text="Join our community" />
           </HeroBannerJoinCommunity>
         </Right>

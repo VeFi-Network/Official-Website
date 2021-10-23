@@ -1,11 +1,7 @@
 import { Button, Container } from "@material-ui/core";
 import React from "react";
 import { LeftAlign } from "../styles/LeftAlign.styled";
-import {
-  RightAlign,
-  RightAlignForm,
-  RightAlignText,
-} from "../styles/RightAlign.styled";
+import { RightAlign, RightAlignForm, RightAlignText } from "../styles/RightAlign.styled";
 import { StyledSubscribe, SubscribeContainer } from "./Subscribe.styled";
 import Image from "../../assets/images/double_coin.svg";
 import { H1, P } from "../Typography";

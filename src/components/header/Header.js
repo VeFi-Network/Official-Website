@@ -1,12 +1,6 @@
 import React from "react";
 import Container from "@material-ui/core/Container";
-import {
-  HeaderContainer,
-  HeaderTop,
-  HeaderCenter,
-  HeaderLeft,
-  HeaderRight,
-} from "./HeaderTop.styled";
+import { HeaderContainer, HeaderTop, HeaderCenter, HeaderLeft, HeaderRight } from "./HeaderTop.styled";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/logo.svg";
 

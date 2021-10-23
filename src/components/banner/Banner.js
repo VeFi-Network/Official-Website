@@ -11,8 +11,7 @@ const Banner = () => {
       <Container>
         <Left>
           <H1>
-            Revolutionizing Innovation in Blockchain Technology from{" "}
-            <CircleStyled>Africa</CircleStyled>
+            Revolutionizing Innovation in Blockchain Technology from <CircleStyled>Africa</CircleStyled>
             to the World.
           </H1>
         </Left>

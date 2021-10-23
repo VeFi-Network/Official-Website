@@ -19,53 +19,27 @@ const Exchange = () => {
               VEFI exchange
             </H1>
             <P>
-              VEFI exchange is a unified cryptocurrency exchange platform built
-              to enable users navigate and control all crypto related products
-              and services on a single platform without goggling between
-              platforms and apps.
+              VEFI exchange is a unified cryptocurrency exchange platform built to enable users navigate and control all
+              crypto related products and services on a single platform without goggling between platforms and apps.
             </P>
             <Paper>
               <div>
-                <Button
-                  variant="contained"
-                  startIcon={<BiCheckCircle />}
-                  className="button"
-                >
+                <Button variant="contained" startIcon={<BiCheckCircle />} className="button">
                   Margin trading
                 </Button>
-                <Button
-                  variant="contained"
-                  startIcon={<BiCheckCircle />}
-                  className="button"
-                >
+                <Button variant="contained" startIcon={<BiCheckCircle />} className="button">
                   P2P trading
                 </Button>
-                <Button
-                  variant="contained"
-                  startIcon={<BiCheckCircle />}
-                  className="button"
-                >
+                <Button variant="contained" startIcon={<BiCheckCircle />} className="button">
                   Features trading
                 </Button>
-                <Button
-                  variant="contained"
-                  startIcon={<BiCheckCircle />}
-                  className="button"
-                >
+                <Button variant="contained" startIcon={<BiCheckCircle />} className="button">
                   Spot trading
                 </Button>
-                <Button
-                  variant="contained"
-                  startIcon={<BiCheckCircle />}
-                  className="button"
-                >
+                <Button variant="contained" startIcon={<BiCheckCircle />} className="button">
                   NFT
                 </Button>
-                <Button
-                  variant="contained"
-                  startIcon={<BiCheckCircle />}
-                  className="button"
-                >
+                <Button variant="contained" startIcon={<BiCheckCircle />} className="button">
                   DEX
                 </Button>
               </div>
