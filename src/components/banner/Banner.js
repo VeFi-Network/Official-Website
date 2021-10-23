@@ -10,16 +10,13 @@ const Banner = () => {
     <StyledBanner>
       <Container>
         <Left>
-          <H1 size="50px">Revolutionizing</H1>
-          <H1 size="50px">Innovation in</H1>
-          <H1 size="50px">Blockchain</H1>
-          <H1 size="50px">Technology</H1>
-          <H1 size="50px">
-            from <CircleStyled>Africa</CircleStyled>
+          <H1>
+            Revolutionizing Innovation in Blockchain Technology from{" "}
+            <CircleStyled>Africa</CircleStyled>
+            to the World.
           </H1>
-          <H1 size="50px">to the World.</H1>
         </Left>
-        <Arrow />
+        <Arrow className="hideOnMobile" />
       </Container>
     </StyledBanner>
   );

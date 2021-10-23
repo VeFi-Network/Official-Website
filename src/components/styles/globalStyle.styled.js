@@ -15,6 +15,12 @@ const GlobalStyles = createGlobalStyle`
         margin:0;
         padding:0;
     }
+    .button{
+        background-color:#fefcea !important;
+        color:#000 !important;
+        font-weight:400 !important;
+    }
+    
 `;
 
 export default GlobalStyles;

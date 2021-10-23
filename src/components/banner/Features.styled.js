@@ -73,6 +73,10 @@ export const FeaturedRightImage = styled.div`
   margin-top: -180px;
   position: absolute;
   top: 0;
+
+  ${media.mobile`
+  margin-top: 0px;
+  `}
 `;
 
 export const AppMockUp = styled.div`
@@ -87,4 +91,11 @@ export const AppMockUp = styled.div`
     margin-top: -10px;
     margin-left: 30px;
   }
+
+  ${media.mobile`
+    img{
+      margin:0px;
+      padding-bottom:10px;
+    }
+  `}
 `;

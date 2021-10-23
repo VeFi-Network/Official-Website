@@ -66,7 +66,7 @@ export const HeroBannerContainer = styled.div`
 
   ${media.mobile`
     margin:0px;
-    flex-direction:column-reverse;
+    flex-direction:column;
 
     > div:nth-child(1) {
       > img {

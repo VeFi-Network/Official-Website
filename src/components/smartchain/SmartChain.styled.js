@@ -14,7 +14,7 @@ export const StyledSmartChain = styled.section`
     width:100%;
     flex:1;
     padding-bottom:350px;
-    
+    margin-top:-100px;
     img{
       display:none;
     }
@@ -81,7 +81,7 @@ export const SmartChainListItemLeft = styled.div`
     font-size:30px;
   }
   p{
-    font-size:20px;
+    font-size:16px;
     line-height:1.5em;
   }
   button{

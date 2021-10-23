@@ -10,10 +10,16 @@ import check from "../../assets/images/check.svg";
 import { Image } from "../../components/Image";
 import { Space } from "../../components/Divider";
 import Team from "../team/Team";
-
+import styled from "styled-components";
+import media from "../../utility/Media";
+const StyledAboutUs = styled.section`
+  ${media.mobile`
+  margin-bottom: 300px;
+  `}
+`;
 const AboutUs = () => {
   return (
-    <>
+    <StyledAboutUs>
       <Banner text="Changing the world's  future to make the world work better for us all" />
       <Section>
         <Container maxWidth="md">
@@ -130,7 +136,7 @@ const AboutUs = () => {
         <Space />
       </Section>
       <Team />
-    </>
+    </StyledAboutUs>
   );
 };
 

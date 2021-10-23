@@ -13,15 +13,18 @@ export const StyledBanner = styled.div`
   position: relative;
 
   ${media.mobile`
-  height: 100vh;
+  padding-top: 50px;
   background-position: right; /* Center the image */
   background-size: cover;
+  img{
+    display:none;
+  }
   `}
 `;
 
 export const Left = styled.div`
   margin-top: 50px;
-
+  width: 500px;
   h1 {
     font-size: 50px;
     margin-left: 40px;

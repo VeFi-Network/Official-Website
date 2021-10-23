@@ -41,7 +41,7 @@ export const H6 = styled.h6`
 `;
 export const P = styled.p`
   font-size: ${({ size }) => size || "14px"};
-  font-color: ${({ color }) => color || "#000"};
+  font-color: ${({ color }) => color || "#fefcea"};
   font-weight: ${({ FontWeight }) => FontWeight || ""};
   line-height: ${({ LineHeight }) => LineHeight || ""};
 `;

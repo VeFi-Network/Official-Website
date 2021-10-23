@@ -19,14 +19,6 @@ export const StyledButton = styled.button`
     font-size: 20px !important;
     margin-left: 5px;
   }
-
-  @media screen and (max-width: ${({ theme }) => theme.iPhone_11}) {
-    padding: 5px 10px;
-    font-size: 14px !important;
-    span {
-      font-size: 14px !important;
-    }
-  }
 `;
 export const Button = ({ icon, text, action }) => {
   return (
