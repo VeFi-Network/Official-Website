@@ -17,14 +17,11 @@ import { H1, H3, P } from "../Typography";
 const HeroBanner = () => {
   return (
     <StyledHeroBanner>
-      <QuoteLeft>
+      <QuoteLeft className="hideOnMobile">
         <img src={asset1} alt="" />
       </QuoteLeft>
       <HeroBannerContainer>
-        <Left>
-          <img src={Image} alt="" />
-        </Left>
-        <QuoteRight>
+        <QuoteRight className="hideOnMobile">
           <img src={asset1} alt="" />
         </QuoteRight>
         <Right>
@@ -39,6 +36,9 @@ const HeroBanner = () => {
             <Button icon={<BiSend />} text="Join our community" />
           </HeroBannerJoinCommunity>
         </Right>
+        <Left>
+          <img src={Image} alt="" />
+        </Left>
       </HeroBannerContainer>
     </StyledHeroBanner>
   );

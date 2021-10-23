@@ -11,7 +11,7 @@ const Banner = () => {
       <Container>
         <Left>
           <H1 size="50px">Revolutionizing</H1>
-          <H1 size="50px">Inovation in</H1>
+          <H1 size="50px">Innovation in</H1>
           <H1 size="50px">Blockchain</H1>
           <H1 size="50px">Technology</H1>
           <H1 size="50px">

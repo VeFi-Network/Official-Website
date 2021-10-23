@@ -35,7 +35,7 @@ export const Left = styled.div`
     padding-left:10px;
     margin-top:80px;
     h1 {
-      font-size: 50px;
+      font-size: 40px;
       margin-left: 0px;
       overflow-wrap: break-word;
       line-height: 1.5em;

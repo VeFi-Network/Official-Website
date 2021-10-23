@@ -9,6 +9,10 @@ export const StyledHeroBanner = styled.section`
   ${media.mobile`
     width:100%;
     flex-direction:column;
+  
+    .hideOnMobile{
+      display:none
+    }
   `}
 `;
 
@@ -61,7 +65,17 @@ export const HeroBannerContainer = styled.div`
   }
 
   ${media.mobile`
-  
+    margin:0px;
+    flex-direction:column-reverse;
+
+    > div:nth-child(1) {
+      > img {
+        object-fit: cover;
+        width:100%;
+        height: 200px;
+        max-width: none !important;
+      }
+    }
   `}
 `;
 
@@ -95,7 +109,28 @@ export const HeroBannerJoinCommunity = styled.div`
     margin-top: 30px;
   }
   ${media.mobile`
-  width:100%;
-  }
+    width:100%;
+    margin-left:0px;
+    border-radius:0px;
+    margin-top: 0px;
+    padding: 40px;
+    height:100%;
+    h1 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+    p {
+      line-height: 1.3em;
+      font-size: 20px;
+      font-weight: 400;
+    }
+    > h1 > span {
+      margin-left:5px;
+      padding: 15px 5px !important;
+      color: #fbf6b4;
+    }
   `}
 `;
