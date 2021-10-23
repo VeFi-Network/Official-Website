@@ -16,7 +16,7 @@ export const Box = styled.div`
     margin-bottom: 30px;
   }
   p {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 `;
 
