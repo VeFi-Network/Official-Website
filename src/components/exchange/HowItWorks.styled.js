@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import bg from "../../assets/images/steps_bg.png";
 import double_coin from "../../assets/images/double_coin.svg";
+import media from "../../utility/Media";
 export const StyledHowItWorks = styled.section`
   width: 100%;
   display: flex;
@@ -12,6 +13,15 @@ export const StyledHowItWorks = styled.section`
   background-blend-mode: screen;
   color: #fff;
   padding-bottom: 60px;
+
+  ${media.mobile`
+    height:100vh;
+    margin-bottom:calc(100% + 200px);
+    display:flex;
+    width:100%;
+    background-position:center;
+    background-blend-mode: lighten;
+  `}
 `;
 
 export const HowItWorksContainer = styled.div`
@@ -29,6 +39,16 @@ export const HowItWorksContainer = styled.div`
   hr {
     background-color: #fff !important;
   }
+
+  ${media.mobile`
+    width:100%;
+    display:flex;
+    margin:0px;
+    background-image:none;
+    flex-direction:column;
+    height:auto;
+    flex-direction:column;
+  `}
 `;
 
 export const FloatContainerRight = styled.div`

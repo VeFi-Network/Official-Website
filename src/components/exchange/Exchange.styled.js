@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import rec from "../../assets/images/map.png";
+import media from "../../utility/Media";
 
 export const StyledExchange = styled.section`
   width: 100%;
@@ -9,6 +10,15 @@ export const StyledExchange = styled.section`
   background-size: contain;
   background-blend-mode: darken;
   color: #fff;
+
+  ${media.mobile`
+ 
+    background-size:cover;
+    background-position:center;
+    flex-direction:column;
+    width:100%;
+    display:flex;
+  `}
 `;
 
 export const ExchangeContainer = styled.div`
@@ -31,6 +41,23 @@ export const ExchangeContainer = styled.div`
     width: 350px;
     height: 450px;
     margin-bottom: -50px;
-    object-fit: conatin;
+    object-fit: contain;
   }
+  ${media.mobile`
+    width:100%;
+    display:flex;
+    flex-direction:column-reverse;
+
+    h1{
+      font-size:50px;
+      margin-left:20px;
+    }
+    p{
+      font-size:26px;
+      line-height:1.5em;
+    }
+    div > img{
+      width:450px;
+    }
+`}
 `;

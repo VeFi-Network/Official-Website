@@ -21,9 +21,11 @@ const Newsletter = () => {
           <NewsletterDiv>
             <NewsletterGetStarted>
               <H1>Get started - it's free</H1>
-              <P>With our VEFI Blockchain ecosystem, bring your ideas</P>
-              <P>to real time in one click to connect to the world.</P>
-              <P>this applies to all VEFI products!</P>
+              <P>
+                With our VEFI Blockchain ecosystem, bring your ideas to real
+                time in one click to connect to the world. this applies to all
+                VEFI products!
+              </P>
             </NewsletterGetStarted>
             <NewsletterFormContainer>
               <NewletterForm>

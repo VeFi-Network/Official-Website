@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import rectangle from "../../assets/images/rectangle.svg";
+import media from "../../utility/Media";
 export const StyledNewsletter = styled.section`
   width: 100%;
   display: flex;
@@ -7,6 +8,11 @@ export const StyledNewsletter = styled.section`
   background: url(${rectangle});
   color: white;
   padding-top: 50px;
+
+  ${media.mobile`
+    padding-top:0px;
+    height:500px;
+  `}
 `;
 
 export const NewsletterContainer = styled.div`
@@ -15,6 +21,11 @@ export const NewsletterContainer = styled.div`
   display: flex;
   position: relative;
   flex-direction: column;
+
+  ${media.mobile`
+    flex-direction:column-reverse;
+    margin-top:100px;
+  `}
 `;
 
 export const NewsletterDiv = styled.div`
@@ -26,6 +37,11 @@ export const NewsletterDiv = styled.div`
   border-radius: 20px;
   padding: 50px 30px;
   flex-direction: column;
+
+  ${media.mobile`
+  width:100%;
+  flex:1;
+`}
 `;
 export const NewsletterGetStarted = styled.div`
   h1 {
@@ -40,6 +56,17 @@ export const NewsletterGetStarted = styled.div`
     margin-left: 8px;
     line-height: 1.3em;
   }
+  ${media.mobile`
+  padding-top:80px;
+
+  h1{
+    margin-top:10px;
+    font-size:34px;
+  }
+  p{
+    font-size:26px;
+  }
+`}
 `;
 export const NewsletterFormContainer = styled.div`
   margin-top: 20px;
@@ -69,6 +96,18 @@ export const NewletterForm = styled.div`
       background: black;
     }
   }
+
+  ${media.mobile`
+  width:100%;
+  input{
+    width:66%;
+    font-size:20px;
+  }
+  button{
+    font-weight:600;
+    padding:5px 20px;
+  }
+`}
 `;
 
 export const NewsletterImage = styled.div`
@@ -86,4 +125,9 @@ export const NewsletterImage = styled.div`
     height: 350px;
     object-fit: contain;
   }
+
+  ${media.mobile`
+  margin-top:0px;
+  position:relative;
+`}
 `;

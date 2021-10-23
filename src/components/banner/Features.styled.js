@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import media from "../../utility/Media";
 export const StyledFeatures = styled.div`
   margin-top: 40px;
   display: flex;
@@ -10,10 +11,22 @@ export const StyledFeatures = styled.div`
       font-size: 45px;
     }
   }
+
+  ${media.mobile`
+    width:100%;
+    display:flex;
+    flex-direction:column;
+  `};
+  ${media.tablet`
+  
+  `};
+  ${media.desktop``};
+  ${media.uhd``};
 `;
 
 export const Box = styled.div`
   margin: 30px 10px;
+
   width: ${({ width }) => width || "100%"};
 
   > p {
@@ -21,6 +34,41 @@ export const Box = styled.div`
     line-height: 1.3em;
     font-weight: 400;
   }
+
+  ${media.mobile`
+    width:100%;
+    white-space:wrap;
+    >p{
+      font-size:30px;
+      text-align:left;
+      font-weight:500;
+      line-height:1.5em;
+    }
+  `};
+
+  ${media.tablet`
+    > p{
+      font-size:45px;
+    }
+  `}
+`;
+
+export const StyledFeature = styled.div`
+  button {
+    margin: 5px 10px;
+    background: #fafafa;
+    color: #333;
+    text-transform: inherit;
+
+    &:hover {
+      background: #fafafa;
+    }
+  }
+
+  ${media.mobile`
+    margin:0px;
+    margin-bottom:10px;
+  `}
 `;
 
 export const StyledFeatureRight = styled.div`

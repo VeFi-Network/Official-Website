@@ -1,12 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import {
-  Btn,
-  CounterTimerBox,
-  HeadingOne,
-  Paragraph,
-  WaitList,
-} from "./CountDown.styled";
+import { H1, P } from "../Typography";
+import { Btn, CounterTimerBox, WaitList } from "./CountDown.styled";
+import media from "../../utility/Media";
 
 export const Timer = styled.div`
   align-items: center;
@@ -20,9 +16,11 @@ export const Timer = styled.div`
     font-size: 14px;
     color: #fbf6b4;
   }
-
-  @media screen and (max-width: ${({ theme }) => theme.iPhone_11}) {
-  }
+  ${media.mobile`
+    h1{
+      font-size:30px;
+    }
+  `}
 `;
 
 export const CounterContainer = styled.div`
@@ -45,9 +43,10 @@ export const CounterContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: ${({ theme }) => theme.iPhone_11}) {
-    width: 100%;
-  }
+  ${media.mobile`
+    width:110%;
+    height:230px;
+  `}
 `;
 
 const CountDownTimer = () => {
@@ -55,25 +54,25 @@ const CountDownTimer = () => {
     <>
       <CounterContainer bg="black">
         <div>
-          <Paragraph>Pre-Sale ICO starts in</Paragraph>
+          <P>Pre-Sale ICO starts in</P>
           <CounterTimerBox>
             <Timer>
-              <HeadingOne>46</HeadingOne>
+              <H1>46</H1>
               <span>Days</span>
             </Timer>
             <span>:</span>
             <Timer>
-              <HeadingOne>12</HeadingOne>
+              <H1>12</H1>
               <span>Hours</span>
             </Timer>
             <span>:</span>
             <Timer>
-              <HeadingOne>05</HeadingOne>
+              <H1>05</H1>
               <span>Min</span>
             </Timer>
             <span>:</span>
             <Timer>
-              <HeadingOne>56</HeadingOne>
+              <H1>56</H1>
               <span>Sec</span>
             </Timer>
           </CounterTimerBox>

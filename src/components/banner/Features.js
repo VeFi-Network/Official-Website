@@ -1,12 +1,12 @@
 import { Container } from "@material-ui/core";
 import React from "react";
-import { HeadingOne, Paragraph } from "../countdown/CountDown.styled";
 import { Left, Right } from "../styles/Position.styled";
 import { StyledHeroBanner } from "./HeroBanner.styled";
 import {
   AppMockUp,
   Box,
   FeaturedRightImage,
+  StyledFeature,
   StyledFeatureRight,
   StyledFeatures,
 } from "./Features.styled";
@@ -25,19 +25,23 @@ const Features = () => {
               VEFI <span>Wallet</span>
             </H1>
             <Box>
-              <P>VEFI NETWORK native wallet, VEFI ensure that this wallet</P>
-              <P>is flexible, secure,easy and simple t use whereby enabling</P>
-              <P>users to store, send,spend,receive,swap and exchange</P>
-              <P>thier crypto assets instantly.</P>
+              <P>
+                VEFI NETWORK native wallet, VEFI ensure that this wallet is
+                flexible, secure,easy and simple t use whereby enabling users to
+                store, send,spend,receive,swap and exchange their crypto assets
+                instantly.
+              </P>
             </Box>
             <Box width="70%">
-              <Feature Icon={<BiCheckCircle />} Text="Store Crypto" />
-              <Feature Icon={<BiCheckCircle />} Text="Send Crypto" />
-              <Feature Icon={<BiCheckCircle />} Text="Spend Crypto" />
-              <Feature Icon={<BiCheckCircle />} Text="Swap Crypto" />
-              <Feature Icon={<BiCheckCircle />} Text="Receive Crypto" />
-              <Feature Icon={<BiCheckCircle />} Text="Exchange Crypto" />
-              <Feature Icon={<BiCheckCircle />} Text="Stake assets" />
+              <StyledFeature>
+                <Feature Icon={<BiCheckCircle />} Text="Store Crypto" />
+                <Feature Icon={<BiCheckCircle />} Text="Send Crypto" />
+                <Feature Icon={<BiCheckCircle />} Text="Spend Crypto" />
+                <Feature Icon={<BiCheckCircle />} Text="Swap Crypto" />
+                <Feature Icon={<BiCheckCircle />} Text="Receive Crypto" />
+                <Feature Icon={<BiCheckCircle />} Text="Exchange Crypto" />
+                <Feature Icon={<BiCheckCircle />} Text="Stake assets" />
+              </StyledFeature>
             </Box>
           </Left>
           <Right size="0.4">

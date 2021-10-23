@@ -1,12 +1,12 @@
 import styled from "styled-components";
-
+import media from "../../utility/Media";
 export const StyledSubscribe = styled.section`
   display: flex;
   width: 100%;
 
-  @media screen and (max-width: ${({ theme }) => theme.iPhone_11}) {
-    background: #fefcea;
-  }
+  ${media.mobile`
+  background: #fefcea;
+  `}
 `;
 
 export const SubscribeContainer = styled.div`
@@ -16,34 +16,34 @@ export const SubscribeContainer = styled.div`
   align-items: center;
   position: relative;
 
-  @media screen and (max-width: ${({ theme }) => theme.iPhone_11}) {
-    flex-direction: column;
-    text-align: center;
+  ${media.mobile`
+  flex-direction: column;
+  text-align: center;
 
-    p {
-      line-height: 1.3em;
+  p {
+    line-height: 1.3em;
+    font-size: 20px;
+  }
+  .hideOnMobile {
+    display: none;
+  }
+  .inputFormContainer {
+    width: 100%;
+    display: flex;
+    background: white;
+    margin-top: 20px;
+    padding: 5px 5px;
+    border: 2px solid #ddd;
+
+    button {
+      margin-right: 5px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      font-size: 16px;
+    }
+    input {
       font-size: 20px;
     }
-    .hideOnMobile {
-      display: none;
-    }
-    .inputFormContainer {
-      width: 100%;
-      display: flex;
-      background: white;
-      margin-top: 20px;
-      padding: 5px 5px;
-      border: 2px solid #ddd;
-
-      button {
-        margin-right: 5px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        font-size: 16px;
-      }
-      input {
-        font-size: 20px;
-      }
-    }
   }
+  `}
 `;

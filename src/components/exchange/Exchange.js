@@ -19,11 +19,12 @@ const Exchange = () => {
             <H1 color="#fbf6b4" size="80px">
               VEFI exchange
             </H1>
-            <P>VEFI exchange is a unified cryptocurrency</P>
-            <P>exchange platform built to enable users navigate</P>
-            <P>and control all crypto related products and </P>
-            <P>services on a single platform without goggling</P>
-            <P>between platforms and apps.</P>
+            <P>
+              VEFI exchange is a unified cryptocurrency exchange platform built
+              to enable users navigate and control all crypto related products
+              and services on a single platform without goggling between
+              platforms and apps.
+            </P>
             <Box width="70%">
               <Feature Icon={<BiCheckCircle />} Text="Margin trading" />
               <Feature Icon={<BiCheckCircle />} Text="P2P trading" />

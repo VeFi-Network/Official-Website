@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import double_coin from "../../assets/images/double_coin.svg";
-
+import media from "../../utility/Media";
 export const StyledCountDown = styled.section`
   width: 100%;
   background: url(${double_coin}) no-repeat, #fefcea;
@@ -10,13 +10,12 @@ export const StyledCountDown = styled.section`
   background-size: contain;
   background-blend-mode: screen;
 
-  @media screen and (max-width: ${({ theme }) => theme.iPhone_11}) {
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: lighten;
-    background: green;
-  }
+  ${media.mobile`
+
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: lighten;
+  `}
 `;
 
 export const CountDownCenter = styled.div`
@@ -27,23 +26,22 @@ export const CountDownCenter = styled.div`
   flex-direction: column;
   text-align: center;
 
-  @media screen and (max-width: ${({ theme }) => theme.iPhone_11}) {
-    background: purple;
-    margin: 30px 0px;
+  ${media.mobile`
+  margin: 30px 0px;
 
-    h3 {
-      font-size: 26px;
-    }
-    h1 {
-      font-size: 60px;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 1.3em;
-    }
+  h3 {
+    font-size: 26px;
   }
+  h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3em;
+  }
+  `}
 `;
 export const CounterTimerBox = styled.div`
   width: 100%;

@@ -1,10 +1,15 @@
 import styled from "styled-components";
-
+import media from "../../utility/Media";
 export const StyledHeroBanner = styled.section`
   width: 100%;
   display: flex;
   position: relative;
   background: ${({ bg }) => bg || "#FEFCEA"};
+
+  ${media.mobile`
+    width:100%;
+    flex-direction:column;
+  `}
 `;
 
 export const QuoteLeft = styled.div`
@@ -20,6 +25,12 @@ export const QuoteLeft = styled.div`
     margin-top: -40px;
     margin-left: 10px;
   }
+
+  ${media.mobile`
+    width:100%;
+    flex-direction:column;
+    background:none;
+  `}
 `;
 
 export const QuoteRight = styled.div`
@@ -48,6 +59,14 @@ export const HeroBannerContainer = styled.div`
       max-width: none !important;
     }
   }
+
+  ${media.mobile`
+  > div:nth-child(1) {
+    > img {
+      background:red;
+    }
+  }
+  `}
 `;
 
 export const HeroBannerJoinCommunity = styled.div`
@@ -79,4 +98,8 @@ export const HeroBannerJoinCommunity = styled.div`
   button {
     margin-top: 30px;
   }
+  ${media.mobile`
+  width:100%;
+  }
+  `}
 `;
