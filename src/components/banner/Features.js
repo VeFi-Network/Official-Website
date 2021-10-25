@@ -3,7 +3,6 @@ import React from "react";
 import { Left, Right } from "../styles/Position.styled";
 import { StyledHeroBanner } from "./HeroBanner.styled";
 import {
-  AppMockUp,
   Box,
   FeaturedRightImage,
   StyledFeatureRight,
