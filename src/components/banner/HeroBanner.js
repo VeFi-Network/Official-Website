@@ -11,7 +11,6 @@ import Image from "../../assets/images/guy_2.png";
 import { Left, Right } from "../styles/Position.styled";
 import asset1 from "../../assets/images/asset1.svg";
 import { Button } from "../Button";
-import { H1, H3, P } from "../Typography";
 import { FaTelegramPlane } from "react-icons/fa";
 import circle from "../../assets/images/circle_yellow.svg";
 import styled from "styled-components";
@@ -19,7 +18,7 @@ import Media from "../../utility/Media";
 
 const CircleStyled = styled.span`
   background: url(${circle});
-  background-size: cover;
+  background-size: contain;
   padding: 20px 50px;
   background-position: center;
 

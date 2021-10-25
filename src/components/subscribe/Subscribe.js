@@ -3,7 +3,7 @@ import React from "react";
 import { StyledSubscribe } from "./Subscribe.styled";
 import styled from "styled-components";
 import media from "../../utility/Media";
-
+import coin_image from "../../assets/images/double_coin.svg";
 const SubscribeFormText = styled.div`
   display: flex;
   width: 100%;
@@ -26,6 +26,9 @@ const SubscribeContainer = styled.div`
   width: 100%;
   div {
     flex: 0.5;
+  }
+  .mobile {
+    text-align: center;
   }
   ${media.mobile`
     display:flex;
@@ -80,7 +83,10 @@ const SubscribeFormContainer = styled.div`
     button {
       padding: 3px 20px;
       font-size: 12px;
-      background: blue;
+      background: #1673b9;
+      color: #fff;
+      font-weight: 600;
+      text-transform: capitalize;
     }
   }
 
@@ -144,7 +150,9 @@ const Subscribe = () => {
       <Container>
         <SubscribeFormText>
           <SubscribeContainer>
-            <div className="mobile">OK</div>
+            <div className="mobile">
+              <img src={coin_image} alt="" />
+            </div>
             <div>
               <SubscribeFormContainer>
                 <h1>

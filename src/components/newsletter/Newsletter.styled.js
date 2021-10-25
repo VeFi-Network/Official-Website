@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import rectangle from "../../assets/images/rectangle.svg";
 import media from "../../utility/Media";
 export const StyledNewsletter = styled.section`
   width: 100%;

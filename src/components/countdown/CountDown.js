@@ -32,7 +32,7 @@ const CountDownCenter = styled.div`
     color: #161525;
   }
   h1 {
-    font-size: 54px;
+    font-size: 64px;
     font-family: "Montserrat";
   }
   p {

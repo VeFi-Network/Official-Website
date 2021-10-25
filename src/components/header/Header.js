@@ -1,9 +1,7 @@
-import React, { useState } from "react";
 import Container from "@material-ui/core/Container";
 import {
   HeaderContainer,
   HeaderTop,
-  HeaderCenter,
   HeaderLeft,
   HeaderRight,
 } from "./HeaderTop.styled";

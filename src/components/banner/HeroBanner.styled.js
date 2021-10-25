@@ -105,13 +105,17 @@ export const HeroBannerJoinCommunity = styled.div`
     line-height: 1.3em;
     font-size: 25px;
     font-weight: 200;
+    margin: 30px 0px;
   }
   > h1 > span {
     padding: 30px 20px !important;
-    color: #fbf6b4;
   }
   button {
     margin-top: 30px;
+  }
+  .mobileText {
+    margin-left: -20px;
+    margin-right: -20px;
   }
   ${media.mobile`
     width:100%;

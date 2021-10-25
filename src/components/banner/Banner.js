@@ -4,6 +4,7 @@ import { CircleStyled } from "../styles/Position.styled";
 import styled from "styled-components";
 import backgroundImage from "../../assets/images/banner.svg";
 import Media from "../../utility/Media";
+import arrow_right from "../../assets/images/arrow_right.svg";
 const StyledBanner = styled.section`
   padding-top: 60px;
   width: 100%;
@@ -21,23 +22,26 @@ const StyledBanner = styled.section`
   }
 
   .imageBox {
-    background: red;
     position: absolute;
-    right: 0;
+    right: -100px;
+    width: 100px;
   }
   ${Media.mobile`
     .imageBox {
       display:flex;
       justify-content:center;
-      background: green;
       position: relative;
       text-align:center;
-      margin-top:20px;
+      margin-top:50px;
+      margin-left:20px;
+      img{
+        height:100px;
+      }
     }
     
 `}
   ${Media.small`
-    height:100vh;
+    height:100%;
 `}
 `;
 const StyledBannerContainer = styled.div`
@@ -47,7 +51,6 @@ const StyledBannerContainer = styled.div`
 
   ${Media.mobile`
     width:100%;
-    background:red;
     overflow-wrap: break-word;
     margin-top: 80px;
     h1{
@@ -58,7 +61,6 @@ const StyledBannerContainer = styled.div`
     }
 `}
   ${Media.small`
-    background:green;
     h1{
       font-size:35px;
     }
@@ -74,7 +76,9 @@ const Banner = () => {
             <CircleStyled>Africa</CircleStyled>
             to the World.
           </h1>
-          <div className="imageBox">ok</div>
+          <div className="imageBox">
+            <img src={arrow_right} alt="" />
+          </div>
         </StyledBannerContainer>
       </Container>
     </StyledBanner>

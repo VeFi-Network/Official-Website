@@ -11,8 +11,7 @@ import {
 } from "./Features.styled";
 import { BiCheckCircle } from "react-icons/bi";
 import map from "../../assets/images/map.png";
-import app_1 from "../../assets/images/app_1.svg";
-import { H1, P } from "../Typography";
+import { P } from "../Typography";
 import { Paper } from "../Grid";
 const Features = () => {
   return (
@@ -25,7 +24,7 @@ const Features = () => {
             </h1>
             <Box>
               <P>
-                VEFI emsures that thus wallet is flexible, secure, easy and
+                VEFI ensures that thus wallet is flexible, secure, easy and
                 simple to use.
               </P>
             </Box>
