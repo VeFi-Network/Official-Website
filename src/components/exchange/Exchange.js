@@ -4,7 +4,6 @@ import { BiCheckCircle } from "react-icons/bi";
 import { Left, Right } from "../styles/Position.styled";
 import { ExchangeContainer, StyledExchange } from "./Exchange.styled";
 import app_1 from "../../assets/images/app_2.svg";
-import { P } from "../Typography";
 import { Paper } from "../Grid";
 
 import styled from "styled-components";
