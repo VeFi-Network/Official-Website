@@ -12,18 +12,20 @@ export const StyledSteps = styled.div`
 
   ${media.mobile`
     background:white;
-    box-shadow:0px 0px 8px rgba(0,0,0,0.15);
-    color:#000;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.10);
+    color:#131313;
     padding:20px;
     width:100%;
     margin:20px 0px;
+    background:white;
+    border-radius:10px;
   `}
 `;
 
 export const StyledStepsLogo = styled.div`
   font-size: 50px;
   ${media.mobile`
-    font-size:80px;
+    font-size:50px;
     font-weight:600;
   `}
 `;
@@ -34,11 +36,12 @@ export const StyledStepsHeading = styled.div`
     font-weight: 600;
   }
   ${media.mobile`
-    height:70px;
+    height:85px;
 
     h3{
-      font-size:30px;
+      font-size:34px;
       line-height:1em;
+      font-weight:700;
     }
 `}
 `;
@@ -49,8 +52,8 @@ export const StyledStepsDesc = styled.div`
   }
   ${media.mobile`
  p{
-   font-size:20px;
-   font-weight:400;
+   font-size:18px;
+   font-weight:600;
    padding-bottom:20px;
  }
 `}

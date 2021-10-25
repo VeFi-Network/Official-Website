@@ -20,15 +20,13 @@ const Features = () => {
       <Container>
         <StyledFeatures>
           <Left size="1">
-            <H1>
+            <h1>
               VEFI <span>Wallet</span>
-            </H1>
+            </h1>
             <Box>
               <P>
-                VEFI NETWORK native wallet, VEFI ensure that this wallet is
-                flexible, secure,easy and simple t use whereby enabling users to
-                store, send,spend,receive,swap and exchange their crypto assets
-                instantly.
+                VEFI emsures that thus wallet is flexible, secure, easy and
+                simple to use.
               </P>
             </Box>
             <Paper>
@@ -90,9 +88,6 @@ const Features = () => {
               <FeaturedRightImage>
                 <img src={map} alt="app" />
               </FeaturedRightImage>
-              <AppMockUp>
-                <img src={app_1} alt="app" />
-              </AppMockUp>
             </StyledFeatureRight>
           </Right>
         </StyledFeatures>

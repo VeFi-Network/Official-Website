@@ -41,4 +41,20 @@ export const Paper = styled.section`
       font-weight: 600;
     }
   }
+
+  ${media.small`
+    display:flex;
+    justfify-content:center;
+    > div {
+      button {
+        font-size: 14px !important;
+        text-transform: capitalize !important;
+        padding: 10px 0px;
+        width: 45%;
+        font-weight: 700;
+        background:yellow;
+        
+      }
+    }
+  `}
 `;

@@ -12,7 +12,6 @@ const StyledBanner = styled.section`
   align-items: center;
   text-align: center;
   height: 350px;
-  margin-bottom: 100px;
   background: url(${backgroundImage}) no-repeat, rgba(0, 0, 0, 0.7);
   background-blend-mode: darken;
   background-size: cover;

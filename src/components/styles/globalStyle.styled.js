@@ -1,19 +1,17 @@
 import { createGlobalStyle } from "styled-components";
 const GlobalStyles = createGlobalStyle`
-    body{
-        background-color:#fff;
-        font-family: 'Montserrat', sans-serif;
-        color:#131313;
-        font-size:20px;
-        overflow-x:hidden;
-    }
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    overflow-x: hidden;
+}
     img{
         max-width:100%;
-    }
-    *{
-        box-sizing:border-box;
-        margin:0;
-        padding:0;
     }
     .button{
         background-color:#fefcea !important;

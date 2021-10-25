@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 export const StyledButton = styled.button`
-  background: ${({ bg }) => bg || "blue"};
+  background-color: ${({ bg }) => bg || "#1673B9"};
   font-size: 12px;
   border-radius: 5px;
   display: flex;
@@ -13,7 +13,7 @@ export const StyledButton = styled.button`
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.19);
   padding: 5px 20px;
   &:hover {
-    opacity: 0.6;
+    opacity: 0.9;
   }
   span {
     font-size: 20px !important;

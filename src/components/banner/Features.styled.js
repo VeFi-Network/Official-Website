@@ -18,7 +18,11 @@ export const StyledFeatures = styled.div`
     flex-direction:column;
 
     h1{
+      font-size:40px;
       margin-left:3px;
+      > span {
+        font-size: 35px;
+      }
     }
   `};
 `;
@@ -61,6 +65,12 @@ export const StyledFeature = styled.div`
   ${media.mobile`
     margin:0px;
     margin-bottom:10px;
+  `}
+
+  ${media.small`
+    button{
+      background:red;
+    }
   `}
 `;
 

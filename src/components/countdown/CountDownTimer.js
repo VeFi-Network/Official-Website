@@ -24,13 +24,14 @@ export const Timer = styled.div`
 `;
 
 export const CounterContainer = styled.div`
-  width: 50%;
+  width: 60%;
   display: flex;
+  margin: 20px auto;
   color: #fbf6b4;
   justify-content: center;
-  background: ${({ bg }) => bg || "black"};
-  height: 200px;
-  margin-top: 40px;
+  background-color: #06041e;
+  height: 250px;
+  padding: 0 30px;
 
   > div {
     display: flex;
@@ -45,14 +46,22 @@ export const CounterContainer = styled.div`
 
   ${media.mobile`
     width:110%;
-    height:230px;
+    height:auto;
+    margin-left:-15px;
+    padding-bottom:20px;
+    background:#06041E;
+
+    button{
+      font-weight:600;
+      font-size:18px;
+    }
   `}
 `;
 
 const CountDownTimer = () => {
   return (
     <>
-      <CounterContainer bg="black">
+      <CounterContainer bg="#06041E">
         <div>
           <P>Pre-Sale ICO starts in</P>
           <CounterTimerBox>
