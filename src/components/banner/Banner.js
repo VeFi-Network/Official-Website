@@ -47,7 +47,7 @@ const StyledBanner = styled.section`
 `}
 `;
 const StyledBannerContainer = styled.div`
-  width: 500px;
+  width: 400px;
   margin-top: 50px;
   position: relative;
 
