@@ -123,4 +123,9 @@ export const HeaderRight = styled.div`
       right:-100%;
     }
 `}
+  ${media.small`
+    button{
+      padding:8px 10px;
+    }
+`}
 `;

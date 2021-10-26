@@ -21,7 +21,7 @@ const StyledSectionContainer = styled(Right)`
     margin-left: 0px;
     font-weight: 300;
     font-size: 24px;
-    color: #fbf6b4;
+    color: white;
     line-height: 1.1em;
   }
 `;

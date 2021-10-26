@@ -4,7 +4,7 @@ import { CircleStyled } from "../styles/Position.styled";
 import styled from "styled-components";
 import backgroundImage from "../../assets/images/banner.svg";
 import Media from "../../utility/Media";
-import arrow_right from "../../assets/images/arrow_right.svg";
+import arrow_right from "../../assets/images/arrow.svg";
 const StyledBanner = styled.section`
   padding-top: 60px;
   width: 100%;
@@ -14,6 +14,7 @@ const StyledBanner = styled.section`
   background: url(${backgroundImage}) no-repeat;
   background-blend-mode: darken;
   background-size: cover;
+  background-position: center;
   position: relative;
   flex-direction: column;
 
@@ -27,21 +28,22 @@ const StyledBanner = styled.section`
     width: 100px;
   }
   ${Media.mobile`
-    .imageBox {
-      display:flex;
-      justify-content:center;
-      position: relative;
-      text-align:center;
-      margin-top:50px;
-      margin-left:20px;
-      img{
-        height:100px;
-      }
+  padding-top: 0px;
+  .imageBox {
+    left:calc(50% - 50px);
+    bottom:0;
+    top:48vh;
+    img{
+      height:70px;
     }
+  }
     
 `}
   ${Media.small`
     height:100%;
+    .imageBox{
+      top:47vh;
+    }
 `}
 `;
 const StyledBannerContainer = styled.div`
@@ -50,14 +52,18 @@ const StyledBannerContainer = styled.div`
   position: relative;
 
   ${Media.mobile`
+    display: flex;
+    height:52vh;
+    align-items:center;
     width:100%;
-    overflow-wrap: break-word;
-    margin-top: 80px;
+    overflow-wrap: break-all;
+    padding-top: 20px;
     h1{
-      font-size:40px;
+      font-size:45px;
+      line-height:1.3em;
     }
     .imageBox{
-      display:flex;
+      
     }
 `}
   ${Media.small`

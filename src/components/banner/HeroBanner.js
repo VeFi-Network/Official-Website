@@ -14,16 +14,16 @@ import { Button } from "../Button";
 import { FaTelegramPlane } from "react-icons/fa";
 import circle from "../../assets/images/circle_yellow.svg";
 import styled from "styled-components";
-import Media from "../../utility/Media";
+import media from "../../utility/Media";
 
 const CircleStyled = styled.span`
-  background: url(${circle});
+  background-image: url(${circle});
   background-size: contain;
   padding: 20px 50px;
   background-position: center;
 
-  ${Media.mobile`
-    border-radius:1px solid #FEFCEA;
+  ${media.mobile`
+    background-image: url(${circle});
   `}
 `;
 const HeroBanner = () => {

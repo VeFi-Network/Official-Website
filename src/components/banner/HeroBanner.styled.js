@@ -97,10 +97,6 @@ export const HeroBannerJoinCommunity = styled.div`
   h1 {
     font-size: 65px;
   }
-  h3 {
-    font-size: 65px;
-    margin-bottom: 30px;
-  }
   p {
     line-height: 1.3em;
     font-size: 25px;
@@ -115,7 +111,6 @@ export const HeroBannerJoinCommunity = styled.div`
   }
   .mobileText {
     margin-left: -20px;
-    margin-right: -20px;
   }
   ${media.mobile`
     width:100%;

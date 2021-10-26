@@ -92,20 +92,20 @@ const SubscribeFormContainer = styled.div`
 
   ${media.mobile`
     h1{
-      font-size:26px;
-      overflow-wrap: break-word;
-      font-weight:600;
+      font-size:24px;
+      overflow-wrap: break-all;
+      font-weight:400;
     }
     h3{
-      font-size:40px;
+      font-size:30px;
     }
     .subscribeFOrm{
       width:100%;
       padding: 10px;
-
+      display:flex;
       input{
         font-weight:400;
-        font-size:24px;
+        font-size:18px;
         color:#131313;
         padding:10px;
         letter-spacing:2px;
@@ -117,7 +117,7 @@ const SubscribeFormContainer = styled.div`
         font-size:18px;
         text-transform:lowercase;
         font-weight:600;
-        background:#131313;
+        background:#1673b9;
         letter-spacing:2px;
       }
     }
@@ -126,10 +126,10 @@ const SubscribeFormContainer = styled.div`
     h1{
       font-size:20px;
       overflow-wrap: break-word;
-      font-weight:600;
+      font-weight:400;
     }
     h3{
-      font-size:30px;
+      font-size:24px;
     }
     .subscribeFOrm{
       width:100%;
@@ -137,8 +137,8 @@ const SubscribeFormContainer = styled.div`
 
       input{
         font-weight:400;
-        font-size:18px;
-        color:#ccc;
+        font-size:14px;
+        color:#131313;
         padding:10px;
       }
     }

@@ -144,13 +144,14 @@ const SectionWrapper = styled.div`
   padding:0px 20px;
   
   h1 {
-    font-size: 38px;
+    font-size: 34px;
     margin-bottom: 40px;
     font-weight: 700;
   }
   p {
     font-size: 16px;
     font-weight: 600;
+    margin-left:3px;
   }
 
   .wrapperTextContainer{

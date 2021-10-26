@@ -50,10 +50,10 @@ const CountDownCenter = styled.div`
       font-size:30px;
     }
     h1{
-      font-size:60px;
+      font-size:65px;
     }
     .mobile{
-      font-size:20px;
+      font-size:24px;
       font-weight:normal;
       margin-bottom:30px;
       color:#383838;

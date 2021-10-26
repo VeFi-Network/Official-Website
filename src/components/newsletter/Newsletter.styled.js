@@ -148,13 +148,21 @@ export const NewsletterImage = styled.div`
   margin-top:0px;
   position:relative;
   width:100%;
-  margin-bottom: -130px;
+  margin-bottom: -135px;
   margin-left: 0px;
 
   img{
     object-fit:cover;
     padding:0px;
-    margin-left:25px;
+    margin-left:50px;
   }
 `}
+
+  ${media.small`
+  img{
+    object-fit:cover;
+    padding:0px;
+    margin-left:25px;
+  }
+  `}
 `;

@@ -18,7 +18,10 @@ export const Timer = styled.div`
   }
   ${media.mobile`
     h1{
-      font-size:30px;
+      font-size:28px !important;
+    }
+    span {
+      font-size: 12px;
     }
   `}
 `;
