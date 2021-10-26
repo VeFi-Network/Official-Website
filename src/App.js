@@ -9,12 +9,12 @@ import Exchange from "./components/exchange/Exchange";
 import HowItWorks from "./components/exchange/HowItWorks";
 import Footer from "./components/footer/Footer";
 import CallToAction from "./components/footer/CallToAction";
-import Newsletter from "./components/newsletter/Newsletter";
 import SmartChain from "./components/smartchain/SmartChain";
 import { Route, Switch } from "react-router";
 import AboutUs from "./pages/about/AboutUs";
 import { ThemeProvider } from "styled-components";
 import ContactUs from "./pages/contact/ContactUs";
+import Faq from "./pages/faq/Faq";
 
 const theme = {
   iphone_x: "375px",
@@ -31,11 +31,16 @@ function App() {
         <Switch>
           <Route path="/about-us">
             <AboutUs />
-            <Newsletter />
+
             <CallToAction />
           </Route>
           <Route path="/contact-us">
             <ContactUs />
+            <CallToAction />
+          </Route>
+          <Route path="/faq">
+            <Faq />
+
             <CallToAction />
           </Route>
           <Route path="/" exact>
@@ -47,7 +52,7 @@ function App() {
             <Exchange />
             <HowItWorks />
             <SmartChain />
-            <Newsletter />
+
             <CallToAction />
           </Route>
         </Switch>
