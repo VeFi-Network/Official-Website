@@ -20,7 +20,7 @@ const theme = {
   iphone_x: "375px",
   iPhone_11: "390px",
   iphone_12_pro_max: "428px",
-  andriod: "480px",
+  andriod: "480px"
 };
 function App() {
   return (

@@ -11,7 +11,7 @@ import {
   NewsletterFormContainer,
   NewsletterGetStarted,
   NewsletterImage,
-  StyledNewsletter,
+  StyledNewsletter
 } from "./Newsletter.styled";
 
 const Newsletter = () => {

@@ -1,22 +1,22 @@
 export const LinkList = [
   {
     title: "Home",
-    url: "/",
+    url: "/"
   },
   {
     title: "Products",
-    url: "/products",
+    url: "/products"
   },
   {
     title: "About Us",
-    url: "/about-us",
+    url: "/about-us"
   },
   {
     title: "FAQ",
-    url: "/faq",
+    url: "/faq"
   },
   {
     title: "Contact Us",
-    url: "/contact-us",
-  },
+    url: "/contact-us"
+  }
 ];
