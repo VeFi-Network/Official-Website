@@ -53,7 +53,13 @@ export const CounterTimerBox = styled.div`
   margin: 10px 0px;
 `;
 
-export const WaitList = styled.div``;
+export const WaitList = styled.div`
+  ${media.mobile`
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  `}
+`;
 
 export const Btn = styled.button`
   background-color: ${({ bg }) => bg || "#fff"};
@@ -64,4 +70,10 @@ export const Btn = styled.button`
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
+  ${media.mobile`
+  margin-left: 0px;
+  `}
+  ${media.small`
+    margin-left: 0px;
+  `}
 `;

@@ -2,84 +2,136 @@ import { Container } from "@material-ui/core";
 import React from "react";
 import { AiFillFacebook, AiFillInstagram, AiFillTwitterCircle, AiOutlineLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { SocialIcons, StyledFooter, StyledFooterContainer, StyledFooterNav } from "./Footer.styled";
-import logo from "../../assets/images/logo.svg";
-import { H3, P } from "../Typography";
-import { Divider } from "../Divider";
+import { StyledFooter } from "./Footer.styled";
+import footer_logo from "../../assets/images/footer_logo.png";
 const Footer = () => {
   return (
     <StyledFooter>
       <Container>
-        <Divider className="mobile" />
-        <StyledFooterContainer>
-          <StyledFooterNav>
-            <H3 color="white">Company</H3>
-            <Link to="/about-us">About us</Link>
-            <Link to="/contact-us">Contact us</Link>
-            <Link to="/team">Our Team</Link>
-            <Link to="/investors">Investor Relations</Link>
-          </StyledFooterNav>
-          <StyledFooterNav>
-            <H3 color="white">Product</H3>
-            <Link to="/product/wallet">Wallet</Link>
-            <Link to="/product/exchange">Exchange</Link>
-            <Link to="/product/smart-chain">Smart Chain</Link>
-            <Link to="/product/network">Network</Link>
-          </StyledFooterNav>
-          <StyledFooterNav>
-            <H3 color="white">Support</H3>
-            <Link to="/faq">FAQ</Link>
-            <Link to="/support">Support center</Link>
-          </StyledFooterNav>
-          <StyledFooterNav>
-            <H3 color="white">Legal</H3>
-            <Link to="/legal/privacy-policy">Privacy Policy</Link>
-            <Link to="/legal/terms">Terms &amp; Condition</Link>
-            <H3 color="white">Community</H3>
-            <Link to="/">Telegram</Link>
-          </StyledFooterNav>
-        </StyledFooterContainer>
-        <Divider className="mobile" />
-        <StyledFooterContainer>
-          <StyledFooterNav>
-            <img src={logo} alt="" />
-            <p>&copy; 2021 VEFI Technologies</p>
-            <p>All Rights Reserved</p>
-          </StyledFooterNav>
-          <StyledFooterNav>
-            <H3 color="white">Contact</H3>
-            <Link to="/">info@vefi.com</Link>
-            <Link to="/">support@vefi.com</Link>
-            <SocialIcons>
-              <span>
-                <AiFillFacebook />
-              </span>
-              <span>
-                <AiFillTwitterCircle />
-              </span>
-              <span>
-                <AiOutlineLinkedin />
-              </span>
-              <span>
-                <AiFillInstagram />
-              </span>
-            </SocialIcons>
-          </StyledFooterNav>
-          <StyledFooterNav>
-            <H3 color="white">USA</H3>
-            <P>
-              +234 9066809425 <br />
-              12109 bethel dr Frisco tx 75033 USA
-            </P>
-          </StyledFooterNav>
-          <StyledFooterNav>
-            <H3 color="white">Nigeria</H3>
-            <P>
-              No 11 address lane, USA <br />
-              Town State
-            </P>
-          </StyledFooterNav>
-        </StyledFooterContainer>
+        <div className="footer">
+          <div className="footer__item">
+            <ul>
+              <li>
+                <img src={footer_logo} alt="" />
+              </li>
+              <li>
+                <p>&copy; 2021 VEFI Technologies All Rights Reserved</p>
+              </li>
+            </ul>
+          </div>
+          <div className="footer__item">
+            <ul>
+              <h2>Company</h2>
+              <li>
+                <Link to="/about-us">About us</Link>
+              </li>
+              <li>
+                <Link to="/">Contact us</Link>
+              </li>
+              <li>
+                <Link to="/">Our Team</Link>
+              </li>
+              <li>
+                <Link to="/">Investor Relations</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer__item">
+            <ul>
+              <h2>Product</h2>
+              <li>
+                <Link to="/about-us">Wallet</Link>
+              </li>
+              <li>
+                <Link to="/">Exchange</Link>
+              </li>
+              <li>
+                <Link to="/">Smart Chain</Link>
+              </li>
+              <li>
+                <Link to="/">Network</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer__item">
+            <ul>
+              <h2>Support</h2>
+              <li>
+                <Link to="/about-us">FAQ</Link>
+              </li>
+              <li>
+                <Link to="/">Help Center</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="footer">
+          <div className="footer__item legal">
+            <ul>
+              <h2>Legal</h2>
+              <li>
+                <Link to="/about-us">Privacy Policy</Link>
+              </li>
+              <li>
+                <Link to="/about-us">Terms &amp; Conditions</Link>
+              </li>
+              <h2>Community</h2>
+              <li>
+                <Link to="/about-us">Telegram</Link>
+              </li>
+            </ul>
+          </div>
+          <div className="footer__item">
+            <ul>
+              <h2>Contact</h2>
+              <li>
+                <a href="mailto:info@vefinetwork.org">info@vefinetwork.org</a>
+              </li>
+              <li>
+                <a href="mailto:marketing@vefinetwork.org">marketing@vefinetwork.org</a>
+              </li>
+              <li>
+                <a href="mailto:support@vefinetwork.org">support@vefinetwork.org</a>
+              </li>
+              <li>
+                <a href="/">
+                  <AiFillFacebook className="social_icon" />
+                </a>
+                <a href="/">
+                  <AiFillInstagram className="social_icon" />
+                </a>
+                <a href="/">
+                  <AiFillTwitterCircle className="social_icon" />
+                </a>
+                <a href="/">
+                  <AiOutlineLinkedin className="social_icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer__item">
+            <ul>
+              <h2>USA</h2>
+              <li>
+                <p>
+                  12109 bethel dr Frisco <br />
+                  tx 75033 USA
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div className="footer__item">
+            <ul>
+              <h2>Nigeria</h2>
+              <li>
+                <p>
+                  No 5, Sylva Okon street, <br />
+                  off Badore road, Ajah
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </Container>
     </StyledFooter>
   );

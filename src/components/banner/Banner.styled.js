@@ -8,14 +8,16 @@ export const StyledBanner = styled.div`
   height: 550px; /* You must set a specified height */
   background-position: left; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
+  background-size: contain;
   display: flex;
   position: relative;
 
   ${media.mobile`
   padding-top: 50px;
-  background-position: right; /* Center the image */
+  background-position: center;
   background-size: cover;
+  height:100vh;
+  background:red;
   img{
     display:none;
   }

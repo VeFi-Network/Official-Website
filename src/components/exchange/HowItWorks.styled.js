@@ -5,11 +5,11 @@ import media from "../../utility/Media";
 export const StyledHowItWorks = styled.section`
   width: 100%;
   display: flex;
-  background: url(${double_coin}) no-repeat, #fefcea;
+  background: url(${double_coin}) no-repeat, #fbf6b4;
   display: flex;
   flex-direction: column;
   background-position: right;
-  background-size: contain;
+  background-size: right;
   background-blend-mode: screen;
   color: #fff;
   padding-bottom: 60px;
@@ -17,8 +17,9 @@ export const StyledHowItWorks = styled.section`
   ${media.mobile`
     display:flex;
     width:100%;
+    background:#fff;
     background-position:center;
-    background-blend-mode: lighten;
+    background-blend-mode: darken;
   `}
 `;
 
@@ -26,7 +27,7 @@ export const HowItWorksContainer = styled.div`
   width: 100%;
   color: #fff;
   height: auto;
-  margin-top: -50px;
+  margin-top: -60px;
   display: flex;
   justify-content: space-between;
   padding: 50px 30px;
@@ -39,6 +40,15 @@ export const HowItWorksContainer = styled.div`
   }
 
   ${media.mobile`
+    width:100%;
+    display:flex;
+    margin:0px;
+    background-image:none;
+    flex-direction:column;
+    height:auto;
+    flex-direction:column;
+  `}
+  ${media.small`
     width:100%;
     display:flex;
     margin:0px;

@@ -68,11 +68,16 @@ export const HeroBannerContainer = styled.div`
     margin:0px;
     flex-direction:column;
 
+    .imageMobile{
+      width:90%;
+      margin:0px auto -30px auto;
+    }
     > div:nth-child(1) {
       > img {
-        object-fit: cover;
+        object-fit: contain;
         width:100%;
-        height: 200px;
+        height: 250px;
+        border-radius:20px;
         max-width: none !important;
       }
     }
@@ -92,21 +97,20 @@ export const HeroBannerJoinCommunity = styled.div`
   h1 {
     font-size: 65px;
   }
-  h3 {
-    font-size: 65px;
-    margin-bottom: 30px;
-  }
   p {
     line-height: 1.3em;
     font-size: 25px;
     font-weight: 200;
+    margin: 30px 0px;
   }
   > h1 > span {
     padding: 30px 20px !important;
-    color: #fbf6b4;
   }
   button {
     margin-top: 30px;
+  }
+  .mobileText {
+    margin-left: -20px;
   }
   ${media.mobile`
     width:100%;
@@ -115,8 +119,10 @@ export const HeroBannerJoinCommunity = styled.div`
     margin-top: 0px;
     padding: 40px;
     height:100%;
+    
     h1 {
-      font-size: 30px;
+      font-size: 20px;
+      margin-bottom:10px;
     }
     h3 {
       font-size: 28px;
@@ -124,13 +130,24 @@ export const HeroBannerJoinCommunity = styled.div`
     }
     p {
       line-height: 1.3em;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 400;
+      margin-top:30px;
     }
     > h1 > span {
       margin-left:5px;
       padding: 15px 5px !important;
       color: #fbf6b4;
+    }
+    button {
+      padding:8px 30px;
+      font-size:16px;
+      font-weight:600;
+    }
+    .mobileText{
+      color:white;
+      font-size:24px;
+      margin-left:-5px;
     }
   `}
 `;

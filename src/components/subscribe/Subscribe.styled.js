@@ -5,7 +5,7 @@ export const StyledSubscribe = styled.section`
   width: 100%;
 
   ${media.mobile`
-  background: #fefcea;
+    background: #fefcea;
   `}
 `;
 

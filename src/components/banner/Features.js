@@ -2,11 +2,10 @@ import { Button, Container } from "@material-ui/core";
 import React from "react";
 import { Left, Right } from "../styles/Position.styled";
 import { StyledHeroBanner } from "./HeroBanner.styled";
-import { AppMockUp, Box, FeaturedRightImage, StyledFeatureRight, StyledFeatures } from "./Features.styled";
+import { Box, FeaturedRightImage, StyledFeatureRight, StyledFeatures } from "./Features.styled";
 import { BiCheckCircle } from "react-icons/bi";
 import map from "../../assets/images/map.png";
-import app_1 from "../../assets/images/app_1.svg";
-import { H1, P } from "../Typography";
+import { P } from "../Typography";
 import { Paper } from "../Grid";
 const Features = () => {
   return (
@@ -14,14 +13,11 @@ const Features = () => {
       <Container>
         <StyledFeatures>
           <Left size="1">
-            <H1>
+            <h1>
               VEFI <span>Wallet</span>
-            </H1>
+            </h1>
             <Box>
-              <P>
-                VEFI NETWORK native wallet, VEFI ensure that this wallet is flexible, secure,easy and simple t use
-                whereby enabling users to store, send,spend,receive,swap and exchange their crypto assets instantly.
-              </P>
+              <P>VEFI ensures that thus wallet is flexible, secure, easy and simple to use.</P>
             </Box>
             <Paper>
               <div>
@@ -54,9 +50,6 @@ const Features = () => {
               <FeaturedRightImage>
                 <img src={map} alt="app" />
               </FeaturedRightImage>
-              <AppMockUp>
-                <img src={app_1} alt="app" />
-              </AppMockUp>
             </StyledFeatureRight>
           </Right>
         </StyledFeatures>

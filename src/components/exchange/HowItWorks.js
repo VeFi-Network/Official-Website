@@ -27,8 +27,8 @@ const HowItWorks = () => {
         <HowItWorksContainer>
           <Steps
             icon={<BiRefresh />}
-            title="Unlimited transaction"
-            desc="VEFI ensures high speed and more than lower transaction fees under large volumes of transaction."
+            title="Unlimited Transaction"
+            desc="VEFI ensures high speed and more than lower transaction fees under large volumes of transaction.Lower transaction are supported"
           />
           <Divider orientation="vertical" flexItem />
           <Steps
