@@ -11,7 +11,7 @@ import {
   SectionTime,
   SectionTimer,
   SectionTypographyContainer,
-  SectionWrapper,
+  SectionWrapper
 } from "../../components/Section";
 import banner_product from "../../assets/images/banner_product.png";
 import { Container } from "@material-ui/core";
@@ -30,8 +30,7 @@ const Product = () => {
               From <span>Africa</span> to the world
             </H2>
             <P size="27px" FontWeight="400" LineHeight="1.1em">
-              The next big thing in Blockchain when high speed meets scalability
-              from Africa to the World.
+              The next big thing in Blockchain when high speed meets scalability from Africa to the World.
             </P>
           </SectionTypographyContainer>
           <SectionCountDownTimerContainer>
