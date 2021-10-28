@@ -1,11 +1,6 @@
 import { Container } from "@material-ui/core";
 import React from "react";
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillTwitterCircle,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
+import { AiFillFacebook, AiFillInstagram, AiFillTwitterCircle, AiOutlineLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { StyledFooter } from "./Footer.styled";
 import footer_logo from "../../assets/images/footer_logo.png";
@@ -93,14 +88,10 @@ const Footer = () => {
                 <a href="mailto:info@vefinetwork.org">info@vefinetwork.org</a>
               </li>
               <li>
-                <a href="mailto:marketing@vefinetwork.org">
-                  marketing@vefinetwork.org
-                </a>
+                <a href="mailto:marketing@vefinetwork.org">marketing@vefinetwork.org</a>
               </li>
               <li>
-                <a href="mailto:support@vefinetwork.org">
-                  support@vefinetwork.org
-                </a>
+                <a href="mailto:support@vefinetwork.org">support@vefinetwork.org</a>
               </li>
               <li>
                 <a href="/">

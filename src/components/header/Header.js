@@ -1,10 +1,5 @@
 import Container from "@material-ui/core/Container";
-import {
-  HeaderContainer,
-  HeaderTop,
-  HeaderLeft,
-  HeaderRight,
-} from "./HeaderTop.styled";
+import { HeaderContainer, HeaderTop, HeaderLeft, HeaderRight } from "./HeaderTop.styled";
 import Logo from "../../assets/images/logo.svg";
 
 import { FaTelegramPlane } from "react-icons/fa";
@@ -22,11 +17,7 @@ const Header = () => {
             </HeaderLeft>
             <HeaderRight>
               <Navigation />
-              <Button
-                icon={<FaTelegramPlane />}
-                text="Join our community"
-                bg=""
-              />
+              <Button icon={<FaTelegramPlane />} text="Join our community" bg="" />
             </HeaderRight>
           </HeaderContainer>
         </Container>

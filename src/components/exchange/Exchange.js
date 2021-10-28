@@ -45,52 +45,27 @@ const Exchange = () => {
               between platforms and apps.
             </p>
             <p className="mobileText">
-              A unified cyrptocurrency exchange platform built to enable users
-              navigate and control all cryto related pproducts and services on a
-              single platform.
+              A unified cyrptocurrency exchange platform built to enable users navigate and control all cryto related
+              pproducts and services on a single platform.
             </p>
             <Paper>
               <div>
-                <Button
-                  variant="contained"
-                  startIcon={<BiCheckCircle />}
-                  className="button"
-                >
+                <Button variant="contained" startIcon={<BiCheckCircle />} className="button">
                   Margin trading
                 </Button>
-                <Button
-                  variant="contained"
-                  startIcon={<BiCheckCircle />}
-                  className="button"
-                >
+                <Button variant="contained" startIcon={<BiCheckCircle />} className="button">
                   P2P trading
                 </Button>
-                <Button
-                  variant="contained"
-                  startIcon={<BiCheckCircle />}
-                  className="button"
-                >
+                <Button variant="contained" startIcon={<BiCheckCircle />} className="button">
                   Features trading
                 </Button>
-                <Button
-                  variant="contained"
-                  startIcon={<BiCheckCircle />}
-                  className="button"
-                >
+                <Button variant="contained" startIcon={<BiCheckCircle />} className="button">
                   Spot trading
                 </Button>
-                <Button
-                  variant="contained"
-                  startIcon={<BiCheckCircle />}
-                  className="button"
-                >
+                <Button variant="contained" startIcon={<BiCheckCircle />} className="button">
                   NFT
                 </Button>
-                <Button
-                  variant="contained"
-                  startIcon={<BiCheckCircle />}
-                  className="button"
-                >
+                <Button variant="contained" startIcon={<BiCheckCircle />} className="button">
                   DEX
                 </Button>
               </div>

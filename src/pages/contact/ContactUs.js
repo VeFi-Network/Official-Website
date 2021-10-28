@@ -4,11 +4,7 @@ import { BiEnvelope } from "react-icons/bi";
 import { FaRegUser } from "react-icons/fa";
 import Input from "../../components/Input";
 import TextArea from "../../components/TextArea";
-import {
-  ContactUsContainer,
-  InputField,
-  StyledContactUs,
-} from "./ContactUs.styled";
+import { ContactUsContainer, InputField, StyledContactUs } from "./ContactUs.styled";
 const ContactUs = () => {
   return (
     <StyledContactUs>

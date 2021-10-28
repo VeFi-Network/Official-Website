@@ -221,12 +221,10 @@ const SmartChain = () => {
               <div className="text first">
                 <span>
                   <p>
-                    VEFI Smart Chain is a new generation High performance
-                    Blockchain based on a unique consensus algorithm (V-DPoS)
-                    with the unique ability of processing over{" "}
-                    <strong>1 million Transaction per second</strong> with
-                    almost zero transaction fees at a near instant processing
-                    time.
+                    VEFI Smart Chain is a new generation High performance Blockchain based on a unique consensus
+                    algorithm (V-DPoS) with the unique ability of processing over{" "}
+                    <strong>1 million Transaction per second</strong> with almost zero transaction fees at a near
+                    instant processing time.
                     <Button text="show more" icon={<AiOutlineArrowDown />} />
                   </p>
                 </span>
@@ -243,11 +241,9 @@ const SmartChain = () => {
                 </span>
                 <span className="divFlot">
                   <p>
-                    VEFI Smart chain is a Climate Neutral Blockain whereby
-                    making VEFI the latest infrastructure for innovation and
-                    development. VEFI Smart Chain is EVM-compatible which
-                    supports DApps built on Ethereum. This promotes faster
-                    transaction.
+                    VEFI Smart chain is a Climate Neutral Blockain whereby making VEFI the latest infrastructure for
+                    innovation and development. VEFI Smart Chain is EVM-compatible which supports DApps built on
+                    Ethereum. This promotes faster transaction.
                   </p>
                 </span>
               </div>
