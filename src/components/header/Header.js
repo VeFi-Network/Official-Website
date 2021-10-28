@@ -9,7 +9,7 @@ import Logo from "../../assets/images/logo.svg";
 
 import { FaTelegramPlane } from "react-icons/fa";
 import { Button } from "../Button";
-import Navigation from "../../pages/navbar/Navigation";
+import Navigation from "../Navigation";
 
 const Header = () => {
   return (

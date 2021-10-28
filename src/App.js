@@ -15,6 +15,7 @@ import AboutUs from "./pages/about/AboutUs";
 import { ThemeProvider } from "styled-components";
 import ContactUs from "./pages/contact/ContactUs";
 import Faq from "./pages/faq/Faq";
+import Product from "./pages/product/Product";
 
 const theme = {
   iphone_x: "375px",
@@ -40,7 +41,11 @@ function App() {
           </Route>
           <Route path="/faq">
             <Faq />
-
+            <CallToAction />
+          </Route>
+          <Route path="/products">
+            <Product />
+            <CountDown />
             <CallToAction />
           </Route>
           <Route path="/" exact>
