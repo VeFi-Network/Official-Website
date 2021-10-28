@@ -8,7 +8,7 @@ export const HeaderTop = styled.div`
   background: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
   position: fixed;
-  z-index: 10;
+  z-index: 999;
 
   ${media.mobile`
   height:80px;
@@ -61,7 +61,7 @@ export const HeaderRight = styled.div`
         color: #161525;
         text-decoration: none;
         &.active {
-          color: #1673b9;
+          color: #fbf6b4;
         }
       }
     }

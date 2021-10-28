@@ -6,7 +6,7 @@ export const StyledButton = styled.button`
   font-size: 12px;
   border-radius: 5px;
   display: flex;
-  color: #fff;
+  color: ${({ fontColor }) => fontColor || "#fff"};
   cursor: pointer;
   align-items: center;
   border: none;
