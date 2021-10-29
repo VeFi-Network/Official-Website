@@ -11,7 +11,7 @@ import Footer from "./components/footer/Footer";
 import CallToAction from "./components/footer/CallToAction";
 import SmartChain from "./components/smartchain/SmartChain";
 import { Route, Switch } from "react-router";
-import AboutUs from "./pages/about/AboutUs";
+import About from "./pages/about/About";
 import { ThemeProvider } from "styled-components";
 import ContactUs from "./pages/contact/ContactUs";
 import Faq from "./pages/faq/Faq";
@@ -31,8 +31,7 @@ function App() {
         <Header />
         <Switch>
           <Route path="/about-us">
-            <AboutUs />
-
+            <About />
             <CallToAction />
           </Route>
           <Route path="/contact-us">

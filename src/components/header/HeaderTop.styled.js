@@ -25,6 +25,12 @@ export const HeaderContainer = styled.div`
 export const HeaderLeft = styled.div`
   display: flex;
   flex: 0.3;
+
+  img {
+    height: 50px;
+    width: 50px;
+    object-fit: contain;
+  }
 `;
 
 export const HeaderCenter = styled.div`
@@ -95,6 +101,11 @@ export const HeaderRight = styled.div`
       .fa-bars{
         transform:rotate(180deg);
         transition:all 0.2s ease-in-out;
+      }
+      img{
+        height:40px;
+        width:35px;
+        object-fit:contain;
       }
     }
 

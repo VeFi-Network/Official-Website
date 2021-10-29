@@ -60,7 +60,7 @@ export const Card = styled.div`
 `;
 
 export const SectionBannerWithBg = styled(SectionBanner)`
-  height: 250px;
+  height: ${({ height }) => height || "250px"};
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -237,7 +237,7 @@ export const SectionHeadingContainer = styled.div`
 `;
 
 export const SectionHeading = styled(Section)`
-  margin-top: 150px;
+  margin: 30px 0px;
   display: flex;
   background: #fff;
   width: 100%;
@@ -259,6 +259,9 @@ export const SectionHeading = styled(Section)`
   ${media.mobile`
     margin-top: 0px;
     padding:20px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    box-shadow: none;
     div:nth-child(3) {
         flex: 0.1;
     }
@@ -278,6 +281,9 @@ export const SectionHeading = styled(Section)`
   ${media.small`
     margin-top: 0px;
     padding:15px;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    box-shadow: none;
     div:nth-child(3) {
         flex: 0.1;
     }
@@ -292,6 +298,25 @@ export const SectionHeading = styled(Section)`
         h1{
             font-size:20px;
         }
+    }
+  `}
+`;
+
+export const SectionImageContainer = styled.div`
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    flex: 0 1 32%;
+  }
+
+  ${media.mobile`
+    padding:0px 20px;
+    width:100%;
+    > *{
+      flex:0 0 50%;
     }
   `}
 `;
