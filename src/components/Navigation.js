@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { LinkList } from "./LinkItem";
 import menu from "../assets/images/menu.png";
+import { Button, StyledButton } from "./Button";
+import { FaTelegramPlane } from "react-icons/fa";
+import { FiFile } from "react-icons/fi";
+
 const Navigation = () => {
   const [clicked, setClicked] = useState(false);
   const menuList = LinkList.map(({ url, title }, index) => {
@@ -22,7 +26,21 @@ const Navigation = () => {
       <div className="menu-btn" onClick={handleClick}>
         {clicked ? <i className="fas fa-times"></i> : <img src={menu} alt="menu" />}
       </div>
-      <ul className={clicked ? "menu-list" : "menu-list close"}>{menuList}</ul>
+      <ul className={clicked ? "menu-list" : "menu-list close"}>
+        {menuList}
+        <div style={{ marginTop: "20px" }}>
+          <li>
+            <StyledButton bg="#000">
+              Whitepaper <FiFile class="icon" />
+            </StyledButton>
+          </li>
+          <li>
+            <StyledButton>
+              Join our community <FaTelegramPlane class="icon" />
+            </StyledButton>
+          </li>
+        </div>
+      </ul>
     </>
   );
 };

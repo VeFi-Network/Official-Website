@@ -111,7 +111,7 @@ export const HeaderRight = styled.div`
 
     .menu-list {
       width:100%;
-      background-color:rgba(0,0,0,0.9);
+      background-color:whitesmoke;
       flex-direction:column;
       position:absolute;
       padding: 20px;
@@ -122,11 +122,25 @@ export const HeaderRight = styled.div`
       li{
         margin-bottom:20px;
         width:100%;
-        text-align:center;
+        text-align:left;
 
         a{
-          color:#fff;
+          color:#000;
+          font-size:24px;
+          &.active{
+            color:#1673B9;
+          }
         }
+        
+        button{
+          margin-left:10px;
+          font-size:18px;
+          font-weight:600;
+        }
+      }
+
+      li:nth-child(1){
+        margin-top:20px;
       }
     }
     .close{

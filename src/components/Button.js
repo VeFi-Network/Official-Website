@@ -19,6 +19,10 @@ export const StyledButton = styled.button`
     font-size: 20px !important;
     margin-left: 5px;
   }
+  .icon {
+    font-size: 15px !important;
+    margin-left: 8px;
+  }
 `;
 export const Button = ({ icon, text, action }) => {
   return (
