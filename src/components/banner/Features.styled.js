@@ -3,10 +3,8 @@ import media from "../../utility/Media";
 export const StyledFeatures = styled.div`
   margin-top: 40px;
   display: flex;
-
   h1 {
     font-size: 50px;
-
     > span {
       font-size: 45px;
     }
@@ -16,10 +14,23 @@ export const StyledFeatures = styled.div`
     width:100%;
     display:flex;
     flex-direction:column;
+    h1{
+      font-size:40px;
+      margin-left:5px;
+      > span {
+        font-size: 35px;
+      }
+    }
+  `};
+
+  ${media.small`
+    width:100%;
+    display:flex;
+    flex-direction:column;
 
     h1{
       font-size:40px;
-      margin-left:3px;
+      margin-left:5px;
       > span {
         font-size: 35px;
       }
@@ -41,6 +52,7 @@ export const Box = styled.div`
   ${media.mobile`
     width:100%;
     white-space:wrap;
+    margin-top:10px;
     >p{
       font-size:20px;
       text-align:left;
@@ -84,8 +96,17 @@ export const FeaturedRightImage = styled.div`
   position: absolute;
   top: 0;
 
+  .walletApp {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+    margin-top: -220px;
+  }
   ${media.mobile`
-  margin-top: 0px;
+    margin-top: 0px;
+    .walletApp{
+      display:none;
+    }
   `}
 `;
 

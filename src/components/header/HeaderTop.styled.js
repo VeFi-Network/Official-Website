@@ -27,10 +27,28 @@ export const HeaderLeft = styled.div`
   flex: 0.3;
 
   img {
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     object-fit: contain;
   }
+
+  ${media.mobile`
+  flex: 0.2;
+    img {
+      height: 100px;
+      width: 100px;
+      object-fit: contain;
+    }
+  `}
+
+  ${media.small`
+  flex: 0.2;
+  img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+  }
+`}
 `;
 
 export const HeaderCenter = styled.div`
@@ -108,8 +126,8 @@ export const HeaderRight = styled.div`
         transition:all 0.2s ease-in-out;
       }
       img{
-        height:40px;
-        width:35px;
+        height:30px;
+        width:30px;
         object-fit:contain;
       }
     }

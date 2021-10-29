@@ -69,7 +69,7 @@ const SectionWrapper = styled.div`
   padding:0px 20px;
   
   h1 {
-    font-size: 38px;
+    font-size: 36px;
     margin-bottom: 40px;
     font-weight: 700;
   }
@@ -144,7 +144,7 @@ const SectionWrapper = styled.div`
   padding:0px 20px;
   
   h1 {
-    font-size: 34px;
+    font-size: 30px;
     margin-bottom: 40px;
     font-weight: 700;
   }

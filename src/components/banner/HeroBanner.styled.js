@@ -121,11 +121,9 @@ export const HeroBannerJoinCommunity = styled.div`
     height:100%;
     
     h1 {
-      font-size: 20px;
+      font-size: 27px;
       margin-bottom:5px;
       white-space:nowrap;
-
-      
     }
     h3 {
       font-size: 28px;
@@ -139,7 +137,6 @@ export const HeroBannerJoinCommunity = styled.div`
     }
     > h1 > span {
       color: #fbf6b4;
-      font-size:28px;
       margin-left:-20px;
       margin-right:-1px;
     }

@@ -4,9 +4,13 @@ import { BiCheckCircle } from "react-icons/bi";
 import { Left, Right } from "../styles/Position.styled";
 import { ExchangeContainer, StyledExchange } from "./Exchange.styled";
 import app_1 from "../../assets/images/app_2.svg";
+import phone_app_1 from "../../assets/images/phone__app_1.png";
+import phone_app_2 from "../../assets/images/phone__app_2.png";
+import arrow from "../../assets/images/arrow.svg";
 import { Paper } from "../Grid";
 
 import styled from "styled-components";
+import media from "../../utility/Media";
 
 const StyledSectionContainer = styled(Right)`
   h1 {
@@ -24,6 +28,39 @@ const StyledSectionContainer = styled(Right)`
     color: white;
     line-height: 1.1em;
   }
+
+  ${media.mobile`
+
+    .mobileText{
+      width:auto;
+      white-space:wrap;
+      margin-bottom:5px;
+      padding:0px 20px;
+      line-height:1.3em;
+    }
+    h1{
+      margin-left:8px;
+
+      span{
+        font-size:50px;
+      }
+    }
+  `}
+  ${media.small`
+  h1{
+    margin-left:0px;
+
+    span{
+      font-size:40px;
+    }
+  }
+  .mobileText{
+    width:auto;
+    white-space:wrap;
+    margin-bottom:5px;
+    padding:0px 10px;
+  }
+  `}
 `;
 const Exchange = () => {
   return (
@@ -31,7 +68,15 @@ const Exchange = () => {
       <Container>
         <ExchangeContainer>
           <Left size="0.4">
-            <img src={app_1} alt="app" />
+            <img src={app_1} alt="app" className="deskToptext" />
+            <div className="arrow">
+              {" "}
+              <img src={arrow} alt="app" />
+            </div>
+            <div className="desktop">
+              <img src={phone_app_1} alt="app" />
+              <img src={phone_app_2} alt="app" />
+            </div>
           </Left>
           <StyledSectionContainer size="0.6">
             <h1>

@@ -23,6 +23,7 @@ export const ExchangeContainer = styled.div`
   align-items: center;
   margin: 60px 0px;
   padding-bottom: 70px;
+
   h1 {
     margin-top: 70px;
     margin-bottom: 10px;
@@ -39,7 +40,9 @@ export const ExchangeContainer = styled.div`
     margin-bottom: -50px;
     object-fit: contain;
   }
-  .mobileText {
+
+  .desktop,
+  .arrow {
     display: none;
   }
   ${media.mobile`
@@ -47,9 +50,35 @@ export const ExchangeContainer = styled.div`
     display:flex;
     flex-direction:column-reverse;
     margin-top:-30px;
+    margin-bottom:-40px;
     color:#131313;
     .deskToptext{
       display:none;
+    }
+    .arrow{
+      margin:20px 0px;
+      display:flex;
+      align-items:center;
+      text-align:center;
+      justify-content:center;
+
+      img{
+        width:60px;height:60px;object-fit:contain;
+      }
+    }
+    .desktop{
+      display:flex;
+      width:100%;
+      margin-top:40px;
+      justify-content:center;
+      
+      img{
+   
+        width:100px;
+        height:50%;
+        object-fit:contain;
+        margin:20px 20px;
+      }
     }
     .mobileText{
       display:block;
