@@ -3,15 +3,13 @@ import {
   Card,
   SectionBannerWithBg,
   SectionCard,
-  SectionHeading,
   SectionHeadingContainer,
   SectionTypographyContainer,
   SectionWrapper
 } from "../../components/Section";
 import banner_product from "../../assets/images/banner_product.png";
 import { Container } from "@material-ui/core";
-import { H1, H2, P } from "../../components/Typography";
-import { FaAngleDown } from "react-icons/fa";
+import { H2, P } from "../../components/Typography";
 import CardItem from "../../components/CardItem";
 import { ListProduct } from "./ListProduct";
 import CountdownTimer from "../../components/CountdownTimer";

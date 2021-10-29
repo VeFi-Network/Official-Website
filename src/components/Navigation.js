@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { LinkList } from "./LinkItem";
 import menu from "../assets/images/menu.png";
-import { Button, StyledButton } from "./Button";
+import { StyledButton } from "./Button";
 import { FaTelegramPlane } from "react-icons/fa";
 import { FiFile } from "react-icons/fi";
 
@@ -31,12 +31,12 @@ const Navigation = () => {
         <div style={{ marginTop: "20px" }}>
           <li>
             <StyledButton bg="#000">
-              Whitepaper <FiFile class="icon" />
+              Whitepaper <FiFile className="icon" />
             </StyledButton>
           </li>
           <li>
             <StyledButton>
-              Join our community <FaTelegramPlane class="icon" />
+              Join our community <FaTelegramPlane className="icon" />
             </StyledButton>
           </li>
         </div>
