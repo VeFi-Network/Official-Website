@@ -54,7 +54,9 @@ export const HeaderCenter = styled.div`
 export const HeaderRight = styled.div`
   display: flex;
   flex: 1;
-
+  .mobile {
+    display: none;
+  }
   .menu-list {
     display: flex;
     flex: 1;
@@ -84,7 +86,10 @@ export const HeaderRight = styled.div`
     margin-left: 40px;
     margin-right: 20px;
     flex-direction: row-reverse;
-
+    .mobile{
+      display:flex;
+      flex-direction:column;
+    }
     .menu-btn {
       margin-left: 30px;
       display:flex;
@@ -136,6 +141,7 @@ export const HeaderRight = styled.div`
           margin-left:10px;
           font-size:18px;
           font-weight:600;
+          padding:10px 20px;
         }
       }
 

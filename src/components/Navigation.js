@@ -28,7 +28,7 @@ const Navigation = () => {
       </div>
       <ul className={clicked ? "menu-list" : "menu-list close"}>
         {menuList}
-        <div style={{ marginTop: "20px" }}>
+        <div style={{ marginTop: "20px" }} className="mobile">
           <li>
             <StyledButton bg="#000">
               Whitepaper <FiFile className="icon" />
