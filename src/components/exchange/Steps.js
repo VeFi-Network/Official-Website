@@ -29,7 +29,7 @@ export const StyledSteps = styled.div`
 export const StyledStepsLogo = styled.div`
   font-size: 30px;
   ${media.mobile`
-    font-size:50px;
+    font-size:30px;
     font-weight:600;
   `}
 `;
@@ -43,9 +43,10 @@ export const StyledStepsHeading = styled.div`
   }
   ${media.mobile`
     h3{
-      font-size:34px;
+      font-size:1.4rem;
       line-height:1em;
-      font-weight:700;
+      font-weight:500;
+      max-width:10ch;
     }
 `}
 `;
@@ -57,9 +58,9 @@ export const StyledStepsDesc = styled.div`
   }
   ${media.mobile`
  p{
-   font-size:18px;
-   font-weight:600;
-   padding-bottom:20px;
+   font-size:16px;
+   font-weight:500;
+   padding-bottom:10px;
  }
 `}
 `;

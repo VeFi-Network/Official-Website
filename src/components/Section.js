@@ -5,6 +5,23 @@ import media from "../utility/Media";
 export const SectionWrapper = styled.section`
   padding-top: 60px;
   width: 100%;
+
+  .countdownContainer {
+    width: 1200px;
+    margin-top: -50px;
+    color: #fefcea;
+  }
+  ${media.mobile`
+      .countdownContainer{
+        width:100%;
+      }
+  `}
+  ${media.small`
+  .countdownContainer{
+        width:100%;
+        margin-top: 0px;
+      }
+  `}
 `;
 export const SectionBanner = styled.div`
   width: 100%;
@@ -68,23 +85,22 @@ export const SectionBannerWithBg = styled(SectionBanner)`
   color: #fff;
 
   ${media.mobile`
-    height:100%;
     background-position: left;
-    padding-bottom:30px;
+    height:70vh;
   `}
 
   ${media.small`
-    height:100%;
     background-position: left;
+    height:90vh;
   `}
 `;
 
 export const SectionTypographyContainer = styled.div`
   white-space: pre-line;
-  width: 500px;
   margin-left: 20px;
   p {
-    margin-top: 10px;
+    margin-top: 20px;
+    max-width: ${({ maxWidth }) => maxWidth || "32ch"};
   }
   span {
     color: #fbf6b4;
@@ -92,24 +108,17 @@ export const SectionTypographyContainer = styled.div`
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 25px 15px;
+    padding: 20px 30px;
     margin: 0px -10px;
   }
   ${media.mobile`
     width:100%;
     margin:0px;
-    h2{
-        font-size:50px;
-    }
   `}
 
   ${media.small`
     width:100%;
     margin:0px;
-
-    h2{
-        font-size:44px;
-    }
   `}
 `;
 
@@ -132,6 +141,7 @@ export const SectionCountDownTimerContainer = styled.div`
     margin-top:30px;
     margin-bottom:30px;
     z-index:10;
+    top:-35px;
   `}
 
   ${media.small`
@@ -142,6 +152,7 @@ export const SectionCountDownTimerContainer = styled.div`
     margin-top:30px;
     margin-bottom:30px;
     z-index:10;
+    top:-35px;
   `}
 `;
 
@@ -210,8 +221,6 @@ export const SectionCountDownButton = styled.div`
 `;
 
 export const SectionHeadingContainer = styled.div`
-  position: relative;
-
   ${media.mobile`
     .MuiContainer-root{
         width:100%;

@@ -106,8 +106,11 @@ export const HeroBannerJoinCommunity = styled.div`
     max-width: 32ch;
   }
   > h1 > span {
-    padding: 30px 35px !important;
+    padding: 30px 35px;
     margin-left: -20px;
+  }
+  a {
+    text-decoration: none;
   }
   button {
     margin-top: 30px;
@@ -124,9 +127,10 @@ export const HeroBannerJoinCommunity = styled.div`
     height:100%;
     
     h1 {
-      font-size: 27px;
+      font-size: 26px;
       margin-bottom:5px;
       white-space:nowrap;
+      max-width: 30ch;
     }
     h3 {
       font-size: 28px;
@@ -140,8 +144,9 @@ export const HeroBannerJoinCommunity = styled.div`
     }
     > h1 > span {
       color: #fbf6b4;
-      margin-left:-20px;
+      margin-left:-10px;
       margin-right:-1px;
+      padding:15px 17px;
     }
     button {
       padding:8px 30px;

@@ -34,6 +34,7 @@ const StyledSectionContainer = styled(Right)`
 
     .mobileText{
       width:auto;
+      display:flex;
       white-space:wrap;
       margin-bottom:5px;
       padding:0px 20px;
@@ -41,11 +42,17 @@ const StyledSectionContainer = styled(Right)`
     }
     h1{
       margin-left:8px;
-
+      font-size:1.8rem;
       span{
-        font-size:50px;
+        font-size:1.5rem;
       }
     }
+    .button {
+    .MuiButton-startIcon {
+      margin-left: 0px;
+    }
+  }
+  
   `}
   ${media.small`
   h1{
@@ -57,10 +64,18 @@ const StyledSectionContainer = styled(Right)`
   }
   .mobileText{
     width:auto;
+    display:flex;
     white-space:wrap;
     margin-bottom:5px;
     padding:0px 10px;
   }
+  .button {
+    text-overflow:wrap;
+    .MuiButton-startIcon {
+      margin-right: 0px;
+    }
+  }
+
   `}
 `;
 const Exchange = () => {

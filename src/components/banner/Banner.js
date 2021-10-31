@@ -6,7 +6,7 @@ import backgroundImage from "../../assets/images/banner.svg";
 import Media from "../../utility/Media";
 import arrow_right from "../../assets/images/arrow.svg";
 const StyledBanner = styled.section`
-  padding-top: 60px;
+  padding-top: 100px;
   width: 100%;
   display: flex;
   height: 500px;
@@ -17,20 +17,25 @@ const StyledBanner = styled.section`
   background-position: center;
   position: relative;
   flex-direction: column;
-
   h1 {
     font-size: 50px;
-    max-width: 15ch;
+    max-width: 13ch;
   }
 
   .imageBox {
     position: absolute;
-    right: -100px;
+    right: calc(100vw - 50%);
     width: 100px;
   }
   ${Media.mobile`
+
+  height:80vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   padding-top: 0px;
   .imageBox {
+    display:none;
     left:calc(50% - 50px);
     bottom:0;
     top:48vh;
@@ -38,31 +43,29 @@ const StyledBanner = styled.section`
       height:70px;
     }
   }
-    
+    h1{
+      max-width: 13ch;
+    }
 `}
   ${Media.small`
-    height:100%;
+    height:100vh;
     .imageBox{
-      top:47vh;
+      display:none;
     }
 `}
 `;
 const StyledBannerContainer = styled.div`
-  margin-top: 50px;
   position: relative;
 
   ${Media.mobile`
     display: flex;
-    height:52vh;
     align-items:center;
     width:100%;
     padding-left:30px;
-    padding-right:30px;
-    padding-top: 20px;
+
     h1{
       font-size:36px;
       line-height:1.3em;
-      
       span{
         background-repeat:no-repeat;
       }
@@ -84,7 +87,7 @@ const Banner = () => {
       <Container>
         <StyledBannerContainer>
           <h1>
-            Revolutionizing Innovation in Blockchain Technology from <CircleStyled>Africa</CircleStyled>to the World.
+            Revolutionizing Innovation in Blockchain Technology from<CircleStyled>Africa</CircleStyled>to the World.
           </h1>
           <div className="imageBox">
             <img src={arrow_right} alt="" />

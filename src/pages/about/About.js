@@ -31,10 +31,12 @@ const About = () => {
                   Changing the world's future to make the world work better for us all.
                 </H2>
               </SectionAboutTypographyContainer>
-              <CountdownTimer />
             </Container>
           </SectionAboutHeadingContainer>
         </SectionBannerWithBg>
+        <div className="countdownContainer">
+          <CountdownTimer />
+        </div>
       </AboutContainer>
       <SectionHeadingContainer>
         <Container maxWidth="md">

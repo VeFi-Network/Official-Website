@@ -16,7 +16,6 @@ const SubscribeFormText = styled.div`
   ${media.mobile`
     width:100%;
     text-align:center;
-    
   `}
   ${media.small`
     width:100%;
@@ -98,7 +97,7 @@ const SubscribeFormContainer = styled.div`
       font-weight:400;
     }
     h3{
-      font-size:30px;
+      font-size:26px;
     }
     .subscribeFOrm{
       width:100%;
@@ -106,19 +105,18 @@ const SubscribeFormContainer = styled.div`
       display:flex;
       input{
         font-weight:400;
-        font-size:18px;
+        font-size:14px;
         color:#131313;
         padding:10px;
         letter-spacing:2px;
       }
       button{
         color:#fff;
-        padding:0px 35px;
-        border-radius:8px;
+        padding:0px 10px;
+        border-radius:5px;
         font-size:18px;
         text-transform:lowercase;
-        font-weight:600;
-        background:#1673b9;
+        font-weight:400;
         letter-spacing:2px;
       }
     }

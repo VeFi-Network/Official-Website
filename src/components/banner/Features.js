@@ -14,7 +14,7 @@ const Features = () => {
       <Container>
         <StyledFeatures>
           <Left size="1">
-            <H1 size="2.3rem !important">
+            <H1 size="2.3rem">
               VEFI <span>Wallet</span>
             </H1>
             <Box>
@@ -53,7 +53,7 @@ const Features = () => {
             <StyledFeatureRight>
               <FeaturedRightImage>
                 <img src={map} alt="app" />
-                <img src={app_2} alt="app" class="walletApp" />
+                <img src={app_2} alt="app" className="walletApp" />
               </FeaturedRightImage>
             </StyledFeatureRight>
           </Right>

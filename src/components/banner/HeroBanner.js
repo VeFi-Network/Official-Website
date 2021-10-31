@@ -40,10 +40,12 @@ const HeroBanner = () => {
           <HeroBannerJoinCommunity>
             <h1>
               From
-              <CircleStyled>Africa</CircleStyled> to the World
+              <CircleStyled>Africa</CircleStyled>to the World
             </h1>
             <p>The next big thing in Blockchain when high speed meets Scalability from Africa to the world.</p>
-            <Button icon={<FaTelegramPlane />} text="Join our community" />
+            <a href="https://t.me/vefi_official" target="_blank" rel="noreferrer">
+              <Button icon={<FaTelegramPlane />} text="Join our community" />
+            </a>
           </HeroBannerJoinCommunity>
         </Right>
       </HeroBannerContainer>

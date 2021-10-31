@@ -18,7 +18,7 @@ export const Timer = styled.div`
   }
   ${media.mobile`
     h1{
-      font-size:28px !important;
+      font-size:26px !important;
     }
     span {
       font-size: 12px;
@@ -56,7 +56,14 @@ export const CounterContainer = styled.div`
 
     button{
       font-weight:600;
-      font-size:18px;
+      font-size:16px;
+      
+    }
+  `}
+
+  ${media.small`
+    button{
+      font-size:14px;
     }
   `}
 `;

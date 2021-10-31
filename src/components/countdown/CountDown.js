@@ -46,14 +46,15 @@ const CountDownCenter = styled.div`
     width:100%;
     flex-direction:column;
     overflow-wrap: break-word;
+    padding:0px;
     h3{
       font-size:26px;
     }
     h1{
-      font-size:60px;
+      font-size:54px;
     }
     .mobile{
-      font-size:20px;
+      font-size:18px;
       font-weight:normal;
       margin-bottom:30px;
       color:#383838;
@@ -68,10 +69,10 @@ const CountDownCenter = styled.div`
       font-size:26px;
     }
     h1{
-      font-size:60px;
+      font-size:54px;
     }
     .mobile{
-      font-size:20px;
+      font-size:18px;
       color:#383838;
       font-weight:normal;
     }
