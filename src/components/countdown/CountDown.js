@@ -85,8 +85,7 @@ const CountDown = () => {
           <h3>The next big thing in</h3>
           <h1>Blockchain</h1>
           <p className="mobile">
-            The next big thing in Blockchain when high speed meets Scalability. VSC ensures high speed and more than
-            lower transaction fees under large volumnes of transaction.
+            The next big thing in the blockchain ecosphere where high speed meets scalability from Africa to the world.
           </p>
           <CountDownTimer />
         </CountDownCenter>
