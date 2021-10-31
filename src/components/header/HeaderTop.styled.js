@@ -25,6 +25,30 @@ export const HeaderContainer = styled.div`
 export const HeaderLeft = styled.div`
   display: flex;
   flex: 0.3;
+
+  img {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+  }
+
+  ${media.mobile`
+  flex: 0.2;
+    img {
+      height: 100px;
+      width: 100px;
+      object-fit: contain;
+    }
+  `}
+
+  ${media.small`
+  flex: 0.2;
+  img {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+  }
+`}
 `;
 
 export const HeaderCenter = styled.div`
@@ -48,7 +72,9 @@ export const HeaderCenter = styled.div`
 export const HeaderRight = styled.div`
   display: flex;
   flex: 1;
-
+  .mobile {
+    display: none;
+  }
   .menu-list {
     display: flex;
     flex: 1;
@@ -78,7 +104,10 @@ export const HeaderRight = styled.div`
     margin-left: 40px;
     margin-right: 20px;
     flex-direction: row-reverse;
-
+    .mobile{
+      display:flex;
+      flex-direction:column;
+    }
     .menu-btn {
       margin-left: 30px;
       display:flex;
@@ -96,11 +125,16 @@ export const HeaderRight = styled.div`
         transform:rotate(180deg);
         transition:all 0.2s ease-in-out;
       }
+      img{
+        height:30px;
+        width:30px;
+        object-fit:contain;
+      }
     }
 
     .menu-list {
       width:100%;
-      background-color:rgba(0,0,0,0.9);
+      background-color:whitesmoke;
       flex-direction:column;
       position:absolute;
       padding: 20px;
@@ -111,11 +145,26 @@ export const HeaderRight = styled.div`
       li{
         margin-bottom:20px;
         width:100%;
-        text-align:center;
+        text-align:left;
 
         a{
-          color:#fff;
+          color:#000;
+          font-size:24px;
+          &.active{
+            color:#1673B9;
+          }
         }
+        
+        button{
+          margin-left:10px;
+          font-size:18px;
+          font-weight:600;
+          padding:10px 20px;
+        }
+      }
+
+      li:nth-child(1){
+        margin-top:20px;
       }
     }
     .close{

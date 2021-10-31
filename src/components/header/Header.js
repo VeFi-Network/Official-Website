@@ -1,6 +1,6 @@
 import Container from "@material-ui/core/Container";
 import { HeaderContainer, HeaderTop, HeaderLeft, HeaderRight } from "./HeaderTop.styled";
-import Logo from "../../assets/images/logo.svg";
+import Logo from "../../assets/images/logo.png";
 
 import { FaTelegramPlane } from "react-icons/fa";
 import { Button } from "../Button";

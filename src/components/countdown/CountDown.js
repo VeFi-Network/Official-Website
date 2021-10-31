@@ -47,13 +47,13 @@ const CountDownCenter = styled.div`
     flex-direction:column;
     overflow-wrap: break-word;
     h3{
-      font-size:30px;
+      font-size:26px;
     }
     h1{
-      font-size:65px;
+      font-size:60px;
     }
     .mobile{
-      font-size:24px;
+      font-size:20px;
       font-weight:normal;
       margin-bottom:30px;
       color:#383838;
@@ -65,10 +65,10 @@ const CountDownCenter = styled.div`
     flex-direction:column;
     overflow-wrap: break-word;
     h3{
-      font-size:18px;
+      font-size:26px;
     }
     h1{
-      font-size:40px;
+      font-size:60px;
     }
     .mobile{
       font-size:20px;
@@ -85,9 +85,8 @@ const CountDown = () => {
           <h3>The next big thing in</h3>
           <h1>Blockchain</h1>
           <p className="mobile">
-            The next big thing in Blockchain when high speed meets <br />
-            Scalability. VSC ensures high speed and more than lower <br />
-            transaction fees under large volumnes of transaction.
+            The next big thing in Blockchain when high speed meets Scalability. VSC ensures high speed and more than
+            lower transaction fees under large volumnes of transaction.
           </p>
           <CountDownTimer />
         </CountDownCenter>

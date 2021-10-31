@@ -117,12 +117,13 @@ export const HeroBannerJoinCommunity = styled.div`
     margin-left:0px;
     border-radius:0px;
     margin-top: 0px;
-    padding: 40px;
+    padding: 20px;
     height:100%;
     
     h1 {
-      font-size: 20px;
-      margin-bottom:10px;
+      font-size: 27px;
+      margin-bottom:5px;
+      white-space:nowrap;
     }
     h3 {
       font-size: 28px;
@@ -135,9 +136,9 @@ export const HeroBannerJoinCommunity = styled.div`
       margin-top:30px;
     }
     > h1 > span {
-      margin-left:5px;
-      padding: 15px 5px !important;
       color: #fbf6b4;
+      margin-left:-20px;
+      margin-right:-1px;
     }
     button {
       padding:8px 30px;
@@ -146,8 +147,8 @@ export const HeroBannerJoinCommunity = styled.div`
     }
     .mobileText{
       color:white;
-      font-size:24px;
-      margin-left:-5px;
+      font-size:27px;
+
     }
   `}
 `;

@@ -56,20 +56,26 @@ const StyledBannerContainer = styled.div`
     height:52vh;
     align-items:center;
     width:100%;
-    overflow-wrap: break-all;
+    padding-left:30px;
+    padding-right:30px;
     padding-top: 20px;
     h1{
-      font-size:45px;
+      font-size:36px;
       line-height:1.3em;
+      
+      span{
+        background-repeat:no-repeat;
+      }
     }
     .imageBox{
-      
+      margin-top:-35px;
     }
 `}
+
   ${Media.small`
-    h1{
-      font-size:35px;
-    }
+  .imageBox{
+    margin-top:0px;
+  }
 `}
 `;
 const Banner = () => {
@@ -78,8 +84,7 @@ const Banner = () => {
       <Container>
         <StyledBannerContainer>
           <h1>
-            Revolutionizing Innovation in Blockchain Technology from <CircleStyled>Africa</CircleStyled>
-            to the World.
+            Revolutionizing Innovation in Blockchain Technology from<CircleStyled>Africa</CircleStyled> to the World.
           </h1>
           <div className="imageBox">
             <img src={arrow_right} alt="" />

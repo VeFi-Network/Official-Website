@@ -5,6 +5,7 @@ import { StyledHeroBanner } from "./HeroBanner.styled";
 import { Box, FeaturedRightImage, StyledFeatureRight, StyledFeatures } from "./Features.styled";
 import { BiCheckCircle } from "react-icons/bi";
 import map from "../../assets/images/map.png";
+import app_2 from "../../assets/images/app_1.svg";
 import { P } from "../Typography";
 import { Paper } from "../Grid";
 const Features = () => {
@@ -17,7 +18,10 @@ const Features = () => {
               VEFI <span>Wallet</span>
             </h1>
             <Box>
-              <P>VEFI ensures that thus wallet is flexible, secure, easy and simple to use.</P>
+              <P className="desktop">
+                VEFI ensures that thus wallet is flexible, secure, easy and simple to use whereby enabling users to
+                store, spend,receive, swap and exchange their crypto assets instantly.
+              </P>
             </Box>
             <Paper>
               <div>
@@ -49,6 +53,7 @@ const Features = () => {
             <StyledFeatureRight>
               <FeaturedRightImage>
                 <img src={map} alt="app" />
+                <img src={app_2} alt="app" class="walletApp" />
               </FeaturedRightImage>
             </StyledFeatureRight>
           </Right>
