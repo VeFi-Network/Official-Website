@@ -2,10 +2,12 @@ import { Container } from "@material-ui/core";
 import React from "react";
 import { Banner, StyledFaq, WrapperDiv } from "./Faq.styled";
 import Question from "./Question";
+import SEO from "../../seo";
 
 const Faq = () => {
   return (
     <StyledFaq>
+      <SEO title="FAQ" />
       <Container maxWidth="md">
         <Banner>
           <h1>Millions of customers rely on our Blockchain Ecosystem</h1>

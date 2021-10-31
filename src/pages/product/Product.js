@@ -14,9 +14,12 @@ import CardItem from "../../components/CardItem";
 import { ListProduct } from "./ListProduct";
 import CountdownTimer from "../../components/CountdownTimer";
 import AppBar from "../../components/AppBar";
+import SEO from "../../seo";
+
 const Product = () => {
   return (
     <SectionWrapper>
+      <SEO title="Products" />
       <SectionBannerWithBg bg={banner_product}>
         <Container>
           <SectionTypographyContainer>
