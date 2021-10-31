@@ -18,10 +18,12 @@ import Card from "../../components/Card";
 import User from "../team/User";
 import TeamList from "../team/Team";
 import { Space } from "../../components/Divider";
+import SEO from "../../seo";
 
 const About = () => {
   return (
     <>
+      <SEO title="About Us" />
       <AboutContainer>
         <SectionBannerWithBg bg={about_banner} height="350px">
           <SectionAboutHeadingContainer>

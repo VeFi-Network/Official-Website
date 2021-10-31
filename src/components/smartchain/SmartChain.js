@@ -225,7 +225,7 @@ const SmartChain = () => {
                     algorithm (V-DPoS) that aims to have the ability to process over{" "}
                     <strong>1 million transactions per second</strong> with almost zero transaction fees at a near
                     instant processing time.
-                    <Button text="show more" icon={<AiOutlineArrowDown />} />
+                    <Button text="Show More" icon={<AiOutlineArrowDown />} />
                   </p>
                 </span>
                 <span className="imageArrow">
@@ -252,9 +252,9 @@ const SmartChain = () => {
                 <span>
                   <p>
                     VEFI Smart Chain would be <br />
-                    cross-chain, making it interoperable with EVM-compatible networks and thus <br />
-                    assets can be moved across these chains without hassle.
-                    <Button text="show more" icon={<AiOutlineArrowDown />} />
+                    cross-chain and interoperable.
+                    <br />
+                    <Button text="Show More" icon={<AiOutlineArrowDown />} />
                   </p>
                 </span>
                 <span></span>
