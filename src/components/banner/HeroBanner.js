@@ -41,7 +41,10 @@ const HeroBanner = () => {
               <span className="mobileText">From</span>
               <CircleStyled>Africa</CircleStyled> to the <span className="mobileText">World</span>
             </h1>
-            <p>The next big thing in Blockchain when high speed meets Scalability from Africa to the world.</p>
+            <p>
+              The next big thing in the blockchain ecosphere where high speed meets scalability from Africa to the
+              world.
+            </p>
             <Button icon={<FaTelegramPlane />} text="Join our community" />
           </HeroBannerJoinCommunity>
         </Right>

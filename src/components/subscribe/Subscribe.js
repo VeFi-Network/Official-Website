@@ -157,7 +157,7 @@ const Subscribe = () => {
               <SubscribeFormContainer>
                 <h1>
                   We are building the fastest <br />
-                  Blockchain platform which can <br />
+                  blockchain platform which would be able to <br />
                   process over 1 million <br /> transactions per second
                 </h1>
                 <h3>Stay Updated!</h3>

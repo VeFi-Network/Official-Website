@@ -84,7 +84,7 @@ const Banner = () => {
       <Container>
         <StyledBannerContainer>
           <h1>
-            Revolutionizing Innovation in Blockchain Technology from<CircleStyled>Africa</CircleStyled> to the World.
+            Revolutionary innovation in blockchain technology from<CircleStyled>Africa</CircleStyled> to the World.
           </h1>
           <div className="imageBox">
             <img src={arrow_right} alt="" />
