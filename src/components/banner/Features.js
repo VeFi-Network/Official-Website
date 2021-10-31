@@ -6,7 +6,7 @@ import { Box, FeaturedRightImage, StyledFeatureRight, StyledFeatures } from "./F
 import { BiCheckCircle } from "react-icons/bi";
 import map from "../../assets/images/map.png";
 import app_2 from "../../assets/images/app_1.svg";
-import { P } from "../Typography";
+import { H1, P } from "../Typography";
 import { Paper } from "../Grid";
 const Features = () => {
   return (
@@ -14,13 +14,13 @@ const Features = () => {
       <Container>
         <StyledFeatures>
           <Left size="1">
-            <h1>
+            <H1 size="2.3rem !important">
               VEFI <span>Wallet</span>
-            </h1>
+            </H1>
             <Box>
               <P className="desktop">
-                VEFI ensures that thus wallet is flexible, secure, easy and simple to use whereby enabling users to
-                store, spend,receive, swap and exchange their crypto assets instantly.
+                VEFI NETWORK native wallet. VEFI ensure that this wallet is flexible, secure, easy and simple to use
+                whereby enabling users to store, sendm spend,receive,swap and exchange their crypto assets instantly.
               </P>
             </Box>
             <Paper>
@@ -44,7 +44,7 @@ const Features = () => {
                   Exchange Cypto
                 </Button>
                 <Button variant="contained" startIcon={<BiCheckCircle />} className="button">
-                  Stake Cypto
+                  Stake assets
                 </Button>
               </div>
             </Paper>

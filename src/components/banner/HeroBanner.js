@@ -18,9 +18,10 @@ import styled from "styled-components";
 const CircleStyled = styled.span`
   background-image: url(${circle});
   background-size: contain;
-  padding: 20px 50px;
+  padding: 20px 0px;
   background-position: center;
   background-repeat: no-repeat;
+  color: #fbf6b4;
 `;
 const HeroBanner = () => {
   return (
@@ -38,8 +39,8 @@ const HeroBanner = () => {
         <Right>
           <HeroBannerJoinCommunity>
             <h1>
-              <span className="mobileText">From</span>
-              <CircleStyled>Africa</CircleStyled> to the <span className="mobileText">World</span>
+              From
+              <CircleStyled>Africa</CircleStyled> to the World
             </h1>
             <p>The next big thing in Blockchain when high speed meets Scalability from Africa to the world.</p>
             <Button icon={<FaTelegramPlane />} text="Join our community" />

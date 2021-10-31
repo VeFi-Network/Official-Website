@@ -16,17 +16,18 @@ const StyledSectionContainer = styled(Right)`
   h1 {
     margin-left: -10px;
     color: #fbf6b4;
-    font-size: 50px;
-    span {
-      font-size: 45px;
-    }
+    font-size: 55px;
   }
   p {
     margin-left: 0px;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 22px;
     color: white;
     line-height: 1.1em;
+    max-width: 40ch;
+  }
+  .mobileText {
+    display: none;
   }
 
   ${media.mobile`
@@ -83,11 +84,8 @@ const Exchange = () => {
               VEFI <span>exchange</span>
             </h1>
             <p className="deskToptext">
-              VEFI exchange is a unified cryptocurrency
-              <br /> exchange platform built to enable users navigate <br />
-              and control all crypto related products and <br />
-              services on a single platform without goggling <br />
-              between platforms and apps.
+              VEFI exchange is a unified cryptocurrency exchange platform built to enable users navigate and control all
+              crypto related products and services on a single platform without goggling between platforms and apps.
             </p>
             <p className="mobileText">
               A unified cyrptocurrency exchange platform built to enable users navigate and control all cryto related

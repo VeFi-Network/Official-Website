@@ -33,7 +33,7 @@ export const HowItWorksContainer = styled.div`
   padding: 50px 30px;
   background: url(${bg}) no-repeat;
   background-position: right;
-  background-size: contain;
+  background-size: cover;
 
   hr {
     background-color: #fff !important;
@@ -59,17 +59,8 @@ export const HowItWorksContainer = styled.div`
   `}
 `;
 
-export const FloatContainerRight = styled.div`
-position: absolute,
-top: 0,
-left: 0,
-`;
-
-export const FloatContainerLeft = styled.div`
-position: absolute,
-top: 0,
-right:0 ,
-`;
+export const FloatContainerRight = styled.div``;
+export const FloatContainerLeft = styled.div``;
 
 export const Content = styled.div`
   margin-bottom: 10px;

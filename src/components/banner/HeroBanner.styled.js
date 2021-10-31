@@ -96,15 +96,18 @@ export const HeroBannerJoinCommunity = styled.div`
 
   h1 {
     font-size: 65px;
+    max-width: 12ch;
   }
   p {
     line-height: 1.3em;
     font-size: 25px;
     font-weight: 200;
     margin: 30px 0px;
+    max-width: 32ch;
   }
   > h1 > span {
-    padding: 30px 20px !important;
+    padding: 30px 35px !important;
+    margin-left: -20px;
   }
   button {
     margin-top: 30px;

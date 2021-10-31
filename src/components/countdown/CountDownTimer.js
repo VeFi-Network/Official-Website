@@ -27,14 +27,14 @@ export const Timer = styled.div`
 `;
 
 export const CounterContainer = styled.div`
-  width: 60%;
+  width: 45%;
   display: flex;
   margin: 20px auto;
   color: #fbf6b4;
   justify-content: center;
   background-color: #06041e;
-  height: 250px;
-  padding: 0 30px;
+  height: auto;
+  padding: 0px 30px 30px 30px;
 
   > div {
     display: flex;
@@ -89,7 +89,7 @@ const CountDownTimer = () => {
             </Timer>
           </CounterTimerBox>
           <WaitList>
-            <Btn bg="#fbf6b4">read more</Btn>
+            <Btn bg="#fbf6b4">whitepaper</Btn>
             <Btn bg="#fbf6b4">join the waitlist</Btn>
           </WaitList>
         </div>

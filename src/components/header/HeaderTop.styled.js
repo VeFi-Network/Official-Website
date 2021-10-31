@@ -108,6 +108,9 @@ export const HeaderRight = styled.div`
       display:flex;
       flex-direction:column;
     }
+    .desktopNav{
+      display:none;
+    }
     .menu-btn {
       margin-left: 30px;
       display:flex;

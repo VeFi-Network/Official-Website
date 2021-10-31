@@ -19,7 +19,8 @@ const StyledBanner = styled.section`
   flex-direction: column;
 
   h1 {
-    font-size: 48px;
+    font-size: 50px;
+    max-width: 15ch;
   }
 
   .imageBox {
@@ -47,7 +48,6 @@ const StyledBanner = styled.section`
 `}
 `;
 const StyledBannerContainer = styled.div`
-  width: 400px;
   margin-top: 50px;
   position: relative;
 
@@ -84,7 +84,7 @@ const Banner = () => {
       <Container>
         <StyledBannerContainer>
           <h1>
-            Revolutionizing Innovation in Blockchain Technology from<CircleStyled>Africa</CircleStyled> to the World.
+            Revolutionizing Innovation in Blockchain Technology from <CircleStyled>Africa</CircleStyled>to the World.
           </h1>
           <div className="imageBox">
             <img src={arrow_right} alt="" />

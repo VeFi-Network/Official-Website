@@ -17,7 +17,7 @@ const Header = () => {
             </HeaderLeft>
             <HeaderRight>
               <Navigation />
-              <Button icon={<FaTelegramPlane />} text="Join our community" bg="" />
+              <Button icon={<FaTelegramPlane />} text="Join our community" bg="" className="desktopNav" />
             </HeaderRight>
           </HeaderContainer>
         </Container>

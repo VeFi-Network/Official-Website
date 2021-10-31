@@ -1,9 +1,10 @@
-import { Button, Container } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import React from "react";
 import { StyledSubscribe } from "./Subscribe.styled";
 import styled from "styled-components";
 import media from "../../utility/Media";
 import coin_image from "../../assets/images/double_coin.svg";
+import { StyledButton } from "../Button";
 const SubscribeFormText = styled.div`
   display: flex;
   width: 100%;
@@ -47,9 +48,10 @@ const SubscribeContainer = styled.div`
 `;
 const SubscribeFormContainer = styled.div`
   h1 {
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 1.3em;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1em;
+    max-width: 28ch;
     font-family: "Open Sans", sans-serif;
     color: #383838;
   }
@@ -62,10 +64,10 @@ const SubscribeFormContainer = styled.div`
   }
 
   .subscribeFOrm {
-    width: 500px;
+    width: 380px;
     background: #fff;
     border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 5px;
     display: flex;
     padding: 5px;
     margin: 0px;
@@ -73,17 +75,16 @@ const SubscribeFormContainer = styled.div`
 
     input {
       width: 100%;
-      padding: 8px 20px;
+      padding: 8px 10px;
       outline: none;
       border: none;
-      backgroudn: transparent;
+      background: transparent;
       margin-right: 10px;
       font-weight: 600;
     }
     button {
       padding: 3px 20px;
       font-size: 12px;
-      background: #1673b9;
       color: #fff;
       font-weight: 600;
       text-transform: capitalize;
@@ -156,14 +157,13 @@ const Subscribe = () => {
             <div>
               <SubscribeFormContainer>
                 <h1>
-                  We are building the fastest <br />
-                  Blockchain platform which can <br />
-                  process over 1 million <br /> transactions per second
+                  We are building the fastest Blockchain platform which can process over 1 million transactions per
+                  second.
                 </h1>
                 <h3>Stay Updated!</h3>
                 <div className="subscribeFOrm">
                   <input type="text" placeholder="example@email.com" />
-                  <Button>Submit</Button>
+                  <StyledButton bg="#000">Submit</StyledButton>
                 </div>
               </SubscribeFormContainer>
             </div>
