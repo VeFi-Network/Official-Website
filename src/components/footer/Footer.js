@@ -77,7 +77,9 @@ const Footer = () => {
               </li>
               <h2>Community</h2>
               <li>
-                <Link to="/about-us">Telegram</Link>
+                <a href="https://t.me/vefi_official" target="_blank" rel="noreferrer">
+                  Telegram
+                </a>
               </li>
             </ul>
           </div>
