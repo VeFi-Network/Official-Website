@@ -21,10 +21,11 @@ const Product = () => {
         <Container>
           <SectionTypographyContainer>
             <H2 size="40px">
-              From <span>Africa</span> to the world
+              From <span>Africa</span> to the world.
             </H2>
             <P size="27px" FontWeight="400" LineHeight="1.1em">
-              The next big thing in Blockchain when high speed meets scalability from Africa to the World.
+              The next big thing in the blockchain ecosphere where high speed meets scalability. A gift from Africa to
+              the world.
             </P>
           </SectionTypographyContainer>
           <CountdownTimer />

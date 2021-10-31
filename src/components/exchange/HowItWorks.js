@@ -28,19 +28,19 @@ const HowItWorks = () => {
           <Steps
             icon={<BiRefresh />}
             title="Unlimited Transaction"
-            desc="VEFI ensures high speed and more than lower transaction fees under large volumes of transaction.Lower transaction are supported"
+            desc="VEFI ensures high speed and low transaction fees for large volumes of transaction."
           />
           <Divider orientation="vertical" flexItem />
           <Steps
             icon={<MdLockOutline />}
             title="Maximum security"
-            desc="Trusted by tonnes of users for its absolute security. Your transactions are safe."
+            desc="Trusted by tons of users for its absolute security."
           />
           <Divider orientation="vertical" flexItem />
           <Steps
             icon={<AiOutlineUsergroupAdd />}
             title="Easy to use"
-            desc="Every one enjoys an easy-to-use platform which is what VEFI offers its users."
+            desc="Every one enjoys an easy-to-use platform which is what VEFI offers."
           />
         </HowItWorksContainer>
       </Container>

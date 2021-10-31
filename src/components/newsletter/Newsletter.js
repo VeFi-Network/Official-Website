@@ -22,15 +22,8 @@ const Newsletter = () => {
           <NewsletterDiv>
             <NewsletterGetStarted>
               <H1>Get started - it's free</H1>
-              <P className="desktop">
-                With our VEFI Blockchain ecosystem, bring your ideas <br />
-                to real time in one click to connect to the world. <br />
-                this applies to all VEFI products!
-              </P>
-              <P className="mobile">
-                With our VEFI Blockchain ecosystem, bring your ideas <br />
-                to real time in one click to connect to the world.
-              </P>
+              <P className="desktop">At the VEFI blockchain ecosystem, your crypto need is an utmost priority.</P>
+              <P className="mobile">At the VEFI blockchain ecosystem, your crypto need is an utmost priority.</P>
             </NewsletterGetStarted>
             <NewsletterFormContainer>
               <NewletterForm>

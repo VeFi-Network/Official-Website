@@ -19,8 +19,8 @@ const Features = () => {
             </h1>
             <Box>
               <P className="desktop">
-                VEFI ensures that thus wallet is flexible, secure, easy and simple to use whereby enabling users to
-                store, spend,receive, swap and exchange their crypto assets instantly.
+                The VEFI wallet aims to be flexible, secure and easy to use enabling users to store, spend, receive,
+                swap and exchange their crypto assets with convenience.
               </P>
             </Box>
             <Paper>

@@ -83,15 +83,14 @@ const Exchange = () => {
               VEFI <span>exchange</span>
             </h1>
             <p className="deskToptext">
-              VEFI exchange is a unified cryptocurrency
+              VEFI exchange aims to be a unified cryptocurrency
               <br /> exchange platform built to enable users navigate <br />
               and control all crypto related products and <br />
-              services on a single platform without goggling <br />
-              between platforms and apps.
+              services with the convenience of a single platform.
             </p>
             <p className="mobileText">
-              A unified cyrptocurrency exchange platform built to enable users navigate and control all cryto related
-              pproducts and services on a single platform.
+              VEFI exchange aims to be a unified cryptocurrency exchange platform built to enable users navigate and
+              control all crypto related products and services with the convenience of a single platform.
             </p>
             <Paper>
               <div>

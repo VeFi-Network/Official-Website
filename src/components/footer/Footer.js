@@ -94,10 +94,10 @@ const Footer = () => {
                 <a href="mailto:support@vefinetwork.org">support@vefinetwork.org</a>
               </li>
               <li>
-                <a href="/">
+                <a href="https://facebook.com/vefi.official">
                   <AiFillFacebook className="social_icon" />
                 </a>
-                <a href="/">
+                <a href="https://instagram.com/vefi.official">
                   <AiFillInstagram className="social_icon" />
                 </a>
                 <a href="/">
@@ -114,8 +114,8 @@ const Footer = () => {
               <h2>USA</h2>
               <li>
                 <p>
-                  12109 bethel dr Frisco <br />
-                  tx 75033 USA
+                  12109 Bethel De Frisco <br />
+                  TX 75033 USA
                 </p>
               </li>
             </ul>

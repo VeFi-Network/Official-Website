@@ -221,9 +221,9 @@ const SmartChain = () => {
               <div className="text first">
                 <span>
                   <p>
-                    VEFI Smart Chain is a new generation High performance Blockchain based on a unique consensus
-                    algorithm (V-DPoS) with the unique ability of processing over{" "}
-                    <strong>1 million Transaction per second</strong> with almost zero transaction fees at a near
+                    VEFI Smart Chain is a new generation high-performant blockchain based on a unique consensus
+                    algorithm (V-DPoS) that aims to have the ability to process over{" "}
+                    <strong>1 million transactions per second</strong> with almost zero transaction fees at a near
                     instant processing time.
                     <Button text="show more" icon={<AiOutlineArrowDown />} />
                   </p>
@@ -241,9 +241,8 @@ const SmartChain = () => {
                 </span>
                 <span className="divFlot">
                   <p>
-                    VEFI Smart chain is a Climate Neutral Blockain whereby making VEFI the latest infrastructure for
-                    innovation and development. VEFI Smart Chain is EVM-compatible which supports DApps built on
-                    Ethereum. This promotes faster transaction.
+                    VEFI Smart Chain would be EVM-compatible and would hence be easy for Ethereum developers to
+                    transition to.
                   </p>
                 </span>
               </div>
@@ -252,8 +251,9 @@ const SmartChain = () => {
               <div className="text last">
                 <span>
                   <p>
-                    VEFI Smart Chain enables multi-chain <br />
-                    Interoperability, which makes it easier to scale DApps.
+                    VEFI Smart Chain would be <br />
+                    cross-chain, making it interoperable with EVM-compatible networks and thus <br />
+                    assets can be moved across these chains without hassle.
                     <Button text="show more" icon={<AiOutlineArrowDown />} />
                   </p>
                 </span>

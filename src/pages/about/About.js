@@ -28,7 +28,7 @@ const About = () => {
             <Container>
               <SectionAboutTypographyContainer>
                 <H2 size="50px" FontWeight="400" LineHeight="1em">
-                  Changing the world's future to make the world work better for us all.
+                  Changing the future with various crypto products.
                 </H2>
               </SectionAboutTypographyContainer>
               <CountdownTimer />
@@ -45,15 +45,14 @@ const About = () => {
               </div>
               <div>
                 <P size="22px" FontWeight="500" LineHeight="1.3em">
-                  VEFI is a blockhain system that operates a cryptocurrency exchange where all crypto services and
-                  products are as well accessed on a single platform.{" "}
+                  VEFI is a blockchain ecosystem that aims to ship a cryptocurrency exchange where various crypto assets
+                  can be accessed.{" "}
                 </P>
                 <P size="22px" FontWeight="500" LineHeight="1.3em">
-                  The VEFI ecosystem Labs and members work towards one goal, which is to bring Blockchain technology
-                  closer to everyone with innovations that make impacts.{" "}
+                  The VEFI ecosystem has one goal - create an innovative blockchain universe.{" "}
                 </P>
                 <P size="22px" FontWeight="500" LineHeight="1.3em">
-                  VEFI is enabling the efficient and easier way to create financial products, protocols and exchange of
+                  VEFI is building an efficient and easy way to create financial products and protocols and to exchange
                   value across DeFi, governments and financial institutions.
                 </P>
               </div>
@@ -63,7 +62,7 @@ const About = () => {
           <Section>
             <Card
               img={circle_image}
-              text="Our vision and mission is to globally improve the freedom of money, improve the blockchain technology and as well become a major blockchain infrastucture services provider in the ecosystem."
+              text="Our vision and mission is to globally improve the freedom of money, improve the blockchain technology and as well become a major blockchain institution in the industry."
               height="40px"
               width="40px"
             />
@@ -72,7 +71,7 @@ const About = () => {
           <Section>
             <Card
               img={check}
-              text="VEFI is building the world's valuable blockchain ecosystem with the key interest to improve lives using the blockchain."
+              text="VEFI is building an ecosystem of value with the key interest in improving lives using blockchain technology."
               height="20px"
               width="20px"
             />
@@ -80,7 +79,7 @@ const About = () => {
           <Section>
             <Card
               img={check}
-              text="VEFI exchange empowers users with all blockchain tools to quickly and easily navigate all cryptocurrency products and services without toggling between different apps."
+              text="The VEFI exchange would empower users with various blockchain tools to quickly and easily navigate all cryptocurrency products and services."
               height="20px"
               width="20px"
             />
@@ -88,7 +87,7 @@ const About = () => {
           <Section>
             <Card
               img={check}
-              text="High-performance Blockchain (VSC) which is climate neutral, saves the cost of trnsactions and times wasted on transactions."
+              text="High-performant blockchain (VSC) which is climate neutral, mitigates transaction cost and saves time."
               height="20px"
               width="20px"
             />
