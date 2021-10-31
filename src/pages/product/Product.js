@@ -15,9 +15,11 @@ import { ListProduct } from "./ListProduct";
 import CountdownTimer from "../../components/CountdownTimer";
 import AppBar from "../../components/AppBar";
 import { SectionHeaderContainer } from "./Product.styled";
+import SEO from "../../seo";
 const Product = () => {
   return (
     <SectionWrapper>
+      <SEO title="Products" />
       <SectionBannerWithBg bg={banner_product}>
         <SectionHeaderContainer>
           <Container>
