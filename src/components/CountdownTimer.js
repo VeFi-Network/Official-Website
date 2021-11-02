@@ -52,10 +52,10 @@ const CountdownTimer = () => {
         </SectionCountdown>
         <SectionCountDownButton>
           <StyledButton bg="#FBf6B4" fontColor="#000">
-            whitepapper
+            Whitepaper
           </StyledButton>
           <StyledButton bg="#FBf6B4" fontColor="#000">
-            join the waitlist
+            Join The Waitlist
           </StyledButton>
         </SectionCountDownButton>
       </SectionTimer>
