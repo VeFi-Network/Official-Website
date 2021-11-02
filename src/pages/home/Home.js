@@ -12,7 +12,10 @@ import {
   SectionNewsletter,
   SectionSmartChain,
   SectionSmartChainContainer,
-  SectionSmartChainWrapper
+  SectionSmartChainWrapper,
+  NewsletterForm,
+  NewsletterInputForm,
+  NewsletterImageContainer
 } from "./Home.styled";
 import { Button, StyledButton } from "../../components/Button";
 import { H2, P } from "../../components/Typography";
@@ -74,20 +77,20 @@ const HomePage = () => {
       <SectionNewsletter>
         <Container maxWidth="md">
           <SectionNewsletterContainer>
-            <div className="NewsletterForm">
+            <NewsletterForm>
               <h2>Get started - it's free</h2>
               <p>
                 With our VEFI Blockchain ecosystem, bring your ideas to real time in one click to connect with the
                 world. this applies to all VEFI products!
               </p>
-              <div className="NewsletterInputForm">
+              <NewsletterInputForm>
                 <Input placeholder="example@email.com" />
                 <StyledButton bg="#000">Get started</StyledButton>
-              </div>
-            </div>
-            <div className="NewsletterImageContainer">
+              </NewsletterInputForm>
+            </NewsletterForm>
+            <NewsletterImageContainer>
               <img src={newsletter_img} alt="newletter" />
-            </div>
+            </NewsletterImageContainer>
           </SectionNewsletterContainer>
         </Container>
       </SectionNewsletter>
