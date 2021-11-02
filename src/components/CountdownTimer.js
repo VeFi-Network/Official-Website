@@ -12,7 +12,7 @@ const CountdownTimer = () => {
   return (
     <SectionCountDownTimerContainer>
       <SectionTimer>
-        <P size="24px">Pre-Sale ICO starts In</P>
+        <P size="24px">Pre-Sale ICO starts in</P>
         <SectionCountdown>
           <SectionTime>
             <H3 size="34px" FontColor="#fefcea" FontWeight="600">

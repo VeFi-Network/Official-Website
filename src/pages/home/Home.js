@@ -42,13 +42,12 @@ const HomePage = () => {
               <div className="left">
                 <P>
                   {" "}
-                  VEFI Smart Chain is a new generation High performance Blockchain based on a unique consensus algorithm
-                  (V-DPoS) with the unique ability of processing over <strong>
-                    1 million transactions per second
-                  </strong>{" "}
-                  with almost zero transaction fees at a near instant processing time.
+                  VEFI Smart Chain is a new generation high-performant blockchain based on a unique consensus algorithm
+                  (V-DPoS) that aims to have the ability to process over
+                  <strong>1 million transactions per second</strong> with almost zero transaction fees at a near instant
+                  processing time.{" "}
                 </P>
-                <Button text="show more" bg="#1673b9" icon={<AiOutlineArrowDown />} />
+                <Button text="Show More" bg="#1673b9" icon={<AiOutlineArrowDown />} />
               </div>
               <div className="right"></div>
             </SectionSmartChain>
@@ -56,9 +55,8 @@ const HomePage = () => {
               <div className="right center"></div>
               <div className="left ">
                 <P>
-                  VEFI Smart chain is a Climate Neutral Blockchain whereby making VEFI the latest infrasturcture for
-                  innovation and development. VEFI Smart Chain is EVM-Compatible which supports DApps built on Etherum.
-                  this promotes faster transaction.
+                  VEFI Smart Chain would be EVM-compatible and would hence be easy for Ethereum developers to transition
+                  to.
                 </P>
               </div>
             </SectionSmartChain>
@@ -67,8 +65,8 @@ const HomePage = () => {
                 <H2 FontColor="#1673b9" size="24px">
                   Interoperability:
                 </H2>
-                <P>VEFI Smart Chain enables multi-chain interoperability, which makes it easier to scall DApps</P>
-                <Button text="show more" bg="#1673b9" icon={<AiOutlineArrowDown />} />
+                <P>VEFI Smart Chain would be cross-chain and interoperable.</P>
+                <Button text="Show More" bg="#1673b9" icon={<AiOutlineArrowDown />} />
               </div>
             </SectionSmartChain>
           </SectionSmartChainContainer>

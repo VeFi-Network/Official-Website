@@ -96,8 +96,8 @@ const CountDownTimer = () => {
             </Timer>
           </CounterTimerBox>
           <WaitList>
-            <Btn bg="#fbf6b4">whitepaper</Btn>
-            <Btn bg="#fbf6b4">join the waitlist</Btn>
+            <Btn bg="#fbf6b4">Whitepaper</Btn>
+            <Btn bg="#fbf6b4">Join the waitlist</Btn>
           </WaitList>
         </div>
       </CounterContainer>
