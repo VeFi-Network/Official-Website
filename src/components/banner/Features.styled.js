@@ -40,13 +40,12 @@ export const StyledFeatures = styled.div`
 
 export const Box = styled.div`
   margin: 30px 10px;
-
   width: ${({ width }) => width || "100%"};
 
   > p {
     font-size: 24px;
-    line-height: 1.3em;
     font-weight: 400;
+    max-width: 48ch;
   }
 
   ${media.mobile`
@@ -54,12 +53,20 @@ export const Box = styled.div`
     white-space:wrap;
     margin-top:10px;
     >p{
-      font-size:20px;
+      font-size:18px;
       text-align:left;
       font-weight:500;
       line-height:1.5em;
+      max-width: 34ch;
     }
   `};
+
+  ${media.small`
+    > p{
+      font-size:18px;
+      max-width: 30ch;
+    }
+  `}
 `;
 
 export const StyledFeature = styled.div`

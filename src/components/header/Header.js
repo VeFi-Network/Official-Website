@@ -5,6 +5,7 @@ import Logo from "../../assets/images/logo.png";
 import { FaTelegramPlane } from "react-icons/fa";
 import { Button } from "../Button";
 import Navigation from "../Navigation";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -13,11 +14,15 @@ const Header = () => {
         <Container>
           <HeaderContainer>
             <HeaderLeft>
-              <img src={Logo} alt="" />
+              <Link to="/">
+                <img src={Logo} alt="" />
+              </Link>
             </HeaderLeft>
             <HeaderRight>
               <Navigation />
-              <Button icon={<FaTelegramPlane />} text="Join our community" bg="" />
+              <a href="https://t.me/vefi_official" target="_blank" rel="noreferrer" className="desktopNav">
+                <Button icon={<FaTelegramPlane />} text="Join our community" bg="" />
+              </a>
             </HeaderRight>
           </HeaderContainer>
         </Container>

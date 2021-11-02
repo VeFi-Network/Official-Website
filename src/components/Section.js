@@ -5,15 +5,30 @@ import media from "../utility/Media";
 export const SectionWrapper = styled.section`
   padding-top: 60px;
   width: 100%;
+
+  .countdownContainer {
+    width: 1200px;
+    margin-top: -50px;
+    color: #fefcea;
+  }
+  ${media.mobile`
+      .countdownContainer{
+        width:100%;
+      }
+  `}
+  ${media.small`
+  .countdownContainer{
+        width:100%;
+        margin-top: 0px;
+      }
+  `}
 `;
 export const SectionBanner = styled.div`
   width: 100%;
   background-image: url(${({ bg }) => bg || ""});
 `;
-
 export const SectionAppBar = styled.div`
   display: flex;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 `;
 
 export const Section = styled.div`
@@ -29,7 +44,7 @@ export const SectionCard = styled(Section)`
 `;
 
 export const Card = styled.div`
-  flex: 1 1 10em;
+  flex: 0 1 10em;
   background: url(${steps_bg});
   background-position: center;
   background-size: cover;
@@ -68,23 +83,22 @@ export const SectionBannerWithBg = styled(SectionBanner)`
   color: #fff;
 
   ${media.mobile`
-    height:100%;
     background-position: left;
-    padding-bottom:30px;
+    height:70vh;
   `}
 
   ${media.small`
-    height:100%;
     background-position: left;
+    height:90vh;
   `}
 `;
 
 export const SectionTypographyContainer = styled.div`
   white-space: pre-line;
-  width: 500px;
   margin-left: 20px;
   p {
-    margin-top: 10px;
+    margin-top: 20px;
+    max-width: ${({ maxWidth }) => maxWidth || "32ch"};
   }
   span {
     color: #fbf6b4;
@@ -92,24 +106,17 @@ export const SectionTypographyContainer = styled.div`
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 25px 15px;
+    padding: 20px 30px;
     margin: 0px -10px;
   }
   ${media.mobile`
     width:100%;
     margin:0px;
-    h2{
-        font-size:50px;
-    }
   `}
 
   ${media.small`
     width:100%;
     margin:0px;
-
-    h2{
-        font-size:44px;
-    }
   `}
 `;
 
@@ -132,6 +139,7 @@ export const SectionCountDownTimerContainer = styled.div`
     margin-top:30px;
     margin-bottom:30px;
     z-index:10;
+    top:-35px;
   `}
 
   ${media.small`
@@ -142,6 +150,7 @@ export const SectionCountDownTimerContainer = styled.div`
     margin-top:30px;
     margin-bottom:30px;
     z-index:10;
+    top:-35px;
   `}
 `;
 
@@ -210,8 +219,9 @@ export const SectionCountDownButton = styled.div`
 `;
 
 export const SectionHeadingContainer = styled.div`
-  position: relative;
-
+  .MuiContainer-root {
+    margin-top: 300px;
+  }
   ${media.mobile`
     .MuiContainer-root{
         width:100%;
@@ -242,63 +252,34 @@ export const SectionHeading = styled(Section)`
   background: #fff;
   width: 100%;
   padding: 15px 0px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
   color: #131313;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  div:nth-child(1),
-  div:nth-child(3) {
-    flex: 0.6;
-  }
-  div:nth-child(2) {
-    flex: 1;
-    text-align: center;
-  }
+  text-align: center;
 
   ${media.mobile`
     margin-top: 0px;
     padding:20px;
-    border-top:1px solid #ccc;
-    border-bottom:1px solid #ccc;
     box-shadow: none;
-    div:nth-child(3) {
-        flex: 0.1;
-    }
-    div:nth-child(1){
-        display:none;
-    }
-    div:nth-child(2) {
-        flex: 1;
-        text-align:left;
-        padding-left:20px;
-        h1{
-            font-size:24px;
-        }
-    }
+    text-align:left;
+    justify-content:left;
+    
+    h1{
+      font-size:1.1rem;
+      }
   `}
 
   ${media.small`
     margin-top: 0px;
     padding:15px;
-    border-top:1px solid #ccc;
-    border-bottom:1px solid #ccc;
     box-shadow: none;
-    div:nth-child(3) {
-        flex: 0.1;
-    }
-    div:nth-child(1){
-        display:none;
-    }
-    div:nth-child(2) {
-        flex: 1;
-        text-align:left;
-        padding-left:20px;
-
-        h1{
-            font-size:20px;
-        }
-    }
+    text-align:left;
+    justify-content:left;
+    margin-left:14px;
+    h1{
+      font-size:1.1rem;
+      }
   `}
 `;
 

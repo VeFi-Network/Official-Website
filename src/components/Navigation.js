@@ -35,9 +35,11 @@ const Navigation = () => {
             </StyledButton>
           </li>
           <li>
-            <StyledButton>
-              Join our community <FaTelegramPlane className="icon" />
-            </StyledButton>
+            <a href="https://t.me/vefi_official">
+              <StyledButton>
+                Join our community <FaTelegramPlane className="icon" />
+              </StyledButton>
+            </a>
           </li>
         </div>
       </ul>

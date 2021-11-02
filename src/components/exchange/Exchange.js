@@ -16,23 +16,25 @@ const StyledSectionContainer = styled(Right)`
   h1 {
     margin-left: -10px;
     color: #fbf6b4;
-    font-size: 50px;
-    span {
-      font-size: 45px;
-    }
+    font-size: 55px;
   }
   p {
     margin-left: 0px;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 22px;
     color: white;
     line-height: 1.1em;
+    max-width: 40ch;
+  }
+  .mobileText {
+    display: none;
   }
 
   ${media.mobile`
 
     .mobileText{
       width:auto;
+      display:flex;
       white-space:wrap;
       margin-bottom:5px;
       padding:0px 20px;
@@ -40,11 +42,17 @@ const StyledSectionContainer = styled(Right)`
     }
     h1{
       margin-left:8px;
-
+      font-size:1.8rem;
       span{
-        font-size:50px;
+        font-size:1.5rem;
       }
     }
+    .button {
+    .MuiButton-startIcon {
+      margin-left: 0px;
+    }
+  }
+  
   `}
   ${media.small`
   h1{
@@ -56,10 +64,18 @@ const StyledSectionContainer = styled(Right)`
   }
   .mobileText{
     width:auto;
+    display:flex;
     white-space:wrap;
     margin-bottom:5px;
     padding:0px 10px;
   }
+  .button {
+    text-overflow:wrap;
+    .MuiButton-startIcon {
+      margin-right: 0px;
+    }
+  }
+
   `}
 `;
 const Exchange = () => {
@@ -83,10 +99,8 @@ const Exchange = () => {
               VEFI <span>exchange</span>
             </h1>
             <p className="deskToptext">
-              VEFI exchange aims to be a unified cryptocurrency
-              <br /> exchange platform built to enable users navigate <br />
-              and control all crypto related products and <br />
-              services with the convenience of a single platform.
+              VEFI exchange aims to be a unified cryptocurrency built to enable users navigate and and control all
+              crypto related products and services with the convenience of a single platform.
             </p>
             <p className="mobileText">
               VEFI exchange aims to be a unified cryptocurrency exchange platform built to enable users navigate and

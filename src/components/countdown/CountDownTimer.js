@@ -18,7 +18,7 @@ export const Timer = styled.div`
   }
   ${media.mobile`
     h1{
-      font-size:28px !important;
+      font-size:26px !important;
     }
     span {
       font-size: 12px;
@@ -27,14 +27,14 @@ export const Timer = styled.div`
 `;
 
 export const CounterContainer = styled.div`
-  width: 60%;
+  width: 45%;
   display: flex;
   margin: 20px auto;
   color: #fbf6b4;
   justify-content: center;
   background-color: #06041e;
-  height: 250px;
-  padding: 0 30px;
+  height: auto;
+  padding: 0px 30px 30px 30px;
 
   > div {
     display: flex;
@@ -56,7 +56,14 @@ export const CounterContainer = styled.div`
 
     button{
       font-weight:600;
-      font-size:18px;
+      font-size:16px;
+      
+    }
+  `}
+
+  ${media.small`
+    button{
+      font-size:14px;
     }
   `}
 `;
@@ -89,8 +96,8 @@ const CountDownTimer = () => {
             </Timer>
           </CounterTimerBox>
           <WaitList>
-            <Btn bg="#fbf6b4">Read More</Btn>
-            <Btn bg="#fbf6b4">Join The Waitlist</Btn>
+            <Btn bg="#fbf6b4">Whitepaper</Btn>
+            <Btn bg="#fbf6b4">Join the waitlist</Btn>
           </WaitList>
         </div>
       </CounterContainer>

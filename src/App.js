@@ -1,21 +1,15 @@
 import Header from "./components/header/Header";
 import GlobalStyles from "./components/styles/globalStyle.styled";
-import Banner from "./components/banner/Banner";
-import Subscribe from "./components/subscribe/Subscribe";
-import CountDown from "./components/countdown/CountDown";
-import HeroBanner from "./components/banner/HeroBanner";
-import Features from "./components/banner/Features";
-import Exchange from "./components/exchange/Exchange";
-import HowItWorks from "./components/exchange/HowItWorks";
 import Footer from "./components/footer/Footer";
 import CallToAction from "./components/footer/CallToAction";
-import SmartChain from "./components/smartchain/SmartChain";
 import { Route, Switch } from "react-router";
 import About from "./pages/about/About";
 import { ThemeProvider } from "styled-components";
 import ContactUs from "./pages/contact/ContactUs";
 import Faq from "./pages/faq/Faq";
 import Product from "./pages/product/Product";
+import HomePage from "./pages/home/Home";
+import CountDown from "./components/countdown/CountDown";
 
 const theme = {
   iphone_x: "375px",
@@ -32,34 +26,22 @@ function App() {
         <Switch>
           <Route path="/about-us">
             <About />
-            <CallToAction />
           </Route>
           <Route path="/contact-us">
             <ContactUs />
-            <CallToAction />
           </Route>
           <Route path="/faq">
             <Faq />
-            <CallToAction />
           </Route>
           <Route path="/products">
             <Product />
             <CountDown />
-            <CallToAction />
           </Route>
           <Route path="/" exact>
-            <Banner />
-            <Subscribe />
-            <CountDown />
-            <HeroBanner />
-            <Features />
-            <Exchange />
-            <HowItWorks />
-            <SmartChain />
-
-            <CallToAction />
+            <HomePage />
           </Route>
         </Switch>
+        <CallToAction />
         <Footer />
       </>
     </ThemeProvider>

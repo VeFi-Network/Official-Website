@@ -32,14 +32,30 @@ const StyledCard = styled.div`
     div:nth-child(1){
       display:none
     }
+    div:nth-child(2){
+      p{
+        max-width:35ch;
+        font-size:0.8rem;
+        color:#333;
+        font-weight:400 !important;
+      }
+    }
   `}
 
   ${media.small`
-  flex-direction:column;
-  padding:0px 30px;
-  div:nth-child(1){
-    display:none
-  }
+    flex-direction:column;
+    padding:0px 30px;
+    div:nth-child(1){
+      display:none
+    }
+    div:nth-child(2){
+      p{
+        max-width:35ch;
+        font-size:0.8rem;
+        color:#333;
+        font-weight:400 !important;
+      }
+    }
   `}
 `;
 const Card = ({ img, text, width, height }) => {

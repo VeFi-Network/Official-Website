@@ -29,7 +29,7 @@ const Footer = () => {
                 <Link to="/">Contact us</Link>
               </li>
               <li>
-                <Link to="/">Our Team</Link>
+                <Link to="/about-us#team">Our Team</Link>
               </li>
               <li>
                 <Link to="/">Investor Relations</Link>
@@ -40,16 +40,16 @@ const Footer = () => {
             <ul>
               <h2>Product</h2>
               <li>
-                <Link to="/about-us">Wallet</Link>
+                <Link to="/products">Wallet</Link>
               </li>
               <li>
-                <Link to="/">Exchange</Link>
+                <Link to="/products">Exchange</Link>
               </li>
               <li>
-                <Link to="/">Smart Chain</Link>
+                <Link to="/products">Smart Chain</Link>
               </li>
               <li>
-                <Link to="/">Network</Link>
+                <Link to="/products">Network</Link>
               </li>
             </ul>
           </div>
@@ -57,7 +57,7 @@ const Footer = () => {
             <ul>
               <h2>Support</h2>
               <li>
-                <Link to="/about-us">FAQ</Link>
+                <Link to="/faq">FAQ</Link>
               </li>
               <li>
                 <Link to="/">Help Center</Link>
@@ -77,7 +77,9 @@ const Footer = () => {
               </li>
               <h2>Community</h2>
               <li>
-                <Link to="/about-us">Telegram</Link>
+                <a href="https://t.me/vefi_official" target="_blank" rel="noreferrer">
+                  Telegram
+                </a>
               </li>
             </ul>
           </div>

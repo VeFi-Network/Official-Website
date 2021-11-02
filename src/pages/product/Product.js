@@ -14,26 +14,29 @@ import CardItem from "../../components/CardItem";
 import { ListProduct } from "./ListProduct";
 import CountdownTimer from "../../components/CountdownTimer";
 import AppBar from "../../components/AppBar";
+import { SectionHeaderContainer } from "./Product.styled";
 import SEO from "../../seo";
-
 const Product = () => {
   return (
     <SectionWrapper>
       <SEO title="Products" />
       <SectionBannerWithBg bg={banner_product}>
-        <Container>
-          <SectionTypographyContainer>
-            <H2 size="40px">
-              From <span>Africa</span> to the world.
-            </H2>
-            <P size="27px" FontWeight="400" LineHeight="1.1em">
-              The next big thing in the blockchain ecosphere where high speed meets scalability. A gift from Africa to
-              the world.
-            </P>
-          </SectionTypographyContainer>
-          <CountdownTimer />
-        </Container>
+        <SectionHeaderContainer>
+          <Container>
+            <SectionTypographyContainer>
+              <H2 size="50px">
+                From<span>Africa</span> to the world
+              </H2>
+              <P size="27px" FontWeight="400" LineHeight="1.1em">
+                The next big thing in Blockchain when high speed meets scalability from Africa to the World.
+              </P>
+            </SectionTypographyContainer>
+          </Container>
+        </SectionHeaderContainer>
       </SectionBannerWithBg>
+      <div className="countdownContainer">
+        <CountdownTimer />
+      </div>
       {/* Product and Services section */}
       <SectionHeadingContainer>
         <Container maxWidth="md">

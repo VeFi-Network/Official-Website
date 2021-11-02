@@ -11,7 +11,7 @@ export const HeaderTop = styled.div`
   z-index: 999;
 
   ${media.mobile`
-  height:80px;
+    height:80px;
 `}
 `;
 
@@ -33,19 +33,19 @@ export const HeaderLeft = styled.div`
   }
 
   ${media.mobile`
-  flex: 0.2;
+  flex: 0.5;
     img {
-      height: 100px;
-      width: 100px;
+      height: 100%;
+      width: 100%;
       object-fit: contain;
     }
   `}
 
   ${media.small`
-  flex: 0.2;
+  flex: 0.5;
   img {
-    height: 100px;
-    width: 100px;
+    height:  100%;
+    width: 100%;
     object-fit: contain;
   }
 `}
@@ -57,7 +57,7 @@ export const HeaderCenter = styled.div`
 
   a {
     text-decoration: none;
-    color: #00062AF;
+    color: #0062af;
     font-weight: 600;
     margin: 0px 10px;
     font-size: 16px;
@@ -87,7 +87,7 @@ export const HeaderRight = styled.div`
         color: #161525;
         text-decoration: none;
         &.active {
-          color: #fbf6b4;
+          color: #0062af;
         }
       }
     }
@@ -95,7 +95,9 @@ export const HeaderRight = styled.div`
   .menu-btn {
     display: none;
   }
-
+  a {
+    text-decoration: none;
+  }
   button {
     display: flex;
   }
@@ -104,9 +106,13 @@ export const HeaderRight = styled.div`
     margin-left: 40px;
     margin-right: 20px;
     flex-direction: row-reverse;
+    
     .mobile{
       display:flex;
       flex-direction:column;
+    }
+    .desktopNav{
+      display:none;
     }
     .menu-btn {
       margin-left: 30px;
@@ -151,7 +157,7 @@ export const HeaderRight = styled.div`
           color:#000;
           font-size:24px;
           &.active{
-            color:#1673B9;
+            color:#0062AF;
           }
         }
         

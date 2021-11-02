@@ -22,6 +22,7 @@ export const StyledCallToAction = styled.div`
     padding:40px 0px;
     p{
       font-size:20px;
+      max-width:30ch;
     }
   `}
 `;
@@ -29,7 +30,7 @@ const CallToAction = () => {
   return (
     <StyledCallToAction bg="#fbf6b4">
       <Container>
-        <P>Need help? Call our support team @ +234 000 000 000</P>
+        <P>Need help? Call our support team @ +234 906 680 9425</P>
       </Container>
     </StyledCallToAction>
   );

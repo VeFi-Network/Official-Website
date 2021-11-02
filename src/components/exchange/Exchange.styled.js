@@ -83,16 +83,17 @@ export const ExchangeContainer = styled.div`
     .mobileText{
       display:block;
       font-size:18px;
-      font-weight:600;
+      font-weight:400;
       color:#131313;
+      margin-left:0px;
     }
     h1{
-      font-size:30px;
+      font-size:2rem;
       margin-left:20px;
       color:#131313 !important;
 
       span{
-        font-size:30px;
+        font-size:1.4rem;
       }
     }
 
