@@ -25,7 +25,7 @@ export const SectionWrapper = styled.section`
 `;
 export const SectionBanner = styled.div`
   width: 100%;
-  background-image: url(${({ bg }) => bg || ""});
+  background-image: url(${({ bg }) => bg || "#000"});
 `;
 export const SectionAppBar = styled.div`
   display: flex;
@@ -220,7 +220,7 @@ export const SectionCountDownButton = styled.div`
 
 export const SectionHeadingContainer = styled.div`
   .MuiContainer-root {
-    margin-top: 300px;
+    margin-top: 250px;
   }
   ${media.mobile`
     .MuiContainer-root{
@@ -298,6 +298,57 @@ export const SectionImageContainer = styled.div`
     width:100%;
     > *{
       flex:0 0 50%;
+    }
+  `}
+`;
+
+export const SectionPrivacyContainer = styled(SectionHeadingContainer)`
+  .container {
+    text-align: left;
+    .appBar {
+      text-align: left;
+      justify-content: flex-start;
+      margin: 10px 0px;
+      h1 {
+        color: #131313;
+        font-size: 20px;
+      }
+    }
+    p,
+    div {
+      color: #333;
+      font-size: 16px;
+      font-weight: normal;
+      margin: 10px 0px;
+      max-width: 100ch;
+
+      ul {
+        li {
+          padding: 8px 0px;
+        }
+      }
+    }
+  }
+  margin-bottom: 80px;
+
+  ${media.mobile`
+    padding:0px 30px;
+    .appBar {
+      h1 {
+        color: #131313;
+        font-size: 20px;
+        margin-left:-10px;
+      }
+    }
+  `}
+  ${media.small`
+    padding:0px 30px;
+    .appBar {
+      h1 {
+        color: #131313;
+        font-size: 20px;
+        margin-left:-10px;
+      }
     }
   `}
 `;
