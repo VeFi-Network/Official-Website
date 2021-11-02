@@ -99,7 +99,7 @@ export const StyledAbout = styled.div`
     padding:0px 30px;
     margin-bottom:20px;
     h1{
-      font-size:2rem;
+      font-size:1.5rem;
       margin-bottom:20px;
     }
     p{
@@ -116,7 +116,7 @@ export const StyledAbout = styled.div`
     padding:0px 30px;
     margin-bottom:20px;
     h1{
-      font-size:2rem;
+      font-size:1.5rem;
       margin-bottom:20px;
     }
     p{

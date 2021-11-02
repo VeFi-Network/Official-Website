@@ -1,59 +1,90 @@
 import React from "react";
-import { Image } from "../../components/Image";
 import styled from "styled-components";
-import { MdFacebook } from "react-icons/md";
-import { FiTwitter, FiInstagram, FiGithub, FiLinkedin } from "react-icons/fi";
+import { FiTwitter, FiGithub, FiLinkedin } from "react-icons/fi";
 import media from "../../utility/Media";
+import { Card, CardActions, CardContent, CardMedia, IconButton, Typography } from "@material-ui/core";
 
 const StyledUserContainer = styled.div`
-  margin-bottom: 10px;
-  margin-right: 10px;
-  position: relative;
-
-  img {
-    width: 100%;
-    height: 200px;
-    display: flex;
-    object-fit: cover;
+  flex: 0 1 25%;
+  .MuiPaper-root {
+    margin: 10px;
+    box-shadow: none;
   }
-  div {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    color: #fff;
-    padding: 8px;
-    display: flex;
-
-    > * {
-      margin-right: 8px;
+  .MuiCardMedia-img {
+    border-radius: 22.5px;
+  }
+  .name {
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1rem;
+    color: #1d1e2c;
+    text-align: center;
+  }
+  .bio {
+    color: #6b7280;
+    font-size: 15px;
+    line-height: 26.25px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  .MuiCardActions-root {
+    align-items: center;
+    margin-top: -20px;
+    text-align: center;
+    justify-content: center;
+  }
+  .MuiCardActions-root {
+    padding: 0px;
+    button {
       font-size: 20px;
+      color: #0062af;
     }
   }
-
   ${media.mobile`
-    width:100%;
-    margin:0px;
-    
-    img{
-      margin:0px 0px 10px 0px;
-    }
-    div{
-      padding:20px 10px;
-    }
+    flex:0 0 100%;
   `}
 `;
-const User = ({ img }) => {
+
+const User = ({ user }) => {
+  const { image, name, role, socialmedia } = user;
+  console.log(image);
   return (
     <>
       <StyledUserContainer>
-        <Image src={img} />
-        <div>
-          <MdFacebook />
-          <FiTwitter />
-          <FiInstagram />
-          <FiLinkedin />
-          <FiGithub />
-        </div>
+        <Card>
+          <CardMedia component="img" alt={name} height="300" image={image} />
+          <CardContent>
+            <Typography gutterBottom variant="body2" component="div" className="name">
+              {name}
+            </Typography>
+            <Typography gutterBottom variant="subtitle1" component="div" className="bio">
+              {role}
+            </Typography>
+          </CardContent>
+          <CardActions disableSpacing>
+            {socialmedia.twitter && (
+              <a href={socialmedia.twitter}>
+                <IconButton aria-label="add to favorites">
+                  <FiTwitter />
+                </IconButton>
+              </a>
+            )}
+            {socialmedia.github && (
+              <a href={socialmedia.github}>
+                <IconButton aria-label="add to favorites">
+                  <FiGithub />
+                </IconButton>
+              </a>
+            )}
+            {socialmedia.linkedln && (
+              <a href={socialmedia.linkedln}>
+                <IconButton aria-label="add to favorites">
+                  <FiLinkedin />
+                </IconButton>
+              </a>
+            )}
+          </CardActions>
+        </Card>
       </StyledUserContainer>
     </>
   );

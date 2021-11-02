@@ -41,7 +41,7 @@ const About = () => {
         </div>
       </AboutContainer>
       <SectionHeadingContainer>
-        <Container maxWidth="md">
+        <Container maxWidth="lg">
           <SectionAboutContainer>
             <StyledAbout>
               <div>
@@ -96,11 +96,11 @@ const About = () => {
               width="20px"
             />
           </Section>
-          <AppBar label="Our Team" />
+          <AppBar label="Our Team" id="#team" />
           <Section>
             <SectionImageContainer>
               {TeamList.map((user, i) => (
-                <User img={user.image} key={i} />
+                <User user={user} key={i} />
               ))}
             </SectionImageContainer>
           </Section>

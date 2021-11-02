@@ -87,7 +87,7 @@ export const HeaderRight = styled.div`
         color: #161525;
         text-decoration: none;
         &.active {
-          color: #fbf6b4;
+          color: #0062af;
         }
       }
     }
@@ -157,7 +157,7 @@ export const HeaderRight = styled.div`
           color:#000;
           font-size:24px;
           &.active{
-            color:#1673B9;
+            color:#0062AF;
           }
         }
         

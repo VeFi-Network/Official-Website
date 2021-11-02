@@ -11,6 +11,7 @@ export const StyledHowItWorks = styled.section`
   background-position: right;
   background-size: right;
   background-blend-mode: screen;
+  background-size: contain;
   color: #fff;
   padding-bottom: 60px;
 
