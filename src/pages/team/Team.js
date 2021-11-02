@@ -11,9 +11,9 @@ const TeamList = [
     bio: ""
   },
   {
-    image: "https://i.ibb.co/MMgVkYt/Anuforo-Okechukwu-Deede.jpg",
+    image: "/team/Anuforo_Okechukwu_Deede.jpg",
     name: "Anuforo Okechukwu Deede",
-    role: "Front end Engineer",
+    role: "Front-End Engineer",
     socialmedia: {
       twitter: "https://www.twitter.com/promiselxg",
       linkedln: "https://www.linkedin.com/in/promiselxg",
@@ -22,9 +22,9 @@ const TeamList = [
     bio: ""
   },
   {
-    image: "https://i.ibb.co/q18gntK/Dennison-Hyde.jpg",
-    name: "Damii dennision",
-    role: "Chief production officer",
+    image: "/team/Dennison_Hyde.jpg",
+    name: "Dami Dennison",
+    role: "Chief Production Officer",
     socialmedia: {
       twitter: "",
       linkedln: "",
@@ -33,9 +33,9 @@ const TeamList = [
     bio: ""
   },
   {
-    image: "https://i.ibb.co/w4RGmQD/Bawo-Eyikimi.jpg",
+    image: "/team/Bawo_Eyikimi.jpg",
     name: "Bawo Eyikimi",
-    role: "Copywriter, social media manager",
+    role: "Copywriter, Social Media Manager",
     socialmedia: {
       twitter: "",
       linkedln: "",
@@ -44,7 +44,7 @@ const TeamList = [
     bio: ""
   },
   {
-    image: "https://i.ibb.co/VCrfqNp/Ekene-Omenukor.jpg",
+    image: "/team/Ekene_Omenukor.jpg",
     name: "Ekene Omenukor ",
     role: "Creative Director ",
     socialmedia: {
@@ -55,7 +55,7 @@ const TeamList = [
     bio: ""
   },
   {
-    image: "https://i.ibb.co/cyvqZ55/akereja-taiwo.jpg",
+    image: "/team/Akereja_Taiwo.jpg",
     name: "Akereja Taiwo",
     role: "Graphic Designer/Community Manager",
     socialmedia: {
