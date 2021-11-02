@@ -1,5 +1,16 @@
 const TeamList = [
   {
+    image: "/team/Kingsley_Victor.jpg",
+    name: "Kingsley Victor",
+    role: "Technical Co-founder/Chief Technical Officer",
+    socialmedia: {
+      twitter: "https://www.twitter.com/java_warrior",
+      linkedln: "https://www.linkedin.com/in/kingsley-victor-952550169",
+      github: "https://github.com/kingsley-einstein"
+    },
+    bio: ""
+  },
+  {
     image: "https://i.ibb.co/MMgVkYt/Anuforo-Okechukwu-Deede.jpg",
     name: "Anuforo Okechukwu Deede",
     role: "Front end Engineer",
@@ -7,17 +18,6 @@ const TeamList = [
       twitter: "https://www.twitter.com/promiselxg",
       linkedln: "https://www.linkedin.com/in/promiselxg",
       github: "https://github.com/promiselxg"
-    },
-    bio: ""
-  },
-  {
-    image: "https://i.ibb.co/1Q58L6s/Kingsley-Victor.jpg",
-    name: "Kingsley Victor",
-    role: "Technical Co-founder/Chief Technical Officer",
-    socialmedia: {
-      twitter: "https://www.twitter.com/java_warrior",
-      linkedln: "https://www.linkedin.com/in/kingsley-victor-952550169",
-      github: "https://github.com/kingsley-einstein"
     },
     bio: ""
   },
