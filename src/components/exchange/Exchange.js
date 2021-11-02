@@ -99,8 +99,8 @@ const Exchange = () => {
               VEFI <span>exchange</span>
             </h1>
             <p className="deskToptext">
-              VEFI exchange is a unified cryptocurrency exchange platform built to enable users navigate and control all
-              crypto related products and services on a single platform without goggling between platforms and apps.
+              VEFI exchange aims to be a unified cryptocurrency built to enable users navigate and and control all
+              crypto related products and services with the convenience of a single platform.
             </p>
             <p className="mobileText">
               VEFI exchange aims to be a unified cryptocurrency exchange platform built to enable users navigate and
