@@ -47,7 +47,6 @@ const StyledUserContainer = styled.div`
 
 const User = ({ user }) => {
   const { image, name, role, socialmedia } = user;
-  console.log(image);
   return (
     <>
       <StyledUserContainer>
@@ -64,21 +63,21 @@ const User = ({ user }) => {
           <CardActions disableSpacing>
             {socialmedia.twitter && (
               <a href={socialmedia.twitter}>
-                <IconButton aria-label="add to favorites">
+                <IconButton aria-label="Twitter">
                   <FiTwitter />
                 </IconButton>
               </a>
             )}
             {socialmedia.github && (
               <a href={socialmedia.github}>
-                <IconButton aria-label="add to favorites">
+                <IconButton aria-label="Github">
                   <FiGithub />
                 </IconButton>
               </a>
             )}
             {socialmedia.linkedln && (
               <a href={socialmedia.linkedln}>
-                <IconButton aria-label="add to favorites">
+                <IconButton aria-label="Linkedin">
                   <FiLinkedin />
                 </IconButton>
               </a>

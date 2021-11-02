@@ -133,12 +133,16 @@ export const SectionNewsletter = styled.div`
   width: 100%;
   display: flex;
   height: 400px;
-
+  margin-top: 200px;
   ${media.mobile`
     height:auto;
+    margin-top:10px;
+    margin-bottom:30px;
   `}
   ${media.small`
   height:auto;
+  margin-top:10px;
+  margin-bottom:30px;
   `}
 `;
 
@@ -158,12 +162,14 @@ export const SectionNewsletterContainer = styled.div`
     padding-bottom:30px;
     position:relative;
     flex-direction:column;
+    border-radius: 5px;
   `}
 
   ${media.small`
-  width:100%;
+    width:100%;
     height:auto;
     padding-bottom:30px;
+    border-radius: 5px;
   `}
 `;
 
