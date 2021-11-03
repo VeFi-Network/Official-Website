@@ -38,6 +38,8 @@ export const HeaderLeft = styled.div`
       height: 100%;
       width: 100%;
       object-fit: contain;
+      outline:none;
+      border-width:0px;
     }
   `}
 
@@ -119,7 +121,8 @@ export const HeaderRight = styled.div`
       display:flex;
       align-items:center;
       cursor:pointer;
-
+      border:none;
+      outline:none;
       .fas{
         font-size:30px;
       }
@@ -135,6 +138,8 @@ export const HeaderRight = styled.div`
         height:30px;
         width:30px;
         object-fit:contain;
+        outline:none;
+        border-width:0px;
       }
     }
 

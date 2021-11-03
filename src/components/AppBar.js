@@ -6,9 +6,7 @@ const AppBar = ({ label, className }) => {
   return (
     <>
       <SectionHeading className={className}>
-        <div>
-          <H1 size="30px">{label}</H1>
-        </div>
+        <H1 size="30px">{label}</H1>
       </SectionHeading>
     </>
   );
