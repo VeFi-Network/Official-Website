@@ -3,7 +3,7 @@ import { SectionWrapper, SectionTypographyContainer, SectionPrivacyContainer } f
 
 import { StyledPrivayContainer } from "./Privacy.styled";
 import SEO from "../../seo";
-import CountdownTimer from "../../components/CountdownTimer";
+import CountDownTimer from "../../components/CountDownTimer";
 import { H2 } from "../../components/Typography";
 import { Container } from "@material-ui/core";
 import AppBar from "../../components/AppBar";
@@ -21,7 +21,7 @@ const Privacy = () => {
           </Container>
         </StyledPrivayContainer>
         <div className="countdownContainer">
-          <CountdownTimer />
+          <CountDownTimer />
         </div>
         <SectionPrivacyContainer>
           <Container maxWidth="md" className="container">

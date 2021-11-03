@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import media from "../../utility/Media";
-import { H3, P } from "../Typography";
+import media from "../utility/Media";
+import { H3, P } from "./Typography";
 
 export const StyledSteps = styled.div`
   flex: 1;

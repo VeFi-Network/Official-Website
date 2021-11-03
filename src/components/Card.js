@@ -7,7 +7,6 @@ const StyledCard = styled.div`
   display: flex;
   margin-bottom: 20px;
   div:nth-child(1) {
-    flex: 0.5;
     text-align: right;
 
     img {
@@ -36,7 +35,6 @@ const StyledCard = styled.div`
       p{
         max-width:35ch;
         font-size:0.8rem;
-        color:#333;
         font-weight:400 !important;
       }
     }

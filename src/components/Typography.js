@@ -15,7 +15,7 @@ export const H2 = styled.h2`
 export const H3 = styled.h3`
   font-size: ${({ size }) => size || "14px"};
   color: ${({ FontColor }) => FontColor || ""};
-  font-weight: ${({ FontWeight }) => FontWeight || ""};
+  font-weight: ${({ FontWeight }) => FontWeight || "normal"};
   line-height: ${({ LineHeight }) => LineHeight || ""};
 `;
 
@@ -42,6 +42,6 @@ export const H6 = styled.h6`
 export const P = styled.p`
   font-size: ${({ size }) => size || "14px"};
   color: ${({ FontColor }) => FontColor || ""};
-  font-weight: ${({ FontWeight }) => FontWeight || ""};
+  font-weight: ${({ FontWeight }) => FontWeight || "normal"};
   line-height: ${({ LineHeight }) => LineHeight || ""};
 `;

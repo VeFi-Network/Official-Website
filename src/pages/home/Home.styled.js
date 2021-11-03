@@ -1,8 +1,10 @@
 import styled from "styled-components";
 import arrow_right from "../../assets/images/arrow_right.svg";
 import arrow_left from "../../assets/images/arrow_left.svg";
+import imageCoin from "../../assets/images/double_coin.svg";
+import double_coin from "../../assets/images/double_coin.svg";
 import media from "../../utility/Media";
-import { StyledHowItWorks } from "../../components/exchange/HowItWorks.styled";
+import { StyledHowItWorks } from "../../components/Section";
 
 export const SectionSmartChainWrapper = styled(StyledHowItWorks)`
   background-position: right;
@@ -258,4 +260,155 @@ display:none;
         right:0;
       }
     `}
+`;
+export const StyledCountDown = styled.div`
+  width: 100%;
+  background: url(${imageCoin}) no-repeat, rgba(254, 253, 233, 255);
+  display: flex;
+  background-position: left;
+  background-size: contain;
+  background-blend-mode: lighten;
+
+  ${media.mobile`
+    width:100%;
+    flex-direction:column;
+  `}
+`;
+export const CountDownCenter = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  color: #161525;
+  justify-content: center;
+  text-align: center;
+  padding: 70px 0px;
+
+  h3 {
+    font-weight: 600;
+
+    color: #161525;
+  }
+
+  p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin: 10px 0px;
+    max-width: 50ch;
+    font-family: "Open Sans", sans-serif;
+  }
+  ${media.mobile`
+    width:100%;
+    flex-direction:column;
+    overflow-wrap: break-word;
+    padding:0px;
+    h3{
+      font-size:26px;
+    }
+    h1{
+      font-size:54px;
+    }
+    .mobile{
+      font-size:18px;
+      font-weight:normal;
+      margin-bottom:30px;
+      color:#383838;
+    }
+  `}
+
+  ${media.small`
+    width:100%;
+    flex-direction:column;
+    overflow-wrap: break-word;
+    h3{
+      font-size:26px;
+    }
+    h1{
+      font-size:54px;
+    }
+    .mobile{
+      font-size:18px;
+      color:#383838;
+      font-weight:normal;
+    }
+  `}
+`;
+export const StyledCountDownContainer = styled.section`
+  width: 100%;
+  background: url(${double_coin}) no-repeat, #fefcea;
+  display: flex;
+  color: #000;
+  background-position: left;
+  background-size: contain;
+  background-blend-mode: screen;
+
+  ${media.mobile`
+
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: lighten;
+  `}
+`;
+
+export const CountDownCenterContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 0px;
+  flex-direction: column;
+  text-align: center;
+
+  p {
+    max-width: 45ch;
+  }
+  ${media.mobile`
+  margin: 30px 0px;
+
+  h3 {
+    font-size: 26px;
+  }
+  h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.3em;
+    }
+  `}
+`;
+export const CounterTimerBox = styled.div`
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px 0px;
+`;
+
+export const WaitList = styled.div`
+  ${media.mobile`
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  `}
+`;
+
+export const Btn = styled.button`
+  background-color: ${({ bg }) => bg || "#fff"};
+  color: ${({ color }) => color || "#333"};
+  margin-left: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  ${media.mobile`
+  margin-left: 0px;
+  `}
+  ${media.small`
+    margin-left: 0px;
+  `}
 `;

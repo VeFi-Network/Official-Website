@@ -1,5 +1,4 @@
 import Header from "./components/header/Header";
-import GlobalStyles from "./components/styles/globalStyle.styled";
 import Footer from "./components/footer/Footer";
 import { Route, Switch } from "react-router";
 import About from "./pages/about/About";
@@ -8,8 +7,8 @@ import ContactUs from "./pages/contact/ContactUs";
 import Faq from "./pages/faq/Faq";
 import Product from "./pages/product/Product";
 import HomePage from "./pages/home/Home";
-import CountDown from "./components/countdown/CountDown";
 import Privacy from "./pages/policy/Privacy";
+import GlobalStyles from "./GlobalStyle.styled";
 
 const theme = {
   iphone_x: "375px",
@@ -35,7 +34,6 @@ function App() {
           </Route>
           <Route path="/products">
             <Product />
-            <CountDown />
           </Route>
           <Route path="/privacy">
             <Privacy />

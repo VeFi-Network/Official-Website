@@ -10,7 +10,6 @@ export const StyledButton = styled.button`
   cursor: pointer;
   align-items: center;
   border: none;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.19);
   padding: 5px 20px;
   &:hover {
     opacity: 0.9;
@@ -22,6 +21,7 @@ export const StyledButton = styled.button`
   .icon {
     font-size: 15px !important;
     margin-left: 8px;
+    margin-right: 8px;
   }
 `;
 export const Button = ({ icon, text, action }) => {
