@@ -64,6 +64,17 @@ const TeamList = [
       github: "https://github.com/Ajt123-del"
     },
     bio: ""
+  },
+  {
+    image: "/team/Joseph_Adediji.jpg",
+    name: "Joseph Adediji",
+    role: "Media Manager/Marketer",
+    socialmedia: {
+      twitter: "https://www.twitter.com/Josylad",
+      linkedln: "https://www.linkedin.com/in/josylad",
+      github: "https://github.com/josylad"
+    },
+    bio: ""
   }
 ];
 
