@@ -29,7 +29,8 @@ const Product = () => {
                 From<span>Africa</span> to the world
               </H2>
               <P size="27px" FontWeight="400" LineHeight="1.1em">
-                The next big thing in Blockchain when high speed meets scalability from Africa to the World.
+                The next big thing in the blockchain ecosphere where high speed meets scalability. This is Africa's gift
+                to the world.
               </P>
             </SectionTypographyContainer>
           </Container>

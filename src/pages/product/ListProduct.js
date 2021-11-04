@@ -1,7 +1,7 @@
 export const ListProduct = [
   {
     label: "Wallet",
-    text: "VEFI’s native wallet ensures that the wallet is flexible, and secure to use, whereby enabling users to store, spend, receive, send, swap, and exchange their crypto-assets instantly. It also allows users to manage different kinds of cryptocurrency."
+    text: "The VEFI wallet aims to be flexible, secure and easy to use enabling users to store, spend, receive, swap and exchange their crypto assets with convenience."
   },
   {
     label: "Exchange",
@@ -9,10 +9,10 @@ export const ListProduct = [
   },
   {
     label: "Smart Chain",
-    text: "VEFI Smart chain is a new generation high-performance block chain based on a unique consensus algorithm (V-DPoS). It aimed to facilitate a credible transaction  independently,  providing smart and secure transactions and reducing  transaction costs."
+    text: "VEFI Smartchain is a new generation high-performant blockchain based on a unique consensus algorithm (V-DPoS). As is the goal of every blockchain project, it would facilitate a credible transaction without the involvement of a middleman. Our smart chain is aimed at providing fast, smart and secure transactions, reducing surplus transaction costs, with little operational conflicts."
   },
   {
     label: "Network",
-    text: "We are a vast Eco system of crypto related services, our aim is to spread wide and deep, bringing crypto services from the  regular households on the streets in Africa to everywhere crypto is used on the planet "
+    text: "We are a vast ecosystem of crypto intrinsic services. We aim widen to our influence towards every possible sector"
   }
 ];
