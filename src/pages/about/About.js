@@ -18,7 +18,6 @@ import User from "../team/User";
 import TeamList from "../team/Team";
 import { Space } from "../../components/Divider";
 import SEO from "../../seo";
-import CountDownTimer from "../../components/CountDownTimer";
 
 const About = () => {
   return (
@@ -36,9 +35,9 @@ const About = () => {
             </Container>
           </SectionAboutHeadingContainer>
         </SectionBannerWithBg>
-        <div className="countdownContainer">
+        {/*<div className="countdownContainer">
           <CountDownTimer className="BannerSectionCountdown" bg="#1673B9" />
-        </div>
+        </div>*/}
       </AboutContainer>
       <SectionHeadingContainer>
         <Container maxWidth="lg">
