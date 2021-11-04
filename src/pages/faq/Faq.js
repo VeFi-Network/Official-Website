@@ -10,16 +10,16 @@ const Faq = () => {
       <SEO title="FAQ" />
       <Container maxWidth="md">
         <Banner>
-          <h1>Millions of customers rely on our Blockchain Ecosystem</h1>
+          <h1>Millions of customers can rely on our blockchain ecosystem</h1>
         </Banner>
         <WrapperDiv>
           <h2>Frequently Asked Questions</h2>
           <Question
-            label="What is VEFi?"
-            text="VEFI is a New Generational High performance Blockchain based on a unique consensus algorithm. It is Africa’s biggest exchange, wallet and smart contract protocol.  In theory, VEFI can process over 1 million transactions per second, is highly secured and scalable."
+            label="What is VeFi?"
+            text="VEFI is a new generation blockchain ecosystem having its roots in Africa. It aims to be Africa’s biggest blockchain institution."
           />
           <Question
-            label="What problems does VEFI solve?"
+            label="What problems would VeFi solve?"
             text="There are five main problems that VEFI solves:
             I.	Slow transaction processing speed
             II.	Low transaction processing volume

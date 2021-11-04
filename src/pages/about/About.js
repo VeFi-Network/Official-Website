@@ -49,13 +49,14 @@ const About = () => {
               </div>
               <div>
                 <P size="22px" FontWeight="500" LineHeight="1.3em">
-                  VEFI-Network is a New Generation High-performance Blockchain based on a unique consensus algorithm.
-                  (V-DPoS). We're building the fastest Blockchain platform which can process over 1 million transactions
-                  per second, is highly secure and scalable, user friendly for building DApps
+                  The VeFi ecosystem is an emerging African unicorn that is aimed at permeating the African power in the
+                  blockchain technology sphere throughout the globe. Our VEFI Smartchain is a new generation
+                  high-performant blockchain based on a unique consensus algorithm. (V-DPoS). We're building a fast
+                  blockchain network with the capacity to process numerous transactions in a second.
                 </P>
                 <P size="22px" FontWeight="500" LineHeight="1.3em">
-                  At vefi, our inspiration lies in the trust that comes with blockchain technology coupled with
-                  supporting financial freedom, and the liberty that cryptocurrency provides.
+                  At VeFi, our inspiration lies in the trust that comes with blockchain technology alongside the
+                  financial liberty cryptocurrencies provide.
                 </P>
               </div>
             </StyledAbout>

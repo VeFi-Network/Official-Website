@@ -71,7 +71,7 @@ const HomePage = () => {
               Revolutionary innovation in blockchain technology from<CircleStyled>Africa</CircleStyled> to the world.
             </H1>
             <div className="HeaderBannerButtonContainer">
-              <StyledButton bg="#fbf6b4">Buy ICO</StyledButton>
+              <StyledButton bg="#fbf6b4">Participate in our ICO</StyledButton>
               <a href="/">
                 <StyledButton>Whitepaper</StyledButton>
               </a>
@@ -93,8 +93,8 @@ const HomePage = () => {
               <div>
                 <SubscribeFormContainer>
                   <H1>
-                    Vefi, emerging block chain Eco-system , motivated to build the next big thing in the block chain
-                    Ecosphere from Africa to the world
+                    VeFi is an emerging blockchain ecosystem with the primal aim to build the next big thing in the
+                    blockchain ecosphere.
                   </H1>
                   <H3>Stay Updated!</H3>
                   <div className="subscribeFOrm">
@@ -112,10 +112,10 @@ const HomePage = () => {
         <Container>
           <CountDownCenterContainer>
             <H3 size="1.2rem">The next big thing in</H3>
-            <H1 size="3.0rem">Blockchain</H1>
+            <H1 size="3.0rem">the blockchain ecosphere</H1>
             <P size="1rem" className="mobile">
-              We believe in building products which are fast and scalable, using crypto to purchase services has never
-              been this easy.
+              We believe in building products which are fast and scalable, leveraging crypto has never been this
+              convenient.
             </P>
             <CountDownTimer />
           </CountDownCenterContainer>
@@ -141,7 +141,7 @@ const HomePage = () => {
                 <HeroBannerCircleStyled>Africa</HeroBannerCircleStyled>to the world
               </H1>
               <P>
-                We are passionate about telling the world Africa can do better that we have ever imagined in crypto too.
+                We are passionate about letting the world understand that Africa has a lot to offer in the crypto space.
               </P>
               <a href="https://t.me/vefi_official" target="_blank" rel="noreferrer">
                 <Button icon={<FaTelegramPlane />} text="Join our community" />
@@ -295,10 +295,10 @@ const HomePage = () => {
               <div className="left">
                 <P>
                   {" "}
-                  VEFI Smart chain is a new generation high-performance block chain based on a unique consensus
-                  algorithm (V-DPoS). It aimed to facilitate a credible transaction without the involvement of a third
-                  party. Our smart chain is aimed at providing fast, smart and secure transactions, reducing surplus
-                  transaction costs, with little operations conflict.
+                  VEFI Smartchain is a new generation high-performant blockchain based on a unique consensus algorithm
+                  (V-DPoS). As is the goal of every blockchain project, it would facilitate a credible transaction
+                  without the involvement of a middleman. Our smart chain is aimed at providing fast, smart and secure
+                  transactions, reducing surplus transaction costs, with little operational conflicts.
                 </P>
               </div>
               <div className="right"></div>
@@ -331,8 +331,7 @@ const HomePage = () => {
             <NewsletterForm>
               <h2>Get started - it's free</h2>
               <p>
-                With our VEFI Blockchain ecosystem, bring your ideas to real time in one click to connect with the
-                world. this applies to all VEFI products!
+                With the VEFI blockchain ecosystem, ideas transition to reality and solace would be taken in crypto.
               </p>
               <NewsletterInputForm>
                 <Input placeholder="example@email.com" />
