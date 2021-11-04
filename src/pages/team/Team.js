@@ -75,6 +75,28 @@ const TeamList = [
       github: "https://github.com/josylad"
     },
     bio: ""
+  },
+  {
+    image: "/team/Falaye_Olawande.jpg",
+    name: "Falaye Olawande Omolara",
+    role: "Content Creator",
+    socialmedia: {
+      twitter: "https://www.twitter.com/whaandey",
+      linkedln: "http://linkedin.com/in/olawandefalaye",
+      github: ""
+    },
+    bio: ""
+  },
+  {
+    image: "/team/Okaformbah_Godwin.jpg",
+    name: "Okaformbah Godwin",
+    role: "Motion Graphics Designer",
+    socialmedia: {
+      twitter: "https://www.twitter.com/Gosh_Sucre",
+      linkedln: "https://www.linkedin.com/in/godwin-okaformbah",
+      github: ""
+    },
+    bio: ""
   }
 ];
 
