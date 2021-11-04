@@ -71,7 +71,7 @@ const HomePage = () => {
               Revolutionary innovation in blockchain technology from<CircleStyled>Africa</CircleStyled> to the world.
             </H1>
             <div className="HeaderBannerButtonContainer">
-              <StyledButton bg="#fbf6b4">Participate in our ICO</StyledButton>
+              <StyledButton bg="#fbf6b4">Buy VEF Token</StyledButton>
               <a href="/">
                 <StyledButton>Whitepaper</StyledButton>
               </a>
