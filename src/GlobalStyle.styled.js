@@ -17,8 +17,7 @@ html, body {
         background-color:#fefcea !important;
         color:#000 !important;
         font-weight:400 !important;
-    }
-    
+    } 
 `;
 
 export default GlobalStyles;

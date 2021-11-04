@@ -12,10 +12,11 @@ import { Container } from "@material-ui/core";
 import { H2, P } from "../../components/Typography";
 import CardItem from "../../components/CardItem";
 import { ListProduct } from "./ListProduct";
-import CountdownTimer from "../../components/CountdownTimer";
 import AppBar from "../../components/AppBar";
 import { SectionHeaderContainer } from "./Product.styled";
 import SEO from "../../seo";
+import CountDownTimer from "../../components/CountDown";
+
 const Product = () => {
   return (
     <SectionWrapper>
@@ -35,12 +36,12 @@ const Product = () => {
         </SectionHeaderContainer>
       </SectionBannerWithBg>
       <div className="countdownContainer">
-        <CountdownTimer />
+        <CountDownTimer className="BannerSectionCountdown" bg="#1673B9" />
       </div>
       {/* Product and Services section */}
       <SectionHeadingContainer>
-        <Container maxWidth="md">
-          <AppBar label="Products &amp; Services" />
+        <Container>
+          <AppBar label="Products &amp; Services" className="sectionAppBar" />
           <SectionCard className="SectionCard">
             {ListProduct.map(({ label, text }, i) => (
               <Card key={i}>

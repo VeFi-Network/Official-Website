@@ -9,7 +9,6 @@ import {
   StyledAbout
 } from "./About.styled";
 import { H1, H2, P } from "../../components/Typography";
-import CountdownTimer from "../../components/CountdownTimer";
 import { Container } from "@material-ui/core";
 import AppBar from "../../components/AppBar";
 import circle_image from "../../assets/images/target.png";
@@ -19,6 +18,7 @@ import User from "../team/User";
 import TeamList from "../team/Team";
 import { Space } from "../../components/Divider";
 import SEO from "../../seo";
+import CountDownTimer from "../../components/CountDown";
 
 const About = () => {
   return (
@@ -37,7 +37,7 @@ const About = () => {
           </SectionAboutHeadingContainer>
         </SectionBannerWithBg>
         <div className="countdownContainer">
-          <CountdownTimer />
+          <CountDownTimer className="BannerSectionCountdown" bg="#1673B9" />
         </div>
       </AboutContainer>
       <SectionHeadingContainer>
@@ -49,29 +49,35 @@ const About = () => {
               </div>
               <div>
                 <P size="22px" FontWeight="500" LineHeight="1.3em">
-                  VEFI is a blockchain ecosystem that aims to ship a cryptocurrency exchange where various crypto assets
-                  can be accessed.{" "}
+                  VEFI-Network is a New Generation High-performance Blockchain based on a unique consensus algorithm.
+                  (V-DPoS). We're building the fastest Blockchain platform which can process over 1 million transactions
+                  per second, is highly secure and scalable, user friendly for building DApps
                 </P>
                 <P size="22px" FontWeight="500" LineHeight="1.3em">
-                  The VEFI ecosystem has one goal - create an innovative blockchain universe.{" "}
-                </P>
-                <P size="22px" FontWeight="500" LineHeight="1.3em">
-                  VEFI is building an efficient and easy way to create financial products and protocols and to exchange
-                  value across DeFi, governments and financial institutions.
+                  At vefi, our inspiration lies in the trust that comes with blockchain technology coupled with
+                  supporting financial freedom, and the liberty that cryptocurrency provides.
                 </P>
               </div>
             </StyledAbout>
           </SectionAboutContainer>
-          <AppBar label="Our Vision and Mission" />
+          <AppBar label="Our Vision and Mission" className="left" />
           <Section>
             <Card
               img={circle_image}
-              text="Our vision and mission is to globally improve the freedom of money, improve the blockchain technology and as well become a major blockchain institution in the industry."
+              text="Improving the freedom of money globally through the integration of institutions, people groups and businesses into the Block chain economy"
               height="40px"
               width="40px"
             />
           </Section>
-          <AppBar label="Our Solution" />
+          <Section>
+            <Card
+              img={circle_image}
+              text="Building and deploying innovative, cutting edge and scalable Blockchain solutions"
+              height="40px"
+              width="40px"
+            />
+          </Section>
+          <AppBar label="Our Solution" className="left" />
           <Section>
             <Card
               img={check}
@@ -96,7 +102,7 @@ const About = () => {
               width="20px"
             />
           </Section>
-          <AppBar label="Our Team" id="#team" />
+          <AppBar label="Our Team" id="#team" className="left" />
           <Section>
             <SectionImageContainer>
               {TeamList.map((user, i) => (

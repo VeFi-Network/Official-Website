@@ -12,8 +12,10 @@ export const StyledPrivayContainer = styled.div`
     color: #fff;
   }
   ${media.mobile`
-        h2{
-            max-width:20ch;
-        }
-    `}
+    align-items:center;
+    justify-content:center;
+      h2{
+        max-width:20ch;
+      }
+  `}
 `;

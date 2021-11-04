@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { H1, P } from "../Typography";
-import { Btn, CounterTimerBox, WaitList } from "./CountDown.styled";
-import media from "../../utility/Media";
+import media from "../utility/Media";
+import { Btn, CounterTimerBox, WaitList } from "../pages/home/Home.styled";
+import { H1, P } from "./Typography";
 
 export const Timer = styled.div`
   align-items: center;
@@ -32,7 +32,7 @@ export const CounterContainer = styled.div`
   margin: 20px auto;
   color: #fbf6b4;
   justify-content: center;
-  background-color: #06041e;
+  background-color: ${({ bg }) => bg || "#06041e"};
   height: auto;
   padding: 0px 30px 30px 30px;
 
@@ -68,10 +68,10 @@ export const CounterContainer = styled.div`
   `}
 `;
 
-const CountDownTimer = () => {
+const CountDownTimer = ({ bg, className }) => {
   return (
     <>
-      <CounterContainer bg="#06041E">
+      <CounterContainer bg={bg} className={className}>
         <div>
           <P>Pre-Sale ICO starts in</P>
           <CounterTimerBox>
