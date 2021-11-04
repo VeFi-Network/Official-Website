@@ -3,11 +3,11 @@ import { SectionWrapper, SectionTypographyContainer, SectionPrivacyContainer } f
 
 import { StyledPrivayContainer } from "./Privacy.styled";
 import SEO from "../../seo";
-import CountDownTimer from "../../components/CountDownTimer";
 import { H2 } from "../../components/Typography";
 import { Container } from "@material-ui/core";
 import AppBar from "../../components/AppBar";
 import { Space } from "../../components/Divider";
+import CountDownTimer from "../../components/CountDown";
 const Privacy = () => {
   return (
     <>

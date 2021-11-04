@@ -30,7 +30,7 @@ import app_1 from "../../assets/images/app_2.svg";
 import phone_app_1 from "../../assets/images/phone__app_1.png";
 import phone_app_2 from "../../assets/images/phone__app_2.png";
 import arrow from "../../assets/images/arrow.svg";
-import CountDownTimer from "../../components/CountDownTimer";
+
 import {
   Box,
   CircleStyled,
@@ -59,6 +59,7 @@ import {
 } from "../../components/Section";
 import { Paper } from "../../components/Grid";
 import Steps from "../../components/Steps";
+import CountDownTimer from "../../components/CountDown";
 const HomePage = () => {
   return (
     <>

@@ -15,7 +15,7 @@ import { ListProduct } from "./ListProduct";
 import AppBar from "../../components/AppBar";
 import { SectionHeaderContainer } from "./Product.styled";
 import SEO from "../../seo";
-import CountDownTimer from "../../components/CountDownTimer";
+import CountDownTimer from "../../components/CountDown";
 
 const Product = () => {
   return (
