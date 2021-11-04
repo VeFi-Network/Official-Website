@@ -62,8 +62,8 @@ export const SectionSmartChain = styled.div`
     p {
       font-size: 18px;
       font-weight: normal;
-      max-width: 50.1ch;
-      color: #333;
+      max-width: 53.1ch;
+      color: #1d1e2c;
     }
     button {
       margin: 15px 0px;
@@ -87,6 +87,7 @@ export const SectionSmartChain = styled.div`
     background-size: contain;
     margin-top: 30px;
     margin-right: 10px;
+    height: 50px;
   }
 
   ${media.mobile`
@@ -185,7 +186,7 @@ export const NewsletterForm = styled.div`
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 10px;
-    color: #333;
+    color: #1d1e2c;
   }
 
   ${media.mobile`
@@ -197,7 +198,7 @@ export const NewsletterForm = styled.div`
     }
     p{
       font-size:14px;
-      color:#333;
+      color:#1d1e2c;
     }
  `}
   ${media.small`
@@ -398,7 +399,7 @@ export const WaitList = styled.div`
 
 export const Btn = styled.button`
   background-color: ${({ bg }) => bg || "#fff"};
-  color: ${({ color }) => color || "#333"};
+  color: ${({ color }) => color || "#1d1e2c"};
   margin-left: 20px;
   padding: 10px 20px;
   border: none;

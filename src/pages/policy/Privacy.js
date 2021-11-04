@@ -21,11 +21,11 @@ const Privacy = () => {
           </Container>
         </StyledPrivayContainer>
         <div className="countdownContainer">
-          <CountDownTimer />
+          <CountDownTimer className="BannerSectionCountdown" bg="#1673B9" />
         </div>
-        <SectionPrivacyContainer>
+        <SectionPrivacyContainer style={{ background: "#f9fafc" }}>
           <Container maxWidth="md" className="container">
-            <AppBar label="Products Policy" className="appBar" />
+            <AppBar label="Products Policy" className="appBar sectionAppBar" />
             <p>
               VeFi is committed to protecting the privacy of its visitors. This Privacy Policy provides our visitors
               with an overview of the measures we have taken to show our commitment to this policy. It describes how
@@ -195,7 +195,7 @@ const Privacy = () => {
             </p>
             <AppBar label="Other Policies" className="appBar" />
             <div>
-              <strong>Correct/Update:</strong>
+              <strong>1. Correct/Update:</strong>
               <blockquote>
                 {" "}
                 You may request that we amend any personal data that we are holding about you which is factually
@@ -203,14 +203,14 @@ const Privacy = () => {
               </blockquote>
             </div>
             <div>
-              <strong>Links This website may contain links to other sites:</strong>
+              <strong>2. Links This website may contain links to other sites:</strong>
               <blockquote>
                 VeFi is not responsible for the privacy practices of such other sites. This privacy statement applies
                 solely to information collected by this website.
               </blockquote>
             </div>
             <div>
-              <strong>Online Payment methods:</strong>
+              <strong>3. Online Payment methods:</strong>
               <blockquote>
                 VeFi is not associated with any of the trademarks which might appear visible in the Online Payment
                 method lists or payment gateways – in this case, Paystack. VeFi does not itself support these payment
@@ -222,7 +222,7 @@ const Privacy = () => {
               </blockquote>
             </div>
             <div>
-              <strong>Data retention policy</strong>
+              <strong>4. Data retention policy</strong>
               <blockquote>
                 We retain your personal information as long as it is necessary and relevant for our operations. In
                 addition, we may retain personal information from closed accounts to comply with national laws, prevent

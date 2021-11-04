@@ -69,8 +69,12 @@ const HomePage = () => {
             <H1>
               Revolutionary innovation in blockchain technology from<CircleStyled>Africa</CircleStyled> to the world.
             </H1>
-            {/**<StyledButton>Buy ICO</StyledButton>
-            <StyledButton>Whitepaper</StyledButton> */}
+            <div className="HeaderBannerButtonContainer">
+              <StyledButton bg="#fbf6b4">Buy ICO</StyledButton>
+              <a href="/">
+                <StyledButton>Whitepaper</StyledButton>
+              </a>
+            </div>
             <div className="imageBox">
               <img src={arrow_right} alt="" />
             </div>
