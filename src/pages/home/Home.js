@@ -71,9 +71,9 @@ const HomePage = () => {
               Revolutionary innovation in blockchain technology from<CircleStyled>Africa</CircleStyled> to the world.
             </H1>
             <div className="HeaderBannerButtonContainer">
-              <StyledButton bg="#fbf6b4">Buy VEF Token</StyledButton>
+              <StyledButton bg="#1673B9">Buy VEF Token</StyledButton>
               <a href="/">
-                <StyledButton>Whitepaper</StyledButton>
+                <StyledButton fontColor="#1673B9">Whitepaper</StyledButton>
               </a>
             </div>
             <div className="imageBox">
@@ -111,9 +111,9 @@ const HomePage = () => {
       <StyledCountDown>
         <Container>
           <CountDownCenterContainer>
-            <H3 size="1.2rem">The next big thing in</H3>
-            <H1 size="3.0rem">the blockchain ecosphere</H1>
-            <P size="1rem" className="mobile">
+            <H3 size="2.3rem">The next big thing in</H3>
+            <H1 size="4.5rem">The Blockchain Ecosphere</H1>
+            <P size="1.8rem" className="mobile">
               We believe in building products which are fast and scalable, leveraging crypto has never been this
               convenient.
             </P>
@@ -314,7 +314,7 @@ const HomePage = () => {
             </SectionSmartChain>
             <SectionSmartChain>
               <div className="left">
-                <H2 FontColor="#1673b9" size="24px">
+                <H2 fc="#1673b9" size="24px">
                   Interoperability:
                 </H2>
                 <P>VEFI Smart Chain would be cross-chain and interoperable.</P>

@@ -101,7 +101,7 @@ export const Card = styled.div`
 `;
 
 export const SectionBannerWithBg = styled(SectionBanner)`
-  height: ${({ height }) => height || "250px"};
+  height: ${({ height }) => (height ? height : "250px")};
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
@@ -124,7 +124,7 @@ export const SectionTypographyContainer = styled.div`
   margin-left: 20px;
   p {
     margin-top: 20px;
-    max-width: ${({ maxWidth }) => maxWidth || "32ch"};
+    max-width: ${({ maxWidth }) => (maxWidth ? maxWidth : "32ch")};
   }
   span {
     color: #fbf6b4;
@@ -645,7 +645,7 @@ export const StyledBannerContainer = styled.div`
       button {
         background: transparent;
         border: 1px solid #1673b9;
-        color: #1673b9;
+
         transition: all 0.3s ease-in-out;
         &:hover {
           color: #000;
@@ -662,7 +662,6 @@ export const StyledBannerContainer = styled.div`
       text-align: center;
       align-items: center;
       justify-content: center;
-      color: #1673b9;
       transition: all 0.3s ease-in-out;
       &:hover {
         color: #000;
@@ -695,7 +694,7 @@ export const StyledBannerContainer = styled.div`
         margin-left:0px;
         padding: 15px 20px;
         width: 100%;
-        font-size: 18px;
+        font-size: 14px;
     }
   }
 `}
@@ -709,7 +708,7 @@ export const StyledBannerContainer = styled.div`
         margin-left:0px;
         padding: 15px 10px;
         width: 100%;
-        font-size: 18px;
+        font-size: 1rem;
     }
   }
 `}

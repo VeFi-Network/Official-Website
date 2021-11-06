@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import SEO from "./seo";
 import App from "./App";
+import ScrollToTop from "./utility/ScrollToTop";
 
 const MainComponent = () => (
   <div>
@@ -17,6 +18,7 @@ const MainComponent = () => (
       ]}
     />
     <BrowserRouter>
+      <ScrollToTop />
       <App />
     </BrowserRouter>
   </div>

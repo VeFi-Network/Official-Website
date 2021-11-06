@@ -9,6 +9,7 @@ import Product from "./pages/product/Product";
 import HomePage from "./pages/home/Home";
 import Privacy from "./pages/policy/Privacy";
 import GlobalStyles from "./GlobalStyle.styled";
+import Token from "./pages/token/Token";
 
 const theme = {
   iphone_x: "375px",
@@ -25,6 +26,9 @@ function App() {
         <Switch>
           <Route path="/about-us">
             <About />
+          </Route>
+          <Route path="/token">
+            <Token />
           </Route>
           <Route path="/contact-us">
             <ContactUs />

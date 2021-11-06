@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { LinkList } from "./LinkItem";
 import menu from "../assets/images/menu.png";
 import { StyledButton } from "./Button";
-import { FaTelegramPlane } from "react-icons/fa";
+import { BiDollar } from "react-icons/bi";
 import { FiFile } from "react-icons/fi";
 
 const Navigation = () => {
@@ -35,11 +35,11 @@ const Navigation = () => {
             </StyledButton>
           </li>
           <li>
-            <a href="https://t.me/vefi_official">
+            <Link to="/token">
               <StyledButton>
-                Join our community <FaTelegramPlane className="icon" />
+                Buy VEF Token <BiDollar className="icon" />
               </StyledButton>
-            </a>
+            </Link>
           </li>
         </div>
       </ul>

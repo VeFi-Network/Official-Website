@@ -8,6 +8,10 @@ export const LinkList = [
     url: "/products"
   },
   {
+    title: "Token sales",
+    url: "/token"
+  },
+  {
     title: "About Us",
     url: "/about-us"
   },

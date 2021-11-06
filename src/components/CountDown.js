@@ -3,6 +3,7 @@ import styled from "styled-components";
 import media from "../utility/Media";
 import { Btn, CounterTimerBox, WaitList } from "../pages/home/Home.styled";
 import { H1, P } from "./Typography";
+import { Link } from "react-router-dom";
 
 export const Timer = styled.div`
   align-items: center;
@@ -96,8 +97,13 @@ const CountDownTimer = ({ bg, className }) => {
             </Timer>
           </CounterTimerBox>
           <WaitList>
-            <Btn bg="#fbf6b4">Whitepaper</Btn>
-            <Btn bg="#fbf6b4">Join the waitlist</Btn>
+            <Link to="/token">
+              <Btn bg="#fbf6b4">Buy VEF Token</Btn>
+            </Link>
+
+            <a href="/">
+              <Btn bg="#fbf6b4">Whitepaper</Btn>
+            </a>
           </WaitList>
         </div>
       </CounterContainer>
