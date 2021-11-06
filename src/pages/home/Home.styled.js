@@ -15,11 +15,11 @@ export const SectionSmartChainWrapper = styled(StyledHowItWorks)`
   overflow: none;
   ${media.mobile`
     padding:0px 30px;
-    margin-top:-40px;
+    margin-top:-60px;
   `}
   ${media.small`
     padding:0px 30px;
-    margin-top:-40px;
+    margin-top:-60px;
   `}
 `;
 
@@ -35,17 +35,17 @@ export const SectionSmartChainContainer = styled.div`
     h2 {
       font-weight: 600;
       font-size: 1.8rem;
+      color: var(--def-color);
     }
   }
   ${media.mobile`
     h2{
-        font-size:1rem !important;
+        font-size:2rem;
         max-width:20ch;
     }
   `}
   ${media.small`
     h2{
-        font-size:1rem !important;
         max-width:25ch;
     }
   `}
@@ -98,9 +98,9 @@ export const SectionSmartChain = styled.div`
             font-size:1rem;
         }
         p{
-            max-width:30ch;
+           
             line-height:1.3em;
-          font-size:0.6rem;  
+            font-size:0.89rem;
         }
     }
     .right{
@@ -120,8 +120,8 @@ export const SectionSmartChain = styled.div`
         }
         p{
           line-height:1.3em;
-          font-size:0.6rem;
-          max-width:40ch;  
+          font-size:0.89rem;
+           
         }
     }
     .right{
@@ -364,17 +364,33 @@ export const CountDownCenterContainer = styled.div`
     max-width: 45ch;
   }
   ${media.mobile`
-  margin: 30px 0px;
+    margin: 20px 0px;
 
-  h3 {
-    font-size: 26px;
-  }
-  h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
+    h3 {
+      font-size: 1.65rem;
+    }
+    h1{
+      font-size: 3rem;
+      margin-top:10px;
+      margin-bottom: 10px;
     }
     p {
-      font-size: 20px;
+      font-size: 1.2rem;
+      line-height: 1.3em;
+    }
+  `}
+  ${media.small`
+    margin: 20px 0px;
+    h3 {
+      font-size: 1.65rem;
+    }
+    h1{
+      font-size: 3rem;
+      margin-top:10px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
       line-height: 1.3em;
     }
   `}

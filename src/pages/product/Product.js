@@ -21,14 +21,14 @@ const Product = () => {
   return (
     <SectionWrapper>
       <SEO title="Products" />
-      <SectionBannerWithBg bg={banner_product}>
+      <SectionBannerWithBg bg={banner_product} height="300px">
         <SectionHeaderContainer>
           <Container>
             <SectionTypographyContainer>
               <H2 size="50px">
                 From<span>Africa</span> to the world
               </H2>
-              <P size="27px" FontWeight="400" LineHeight="1.1em">
+              <P size="27px" FontWeight="400" LineHeight="1.1em" maxWidth="50ch">
                 The next big thing in the blockchain ecosphere where high speed meets scalability. This is Africa's gift
                 to the world.
               </P>
