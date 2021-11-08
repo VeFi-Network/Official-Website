@@ -641,7 +641,8 @@ export const StyledBannerContainer = styled.div`
     margin: 30px 0px;
     a {
       text-decoration: none;
-
+    }
+    a:last-child {
       button {
         background: transparent;
         border: 1px solid #1673b9;

@@ -101,9 +101,9 @@ const CountDownTimer = ({ bg, className }) => {
               <Btn bg="#fbf6b4">Buy VEF Token</Btn>
             </Link>
 
-            <a href="/">
+            <Link to="/docs/VEFI_WHITEPAPER.pdf" target="_blank">
               <Btn bg="#fbf6b4">Whitepaper</Btn>
-            </a>
+            </Link>
           </WaitList>
         </div>
       </CounterContainer>

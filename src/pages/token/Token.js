@@ -1,6 +1,6 @@
 import { Container } from "@material-ui/core";
 import React from "react";
-import { StyledButton } from "../../components/Button";
+import { Button } from "../../components/Button";
 import { Timer } from "../../components/CountDown";
 import { SectionWrapper } from "../../components/Section";
 import { H1, P } from "../../components/Typography";
@@ -60,7 +60,7 @@ const Token = () => {
                       <span>150m vef</span>
                     </div>
                   </StyledTokenSaleStat>
-                  <StyledButton bg="#1673B9">Purchase VEF Token</StyledButton>
+                  <Button bg="#1673B9" label="Purchase VEF Token" />
                 </StyledTokenSalesCountDownContainer>
               </div>
               <div>
@@ -77,7 +77,7 @@ const Token = () => {
                       <span>
                         <FaCheckCircle />
                       </span>
-                      <span>Current token prize: $0.75</span>
+                      <span>Current token prize: $0.02</span>
                     </li>
                     <li>
                       <span>

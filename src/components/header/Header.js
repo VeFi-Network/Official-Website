@@ -21,7 +21,7 @@ const Header = () => {
             <HeaderRight>
               <Navigation />
               <a href="https://t.me/vefi_official" target="_blank" rel="noreferrer" className="desktopNav">
-                <Button icon={<FaTelegramPlane />} text="Join our community" bg="" />
+                <Button icon={<FaTelegramPlane />} label="Join our community" bg="" />
               </a>
             </HeaderRight>
           </HeaderContainer>

@@ -60,6 +60,7 @@ import {
 import { Paper } from "../../components/Grid";
 import Steps from "../../components/Steps";
 import CountDownTimer from "../../components/CountDown";
+import { Link } from "react-router-dom";
 const HomePage = () => {
   return (
     <>
@@ -71,10 +72,12 @@ const HomePage = () => {
               Revolutionary innovation in blockchain technology from<CircleStyled>Africa</CircleStyled> to the world.
             </H1>
             <div className="HeaderBannerButtonContainer">
-              <StyledButton bg="#1673B9">Buy VEF Token</StyledButton>
-              <a href="/">
+              <Link to="/token">
+                <StyledButton bg="#1673B9">Buy VEF Token</StyledButton>
+              </Link>
+              <Link to="/docs/VEFI_WHITEPAPER.pdf" target="_blank">
                 <StyledButton fontColor="#1673B9">Whitepaper</StyledButton>
-              </a>
+              </Link>
             </div>
             <div className="imageBox">
               <img src={arrow_right} alt="" />
@@ -93,7 +96,7 @@ const HomePage = () => {
               <div>
                 <SubscribeFormContainer>
                   <H1>
-                    VeFi is an emerging blockchain ecosystem with the primal aim to build the next big thing in the
+                    VEFI is an emerging blockchain ecosystem with the primary aim to build the next big thing in the
                     blockchain ecosphere.
                   </H1>
                   <H3>Stay Updated!</H3>
@@ -144,7 +147,7 @@ const HomePage = () => {
                 We are passionate about letting the world understand that Africa has a lot to offer in the crypto space.
               </P>
               <a href="https://t.me/vefi_official" target="_blank" rel="noreferrer">
-                <Button icon={<FaTelegramPlane />} text="Join our community" />
+                <Button icon={<FaTelegramPlane />} label="Join our community" />
               </a>
             </HeroBannerJoinCommunity>
           </Right>
