@@ -27,7 +27,7 @@ const Token = () => {
               <div>
                 <StyledTokenSalesCountDownContainer>
                   <H1 size="2.5rem" fw="normal">
-                    Our seed sales starts in
+                    Our seed sale starts in
                   </H1>
                   <StyledTokenCounterTimerBox>
                     <Timer>
@@ -66,11 +66,11 @@ const Token = () => {
               <div>
                 <StyledTokenSalesDesc>
                   <H1 size="2.8rem" lh="1.2em">
-                    Our ICO sales program for VEF token will drive the Internet from Africa to the World.
+                    Our ICO program for the VEF token will aid in setting the standard the VEFI ecosystem is aiming for.
                   </H1>
                   <P size="1.6rem">
-                    We are currently opening our ICO for VEF token, with all funds collected to build and develop the
-                    technical ecosystem for VEFI.
+                    We are currently opening our ICO for VEF token, with all funds going directly to the development of
+                    the technical arm of the VEFI ecosystem.
                   </P>
                   <ul>
                     <li>
