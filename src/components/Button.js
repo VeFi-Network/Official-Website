@@ -24,11 +24,11 @@ export const StyledButton = styled.button`
     margin-right: 8px;
   }
 `;
-export const Button = ({ icon, text, action }) => {
+export const Button = ({ icon, label, action }) => {
   return (
     <>
       <StyledButton onClick={action}>
-        {text}
+        {label}
         <span>{icon}</span>
       </StyledButton>
     </>

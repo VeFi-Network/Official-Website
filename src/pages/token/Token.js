@@ -1,6 +1,6 @@
 import { Container } from "@material-ui/core";
 import React from "react";
-import { StyledButton } from "../../components/Button";
+import { Button } from "../../components/Button";
 import { Timer } from "../../components/CountDown";
 import { SectionWrapper } from "../../components/Section";
 import { H1, P } from "../../components/Typography";
@@ -15,7 +15,40 @@ import {
   StyledTokenSaleStat,
   StyledTokenSaleWrapper
 } from "./Token.styled";
-
+import Countdown from "react-countdown";
+const renderer = ({ days, hours, minutes, seconds, completed }) => {
+  if (completed) {
+    // Render a completed state
+    return "countdown completed";
+  } else {
+    // Render a countdown
+    return (
+      <>
+        <StyledTokenCounterTimerBox>
+          <Timer>
+            <H1 size="4rem !important">{days}</H1>
+            <span>Days</span>
+          </Timer>
+          <span>:</span>
+          <Timer>
+            <H1 size="4rem !important">{hours}</H1>
+            <span>Hours</span>
+          </Timer>
+          <span>:</span>
+          <Timer>
+            <H1 size="4rem !important">{minutes}</H1>
+            <span>Min</span>
+          </Timer>
+          <span>:</span>
+          <Timer>
+            <H1 size="4rem !important">{seconds}</H1>
+            <span>Sec</span>
+          </Timer>
+        </StyledTokenCounterTimerBox>
+      </>
+    );
+  }
+};
 const Token = () => {
   return (
     <>
@@ -29,27 +62,8 @@ const Token = () => {
                   <H1 size="2.5rem" fw="normal">
                     Our seed sale starts in
                   </H1>
-                  <StyledTokenCounterTimerBox>
-                    <Timer>
-                      <H1 size="4rem !important">46</H1>
-                      <span>Days</span>
-                    </Timer>
-                    <span>:</span>
-                    <Timer>
-                      <H1 size="4rem !important">12</H1>
-                      <span>Hours</span>
-                    </Timer>
-                    <span>:</span>
-                    <Timer>
-                      <H1 size="4rem !important">05</H1>
-                      <span>Min</span>
-                    </Timer>
-                    <span>:</span>
-                    <Timer>
-                      <H1 size="4rem !important">56</H1>
-                      <span>Sec</span>
-                    </Timer>
-                  </StyledTokenCounterTimerBox>
+                  <Countdown date={"2021-12-31"} renderer={renderer} />
+
                   <StyledTokenSaleStat>
                     <p>VEF sold</p>
                     <div className="box"></div>
@@ -60,7 +74,7 @@ const Token = () => {
                       <span>150m vef</span>
                     </div>
                   </StyledTokenSaleStat>
-                  <StyledButton bg="#1673B9">Purchase VEF Token</StyledButton>
+                  <Button bg="#1673B9" label="Purchase VEF Token" />
                 </StyledTokenSalesCountDownContainer>
               </div>
               <div>
@@ -77,7 +91,7 @@ const Token = () => {
                       <span>
                         <FaCheckCircle />
                       </span>
-                      <span>Current token prize: $0.75</span>
+                      <span>Current token prize: $0.02</span>
                     </li>
                     <li>
                       <span>

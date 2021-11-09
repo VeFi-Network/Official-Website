@@ -4,6 +4,7 @@ import media from "../utility/Media";
 import { Btn, CounterTimerBox, WaitList } from "../pages/home/Home.styled";
 import { H1, P } from "./Typography";
 import { Link } from "react-router-dom";
+import Countdown from "react-countdown";
 
 export const Timer = styled.div`
   align-items: center;
@@ -69,41 +70,55 @@ export const CounterContainer = styled.div`
   `}
 `;
 
+const renderer = ({ days, hours, minutes, seconds, completed }) => {
+  if (completed) {
+    // Render a completed state
+    return "countdown completed";
+  } else {
+    // Render a countdown
+    return (
+      <>
+        <CounterTimerBox>
+          <Timer>
+            <H1>{days}</H1>
+            <span>Days</span>
+          </Timer>
+          <span>:</span>
+          <Timer>
+            <H1>{hours}</H1>
+            <span>Hours</span>
+          </Timer>
+          <span>:</span>
+          <Timer>
+            <H1>{minutes}</H1>
+            <span>Min</span>
+          </Timer>
+          <span>:</span>
+          <Timer>
+            <H1>{seconds}</H1>
+            <span>Sec</span>
+          </Timer>
+        </CounterTimerBox>
+      </>
+    );
+  }
+};
 const CountDownTimer = ({ bg, className }) => {
   return (
     <>
       <CounterContainer bg={bg} className={className}>
         <div>
           <P>Pre-Sale ICO starts in</P>
-          <CounterTimerBox>
-            <Timer>
-              <H1>46</H1>
-              <span>Days</span>
-            </Timer>
-            <span>:</span>
-            <Timer>
-              <H1>12</H1>
-              <span>Hours</span>
-            </Timer>
-            <span>:</span>
-            <Timer>
-              <H1>05</H1>
-              <span>Min</span>
-            </Timer>
-            <span>:</span>
-            <Timer>
-              <H1>56</H1>
-              <span>Sec</span>
-            </Timer>
-          </CounterTimerBox>
+          <Countdown date={"2021-12-31"} renderer={renderer} />
+
           <WaitList>
             <Link to="/token">
               <Btn bg="#fbf6b4">Buy VEF Token</Btn>
             </Link>
 
-            <a href="/">
+            <Link to="/docs/VEFI_WHITEPAPER.pdf" target="_blank">
               <Btn bg="#fbf6b4">Whitepaper</Btn>
-            </a>
+            </Link>
           </WaitList>
         </div>
       </CounterContainer>
