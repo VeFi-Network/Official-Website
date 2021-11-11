@@ -674,7 +674,6 @@ export const StyledBannerContainer = styled.div`
   ${media.mobile`
     display: flex;
     width:100%;
-    padding-left:30px;
     flex-direction:column;
     padding-top:80px;
     align-items: flex-start;
@@ -690,7 +689,9 @@ export const StyledBannerContainer = styled.div`
       margin-top:-35px;
     }
     .HeaderBannerButtonContainer {
-
+      display:flex;
+      width:100%;
+      justify-content:space-evenly;
       button {
         margin-left:0px;
         padding: 15px 20px;
@@ -880,9 +881,9 @@ export const HeroBannerJoinCommunity = styled.div`
     height:100%;
     
     h1 {
-      font-size: 26px;
+      font-size: 2rem;
       margin-bottom:5px;
-      white-space:nowrap;
+      white-space:wrap;
       max-width: 30ch;
     }
     h3 {

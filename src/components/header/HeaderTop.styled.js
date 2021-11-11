@@ -36,18 +36,20 @@ export const HeaderLeft = styled.div`
   flex: 0.5;
     img {
       height: 100%;
-      width: 100%;
+      width: 100px;
       object-fit: contain;
       outline:none;
       border-width:0px;
+      max-width:200px;
     }
   `}
 
   ${media.small`
   flex: 0.5;
   img {
-    height:  100%;
-    width: 100%;
+    height: 100%;
+    width: 100px;
+    max-width:200px;
     object-fit: contain;
   }
 `}
