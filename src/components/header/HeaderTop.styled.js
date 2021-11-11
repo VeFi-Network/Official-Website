@@ -51,6 +51,10 @@ export const HeaderLeft = styled.div`
     object-fit: contain;
   }
 `}
+
+@media screen and (max-width:1200px) {
+    flex: 0.1;
+  }
 `;
 
 export const HeaderCenter = styled.div`

@@ -41,7 +41,6 @@ import {
   HeroBannerJoinCommunity,
   HowItWorksContainer,
   Left,
-  QuoteLeft,
   QuoteRight,
   Right,
   StyledBanner,
@@ -127,9 +126,6 @@ const HomePage = () => {
 
       {/* <=== HERO BANNER  ===> */}
       <StyledHeroBanner>
-        <QuoteLeft className="hideOnMobile">
-          <img src={asset1} alt="" />
-        </QuoteLeft>
         <HeroBannerContainer className="phone">
           <Left className="imageMobile">
             <img src={Image} alt="" />

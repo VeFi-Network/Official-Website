@@ -816,6 +816,25 @@ export const HeroBannerContainer = styled.div`
       }
     }
   `}
+
+  @media screen and (max-width:1200px) {
+    > div:nth-child(1) {
+      > img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    > div:nth-child(1) {
+      > img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
 `;
 
 export const HeroBannerJoinCommunity = styled.div`
