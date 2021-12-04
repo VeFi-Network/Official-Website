@@ -1,5 +1,5 @@
 export const RoadmapData = {
-  heading: 'Preliminary s',
+  heading: 'Preliminary Roadmap',
   subheading: '',
   events: [
     {
