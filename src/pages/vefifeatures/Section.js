@@ -28,7 +28,9 @@ const Section = (props) => {
                 <SectionImgContainer>
                   <SectionImg src={feature.img} />
                 </SectionImgContainer>
-                <Heading className="heading">{feature.title}</Heading>
+                <Heading className="heading" bold>
+                  {feature.title}
+                </Heading>
                 <Subheading className="subheading">
                   {feature.description}
                 </Subheading>

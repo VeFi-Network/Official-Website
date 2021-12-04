@@ -51,7 +51,8 @@ export const Heading = styled.div`
       : props.size === 'bg'
       ? 'var(--font-bg)'
       : '16px'};
-  font-family: 'SF UI Text SemiBold';
+  font-family: 'Gilroy-Bold ☞';
+  max-width: ${({ maxWidth }) => maxWidth || ''};
   color: ${({ fontColor }) => fontColor || 'var(--heading-color)'};
   line-height: 1.3;
   font-weight: ${({ bold }) => (bold ? '600' : 'medium')};

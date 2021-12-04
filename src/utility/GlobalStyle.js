@@ -41,7 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-font-family: "SF UI Text SemiBold";
+font-family: "Gilroy-Bold ☞";
 color: var(--heading-color);
 font-size: var(--font-md);
 line-height: 1.3;
@@ -54,14 +54,8 @@ line-height: 1.5;
 html,body{
     scroll-behavior: smooth;
     font-size: 16px;
-    font-family: "SF UI Text Regular",'Montserrat','Open Sans', sans-serif;
+    font-family: "SF UI Text semibold",'Open Sans', sans-serif;
     background:#fff;
-}
-@font-face {
-  font-family: 'SFUI'; /* Define the custom font name */
-  src:  url('/fonts/SFUIText-Regular') format('woff2'),
-        url('/fonts/SFUIText-Regular') format('woff'); /* Define where the font can be downloaded */
-  font-display: fallback; /* Define how the browser behaves during download */
 }
 `;
 

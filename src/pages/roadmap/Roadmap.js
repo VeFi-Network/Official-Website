@@ -14,7 +14,7 @@ import { Container, SectionWrapper } from '../../utility/GlobalStyle';
 const Roadmap = (props) => {
   return (
     <>
-      <SectionWrapper bg="#fff">
+      <SectionWrapper bg="#fff" id={props.id}>
         <Container>
           <RoadmapContainer>
             <FaqTextWrapper>

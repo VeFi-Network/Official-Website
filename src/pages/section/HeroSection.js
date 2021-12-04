@@ -20,7 +20,7 @@ const HeroSection = (props) => {
           <SectionRow>
             <SectionColumn>
               <TextWrapper>
-                <Heading size="md" bold>
+                <Heading size="md" bold maxWidth="30rem">
                   {props.heading}
                 </Heading>
                 <Subheading mxWidth="50ch" size="md">

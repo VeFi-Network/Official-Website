@@ -26,7 +26,7 @@ export const Event = styled.div`
     padding-bottom: 8px;
 
     @media screen and (max-width: 768px) {
-      font-size: 0.5rem;
+      font-size: 14px;
       line-height: 1.5;
     }
   }
