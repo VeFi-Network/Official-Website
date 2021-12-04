@@ -100,6 +100,11 @@ export const Circle = styled.span`
   border-radius: 50%;
   margin-right: 20px;
   margin-top: 5px;
+
+  @media screen and (max-width: 768px) {
+    width: 10px;
+    height: 10px;
+  }
 `;
 
 export const Content = styled.div`
