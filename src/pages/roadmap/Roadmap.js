@@ -6,7 +6,7 @@ const Roadmap = () => {
     <>
       <SectionWrapper bg="#fff">
         <Container>
-          <h1>Preliminary Roadmap</h1>
+          <h1>Roadmap</h1>
         </Container>
       </SectionWrapper>
     </>

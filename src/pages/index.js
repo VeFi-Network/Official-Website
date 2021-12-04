@@ -9,7 +9,7 @@ import {
   TokenSale,
   Contact,
   Footer,
-  // Roadmap,
+  Roadmap,
   FAQ,
   TokenSalesInfo,
   Team,
@@ -44,7 +44,7 @@ const Home = () => {
       <Token {...Tokenomics} />
       <TokenSale {...Tokensale} />
       <TokenSalesInfo {...TokenInfo} />
-      {/* {<Roadmap />} */}
+      <Roadmap />
       <Contact {...Contactus} />
       <Team {...TeamMembers} />
       <FAQ {...FrequentlyAskedQuestions} />
