@@ -26,6 +26,7 @@ import {
   FrequentlyAskedQuestions,
   TokenInfo,
 } from '../utility/data';
+import { RoadmapData } from '../utility/data/Roadmap.data';
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +45,7 @@ const Home = () => {
       <Token {...Tokenomics} />
       <TokenSale {...Tokensale} />
       <TokenSalesInfo {...TokenInfo} />
-      <Roadmap />
+      <Roadmap {...RoadmapData} />
       <Contact {...Contactus} />
       <Team {...TeamMembers} />
       <FAQ {...FrequentlyAskedQuestions} />

@@ -19,7 +19,7 @@ export const Event = styled.div`
   padding: 20px 0px;
 
   ul li {
-    font-size: 0.55rem;
+    font-size: 0.8rem;
     color: var(--heading-color);
     line-height: 1.1;
     list-style-type: disc;

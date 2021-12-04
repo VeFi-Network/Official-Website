@@ -19,25 +19,25 @@ const Roadmap = (props) => {
           <RoadmapContainer>
             <FaqTextWrapper>
               <Heading size="sm" bold>
-                Preliminary Roadmap
+                {props?.heading}
               </Heading>
               <Subheading>{props?.subheading}</Subheading>
             </FaqTextWrapper>
             <Timeline>
               <TimelineUl>
                 <TimelineContent>
-                  <TimelineLi>
-                    <Heading>Team formation on the 2th</Heading>
-                    <Event>
-                      <ul>
-                        <li>
-                          The Seed Sale will be conducted at a rate of 0.15 USD
-                          = 1 VEF. The Seed Sale will also be conducted in ETH,
-                          BTC, and USD.
-                        </li>
-                      </ul>
-                    </Event>
-                  </TimelineLi>
+                  {props.events.map((event, i) => (
+                    <TimelineLi key={i}>
+                      <Heading bold>{event.title}</Heading>
+                      <Event>
+                        <ul>
+                          {event.description.map((info, i) => (
+                            <li key={i}>{info}</li>
+                          ))}
+                        </ul>
+                      </Event>
+                    </TimelineLi>
+                  ))}
                 </TimelineContent>
               </TimelineUl>
             </Timeline>
