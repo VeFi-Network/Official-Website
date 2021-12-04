@@ -1,0 +1,10 @@
+export { AboutUs } from './Data';
+export { VefiFeatures } from './Data';
+export { Tokenomics } from './Data';
+export { Tokensale } from './Data';
+export { Contactus } from './Data';
+export { FooterData } from './Data';
+export { Homedata } from './Data';
+export { FrequentlyAskedQuestions } from './Faq.data';
+export { TokenInfo } from './TokenSales.Data';
+export { TeamMembers } from './Team.data';
