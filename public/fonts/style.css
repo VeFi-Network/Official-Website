@@ -5,6 +5,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('SF UI Text Regular'), url('SFUIText-Regular.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
   font-weight: normal;
   src: local('SF UI Text Italic'),
     url('SFUIText-RegularItalic.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('SF UI Text Light'), url('SFUIText-Light.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
   font-weight: normal;
   src: local('SF UI Text Light Italic'),
     url('SFUIText-LightItalic.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -35,6 +39,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('SF UI Text Medium'), url('SFUIText-Medium.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -43,6 +48,7 @@
   font-weight: normal;
   src: local('SF UI Text Medium Italic'),
     url('SFUIText-MediumItalic.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -51,6 +57,7 @@
   font-weight: normal;
   src: local('SF UI Text Semibold'),
     url('SFUIText-Semibold.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -59,6 +66,7 @@
   font-weight: normal;
   src: local('SF UI Text Semibold Italic'),
     url('SFUIText-SemiboldItalic.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -66,6 +74,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('SF UI Text Bold'), url('SFUIText-Bold.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -74,6 +83,7 @@
   font-weight: normal;
   src: local('SF UI Text Bold Italic'),
     url('SFUIText-BoldItalic.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -81,6 +91,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('SF UI Text Heavy'), url('SFUIText-Heavy.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -89,6 +100,7 @@
   font-weight: normal;
   src: local('SF UI Text Heavy Italic'),
     url('SFUIText-HeavyItalic.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -96,6 +108,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('Gilroy-Bold ☞'), url('Gilroy-Bold.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -103,6 +116,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('Gilroy-Heavy ☞'), url('Gilroy-Heavy.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -110,6 +124,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('Gilroy-Light ☞'), url('Gilroy-Light.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -117,6 +132,7 @@
   font-style: normal;
   font-weight: normal;
   src: local('Gilroy-Medium ☞'), url('Gilroy-Medium.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -124,4 +140,5 @@
   font-style: normal;
   font-weight: normal;
   src: local('Gilroy-Regular ☞'), url('Gilroy-Regular.woff') format('woff');
+  font-display: swap;
 }
