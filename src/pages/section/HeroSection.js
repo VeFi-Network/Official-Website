@@ -32,7 +32,11 @@ const HeroSection = (props) => {
               </TextWrapper>
             </SectionColumn>
             <SectionColumn>
-              <CountDown bg="var(--bg-blue)" bgColor="#000" />
+              <CountDown
+                bg="var(--bg-blue)"
+                bgColor="#000"
+                hoverBg="var(--bg-green)"
+              />
             </SectionColumn>
           </SectionRow>
         </Container>

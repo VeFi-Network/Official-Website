@@ -102,7 +102,7 @@ export const Circle = styled.span`
   margin-top: 5px;
 
   @media screen and (max-width: 768px) {
-    width: 10px;
+    width: 14px;
     height: 10px;
   }
 `;
@@ -115,6 +115,15 @@ export const Content = styled.div`
     color: #ccc;
     font-size: 1rem;
     max-width: 30rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    ${Subheading} {
+      font-size: 0.8rem;
+    }
+    ${Heading} {
+      font-size: 1rem;
+    }
   }
 `;
 

@@ -12,6 +12,9 @@ import {
   Wallet,
   Yield,
   Youtube,
+  Facebook,
+  Instagram,
+  Discord,
 } from '../index';
 
 export const AboutUs = {
@@ -156,7 +159,19 @@ export const Contactus = {
     'Ask questions in the chat section and check out our social media handles.',
   subheading:
     ' Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Bibendum Est Ultricies Integer Quis. Iaculis Urna Id',
+  buttonText: 'Send An Email to Vefi Network ',
+  url: '/',
   socialMedia: [
+    {
+      title: 'Facebook',
+      img: Facebook,
+      url: 'https://www.facebook.com',
+    },
+    {
+      title: 'Instagram',
+      img: Instagram,
+      url: 'https://www.instagram.com',
+    },
     {
       title: 'Twitter',
       img: Twitter,
@@ -176,6 +191,11 @@ export const Contactus = {
       title: 'Youtube',
       img: Youtube,
       url: 'https://www.youtube.com',
+    },
+    {
+      title: 'Discord',
+      img: Discord,
+      url: 'https://www.discord.com',
     },
   ],
 };

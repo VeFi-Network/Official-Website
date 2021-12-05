@@ -91,7 +91,8 @@ export const Button = styled.button`
   transition: 0.5s all ease-in-out;
 
   &:hover {
-    opacity: 0.5;
+    background: ${({ hoverBg }) => hoverBg || ''};
+    color: ${({ hoverColor }) => hoverColor || ''};
     border: 1px solid var(--bg-blue);
     transition: 0.5s all ease-in-out;
   }

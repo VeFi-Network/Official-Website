@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  ContactLink,
   Icon,
   SocialIcon,
   SocialIconContainer,
@@ -7,7 +8,8 @@ import {
 } from '../../styles/contactus/Contactus.styled';
 import { Heading, Subheading } from '../../styles/section/Section.styled';
 import { Column, Row } from '../../styles/section/Tokenomics.styled';
-import { Button, Container, SectionWrapper } from '../../utility/GlobalStyle';
+import { Container, SectionWrapper } from '../../utility/GlobalStyle';
+import { FiArrowRight } from '../../utility';
 
 const Contact = (props) => {
   return (
@@ -23,9 +25,10 @@ const Contact = (props) => {
                 {props.heading}
               </Heading>
               <Subheading fontColor="#ccc">{props.subheading}</Subheading>
-              <Button border bgColor="var(--bg-blue)" fontColor="#fff">
-                Send An Email To Vefi Network
-              </Button>
+              <ContactLink href={props?.url}>
+                {props?.buttonText}
+                <FiArrowRight className="icon" />
+              </ContactLink>
             </Column>
             <Column flex="1">
               <SocialIconContainer>

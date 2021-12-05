@@ -13,7 +13,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 import { Button } from '../utility/GlobalStyle';
 import { Heading } from '../styles/section/Section.styled';
 
-const CountDown = ({ bg, border, bgColor }) => {
+const CountDown = ({ bg, border, bgColor, hoverBg }) => {
   return (
     <>
       <CountdownContainer>
@@ -58,7 +58,13 @@ const CountDown = ({ bg, border, bgColor }) => {
             </Timer>
           </CountdownTimerWrapper>
           <CountdownBtn>
-            <Button bgColor={bgColor} fontColor="#fff" bold border>
+            <Button
+              bgColor={bgColor}
+              hoverBg={hoverBg}
+              fontColor="#fff"
+              bold
+              border
+            >
               Buy on Pancakeswap
             </Button>
           </CountdownBtn>

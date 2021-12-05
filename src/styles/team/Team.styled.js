@@ -3,7 +3,6 @@ import { Subheading } from '../section/Section.styled';
 
 export const TeamContainer = styled.div`
   width: 100%;
-
   @media screen and (max-width: 768px) {
     .teamheading {
       font-size: var(--font-sm);
@@ -14,11 +13,11 @@ export const TeamContainer = styled.div`
 export const TeamMember = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 280px);
-  gap: 10px;
+  grid-template-columns: repeat(auto-fill, 265px);
+  gap: 5px;
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 export const TeamWrapper = styled.div`
@@ -33,14 +32,14 @@ export const TeamMemeberImage = styled.div`
   height: 260px;
 
   img {
-    width: 100%;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     object-fit: cover;
     border-radius: 50%;
-
     @media screen and (max-width: 768px) {
       height: 250px;
       width: 250px;
+      border-radius: 20px;
     }
   }
 `;

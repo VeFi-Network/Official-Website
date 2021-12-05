@@ -7,11 +7,11 @@ export const TeamMembers = {
       image:
         'https://images.unsplash.com/photo-1638136591747-729bf897db2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
       name: 'John Doe',
-      role: 'Technical Co-founder/Chief Technical Officer',
+      role: 'Founder/CEO',
       socialmedia: {
-        twitter: 'https://www.twitter.com/java_warrior',
-        linkedln: 'https://www.linkedin.com/in/kingsley-victor-952550169',
-        github: 'https://github.com/kingsley-einstein',
+        twitter: 'https://www.twitter.com/',
+        linkedln: 'https://www.linkedin.com/',
+        github: 'https://github.com/',
       },
       bio: '',
     },
@@ -19,11 +19,11 @@ export const TeamMembers = {
       image:
         'https://images.unsplash.com/photo-1637942420578-8864f4e08322?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
       name: 'John Doe',
-      role: 'Front-End Engineer',
+      role: 'Chief Technology Officer',
       socialmedia: {
-        twitter: 'https://www.twitter.com/promiselxg',
-        linkedln: 'https://www.linkedin.com/in/promiselxg',
-        github: 'https://github.com/promiselxg',
+        twitter: 'https://www.twitter.com/',
+        linkedln: 'https://www.linkedin.com/in/',
+        github: 'https://github.com/',
       },
       bio: '',
     },
@@ -31,7 +31,7 @@ export const TeamMembers = {
       image:
         'https://images.unsplash.com/photo-1544985052-b51c2e3a73ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
       name: 'John Doe',
-      role: 'Chief Production Officer',
+      role: 'Chief Operating Officer',
       socialmedia: {
         twitter: '',
         linkedln: '',
@@ -43,7 +43,79 @@ export const TeamMembers = {
       image:
         'https://images.unsplash.com/photo-1513579636119-039095f588d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
       name: 'John Doe',
-      role: 'Copywriter, Social Media Manager',
+      role: 'Chief Product Manager',
+      socialmedia: {
+        twitter: '',
+        linkedln: '',
+        github: '',
+      },
+      bio: '',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1638261655762-e388a43f62b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=381&q=80',
+      name: 'John Doe',
+      role: 'Chief Product Designer',
+      socialmedia: {
+        twitter: '',
+        linkedln: '',
+        github: '',
+      },
+      bio: '',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1597014937453-aab97f538f9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+      name: 'John Doe',
+      role: 'Tech Lawyer',
+      socialmedia: {
+        twitter: '',
+        linkedln: '',
+        github: '',
+      },
+      bio: '',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1579922038598-ce6e1fc5b768?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=360&q=80',
+      name: 'John Doe',
+      role: 'Chief Marketing Officer',
+      socialmedia: {
+        twitter: '',
+        linkedln: '',
+        github: '',
+      },
+      bio: '',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1638137550906-14c8163b983e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+      name: 'John Doe',
+      role: 'Head of Growth',
+      socialmedia: {
+        twitter: '',
+        linkedln: '',
+        github: '',
+      },
+      bio: '',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1580252167834-ffd32b084a00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=370&q=80',
+      name: 'John Doe',
+      role: 'Lead Social Media Manager',
+      socialmedia: {
+        twitter: '',
+        linkedln: '',
+        github: '',
+      },
+      bio: '',
+    },
+    {
+      image:
+        'https://images.unsplash.com/photo-1638214522452-a49ea98b4682?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+      name: 'John Doe',
+      role: 'Creative Director',
       socialmedia: {
         twitter: '',
         linkedln: '',

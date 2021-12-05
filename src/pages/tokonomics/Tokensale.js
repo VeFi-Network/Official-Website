@@ -43,7 +43,12 @@ const Tokensale = (tokensale) => {
             </Column>
             <Column flex="1">
               <TokenSaleCountdown>
-                <Countdown bg="#000" border bgColor="var(--bg-blue)" />
+                <Countdown
+                  bg="#000"
+                  hoverBg="var(--bg-green)"
+                  border
+                  bgColor="var(--bg-blue)"
+                />
               </TokenSaleCountdown>
             </Column>
           </Row>
