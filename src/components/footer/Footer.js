@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from '../../components';
+import { Flag, Image } from '..';
 import { FiDownload } from 'react-icons/fi';
 import {
   FooterLink,
@@ -25,6 +25,7 @@ const Footer = ({ heading, subheading, document, id }) => {
                 {heading}
               </Heading>
               <Subheading fontColor="var(--bg-color)">{subheading}</Subheading>
+              <Flag />
             </Column>
             <Column flex="0.2">
               <Box>

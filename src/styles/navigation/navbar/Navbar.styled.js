@@ -35,10 +35,14 @@ export const NavLogo = styled(LinkRouter)`
   display: flex;
   align-items: center;
 
+  .flag {
+    border-left: 1px solid #ddd;
+  }
   img {
     width: 80px;
     height: 80px;
     object-fit: contain;
+    margin-right: 20px;
   }
 `;
 

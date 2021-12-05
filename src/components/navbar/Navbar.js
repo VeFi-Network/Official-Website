@@ -13,7 +13,7 @@ import {
 import { Logo, FaBars } from '../../utility';
 import { Button } from '../../utility/GlobalStyle';
 import { NavLinks as Navigation } from '../../utility/data/Navlinks';
-import { Image } from '../../components';
+import { Flag, Image } from '../../components';
 
 const Navbar = ({ toggle }) => {
   return (
@@ -22,6 +22,7 @@ const Navbar = ({ toggle }) => {
         <NavbarContainer>
           <NavLogo to="/">
             <Image img={Logo} alt="Logo" />
+            <Flag />
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars className="icon" />
