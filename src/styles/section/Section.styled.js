@@ -253,3 +253,21 @@ export const SectionItemWrapper = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export const BrandsWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  padding-top: 30px;
+  /* overflow-x: scroll; */
+`;
+
+export const Brand = styled.div`
+  height: 50px;
+  margin-right: 20px;
+  width: 150px;
+  img {
+    width: 100%;
+    height: 30px;
+    object-fit: contain;
+  }
+`;

@@ -2,19 +2,22 @@ import {
   Bitcoin,
   Exchange,
   Medium,
-  Nft,
-  Security,
-  Staking,
+  // Nft,
+  // Security,
+  // Staking,
+  // TokenDb,
+  // Yield,
   Swap,
   Telegram,
-  TokenDb,
   Twitter,
   Wallet,
-  Yield,
   Youtube,
   Facebook,
   Instagram,
   Discord,
+  Binance,
+  Pancakeswap,
+  Solana,
 } from '../index';
 
 export const AboutUs = {
@@ -29,7 +32,7 @@ export const AboutUs = {
   },
 };
 export const VefiFeatures = {
-  title: 'Features of VEFI Network',
+  title: 'The VEFI Ecosystem',
   subtitle:
     "We're building the fastest Blockchain platform which can process over 1 million transactions per second, is highly secure and scalable, user friendly for building DApps",
   features: [
@@ -46,41 +49,41 @@ export const VefiFeatures = {
         'VEFI ensures that this wallet is flexible, secure, easy, and simple to use whereby enabling users to store, spend, receive, send, swap and exchange their crypto-assets instantly',
     },
     {
-      title: 'Swap',
+      title: 'Smart Contract',
       img: Swap,
       description:
         'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore',
     },
-    {
-      title: 'Staking',
-      img: Staking,
-      description:
-        'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-    },
-    {
-      title: 'Yeilding',
-      img: Yield,
-      description:
-        'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-    },
-    {
-      title: "Vefi NFT's",
-      img: Nft,
-      description:
-        'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-    },
-    {
-      title: 'Security',
-      img: Security,
-      description:
-        'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-    },
-    {
-      title: 'Vefi Token',
-      img: TokenDb,
-      description:
-        'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore',
-    },
+    // {
+    //   title: 'Staking',
+    //   img: Staking,
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    // },
+    // {
+    //   title: 'Yeilding',
+    //   img: Yield,
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    // },
+    // {
+    //   title: "Vefi NFT's",
+    //   img: Nft,
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    // },
+    // {
+    //   title: 'Security',
+    //   img: Security,
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    // },
+    // {
+    //   title: 'Vefi Token',
+    //   img: TokenDb,
+    //   description:
+    //     'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+    // },
   ],
 };
 export const Tokenomics = {
@@ -211,4 +214,18 @@ export const Homedata = {
   subheading:
     'we are building the fastest Blockchain platform which can process over 1 million transactions per second.',
   buttonText: 'Join Airdrop',
+  brands: [
+    {
+      name: 'Binance',
+      image: Binance,
+    },
+    {
+      name: 'Pancakeswap',
+      image: Pancakeswap,
+    },
+    {
+      name: 'Solana',
+      image: Solana,
+    },
+  ],
 };

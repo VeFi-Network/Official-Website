@@ -16,6 +16,9 @@ export { default as Instagram } from '../assets/brand/instagram.png';
 export { default as Discord } from '../assets/brand/discord.png';
 export { default as Telegram } from '../assets/brand/telegram.png';
 export { default as Youtube } from '../assets/brand/youtube.png';
+export { default as Pancakeswap } from '../assets/brand/pancake.svg';
+export { default as Solana } from '../assets/brand/solana.svg';
+export { default as Binance } from '../assets/brand/binance.svg';
 export { Link as LinkRouter } from 'react-router-dom';
 export { Link as LinkScroll } from 'react-scroll';
 export {

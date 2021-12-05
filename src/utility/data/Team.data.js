@@ -75,53 +75,5 @@ export const TeamMembers = {
       },
       bio: '',
     },
-    {
-      image:
-        'https://images.unsplash.com/photo-1579922038598-ce6e1fc5b768?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=360&q=80',
-      name: 'John Doe',
-      role: 'Chief Marketing Officer',
-      socialmedia: {
-        twitter: '',
-        linkedln: '',
-        github: '',
-      },
-      bio: '',
-    },
-    {
-      image:
-        'https://images.unsplash.com/photo-1638137550906-14c8163b983e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
-      name: 'John Doe',
-      role: 'Head of Growth',
-      socialmedia: {
-        twitter: '',
-        linkedln: '',
-        github: '',
-      },
-      bio: '',
-    },
-    {
-      image:
-        'https://images.unsplash.com/photo-1580252167834-ffd32b084a00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=370&q=80',
-      name: 'John Doe',
-      role: 'Lead Social Media Manager',
-      socialmedia: {
-        twitter: '',
-        linkedln: '',
-        github: '',
-      },
-      bio: '',
-    },
-    {
-      image:
-        'https://images.unsplash.com/photo-1638214522452-a49ea98b4682?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-      name: 'John Doe',
-      role: 'Creative Director',
-      socialmedia: {
-        twitter: '',
-        linkedln: '',
-        github: '',
-      },
-      bio: '',
-    },
   ],
 };

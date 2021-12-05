@@ -1,5 +1,6 @@
 import React from 'react';
 import CountDown from '../../components/CountDown';
+import Image from '../../components/Image';
 import {
   HeroSectionContainer,
   SectionRow,
@@ -8,6 +9,8 @@ import {
   Heading,
   Subheading,
   Link,
+  BrandsWrapper,
+  Brand,
 } from '../../styles/section/Section.styled';
 import { HeroSectionBg } from '../../utility';
 import { Button, Container } from '../../utility/GlobalStyle';
@@ -38,6 +41,13 @@ const HeroSection = (props) => {
                 hoverBg="var(--bg-green)"
               />
             </SectionColumn>
+            <BrandsWrapper>
+              {props.brands.map(({ name, image }, i) => (
+                <Brand key={i}>
+                  <Image img={image} alt={name} />
+                </Brand>
+              ))}
+            </BrandsWrapper>
           </SectionRow>
         </Container>
       </HeroSectionContainer>
