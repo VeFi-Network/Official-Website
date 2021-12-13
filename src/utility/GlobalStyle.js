@@ -14,7 +14,9 @@ const GlobalStyle = createGlobalStyle`
    --font-bg:4rem;
    --font-md:2.8rem;
    --font-sm:1.8rem;
-   --fm-bold:"SF UI Text regular";
+   --fm-bold:"SF UI Text SemiBold";
+   --fm-heading:"Gilroy-Bold ☞";
+   --font-inter-semibold:'Inter'
 }
 * {
 margin: 0;
@@ -31,6 +33,8 @@ img{
     -webkit-user-select:none;
     -webkit-tap-highlight-color:transparent;
     user-select:none;
+    outline:none;
+    border:none;
 }
 a{
   text-decoration:none;
@@ -52,10 +56,10 @@ color:var(--subheading-color);
 line-height: 1.5;
 }
 html,body{
-    scroll-behavior: smooth;
-    font-size: 16px;
-    font-family: "SF UI Text semibold",'Open Sans', sans-serif;
-    background:#fff;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-family: "SF UI Text semibold","Inter",'Open Sans', sans-serif;
+  background:#fff;
 }
 `;
 
@@ -105,7 +109,11 @@ export const SectionWrapper = styled.section`
   padding: 80px 0px;
   width: 100%;
   background: ${({ bg }) => bg || ''};
-
+  .contactusHeading {
+    font: normal normal 600 36px/59px Gilroy ☞;
+    color: #4fd09e;
+    text-transform: capitalize;
+  }
   ${Row} {
     @media screen and (max-width: 768px) {
       flex-direction: column;

@@ -19,15 +19,17 @@ const Token = (tokenomics) => {
       <TokenContainer id={tokenomics.id}>
         <Container>
           <HeadingWrapper>
-            <Heading size="sm" bold>
+            <Heading size="sm" bold className="tokenomics">
               {tokenomics.title}
             </Heading>
-            <Subheading>{tokenomics.subtitle}</Subheading>
+            <Subheading className="tokenomicsSub">
+              {tokenomics.subtitle}
+            </Subheading>
           </HeadingWrapper>
           <RowContainer>
             <Row>
-              <Column>
-                <ColumWrapper>
+              <Column flex="0.6">
+                <ColumWrapper className="token">
                   {tokenomics.info.map((item, i) => (
                     <Box key={i}>
                       <BoxHeading>
@@ -38,7 +40,7 @@ const Token = (tokenomics) => {
                   ))}
                 </ColumWrapper>
               </Column>
-              <Column></Column>
+              <Column flex="0.4"></Column>
             </Row>
           </RowContainer>
         </Container>

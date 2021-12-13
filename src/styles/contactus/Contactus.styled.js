@@ -5,7 +5,6 @@ export const TopLine = styled.div`
   text-transform: uppercase;
 `;
 export const SocialIconContainer = styled.div`
-  margin-left: 40px;
   padding-top: 30px;
   justify-content: center;
   align-items: center;
@@ -44,5 +43,6 @@ export const ContactLink = styled.a`
   }
   .icon {
     margin-left: 10px;
+    color: var(--bg-green);
   }
 `;

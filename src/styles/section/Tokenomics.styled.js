@@ -17,12 +17,22 @@ export const HeadingWrapper = styled.div`
   justify-content: center;
   text-align: center;
   margin-bottom: 20px;
+  max-width: 90ch;
+  width: 100%;
+  margin: 0px auto;
+
+  .tokenomics {
+    font: normal normal bold 40px/64px Gilroy ☞;
+  }
+  .tokenomicsSub {
+    font: normal normal normal 18px/30px SF UI Text;
+  }
+  .tokenSaleHeading {
+    font: normal normal bold 40px/64px Gilroy ☞;
+    margin-bottom: 30px;
+  }
 `;
 
-export const RowContainer = styled.div`
-  width: 100%;
-  display: flex;
-`;
 export const Row = styled.div`
   display: flex;
   width: 100%;
@@ -86,7 +96,24 @@ export const BoxContent = styled.div`
     max-width: 100%;
   }
 `;
+export const RowContainer = styled.div`
+  width: 100%;
+  display: flex;
 
+  .token {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 5px;
+    ${BoxContent} {
+      max-width: 35ch;
+      font: normal normal normal 18px/30px SF UI Text;
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+`;
 export const ColumnHeadingWrapper = styled.div`
   display: flex;
   margin-bottom: 30px;

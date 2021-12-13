@@ -20,7 +20,7 @@ const Tokensale = (tokensale) => {
     <TokenContainer bg="#000">
       <Container>
         <HeadingWrapper>
-          <Heading size="sm" fontColor="#fff" bold>
+          <Heading size="sm" fontColor="#fff" bold className="tokenSaleHeading">
             {tokensale.title}
           </Heading>
         </HeadingWrapper>

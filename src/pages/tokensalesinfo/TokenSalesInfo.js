@@ -19,10 +19,12 @@ const TokenSalesInfo = (props) => {
       <SectionWrapper bg="#fff">
         <Container>
           <TokenSalesWrapper>
-            <Heading size="sm" bold>
+            <Heading size="sm" bold className="heading">
               {TokenSupply.heading}
             </Heading>
-            <Subheading>{TokenSupply.subheading}</Subheading>
+            <Subheading className="subheading">
+              {TokenSupply.subheading}
+            </Subheading>
             <ChartContainer>
               <Barchart />
             </ChartContainer>

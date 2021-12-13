@@ -17,11 +17,15 @@ const Contact = (props) => {
       <SectionWrapper bg="#000" id={props.id}>
         <Container>
           <Row>
-            <Column flex="1">
+            <Column flex="0.6">
               <TopLine>
                 <Heading fontColor="#ccc">{props.title}</Heading>
               </TopLine>
-              <Heading size="sm" fontColor="var(--bg-green)">
+              <Heading
+                size="sm"
+                fontColor="var(--bg-green)"
+                className="contactusHeading"
+              >
                 {props.heading}
               </Heading>
               <Subheading fontColor="#ccc">{props.subheading}</Subheading>
@@ -30,7 +34,7 @@ const Contact = (props) => {
                 <FiArrowRight className="icon" />
               </ContactLink>
             </Column>
-            <Column flex="1">
+            <Column flex="0.4">
               <SocialIconContainer>
                 {props.socialMedia.map((link, i) => (
                   <SocialIcon href={link.url} target="_blank" key={i}>

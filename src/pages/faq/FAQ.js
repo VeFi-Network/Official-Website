@@ -25,10 +25,12 @@ const FAQ = (props) => {
         <Container>
           <FaqContainer>
             <FaqTextWrapper>
-              <Heading size="sm" bold>
+              <Heading size="sm" bold className="faqheading">
                 {props.heading}
               </Heading>
-              <Subheading>{props.subheading}</Subheading>
+              <Subheading className="faqsubheading">
+                {props.subheading}
+              </Subheading>
             </FaqTextWrapper>
             <TabContext value={value}>
               <Box className="faqBox">

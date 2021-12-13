@@ -3,6 +3,9 @@ import { Subheading } from '../section/Section.styled';
 
 export const TeamContainer = styled.div`
   width: 100%;
+  .teamheading {
+    font: normal normal bold 40px/49px Gilroy ☞;
+  }
   @media screen and (max-width: 768px) {
     .teamheading {
       font-size: var(--font-sm);

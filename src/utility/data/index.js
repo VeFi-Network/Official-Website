@@ -1,8 +1,8 @@
 export { AboutUs } from './Data';
-export { VefiFeatures } from './Data';
-export { Tokenomics } from './Data';
-export { Tokensale } from './Data';
-export { Contactus } from './Data';
+export { VefiFeatures } from './Vefifeature.data';
+export { Tokenomics } from './Tokenomics.data';
+export { Tokensale } from './Tokensale.data';
+export { Contactus } from './Contactus.data';
 export { FooterData } from './Data';
 export { Homedata } from './Data';
 export { FrequentlyAskedQuestions } from './Faq.data';

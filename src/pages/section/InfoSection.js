@@ -19,19 +19,30 @@ const InfoSection = ({ AboutUs }) => {
     <>
       <InfoSec id={AboutUs.id}>
         <Container>
-          <Heading size="sm" bold>
+          <Heading size="sm" bold className="infoSecHeading">
             {AboutUs?.title}
           </Heading>
           <InfoRow>
             <InfoColumn>
               <InfoTextWrapper>
                 <InfoHeading>
-                  <Heading bold>{AboutUs?.subtitle}</Heading>
+                  <Heading bold size="sm" className="infoSecSubheading">
+                    {AboutUs?.subtitle}
+                  </Heading>
                 </InfoHeading>
                 <InfoDescription>
-                  <Subheading>{AboutUs?.description}</Subheading>
+                  {AboutUs.description.map((des, i) => (
+                    <Subheading key={i} padding="5px 0px">
+                      {des}
+                    </Subheading>
+                  ))}
                 </InfoDescription>
-                <Button bgColor="var(--bg-blue)" border fontColor="#fff">
+                <Button
+                  bgColor="var(--bg-blue)"
+                  border
+                  fontColor="#fff"
+                  style={{ marginTop: '20px' }}
+                >
                   <FiDownload /> &nbsp;
                   {AboutUs?.buttonText}
                 </Button>

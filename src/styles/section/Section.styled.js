@@ -28,9 +28,7 @@ export const SectionRow = styled.div`
   }
 `;
 export const SectionColumn = styled.div`
-  flex: 1;
-  max-width: 50%;
-  flex-basis: 50%;
+  flex: ${({ flex }) => flex || '1'};
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
@@ -39,10 +37,8 @@ export const SectionColumn = styled.div`
     justify-content: center;
   }
 `;
-export const TextWrapper = styled.div`
-  padding: 50px 0px;
-`;
-export const Heading = styled.div`
+
+export const Heading = styled.h1`
   font-size: ${(props) =>
     props.size === 'sm'
       ? 'var(--font-sm)'
@@ -69,9 +65,9 @@ export const Heading = styled.div`
   }
 `;
 export const Subheading = styled.p`
-  padding: 15px 0px 30px 0px;
+  padding: ${({ padding }) => padding || '15px 0px 30px 0px'};
   max-width: ${({ mxWidth }) => mxWidth || ''};
-  font-size: 0.9rem;
+  font-size: ${({ size }) => size || '0.9rem'};
   color: ${({ fontColor }) => fontColor || ''};
 
   @media screen and (max-width: 768px) {
@@ -79,7 +75,14 @@ export const Subheading = styled.p`
   }
 `;
 export const Link = styled(LinkRouter)``;
-
+export const TextWrapper = styled.div`
+  ${Heading} {
+    font: normal normal 800 60px/79px Gilroy ☞;
+  }
+  ${Subheading} {
+    font: normal normal normal 18px/30px SF UI Text;
+  }
+`;
 export const InfoSec = styled.section`
   height: 100%;
   background: var(--bg-color);
@@ -88,6 +91,12 @@ export const InfoSec = styled.section`
   padding: 80px 0px;
   text-align: center;
 
+  .infoSecHeading {
+    font: normal normal bold 34px/42px Gilroy ☞;
+  }
+  .infoSecSubheading {
+    font: normal normal bold 24px/30px Gilroy ☞;
+  }
   @media screen and (max-width: 768px) {
     height: 100%;
     padding: 40px 0px;
@@ -171,6 +180,10 @@ export const InfoHeading = styled.div`
   }
 `;
 export const InfoDescription = styled.div`
+  ${Subheading} {
+    font: normal normal normal 16px/26px SF UI Text;
+    color: #3f3f3f;
+  }
   @media screen and (max-width: 768px) {
     ${Subheading} {
       font-size: 0.85rem;
@@ -197,6 +210,20 @@ export const SectionHeading = styled.div`
   margin-left: auto;
   margin-right: auto;
 
+  .headingBg {
+    font: normal normal bold 34px/42px Gilroy ☞;
+  }
+  .subheadingBg {
+    font: normal normal normal 16px/26px SF UI Text;
+  }
+  .heading {
+    font: normal normal bold 20px/26px Inter;
+    text-transform: capitalize;
+  }
+  .subheading {
+    font: normal normal normal 14px/26px SF UI Text;
+    color: #545454;
+  }
   @media screen and (max-width: 768px) {
     .subheading {
       font-size: small;
@@ -258,7 +285,12 @@ export const BrandsWrapper = styled.div`
   width: 100%;
   display: flex;
   padding-top: 30px;
-  /* overflow-x: scroll; */
+  overflow-x: scroll;
+  --ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const Brand = styled.div`

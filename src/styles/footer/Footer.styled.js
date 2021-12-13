@@ -11,13 +11,16 @@ export const FooterWrapper = styled.section`
 
   ${Heading} {
     padding-top: 20px;
+    font: normal normal medium 48px/64px Gilroy ☞;
+    text-transform: capitalize;
   }
   ${Subheading} {
     margin-left: 5px;
+    font: normal normal normal 16px/19px SF UI Text;
   }
 
   ${Box} {
-    padding-top: 50px;
+    padding-top: 70px;
 
     @media screen and (max-width: 768px) {
       padding-top: 10px;

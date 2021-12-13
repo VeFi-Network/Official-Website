@@ -18,7 +18,7 @@ const Roadmap = (props) => {
         <Container>
           <RoadmapContainer>
             <FaqTextWrapper>
-              <Heading size="sm" bold>
+              <Heading size="sm" bold className="heading">
                 {props?.heading}
               </Heading>
               <Subheading>{props?.subheading}</Subheading>

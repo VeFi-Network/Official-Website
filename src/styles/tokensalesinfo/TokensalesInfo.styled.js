@@ -25,6 +25,14 @@ export const TokenSalesWrapper = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  .heading {
+    font: normal normal bold 40px/49px Gilroy ☞;
+  }
+  .subheading {
+    font: normal normal normal 20px/40px SF UI Text;
+    color: #4a4a4a;
+  }
 `;
 
 export const ChartData = styled.div`
@@ -51,7 +59,8 @@ export const Dataset = styled.div`
 
 export const Data = styled.div`
   font-size: 0.7rem;
-  color: var(--heading-color);
+  color: #000000;
+  font-weight: bold;
 
   &:last-child {
     max-width: 6rem;

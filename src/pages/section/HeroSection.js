@@ -21,11 +21,9 @@ const HeroSection = (props) => {
       <HeroSectionContainer bg={HeroSectionBg} id={props.id}>
         <Container>
           <SectionRow>
-            <SectionColumn>
+            <SectionColumn flex="0.6">
               <TextWrapper>
-                <Heading size="md" bold maxWidth="30rem">
-                  {props.heading}
-                </Heading>
+                <Heading maxWidth="50ch">{props.heading}</Heading>
                 <Subheading mxWidth="50ch" size="md">
                   {props.subheading}
                 </Subheading>
@@ -34,7 +32,7 @@ const HeroSection = (props) => {
                 </Link>
               </TextWrapper>
             </SectionColumn>
-            <SectionColumn>
+            <SectionColumn flex="0.4">
               <CountDown
                 bg="var(--bg-blue)"
                 bgColor="#000"

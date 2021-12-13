@@ -7,6 +7,12 @@ export const RoadmapContainer = styled.div`
   display: flex;
   flex-direction: column;
 
+  ${Heading} {
+    font: normal normal bold 20px/25px Gilroy ☞;
+  }
+  .heading {
+    font: normal normal bold 40px/49px Gilroy ☞;
+  }
   @media screen and (max-width: 768px) {
     min-height: 100%;
     padding-bottom: 40px;
@@ -19,9 +25,9 @@ export const Event = styled.div`
   padding: 20px 0px;
 
   ul li {
-    font-size: 0.8rem;
+    font: normal normal medium 16px/28px SF UI Text;
     color: var(--heading-color);
-    line-height: 1.1;
+
     list-style-type: disc;
     padding-bottom: 8px;
 
@@ -93,7 +99,7 @@ export const TimelineLi = styled.li`
   }
   &:nth-child(odd)::after {
     right: -6px;
-    top: 26px;
+    top: 30px;
   }
   &:nth-child(even) {
     float: right;
@@ -110,12 +116,12 @@ export const TimelineLi = styled.li`
       }
     }
     ${Event} {
-      padding-left: 20px;
+      padding-left: 30px;
     }
   }
   &:nth-child(even)::after {
     left: -5px;
-    top: 26px;
+    top: 30px;
   }
 `;
 export const TimelineContent = styled.div`

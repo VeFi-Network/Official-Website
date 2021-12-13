@@ -17,10 +17,10 @@ const Section = (props) => {
       <SectionContainer>
         <Container>
           <SectionHeading mxWidth="51rem">
-            <Heading size="sm" bold>
+            <Heading size="sm" bold className="headingBg">
               {props.title}
             </Heading>
-            <Subheading className="subheading">{props.subtitle}</Subheading>
+            <Subheading className="subheadingBg">{props.subtitle}</Subheading>
           </SectionHeading>
           <SectionWrapper>
             {props.features.map((feature, i) => (

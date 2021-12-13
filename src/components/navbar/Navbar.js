@@ -30,7 +30,15 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             {Navigation.map(({ label, path }, i) => (
               <NavItem key={i}>
-                <NavLinks to={path}>{label}</NavLinks>
+                <NavLinks
+                  to={path}
+                  smooth={true}
+                  duration={300}
+                  spy={true}
+                  exact="true"
+                >
+                  {label}
+                </NavLinks>
               </NavItem>
             ))}
           </NavMenu>
