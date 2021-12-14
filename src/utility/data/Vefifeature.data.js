@@ -53,4 +53,16 @@ export const VefiFeatures = {
     //     'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore',
     // },
   ],
+  useCases: {
+    heading: 'Uses of the Vefi Smart Chain.',
+    useCase: [
+      'Payment of transaction fees to the VEFI Smart chain network.',
+      'Spending on products and services.',
+      'Depositing and getting recognized to Join the Master Node.',
+      'Payment of fees o VEFI Exchange which include loan interest, trading fees, investment on certain ICOs listed on VEFI luanchpad program, listing fees, etc.',
+      'Depositing to participate in Voting for the Matser Node Clusters.',
+      'Joining DeFi built on VEFI Smart Chain.',
+      'Depositing to participate in VEFI Smart Chain (VSC) staking program to secure the network.',
+    ],
+  },
 };

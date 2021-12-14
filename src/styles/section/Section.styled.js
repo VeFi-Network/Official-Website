@@ -197,6 +197,24 @@ export const SectionContainer = styled.section`
   height: 100%;
   width: 100%;
 
+  .usecases {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 10px;
+    margin-top: 40px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 20px;
+      padding: 0px 20px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    li {
+      padding-bottom: 10px;
+      text-align: left;
+      font: normal normal normal 18px/30px SF UI Text;
+    }
+  }
   @media screen and (max-width: 768px) {
     height: 100%;
   }

@@ -37,6 +37,21 @@ const Section = (props) => {
               </SectionItem>
             ))}
           </SectionWrapper>
+          <SectionHeading>
+            <Heading
+              style={{
+                font: ' normal normal bold 24px/30px Gilroy ☞',
+                paddingTop: '30px',
+              }}
+            >
+              {props.useCases.heading}
+            </Heading>
+            <ul className="usecases">
+              {props.useCases.useCase.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </SectionHeading>
         </Container>
       </SectionContainer>
     </>
