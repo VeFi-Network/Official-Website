@@ -74,3 +74,35 @@ export const DataBg = styled.div`
   border-radius: 50%;
   margin-bottom: 5px;
 `;
+
+export const BarWrapper = styled.div`
+  width: 500px;
+  height: 300px;
+  display: flex;
+  margin: 0px auto;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
+export const Bar = styled.div`
+  width: 50px;
+  height: 100%;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 0px auto;
+`;
+export const BarValue = styled.div`
+  position: absolute;
+  bottom: 0;
+  margin-bottom: ${({ marginBottom }) => marginBottom || ''};
+`;
+export const BarBg = styled.div`
+  background: ${({ bg }) => bg || ''};
+  height: ${({ height }) => height || ''};
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+`;

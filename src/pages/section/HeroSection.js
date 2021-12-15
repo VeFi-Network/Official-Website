@@ -28,7 +28,9 @@ const HeroSection = (props) => {
                   {props.subheading}
                 </Subheading>
                 <Link to="/">
-                  <Button border>{props.buttonText}</Button>
+                  <Button border hoverBg="var(--bg-blue)" hoverColor="#fff">
+                    {props.buttonText}
+                  </Button>
                 </Link>
               </TextWrapper>
             </SectionColumn>

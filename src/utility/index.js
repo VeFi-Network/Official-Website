@@ -1,5 +1,6 @@
 export { default as Logo } from '../assets/logo.webp';
 export { default as Bitcoin } from '../assets/img/vefi_token.svg';
+export { default as btc } from '../assets/img/bitcoin.webp';
 export { default as Exchange } from '../assets/img/exchange.webp';
 export { default as Nft } from '../assets/img/nft.webp';
 export { default as Staking } from '../assets/img/staking.webp';
@@ -21,6 +22,10 @@ export { default as Solana } from '../assets/brand/solana.svg';
 export { default as Binance } from '../assets/brand/binance.svg';
 export { Link as LinkRouter } from 'react-router-dom';
 export { Link as LinkScroll } from 'react-scroll';
+export { default as Kingsely } from '../assets/team/kingsley_victor.webp';
+export { default as Barinor } from '../assets/team/barinor_kue.webp';
+export { default as Bonaventure } from '../assets/team/bonaventure_pascal.webp';
+export { default as James } from '../assets/team/james_emmah.webp';
 export {
   FaTimes,
   FaBars,

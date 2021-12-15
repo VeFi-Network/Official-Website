@@ -39,9 +39,9 @@ const InfoSection = ({ AboutUs }) => {
                 </InfoDescription>
                 <Button
                   bgColor="var(--bg-blue)"
-                  border
                   fontColor="#fff"
                   style={{ marginTop: '20px' }}
+                  className="button"
                 >
                   <FiDownload /> &nbsp;
                   {AboutUs?.buttonText}

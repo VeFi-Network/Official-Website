@@ -1,5 +1,4 @@
 import React from 'react';
-import Barchart from '../../components/BarChart';
 import DoughnutChart from '../../components/Doughnut';
 import { Heading, Subheading } from '../../styles/section/Section.styled';
 import {
@@ -9,6 +8,10 @@ import {
   DataBg,
   Dataset,
   TokenSalesWrapper,
+  BarWrapper,
+  Bar,
+  BarValue,
+  BarBg,
 } from '../../styles/tokensalesinfo/TokensalesInfo.styled';
 import { TokenSupply } from '../../utility/data/TokenSales.Data';
 import { Container, SectionWrapper } from '../../utility/GlobalStyle';
@@ -25,9 +28,20 @@ const TokenSalesInfo = (props) => {
             <Subheading className="subheading">
               {TokenSupply.subheading}
             </Subheading>
-            <ChartContainer>
-              <Barchart />
-            </ChartContainer>
+
+            <BarWrapper>
+              {TokenSupply.datasets.map((item, i) => (
+                <Bar key={i}>
+                  <BarValue marginBottom={item.margibBottom}>
+                    {item.value}
+                  </BarValue>
+                  <BarBg bg={item.color} height={item.height}>
+                    &nbsp;
+                  </BarBg>
+                </Bar>
+              ))}
+            </BarWrapper>
+
             <ChartData>
               {TokenSupply.datasets.map(({ label, color }, i) => (
                 <Dataset key={i}>

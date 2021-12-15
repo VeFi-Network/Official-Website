@@ -1,4 +1,4 @@
-import { Exchange, Wallet, Swap } from '../index';
+import { Exchange, Wallet, btc } from '../index';
 export const VefiFeatures = {
   title: 'The VEFI Ecosystem',
   subtitle:
@@ -8,19 +8,19 @@ export const VefiFeatures = {
       title: 'Vefi Exchange',
       img: Exchange,
       description:
-        'Features like liquid Swap, Launchpad, savings, and trading features which include futures, P2P, margin, spot , etc along with DeFi features like loans, VEFI pay for crypto spending',
+        'Features like liquid Swap, Launchpad, savings, and trading features which include futures, P2P, margin, spot , etc along with DeFi features like loans, VEFI pay for crypto spending.',
     },
     {
       title: 'Vefi Wallet',
       img: Wallet,
       description:
-        'VEFI ensures that this wallet is flexible, secure, easy, and simple to use whereby enabling users to store, spend, receive, send, swap and exchange their crypto-assets instantly',
+        'VEFI ensures that this wallet is flexible, secure, easy, and simple to use whereby enabling users to store, spend, receive, send, swap and exchange their crypto-assets instantly.',
     },
     {
-      title: 'Smart Contract',
-      img: Swap,
+      title: 'Vefi Smart Contract',
+      img: btc,
       description:
-        'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+        'A new generation high-performance blockchain based on a unique consensus algorithm (V-DPoS) with the unique ability to process over 1 million + transactions per second with almost zero transaction fees at a near-instant processing time.',
     },
     // {
     //   title: 'Staking',

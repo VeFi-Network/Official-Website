@@ -77,6 +77,12 @@ export const Container = styled.div`
   padding: 0 24px;
   margin-left: auto;
   margin-right: auto;
+
+  .button {
+    &:hover {
+      border: none !important;
+    }
+  }
 `;
 export const Button = styled.button`
   border-radius: 20px;

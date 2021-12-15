@@ -83,8 +83,8 @@ export const Box = styled.div`
 `;
 export const BoxHeading = styled.div`
   ${Heading} {
+    font: normal normal 600 20px/30px Gilroy ☞;
     color: var(--bg-blue);
-    margin-bottom: 5px;
   }
 `;
 export const BoxContent = styled.div`
