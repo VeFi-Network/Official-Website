@@ -1,7 +1,7 @@
-import React from 'react';
-import { FiDownload } from 'react-icons/fi';
+import React from "react";
+import { FiDownload } from "react-icons/fi";
 
-import Image from '../../components/Image';
+import Image from "../../components/Image";
 import {
   Heading,
   InfoColumn,
@@ -10,9 +10,10 @@ import {
   InfoTextWrapper,
   InfoHeading,
   InfoDescription,
-  Subheading,
-} from '../../styles/section/Section.styled';
-import { Button, Container } from '../../utility/GlobalStyle';
+  Subheading
+} from "../../styles/section/Section.styled";
+import { Whitepapper } from "../../utility";
+import { Button, Container } from "../../utility/GlobalStyle";
 
 const InfoSection = ({ AboutUs }) => {
   return (
@@ -37,17 +38,19 @@ const InfoSection = ({ AboutUs }) => {
                     </Subheading>
                   ))}
                 </InfoDescription>
-                <Button
-                  bgColor="var(--bg-blue)"
-                  fontColor="#fff"
-                  style={{ marginTop: '20px' }}
-                  className="button"
-                  icon={<FiDownload />}
-                  label={AboutUs?.buttonText}
-                >
-                  <FiDownload /> &nbsp;
-                  {AboutUs?.buttonText}
-                </Button>
+                <a href={Whitepapper} target="_blank" rel="noreferrer">
+                  <Button
+                    bgColor="var(--bg-blue)"
+                    fontColor="#fff"
+                    style={{ marginTop: "20px" }}
+                    className="button"
+                    icon={<FiDownload />}
+                    label={AboutUs?.buttonText}
+                  >
+                    <FiDownload /> &nbsp;
+                    {AboutUs?.buttonText}
+                  </Button>
+                </a>
               </InfoTextWrapper>
             </InfoColumn>
             <InfoColumn>

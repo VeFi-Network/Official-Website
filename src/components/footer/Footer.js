@@ -25,7 +25,7 @@ const Footer = ({ heading, subheading, document, id }) => {
             </Column>
             <Column flex="0.2">
               <Box>
-                <FooterLink href={document}>
+                <FooterLink href={document} target="_blank" rel="noreferrer">
                   <Button bgColor="var(--bg-blue)" fontColor="#fff" border>
                     Whitepaper &nbsp; <FiDownload />
                   </Button>
