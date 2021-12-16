@@ -1,45 +1,84 @@
-import { Container } from "@material-ui/core";
-import React from "react";
-import { Banner, StyledFaq, WrapperDiv } from "./Faq.styled";
-import Question from "./Question";
-import SEO from "../../seo";
+import React, { useState } from "react";
+import { FaqContainer, FaqTextWrapper, Faquestion, FaquestionContainer } from "../../styles/faq/Faq.styled";
+import { Heading, Subheading } from "../../styles/section/Section.styled";
+import { Container, SectionWrapper } from "../../utility/GlobalStyle";
+import Box from "@mui/material/Box";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabPanel from "@mui/lab/TabPanel";
+import { Tabs } from "@mui/material";
 
-const Faq = () => {
+const FAQ = props => {
+  const [value, setValue] = useState("1");
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
   return (
-    <StyledFaq>
-      <SEO title="FAQ" />
-      <Container maxWidth="md">
-        <Banner>
-          <h1>Millions of customers can rely on our blockchain ecosystem</h1>
-        </Banner>
-        <WrapperDiv>
-          <h2>Frequently Asked Questions</h2>
-          <Question
-            label="What is VeFi?"
-            text="VEFI is a new generation blockchain ecosystem having its roots in Africa. It aims to be Africa’s biggest blockchain institution."
-          />
-          <Question
-            label="What problems would VeFi solve?"
-            text="There are five main problems that VEFI solves:
-            I.	Slow transaction processing speed
-            II.	Low transaction processing volume
-            III.	High transaction costs 
-            IV.	Insecurity, poor blockchain infrastructure and architecture
-            V.	Minimizing the consumption of energy and equipment to protect the environment and climate.
-            "
-          />
-          <Question
-            label="What makes VEFI different to be successful?"
-            text="VEFI has three areas that makes it unique and different from other blockchain platforms:
-            I.	 High transaction proficiency: Using a unique consensus algorithm (V-DPoS), VEFI can process over 1 million  transactions per second with almost zero transaction fees, at a near-instant processing time. 
-            II.	 Green Solution: VEFI is a climate-neutral blockchain platform making it the latest infrastructure for innovation and development.
-            III.	 Strong community: VEFI is currently Africa’s largest Blockchain ecosystem with millions of users across the continent and worldwide. By joining the VEFI community, everyone is opportuned to receive the greatest advantages, that will bring great value to the society.
-            "
-          />
-        </WrapperDiv>
-      </Container>
-    </StyledFaq>
+    <>
+      <SectionWrapper bg="#fff" id={props.id}>
+        <Container>
+          <FaqContainer>
+            <FaqTextWrapper>
+              <Heading size="sm" bold className="faqheading">
+                {props.heading}
+              </Heading>
+              <Subheading className="faqsubheading">{props.subheading}</Subheading>
+            </FaqTextWrapper>
+            <TabContext value={value}>
+              <Box className="faqBox">
+                <Tabs value={value} onChange={handleChange} variant="scrollable" scrollButtons="auto" aria-label="faq">
+                  {props.tab.map(({ label, id }) => (
+                    <Tab label={label} value={id} key={id} className="tab" />
+                  ))}
+                </Tabs>
+              </Box>
+              <TabPanel value="1">
+                <FaquestionContainer>
+                  {props.BeginnersGuide.map(({ question, answer }, i) => (
+                    <Faquestion key={i}>
+                      <Heading>{question}</Heading>
+                      <Subheading>{answer}</Subheading>
+                    </Faquestion>
+                  ))}
+                </FaquestionContainer>
+              </TabPanel>
+              <TabPanel value="2">
+                <FaquestionContainer>
+                  {props.Security.map(({ question, answer }, i) => (
+                    <Faquestion key={i}>
+                      <Heading>{question}</Heading>
+                      <Subheading>{answer}</Subheading>
+                    </Faquestion>
+                  ))}
+                </FaquestionContainer>
+              </TabPanel>
+              <TabPanel value="3">
+                <FaquestionContainer>
+                  {props.IcoToken.map(({ question, answer }, i) => (
+                    <Faquestion key={i}>
+                      <Heading>{question}</Heading>
+                      <Subheading>{answer}</Subheading>
+                    </Faquestion>
+                  ))}
+                </FaquestionContainer>
+              </TabPanel>
+              <TabPanel value="4">
+                <FaquestionContainer>
+                  {props.InvestorsGuide.map(({ question, answer }, i) => (
+                    <Faquestion key={i}>
+                      <Heading>{question}</Heading>
+                      <Subheading>{answer}</Subheading>
+                    </Faquestion>
+                  ))}
+                </FaquestionContainer>
+              </TabPanel>
+            </TabContext>
+          </FaqContainer>
+        </Container>
+      </SectionWrapper>
+    </>
   );
 };
 
-export default Faq;
+export default FAQ;
