@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Heading, Subheading } from '../section/Section.styled';
+import styled from "styled-components";
+import { Heading, Subheading } from "../section/Section.styled";
 
 export const FaqContainer = styled.div`
   width: 100%;

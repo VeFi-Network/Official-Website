@@ -1,30 +1,30 @@
 export const NavLinks = [
   {
-    label: 'Home',
-    path: 'home',
+    label: "Home",
+    path: "home"
   },
   {
-    label: 'About',
-    path: 'about',
+    label: "About",
+    path: "about"
   },
   {
-    label: 'Token',
-    path: 'token',
+    label: "Token",
+    path: "token"
   },
   {
-    label: 'Team',
-    path: 'team',
+    label: "Team",
+    path: "team"
   },
   {
-    label: 'Roadmap',
-    path: 'roadmap',
+    label: "Roadmap",
+    path: "roadmap"
   },
   {
-    label: 'Contact',
-    path: 'contact',
+    label: "Contact",
+    path: "contact"
   },
   {
-    label: 'FAQ',
-    path: 'faq',
-  },
+    label: "FAQ",
+    path: "faq"
+  }
 ];

@@ -1,17 +1,17 @@
-import React from 'react';
-import { FaqTextWrapper } from '../../styles/faq/Faq.styled';
+import React from "react";
+import { FaqTextWrapper } from "../../styles/faq/Faq.styled";
 import {
   Event,
   RoadmapContainer,
   Timeline,
   TimelineContent,
   TimelineLi,
-  TimelineUl,
-} from '../../styles/roadmap/Roadmap.styled';
-import { Heading, Subheading } from '../../styles/section/Section.styled';
-import { Container, SectionWrapper } from '../../utility/GlobalStyle';
+  TimelineUl
+} from "../../styles/roadmap/Roadmap.styled";
+import { Heading, Subheading } from "../../styles/section/Section.styled";
+import { Container, SectionWrapper } from "../../utility/GlobalStyle";
 
-const Roadmap = (props) => {
+const Roadmap = props => {
   return (
     <>
       <SectionWrapper bg="#fff" id={props.id}>

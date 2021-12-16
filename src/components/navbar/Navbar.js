@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Nav,
   NavbarContainer,
@@ -7,12 +7,12 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
-} from '../../styles/navigation/navbar/Navbar.styled';
-import { Logo, FaBars } from '../../utility';
-import { NavLinks as Navigation } from '../../utility/data/Navlinks';
-import { Flag, Image, Button } from '../../components';
-import { ConnectWallet } from '../../utility/function';
+  NavBtn
+} from "../../styles/navigation/navbar/Navbar.styled";
+import { Logo, FaBars } from "../../utility";
+import { NavLinks as Navigation } from "../../utility/data/Navlinks";
+import { Flag, Image, Button } from "../../components";
+import { ConnectWallet } from "../../utility/function";
 
 const Navbar = ({ toggle }) => {
   return (
@@ -30,13 +30,7 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             {Navigation.map(({ label, path }, i) => (
               <NavItem key={i}>
-                <NavLinks
-                  to={path}
-                  smooth={true}
-                  duration={300}
-                  spy={true}
-                  exact="true"
-                >
+                <NavLinks to={path} smooth={true} duration={300} spy={true} exact="true">
                   {label}
                 </NavLinks>
               </NavItem>

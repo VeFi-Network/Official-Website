@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   SidebarContainer,
   Icon,
@@ -7,10 +7,10 @@ import {
   SidebarMenu,
   SidebarLink,
   SidebarBtnWrap,
-  SidebarBtn,
-} from '../../styles/navigation/sidebar/Sidebar.styled';
-import { NavLinks } from '../../utility/data/Navlinks';
-import { Button } from '../../utility/GlobalStyle';
+  SidebarBtn
+} from "../../styles/navigation/sidebar/Sidebar.styled";
+import { NavLinks } from "../../utility/data/Navlinks";
+import { Button } from "../../utility/GlobalStyle";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (

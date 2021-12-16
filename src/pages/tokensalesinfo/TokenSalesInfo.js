@@ -1,6 +1,6 @@
-import React from 'react';
-import DoughnutChart from '../../components/Doughnut';
-import { Heading, Subheading } from '../../styles/section/Section.styled';
+import React from "react";
+import DoughnutChart from "../../components/Doughnut";
+import { Heading, Subheading } from "../../styles/section/Section.styled";
 import {
   ChartContainer,
   ChartData,
@@ -11,12 +11,12 @@ import {
   BarWrapper,
   Bar,
   BarValue,
-  BarBg,
-} from '../../styles/tokensalesinfo/TokensalesInfo.styled';
-import { TokenSupply } from '../../utility/data/TokenSales.Data';
-import { Container, SectionWrapper } from '../../utility/GlobalStyle';
+  BarBg
+} from "../../styles/tokensalesinfo/TokensalesInfo.styled";
+import { TokenSupply } from "../../utility/data/TokenSales.Data";
+import { Container, SectionWrapper } from "../../utility/GlobalStyle";
 
-const TokenSalesInfo = (props) => {
+const TokenSalesInfo = props => {
   return (
     <>
       <SectionWrapper bg="#fff">
@@ -25,16 +25,12 @@ const TokenSalesInfo = (props) => {
             <Heading size="sm" bold className="heading">
               {TokenSupply.heading}
             </Heading>
-            <Subheading className="subheading">
-              {TokenSupply.subheading}
-            </Subheading>
+            <Subheading className="subheading">{TokenSupply.subheading}</Subheading>
 
             <BarWrapper>
               {TokenSupply.datasets.map((item, i) => (
                 <Bar key={i}>
-                  <BarValue marginBottom={item.margibBottom}>
-                    {item.value}
-                  </BarValue>
+                  <BarValue marginBottom={item.margibBottom}>{item.value}</BarValue>
                   <BarBg bg={item.color} height={item.height}>
                     &nbsp;
                   </BarBg>

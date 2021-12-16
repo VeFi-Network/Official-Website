@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ChartContainer = styled.div`
   width: 100%;
@@ -68,7 +68,7 @@ export const Data = styled.div`
 `;
 
 export const DataBg = styled.div`
-  background: ${({ bg }) => bg || '#000'};
+  background: ${({ bg }) => bg || "#000"};
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -97,11 +97,11 @@ export const Bar = styled.div`
 export const BarValue = styled.div`
   position: absolute;
   bottom: 0;
-  margin-bottom: ${({ marginBottom }) => marginBottom || ''};
+  margin-bottom: ${({ marginBottom }) => marginBottom || ""};
 `;
 export const BarBg = styled.div`
-  background: ${({ bg }) => bg || ''};
-  height: ${({ height }) => height || ''};
+  background: ${({ bg }) => bg || ""};
+  height: ${({ height }) => height || ""};
   width: 100%;
   bottom: 0;
   position: absolute;
