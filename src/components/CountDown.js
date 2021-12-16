@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   CountdownContainer,
   CountdownProgressBar,
@@ -7,11 +7,11 @@ import {
   CountdownWrapper,
   Timer,
   CountdownHeading,
-  CountdownBtn,
-} from '../styles/countdown/Countdown.styled';
-import LinearProgress from '@mui/material/LinearProgress';
-import { Button } from './index';
-import { Heading } from '../styles/section/Section.styled';
+  CountdownBtn
+} from "../styles/countdown/Countdown.styled";
+import LinearProgress from "@mui/material/LinearProgress";
+import { Button } from "./index";
+import { Heading } from "../styles/section/Section.styled";
 
 const CountDown = ({ bg, border, bgColor, hoverBg }) => {
   return (
@@ -27,11 +27,7 @@ const CountDown = ({ bg, border, bgColor, hoverBg }) => {
             </CountdownHeading>
           </CountdownTextWrapper>
           <CountdownProgressBar>
-            <LinearProgress
-              variant="determinate"
-              value={70}
-              className="progress"
-            />
+            <LinearProgress variant="determinate" value={70} className="progress" />
           </CountdownProgressBar>
           <CountdownTextWrapper>
             <Heading fontColor="#fff">Total amount VEF 5,500,000</Heading>
@@ -58,14 +54,7 @@ const CountDown = ({ bg, border, bgColor, hoverBg }) => {
             </Timer>
           </CountdownTimerWrapper>
           <CountdownBtn>
-            <Button
-              bgColor={bgColor}
-              hoverBg={hoverBg}
-              fontColor="#fff"
-              bold
-              border
-              label="Buy on Pancakeswap"
-            />
+            <Button bgColor={bgColor} hoverBg={hoverBg} fontColor="#fff" bold border label="Buy on Pancakeswap" />
           </CountdownBtn>
         </CountdownWrapper>
       </CountdownContainer>

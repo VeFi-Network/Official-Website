@@ -1,15 +1,11 @@
-import React from 'react';
-import { Flag, Image, ScrollToTop } from '../index';
-import { FiDownload } from 'react-icons/fi';
-import {
-  FooterLink,
-  FooterLogo,
-  FooterWrapper,
-} from '../../styles/footer/Footer.styled';
-import { Heading, Subheading } from '../../styles/section/Section.styled';
-import { Box, Column, Row } from '../../styles/section/Tokenomics.styled';
-import { Logo } from '../../utility';
-import { Button, Container, SectionWrapper } from '../../utility/GlobalStyle';
+import React from "react";
+import { Flag, Image, ScrollToTop } from "../index";
+import { FiDownload } from "react-icons/fi";
+import { FooterLink, FooterLogo, FooterWrapper } from "../../styles/footer/Footer.styled";
+import { Heading, Subheading } from "../../styles/section/Section.styled";
+import { Box, Column, Row } from "../../styles/section/Tokenomics.styled";
+import { Logo } from "../../utility";
+import { Button, Container, SectionWrapper } from "../../utility/GlobalStyle";
 
 const Footer = ({ heading, subheading, document, id }) => {
   return (
@@ -39,7 +35,7 @@ const Footer = ({ heading, subheading, document, id }) => {
           </Row>
         </Container>
       </FooterWrapper>
-      <SectionWrapper bg="#fff" style={{ textAlign: 'center' }}>
+      <SectionWrapper bg="#fff" style={{ textAlign: "center" }}>
         <Container>
           <Row>
             <Column flex="1">
