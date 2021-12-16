@@ -1,17 +1,11 @@
-import React from 'react';
-import {
-  ContactLink,
-  Icon,
-  SocialIcon,
-  SocialIconContainer,
-  TopLine,
-} from '../../styles/contactus/Contactus.styled';
-import { Heading, Subheading } from '../../styles/section/Section.styled';
-import { Column, Row } from '../../styles/section/Tokenomics.styled';
-import { Container, SectionWrapper } from '../../utility/GlobalStyle';
-import { FiArrowRight } from '../../utility';
+import React from "react";
+import { ContactLink, Icon, SocialIcon, SocialIconContainer, TopLine } from "../../styles/contactus/Contactus.styled";
+import { Heading, Subheading } from "../../styles/section/Section.styled";
+import { Column, Row } from "../../styles/section/Tokenomics.styled";
+import { Container, SectionWrapper } from "../../utility/GlobalStyle";
+import { FiArrowRight } from "../../utility";
 
-const Contact = (props) => {
+const Contact = props => {
   return (
     <>
       <SectionWrapper bg="#000" id={props.id}>
@@ -21,11 +15,7 @@ const Contact = (props) => {
               <TopLine>
                 <Heading fontColor="#ccc">{props.title}</Heading>
               </TopLine>
-              <Heading
-                size="sm"
-                fontColor="var(--bg-green)"
-                className="contactusHeading"
-              >
+              <Heading size="sm" fontColor="var(--bg-green)" className="contactusHeading">
                 {props.heading}
               </Heading>
               <Subheading fontColor="#ccc">{props.subheading}</Subheading>

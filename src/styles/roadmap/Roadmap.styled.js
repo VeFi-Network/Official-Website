@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Heading } from '../section/Section.styled';
+import styled from "styled-components";
+import { Heading } from "../section/Section.styled";
 
 export const RoadmapContainer = styled.div`
   margin-top: -80px;
@@ -46,7 +46,7 @@ export const Timeline = styled.div`
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 1px;
@@ -67,7 +67,7 @@ export const TimelineLi = styled.li`
     margin-bottom: 0px;
   }
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 10px;
     height: 10px;

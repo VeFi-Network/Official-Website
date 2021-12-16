@@ -1,27 +1,27 @@
-import { Exchange, Wallet, btc } from '../index';
+import { Exchange, Wallet, btc } from "../index";
 export const VefiFeatures = {
-  title: 'The VEFI Ecosystem',
+  title: "The VEFI Ecosystem",
   subtitle:
-    "We're building the fastest Blockchain platform which can process over 1 million transactions per second, is highly secure and scalable, user friendly for building DApps",
+    "A blockchain ecosystem aimed at the proliferation of crypto users and mass adoption of blockchain technology.",
   features: [
     {
-      title: 'Vefi Exchange',
+      title: "Exchange",
       img: Exchange,
       description:
-        'Features like liquid Swap, Launchpad, savings, and trading features which include futures, P2P, margin, spot , etc along with DeFi features like loans, VEFI pay for crypto spending.',
+        "Includes features such as liquid swap, launchpads, savings, and trading features such as futures, P2P, margin, spot e.t.c. alongside DeFi features like loans, on-chain deposits e.t.c."
     },
     {
-      title: 'Vefi Wallet',
+      title: "Wallet",
       img: Wallet,
       description:
-        'VEFI ensures that this wallet is flexible, secure, easy, and simple to use whereby enabling users to store, spend, receive, send, swap and exchange their crypto-assets instantly.',
+        "A non-custodian wallet that's flexible and secure, allowing users to send and swap crypto assets with ease."
     },
     {
-      title: 'Vefi Smart Contract',
+      title: "Blockchain",
       img: btc,
       description:
-        'A new generation high-performance blockchain based on a unique consensus algorithm (V-DPoS) with the unique ability to process over 1 million + transactions per second with almost zero transaction fees at a near-instant processing time.',
-    },
+        "A new generation high-performant smart contract based blockchain based on a unique consensus algorithm (V-DPoS) with the unique ability to process over 1 million + transactions per second with almost zero transaction fees at a near-instant processing time."
+    }
     // {
     //   title: 'Staking',
     //   img: Staking,
@@ -54,15 +54,15 @@ export const VefiFeatures = {
     // },
   ],
   useCases: {
-    heading: 'Uses of the Vefi Smart Chain.',
+    heading: "Uses of the Vefi Smart Chain.",
     useCase: [
-      'Payment of transaction fees to the VEFI Smart chain network.',
-      'Spending on products and services.',
-      'Depositing and getting recognized to Join the Master Node.',
-      'Payment of fees o VEFI Exchange which include loan interest, trading fees, investment on certain ICOs listed on VEFI luanchpad program, listing fees, etc.',
-      'Depositing to participate in Voting for the Matser Node Clusters.',
-      'Joining DeFi built on VEFI Smart Chain.',
-      'Depositing to participate in VEFI Smart Chain (VSC) staking program to secure the network.',
-    ],
-  },
+      "Payment of transaction fees to the VEFI Smart chain network.",
+      "Spending on products and services.",
+      "Depositing and getting recognized to Join the Master Node.",
+      "Payment of fees o VEFI Exchange which include loan interest, trading fees, investment on certain ICOs listed on VEFI luanchpad program, listing fees, etc.",
+      "Depositing to participate in Voting for the Matser Node Clusters.",
+      "Joining DeFi built on VEFI Smart Chain.",
+      "Depositing to participate in VEFI Smart Chain (VSC) staking program to secure the network."
+    ]
+  }
 };

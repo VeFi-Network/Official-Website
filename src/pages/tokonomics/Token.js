@@ -1,5 +1,5 @@
-import React from 'react';
-import { Heading, Subheading } from '../../styles/section/Section.styled';
+import React from "react";
+import { Heading, Subheading } from "../../styles/section/Section.styled";
 import {
   Box,
   BoxContent,
@@ -9,11 +9,11 @@ import {
   HeadingWrapper,
   Row,
   RowContainer,
-  TokenContainer,
-} from '../../styles/section/Tokenomics.styled';
-import { Container } from '../../utility/GlobalStyle';
+  TokenContainer
+} from "../../styles/section/Tokenomics.styled";
+import { Container } from "../../utility/GlobalStyle";
 
-const Token = (tokenomics) => {
+const Token = tokenomics => {
   return (
     <>
       <TokenContainer id={tokenomics.id}>
@@ -22,9 +22,7 @@ const Token = (tokenomics) => {
             <Heading size="sm" bold className="tokenomics">
               {tokenomics.title}
             </Heading>
-            <Subheading className="tokenomicsSub">
-              {tokenomics.subtitle}
-            </Subheading>
+            <Subheading className="tokenomicsSub">{tokenomics.subtitle}</Subheading>
           </HeadingWrapper>
           <RowContainer>
             <Row>

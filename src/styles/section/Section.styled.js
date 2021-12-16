@@ -1,11 +1,11 @@
-import styled from 'styled-components';
-import { LinkRouter } from '../../utility';
+import styled from "styled-components";
+import { LinkRouter } from "../../utility";
 
 export const HeroSectionContainer = styled.section`
   height: 100%;
   width: 100%;
   display: flex;
-  background: url(${({ bg }) => bg || ''});
+  background: url(${({ bg }) => bg || ""});
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,14 +21,14 @@ export const SectionRow = styled.div`
   display: flex;
   padding: 80px 0px;
   flex-wrap: wrap;
-  flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
+  flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
 
   @media screen and (max-width: 768px) {
     padding: 40px 0px;
   }
 `;
 export const SectionColumn = styled.div`
-  flex: ${({ flex }) => flex || '1'};
+  flex: ${({ flex }) => flex || "1"};
 
   @media screen and (max-width: 768px) {
     max-width: 100%;
@@ -39,36 +39,30 @@ export const SectionColumn = styled.div`
 `;
 
 export const Heading = styled.h1`
-  font-size: ${(props) =>
-    props.size === 'sm'
-      ? 'var(--font-sm)'
-      : props.size === 'md'
-      ? 'var(--font-md)'
-      : props.size === 'bg'
-      ? 'var(--font-bg)'
-      : '16px'};
-  font-family: 'Gilroy-Bold ☞';
-  max-width: ${({ maxWidth }) => maxWidth || ''};
-  color: ${({ fontColor }) => fontColor || 'var(--heading-color)'};
+  font-size: ${props =>
+    props.size === "sm"
+      ? "var(--font-sm)"
+      : props.size === "md"
+      ? "var(--font-md)"
+      : props.size === "bg"
+      ? "var(--font-bg)"
+      : "16px"};
+  font-family: "Gilroy-Bold ☞";
+  max-width: ${({ maxWidth }) => maxWidth || ""};
+  color: ${({ fontColor }) => fontColor || "var(--heading-color)"};
   line-height: 1.3;
-  font-weight: ${({ bold }) => (bold ? '600' : 'medium')};
+  font-weight: ${({ bold }) => (bold ? "600" : "medium")};
 
   @media screen and (max-width: 768px) {
-    font-size: ${(props) =>
-      props.size === 'sm'
-        ? '1.1rem'
-        : props.size === 'md'
-        ? '2rem'
-        : props.size === 'bg'
-        ? '2.5rem'
-        : '14px'};
+    font-size: ${props =>
+      props.size === "sm" ? "1.1rem" : props.size === "md" ? "2rem" : props.size === "bg" ? "2.5rem" : "14px"};
   }
 `;
 export const Subheading = styled.p`
-  padding: ${({ padding }) => padding || '15px 0px 30px 0px'};
-  max-width: ${({ mxWidth }) => mxWidth || ''};
-  font-size: ${({ size }) => size || '0.9rem'};
-  color: ${({ fontColor }) => fontColor || ''};
+  padding: ${({ padding }) => padding || "15px 0px 30px 0px"};
+  max-width: ${({ mxWidth }) => mxWidth || ""};
+  font-size: ${({ size }) => size || "0.9rem"};
+  color: ${({ fontColor }) => fontColor || ""};
 
   @media screen and (max-width: 768px) {
     font-size: small;
@@ -113,7 +107,7 @@ export const InfoRow = styled.div`
   justify-content: center;
   text-align: center;
   display: flex;
-  flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
+  flex-direction: ${({ imgStart }) => (imgStart ? "row-reverse" : "row")};
 
   @media screen and (max-width: 768px) {
     flex-direction: column-reverse;
@@ -224,7 +218,7 @@ export const SectionHeading = styled.div`
   justify-content: center;
   text-align: center;
   width: 100%;
-  max-width: ${({ mxWidth }) => mxWidth || ''};
+  max-width: ${({ mxWidth }) => mxWidth || ""};
   margin-left: auto;
   margin-right: auto;
 
@@ -277,7 +271,7 @@ export const SectionItem = styled.div`
   text-align: center;
 
   ${Heading} {
-    font-family: 'SF UI Text Regular';
+    font-family: "SF UI Text Regular";
   }
   @media screen and (max-width: 768px) {
     flex: 0 0 100%;

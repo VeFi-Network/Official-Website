@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Subheading } from '../section/Section.styled';
+import styled from "styled-components";
+import { Subheading } from "../section/Section.styled";
 
 export const TeamContainer = styled.div`
   width: 100%;

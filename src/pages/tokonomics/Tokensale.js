@@ -1,6 +1,6 @@
-import React from 'react';
-import { Countdown } from '../../components';
-import { Heading, Subheading } from '../../styles/section/Section.styled';
+import React from "react";
+import { Countdown } from "../../components";
+import { Heading, Subheading } from "../../styles/section/Section.styled";
 import {
   Circle,
   Column,
@@ -11,11 +11,11 @@ import {
   Row,
   RowContainer,
   TokenContainer,
-  TokenSaleCountdown,
-} from '../../styles/section/Tokenomics.styled';
-import { Container } from '../../utility/GlobalStyle';
+  TokenSaleCountdown
+} from "../../styles/section/Tokenomics.styled";
+import { Container } from "../../utility/GlobalStyle";
 
-const Tokensale = (tokensale) => {
+const Tokensale = tokensale => {
   return (
     <TokenContainer bg="#000">
       <Container>
@@ -43,12 +43,7 @@ const Tokensale = (tokensale) => {
             </Column>
             <Column flex="1">
               <TokenSaleCountdown>
-                <Countdown
-                  bg="#000"
-                  hoverBg="var(--bg-green)"
-                  border
-                  bgColor="var(--bg-blue)"
-                />
+                <Countdown bg="#000" hoverBg="var(--bg-green)" border bgColor="var(--bg-blue)" />
               </TokenSaleCountdown>
             </Column>
           </Row>

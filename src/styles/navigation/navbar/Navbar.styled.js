@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { LinkRouter, LinkScroll } from '../../../utility';
+import styled from "styled-components";
+import { LinkRouter, LinkScroll } from "../../../utility";
 
 export const Nav = styled.nav`
   height: 80px;

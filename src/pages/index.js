@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   HeroSection,
   InfoSection,
@@ -12,8 +12,8 @@ import {
   Roadmap,
   FAQ,
   TokenSalesInfo,
-  Team,
-} from '../components';
+  Team
+} from "../components";
 import {
   AboutUs,
   VefiFeatures,
@@ -24,9 +24,9 @@ import {
   Homedata,
   TeamMembers,
   FrequentlyAskedQuestions,
-  TokenInfo,
-} from '../utility/data';
-import { RoadmapData } from '../utility/data/Roadmap.data';
+  TokenInfo
+} from "../utility/data";
+import { RoadmapData } from "../utility/data/Roadmap.data";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,7 +1,7 @@
-import React from 'react';
-import { Image } from '../../components';
-import { FaqTextWrapper } from '../../styles/faq/Faq.styled';
-import { Heading, Subheading } from '../../styles/section/Section.styled';
+import React from "react";
+import { Image } from "../../components";
+import { FaqTextWrapper } from "../../styles/faq/Faq.styled";
+import { Heading, Subheading } from "../../styles/section/Section.styled";
 import {
   TeamContainer,
   TeamMember,
@@ -9,11 +9,11 @@ import {
   TeamMemeberImage,
   TeamMemberName,
   TeamMemberRole,
-  SocialLinks,
-} from '../../styles/team/Team.styled';
-import { Container, SectionWrapper } from '../../utility/GlobalStyle';
-import { FiTwitter, FaLinkedinIn } from '../../utility';
-const Team = (props) => {
+  SocialLinks
+} from "../../styles/team/Team.styled";
+import { Container, SectionWrapper } from "../../utility/GlobalStyle";
+import { FiTwitter, FaLinkedinIn } from "../../utility";
+const Team = props => {
   return (
     <>
       <SectionWrapper id={props.id}>
@@ -38,18 +38,12 @@ const Team = (props) => {
                     <Subheading>{user.role}</Subheading>
                   </TeamMemberRole>
                   {user.socialmedia.twitter && (
-                    <SocialLinks
-                      href={user.socialmedia.twitter}
-                      target="_blank"
-                    >
+                    <SocialLinks href={user.socialmedia.twitter} target="_blank">
                       <FiTwitter />
                     </SocialLinks>
                   )}
                   {user.socialmedia.linkedln && (
-                    <SocialLinks
-                      href={user.socialmedia.linkedln}
-                      target="_blank"
-                    >
+                    <SocialLinks href={user.socialmedia.linkedln} target="_blank">
                       <FaLinkedinIn />
                     </SocialLinks>
                   )}

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CountdownContainer = styled.div`
   margin-left: 30px;
@@ -14,7 +14,7 @@ export const CountdownContainer = styled.div`
 `;
 
 export const CountdownWrapper = styled.div`
-  background: ${({ bg }) => bg || '#000'};
+  background: ${({ bg }) => bg || "#000"};
   display: flex;
   padding: 20px 40px;
   flex-direction: column;
@@ -22,7 +22,7 @@ export const CountdownWrapper = styled.div`
   color: #fff;
   width: 100%;
   max-width: 450px;
-  border: ${({ border }) => (border ? '2px solid var(--bg-blue)' : 'none')};
+  border: ${({ border }) => (border ? "2px solid var(--bg-blue)" : "none")};
   @media screen and (max-width: 768px) {
   }
 `;
@@ -59,9 +59,9 @@ export const Timer = styled.div`
   }
 `;
 export const CountdownHeading = styled.div`
-  text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : '')};
-  font-size: ${({ sm }) => (sm ? 'var(--font-sm)' : '1rem')};
-  font-weight: ${({ bold }) => (bold ? '600' : '')};
+  text-transform: ${({ uppercase }) => (uppercase ? "uppercase" : "")};
+  font-size: ${({ sm }) => (sm ? "var(--font-sm)" : "1rem")};
+  font-weight: ${({ bold }) => (bold ? "600" : "")};
   padding: 10px 0px;
   font-family: var(--fm-bold);
 `;
