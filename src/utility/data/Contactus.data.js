@@ -1,57 +1,48 @@
-import {
-  Discord,
-  Facebook,
-  Instagram,
-  Medium,
-  Telegram,
-  Twitter,
-  Youtube,
-} from '../index';
+import { Discord, Facebook, Instagram, Medium, Telegram, Twitter, Youtube } from "../index";
 
 export const Contactus = {
-  id: 'contact',
-  title: 'get in touch with us',
-  heading:
-    'Ask questions in the chat section and check out our social media handles.',
+  id: "contact",
+  title: "get in touch with us",
+  heading: "Ask questions in the chat section and check out our social media handles.",
   subheading:
-    ' Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Bibendum Est Ultricies Integer Quis. Iaculis Urna Id',
-  buttonText: 'Send An Email to Vefi Network ',
-  url: '/',
+    " Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Bibendum Est Ultricies Integer Quis. Iaculis Urna Id",
+  buttonText: "Send An Email to Vefi Network ",
+  url: "/",
   socialMedia: [
     {
-      title: 'Facebook',
+      title: "Facebook",
       img: Facebook,
-      url: 'https://www.facebook.com',
+      url: "https://facebook.com/vefi.official"
     },
     {
-      title: 'Instagram',
+      title: "Instagram",
       img: Instagram,
-      url: 'https://www.instagram.com',
+      url: "https://www.instagram.com/vefi.official/"
     },
     {
-      title: 'Twitter',
+      title: "Twitter",
       img: Twitter,
-      url: 'https://www.twitter.com',
+      url: "https://www.twitter.com/vefi_official"
     },
     {
-      title: 'Telegram',
+      title: "Telegram",
       img: Telegram,
-      url: 'https://t.me/vefi_official',
+      url: "https://t.me/vefi_official"
     },
     {
-      title: 'Medium',
+      title: "Medium",
       img: Medium,
-      url: 'https://www.medium.com',
+      url: "https://medium.com/@vefi.official"
     },
     {
-      title: 'Youtube',
+      title: "Youtube",
       img: Youtube,
-      url: 'https://www.youtube.com',
+      url: "https://www.youtube.com/channel/UCXMsXe5AvNSPL32Yna8MKdQ"
     },
     {
-      title: 'Discord',
+      title: "Discord",
       img: Discord,
-      url: 'https://www.discord.com',
-    },
-  ],
+      url: "https://www.discord.com"
+    }
+  ]
 };
