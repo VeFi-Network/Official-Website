@@ -1,3 +1,3 @@
 export const ConnectWallet = () => {
-  alert('Connect Wallet');
+  console.log("Connect Wallet");
 };

@@ -1,3 +1,3 @@
 export const JoinAirDrop = () => {
-  alert('Join Air Drop');
+  console.log("Join Air Drop");
 };
