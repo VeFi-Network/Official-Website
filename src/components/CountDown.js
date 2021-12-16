@@ -54,7 +54,7 @@ const CountDown = ({ bg, border, bgColor, hoverBg }) => {
             </Timer>
           </CountdownTimerWrapper>
           <CountdownBtn>
-            <Button bgColor={bgColor} hoverBg={hoverBg} fontColor="#fff" bold border label="Buy on Pancakeswap" />
+            <Button bgColor={bgColor} hoverBg={hoverBg} fontColor="#fff" bold border label="Buy on Pinksale" />
           </CountdownBtn>
         </CountdownWrapper>
       </CountdownContainer>
