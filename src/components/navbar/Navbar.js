@@ -8,12 +8,11 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink,
 } from '../../styles/navigation/navbar/Navbar.styled';
 import { Logo, FaBars } from '../../utility';
-import { Button } from '../../utility/GlobalStyle';
 import { NavLinks as Navigation } from '../../utility/data/Navlinks';
-import { Flag, Image } from '../../components';
+import { Flag, Image, Button } from '../../components';
+import { ConnectWallet } from '../../utility/function';
 
 const Navbar = ({ toggle }) => {
   return (
@@ -24,6 +23,7 @@ const Navbar = ({ toggle }) => {
             <Image img={Logo} alt="Logo" />
             <Flag />
           </NavLogo>
+
           <MobileIcon onClick={toggle}>
             <FaBars className="icon" />
           </MobileIcon>
@@ -43,16 +43,14 @@ const Navbar = ({ toggle }) => {
             ))}
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/connect">
-              <Button
-                bgColor="#000"
-                fontColor="#fff"
-                border
-                hoverBg="var(--bg-blue)"
-              >
-                Connect Wallet
-              </Button>
-            </NavBtnLink>
+            <Button
+              bgColor="#000"
+              fontColor="#fff"
+              border
+              hoverBg="var(--bg-blue)"
+              label="Connect Wallet"
+              onClick={ConnectWallet}
+            />
           </NavBtn>
         </NavbarContainer>
       </Nav>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '../../components';
 import CountDown from '../../components/CountDown';
 import Image from '../../components/Image';
 import {
@@ -13,7 +14,8 @@ import {
   Brand,
 } from '../../styles/section/Section.styled';
 import { HeroSectionBg } from '../../utility';
-import { Button, Container } from '../../utility/GlobalStyle';
+import { JoinAirDrop } from '../../utility/function';
+import { Container } from '../../utility/GlobalStyle';
 
 const HeroSection = (props) => {
   return (
@@ -28,9 +30,13 @@ const HeroSection = (props) => {
                   {props.subheading}
                 </Subheading>
                 <Link to="/">
-                  <Button border hoverBg="var(--bg-blue)" hoverColor="#fff">
-                    {props.buttonText}
-                  </Button>
+                  <Button
+                    border
+                    hoverBg="var(--bg-blue)"
+                    hoverColor="#fff"
+                    label={props.buttonText}
+                    onClick={JoinAirDrop}
+                  />
                 </Link>
               </TextWrapper>
             </SectionColumn>

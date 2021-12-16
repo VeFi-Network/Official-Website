@@ -96,7 +96,6 @@ export const Button = styled.button`
   border: ${({ border }) => (border ? '1px solid #000' : 'none')};
   cursor: pointer;
   align-items: center;
-
   justify-content: center;
   transition: 0.5s all ease-in-out;
 
@@ -128,6 +127,50 @@ export const SectionWrapper = styled.section`
   @media screen and (max-width: 768px) {
     padding-top: 40px;
     padding-bottom: 0px;
+  }
+`;
+export const ScrollToTopWrapper = styled.div`
+  position: fixed;
+  display: flex;
+
+  bottom: 20px;
+  right: 0;
+  align-items: flex-end;
+  text-align: right;
+  justify-content: right;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    width: 90%;
+    text-align: center;
+    justify-content: center;
+  }
+  .arrow {
+    color: var(--bg-blue);
+    font-size: 3rem;
+    margin-right: 30px;
+
+    @media screen and (max-width: 768px) {
+      margin-right: 0px;
+    }
   }
 `;
 export default GlobalStyle;

@@ -42,6 +42,8 @@ const InfoSection = ({ AboutUs }) => {
                   fontColor="#fff"
                   style={{ marginTop: '20px' }}
                   className="button"
+                  icon={<FiDownload />}
+                  label={AboutUs?.buttonText}
                 >
                   <FiDownload /> &nbsp;
                   {AboutUs?.buttonText}

@@ -1,5 +1,7 @@
 export { default as Navbar } from '../components/navbar/Navbar';
 export { default as Sidebar } from '../components/sidebar/Sidebar';
+export { default as Button } from '../components/Button';
+export { default as ScrollToTop } from '../components/ScrollToTop';
 export { default as Image } from '../components/Image';
 export { default as HeroSection } from '../pages/section/HeroSection';
 export { default as InfoSection } from '../pages/section/InfoSection';

@@ -10,7 +10,7 @@ import {
   CountdownBtn,
 } from '../styles/countdown/Countdown.styled';
 import LinearProgress from '@mui/material/LinearProgress';
-import { Button } from '../utility/GlobalStyle';
+import { Button } from './index';
 import { Heading } from '../styles/section/Section.styled';
 
 const CountDown = ({ bg, border, bgColor, hoverBg }) => {
@@ -64,9 +64,8 @@ const CountDown = ({ bg, border, bgColor, hoverBg }) => {
               fontColor="#fff"
               bold
               border
-            >
-              Buy on Pancakeswap
-            </Button>
+              label="Buy on Pancakeswap"
+            />
           </CountdownBtn>
         </CountdownWrapper>
       </CountdownContainer>

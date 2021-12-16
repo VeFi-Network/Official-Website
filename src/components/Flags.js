@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactFlagsSelect from 'react-flags-select';
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 const CountryFlagCountainer = styled.div`
   .menu-flags-button {
@@ -11,6 +12,7 @@ const Flags = () => {
   const [selected, setSelected] = useState('US');
   return (
     <>
+      <Helmet></Helmet>
       <CountryFlagCountainer>
         <ReactFlagsSelect
           selected={selected}

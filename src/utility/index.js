@@ -35,6 +35,7 @@ export {
   FaRegEnvelope,
   FaCheckCircle,
   FaLinkedinIn,
+  FaArrowCircleUp,
 } from 'react-icons/fa';
 
 export { FiArrowRight, FiDownload, FiTwitter } from 'react-icons/fi';

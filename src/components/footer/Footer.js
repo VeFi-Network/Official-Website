@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flag, Image } from '..';
+import { Flag, Image, ScrollToTop } from '../index';
 import { FiDownload } from 'react-icons/fi';
 import {
   FooterLink,
@@ -50,6 +50,7 @@ const Footer = ({ heading, subheading, document, id }) => {
           </Row>
         </Container>
       </SectionWrapper>
+      <ScrollToTop />
     </>
   );
 };
