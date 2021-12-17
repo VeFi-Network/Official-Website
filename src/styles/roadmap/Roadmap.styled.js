@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Heading } from '../section/Section.styled';
+import styled from "styled-components";
+import { Heading } from "../section/Section.styled";
 
 export const RoadmapContainer = styled.div`
   margin-top: -80px;
@@ -46,7 +46,7 @@ export const Timeline = styled.div`
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     height: 100%;
     width: 1px;
@@ -67,7 +67,7 @@ export const TimelineLi = styled.li`
     margin-bottom: 0px;
   }
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 10px;
     height: 10px;
@@ -90,7 +90,7 @@ export const TimelineLi = styled.li`
         text-align: left;
         padding: 0px 5px 0px 0px;
         word-wrap: break-word;
-        font-size: 12px;
+        font-size: 26px;
       }
     }
     ${Event} {
@@ -110,9 +110,9 @@ export const TimelineLi = styled.li`
 
       @media screen and (max-width: 768px) {
         text-align: left;
-        padding: 0px 0px 0px 8px;
+        padding: 0px 0px 0px 20px;
         word-wrap: break-word;
-        font-size: 12px;
+        font-size: 26px;
       }
     }
     ${Event} {

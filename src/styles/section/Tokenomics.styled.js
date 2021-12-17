@@ -1,11 +1,11 @@
-import styled from 'styled-components';
-import { Heading, Subheading } from './Section.styled';
+import styled from "styled-components";
+import { Heading, Subheading } from "./Section.styled";
 
 export const TokenContainer = styled.section`
   width: 100%;
   padding: 80px 0px 50px 0px;
   height: 100%;
-  background: ${({ bg }) => bg || ''};
+  background: ${({ bg }) => bg || ""};
   @media screen and (max-width: 768px) {
     height: 100%;
     padding: 40px 0px;
@@ -31,6 +31,13 @@ export const HeadingWrapper = styled.div`
     font: normal normal bold 40px/64px Gilroy ☞;
     margin-bottom: 30px;
   }
+
+  @media screen and (max-width: 768px) {
+    .tokenomicsSub {
+      font-size: 22px;
+      line-height: 1.8em;
+    }
+  }
 `;
 
 export const Row = styled.div`
@@ -43,13 +50,13 @@ export const Row = styled.div`
   }
 `;
 export const Column = styled.div`
-  flex: ${({ flex }) => flex || '1'};
+  flex: ${({ flex }) => flex || "1"};
   margin-right: 10px;
   height: 100%;
 
   &:last-child {
     margin-right: 0px;
-    flex: ${({ flex }) => flex || '0.5'};
+    flex: ${({ flex }) => flex || "0.5"};
     margin-left: 20px;
 
     @media screen and (max-width: 768px) {
@@ -86,6 +93,12 @@ export const BoxHeading = styled.div`
     font: normal normal 600 20px/30px Gilroy ☞;
     color: var(--bg-blue);
   }
+
+  @media screen and (max-width: 768px) {
+    ${Heading} {
+      font-size: 26px;
+    }
+  }
 `;
 export const BoxContent = styled.div`
   font-size: 18px;
@@ -110,7 +123,7 @@ export const RowContainer = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 `;
@@ -120,7 +133,7 @@ export const ColumnHeadingWrapper = styled.div`
 `;
 
 export const Circle = styled.span`
-  background: ${({ bg }) => bg || ''};
+  background: ${({ bg }) => bg || ""};
   width: 13px;
   height: 13px;
   object-fit: contain;

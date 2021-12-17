@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import { Row } from '../styles/section/Tokenomics.styled';
+import styled, { createGlobalStyle } from "styled-components";
+import { Row } from "../styles/section/Tokenomics.styled";
 
 const GlobalStyle = createGlobalStyle`
 :root{
@@ -65,14 +65,8 @@ html,body{
 
 export const Container = styled.div`
   z-index: 1;
-  width: ${(props) =>
-    props.mxWidth === 'sm'
-      ? '600px'
-      : props.mxWidth === 'md'
-      ? '800px'
-      : props.mxWidth === 'lg'
-      ? '1000px'
-      : '100%'};
+  width: ${props =>
+    props.mxWidth === "sm" ? "600px" : props.mxWidth === "md" ? "800px" : props.mxWidth === "lg" ? "1000px" : "100%"};
   max-width: 1200px;
   padding: 0 24px;
   margin-left: auto;
@@ -86,22 +80,22 @@ export const Container = styled.div`
 `;
 export const Button = styled.button`
   border-radius: 20px;
-  background: ${({ bgColor }) => bgColor || 'transparent'};
-  color: ${({ fontColor }) => fontColor || 'var(--heading-color)'};
+  background: ${({ bgColor }) => bgColor || "transparent"};
+  color: ${({ fontColor }) => fontColor || "var(--heading-color)"};
   white-space: nowrap;
-  padding: ${({ big }) => (big ? '12px 64px' : '12px 30px')};
+  padding: ${({ big }) => (big ? "12px 64px" : "12px 30px")};
   font-size: 0.85rem;
-  font-weight: ${({ bold }) => (bold ? '600' : '')};
+  font-weight: ${({ bold }) => (bold ? "600" : "")};
   outline: none;
-  border: ${({ border }) => (border ? '1px solid #000' : 'none')};
+  border: ${({ border }) => (border ? "1px solid #000" : "none")};
   cursor: pointer;
   align-items: center;
   justify-content: center;
   transition: 0.5s all ease-in-out;
 
   &:hover {
-    background: ${({ hoverBg }) => hoverBg || ''};
-    color: ${({ hoverColor }) => hoverColor || ''};
+    background: ${({ hoverBg }) => hoverBg || ""};
+    color: ${({ hoverColor }) => hoverColor || ""};
     border: 1px solid var(--bg-blue);
     transition: 0.5s all ease-in-out;
   }
@@ -113,11 +107,16 @@ export const Button = styled.button`
 export const SectionWrapper = styled.section`
   padding: 80px 0px;
   width: 100%;
-  background: ${({ bg }) => bg || ''};
+  background: ${({ bg }) => bg || ""};
   .contactusHeading {
     font: normal normal 600 36px/59px Gilroy ☞;
     color: #4fd09e;
     text-transform: capitalize;
+
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+      line-height: 35px;
+    }
   }
   ${Row} {
     @media screen and (max-width: 768px) {

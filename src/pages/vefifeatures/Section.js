@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Heading,
   SectionContainer,
@@ -7,11 +7,11 @@ import {
   SectionImg,
   SectionItem,
   Subheading,
-  SectionImgContainer,
-} from '../../styles/section/Section.styled';
-import { Container } from '../../utility/GlobalStyle';
+  SectionImgContainer
+} from "../../styles/section/Section.styled";
+import { Container } from "../../utility/GlobalStyle";
 
-const Section = (props) => {
+const Section = props => {
   return (
     <>
       <SectionContainer>
@@ -31,18 +31,17 @@ const Section = (props) => {
                 <Heading className="heading" bold>
                   {feature.title}
                 </Heading>
-                <Subheading className="subheading">
-                  {feature.description}
-                </Subheading>
+                <Subheading className="subheading">{feature.description}</Subheading>
               </SectionItem>
             ))}
           </SectionWrapper>
           <SectionHeading>
             <Heading
               style={{
-                font: ' normal normal bold 24px/30px Gilroy ☞',
-                paddingTop: '30px',
+                font: " normal normal bold 24px/30px Gilroy ☞",
+                paddingTop: "30px"
               }}
+              className="headingUseCase"
             >
               {props.useCases.heading}
             </Heading>
