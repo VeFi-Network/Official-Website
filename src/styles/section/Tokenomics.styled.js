@@ -6,12 +6,26 @@ export const TokenContainer = styled.section`
   padding: 80px 0px 50px 0px;
   height: 100%;
   background: ${({ bg }) => bg || ""};
+  opacity: ${({ opacity }) => opacity || "1"};
   @media screen and (max-width: 768px) {
     height: 100%;
     padding: 40px 0px;
   }
 `;
+export const BgContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: url(${({ bg }) => bg || ""});
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 
+  @media screen and (max-width: 768px) {
+    background-size: cover;
+    background-position: center;
+  }
+`;
 export const HeadingWrapper = styled.div`
   align-items: center;
   justify-content: center;
@@ -59,6 +73,11 @@ export const Column = styled.div`
     flex: ${({ flex }) => flex || "0.5"};
     margin-left: 20px;
 
+    .columnIcon {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
     @media screen and (max-width: 768px) {
       margin-left: 0px;
     }

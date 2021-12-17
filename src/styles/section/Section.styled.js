@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { LinkRouter } from "../../utility";
+import { HeroSectionBgMobile, LinkRouter } from "../../utility";
 
 export const HeroSectionContainer = styled.section`
   height: 100%;
@@ -12,8 +12,9 @@ export const HeroSectionContainer = styled.section`
   display: flex;
 
   @media screen and (max-width: 768px) {
-    background-position: left;
-    background-size: contain;
+    background-image: url(${HeroSectionBgMobile});
+    background-position: center;
+    background-size: cover;
   }
 `;
 
