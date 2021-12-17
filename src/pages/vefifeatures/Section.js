@@ -41,6 +41,7 @@ const Section = props => {
                 font: " normal normal bold 24px/30px Gilroy ☞",
                 paddingTop: "30px"
               }}
+              className="headingUseCase"
             >
               {props.useCases.heading}
             </Heading>

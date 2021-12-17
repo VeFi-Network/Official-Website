@@ -90,7 +90,7 @@ export const TimelineLi = styled.li`
         text-align: left;
         padding: 0px 5px 0px 0px;
         word-wrap: break-word;
-        font-size: 12px;
+        font-size: 26px;
       }
     }
     ${Event} {
@@ -110,9 +110,9 @@ export const TimelineLi = styled.li`
 
       @media screen and (max-width: 768px) {
         text-align: left;
-        padding: 0px 0px 0px 8px;
+        padding: 0px 0px 0px 20px;
         word-wrap: break-word;
-        font-size: 12px;
+        font-size: 26px;
       }
     }
     ${Event} {

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Subheading } from "../section/Section.styled";
+import { Heading, Subheading } from "../section/Section.styled";
 
 export const TeamContainer = styled.div`
   width: 100%;
@@ -20,7 +20,7 @@ export const TeamMember = styled.div`
   gap: 5px;
 
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 `;
 export const TeamWrapper = styled.div`
@@ -32,7 +32,7 @@ export const TeamWrapper = styled.div`
 `;
 export const TeamMemeberImage = styled.div`
   width: 100%;
-  height: 260px;
+  height: 250px;
 
   img {
     width: 240px;
@@ -40,19 +40,32 @@ export const TeamMemeberImage = styled.div`
     object-fit: cover;
     border-radius: 50%;
     @media screen and (max-width: 768px) {
-      height: 250px;
-      width: 250px;
+      height: 380px;
+      width: 100%;
       border-radius: 20px;
     }
   }
+  @media screen and (max-width: 768px) {
+    height: 400px;
+  }
 `;
-export const TeamMemberName = styled.div``;
+export const TeamMemberName = styled.div`
+  @media screen and (max-width: 768px) {
+    ${Heading} {
+      font-size: 26px;
+    }
+  }
+`;
 export const TeamMemberRole = styled.div`
   margin-bottom: 10px;
 
   ${Subheading} {
     padding: 0px;
     font-size: small;
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 `;
 export const SocialLinks = styled.a`

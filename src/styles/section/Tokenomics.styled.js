@@ -6,12 +6,26 @@ export const TokenContainer = styled.section`
   padding: 80px 0px 50px 0px;
   height: 100%;
   background: ${({ bg }) => bg || ""};
+  opacity: ${({ opacity }) => opacity || "1"};
   @media screen and (max-width: 768px) {
     height: 100%;
     padding: 40px 0px;
   }
 `;
+export const BgContainer = styled.div`
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: url(${({ bg }) => bg || ""});
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 
+  @media screen and (max-width: 768px) {
+    background-size: cover;
+    background-position: center;
+  }
+`;
 export const HeadingWrapper = styled.div`
   align-items: center;
   justify-content: center;
@@ -30,6 +44,13 @@ export const HeadingWrapper = styled.div`
   .tokenSaleHeading {
     font: normal normal bold 40px/64px Gilroy ☞;
     margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .tokenomicsSub {
+      font-size: 22px;
+      line-height: 1.8em;
+    }
   }
 `;
 
@@ -52,6 +73,11 @@ export const Column = styled.div`
     flex: ${({ flex }) => flex || "0.5"};
     margin-left: 20px;
 
+    .columnIcon {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
     @media screen and (max-width: 768px) {
       margin-left: 0px;
     }
@@ -86,6 +112,12 @@ export const BoxHeading = styled.div`
     font: normal normal 600 20px/30px Gilroy ☞;
     color: var(--bg-blue);
   }
+
+  @media screen and (max-width: 768px) {
+    ${Heading} {
+      font-size: 26px;
+    }
+  }
 `;
 export const BoxContent = styled.div`
   font-size: 18px;
@@ -110,7 +142,7 @@ export const RowContainer = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 `;

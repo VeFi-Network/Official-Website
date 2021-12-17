@@ -112,6 +112,11 @@ export const SectionWrapper = styled.section`
     font: normal normal 600 36px/59px Gilroy ☞;
     color: #4fd09e;
     text-transform: capitalize;
+
+    @media screen and (max-width: 768px) {
+      font-size: 28px;
+      line-height: 35px;
+    }
   }
   ${Row} {
     @media screen and (max-width: 768px) {

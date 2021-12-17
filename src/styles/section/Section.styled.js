@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { LinkRouter } from "../../utility";
+import { HeroSectionBgMobile, LinkRouter } from "../../utility";
 
 export const HeroSectionContainer = styled.section`
   height: 100%;
@@ -12,8 +12,9 @@ export const HeroSectionContainer = styled.section`
   display: flex;
 
   @media screen and (max-width: 768px) {
-    background-position: left;
-    background-size: contain;
+    background-image: url(${HeroSectionBgMobile});
+    background-position: center;
+    background-size: cover;
   }
 `;
 
@@ -76,6 +77,21 @@ export const TextWrapper = styled.div`
   ${Subheading} {
     font: normal normal normal 18px/30px SF UI Text;
   }
+
+  @media screen and (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    ${Heading} {
+      font-size: 35px;
+      max-width: 100ch;
+      line-height: 55px;
+    }
+    ${Subheading} {
+      font-size: 20px;
+    }
+  }
 `;
 export const InfoSec = styled.section`
   height: 100%;
@@ -97,6 +113,12 @@ export const InfoSec = styled.section`
 
     ${Heading} {
       font-size: var(--font-sm);
+    }
+    .infoSecHeading {
+      font-size: 35px !important;
+    }
+    .infoSecSubheading {
+      font-size: 24px !important;
     }
   }
 `;
@@ -180,8 +202,9 @@ export const InfoDescription = styled.div`
   }
   @media screen and (max-width: 768px) {
     ${Subheading} {
-      font-size: 0.85rem;
-      line-height: 1.8;
+      font-size: 19px !important;
+      text-align: justify;
+      line-height: 26px !important;
     }
   }
 `;
@@ -200,7 +223,7 @@ export const SectionContainer = styled.section`
 
     @media screen and (max-width: 768px) {
       margin-top: 20px;
-      padding: 0px 20px;
+      padding: 0px 30px;
       grid-template-columns: repeat(1, 1fr);
     }
     li {
@@ -237,8 +260,15 @@ export const SectionHeading = styled.div`
     color: #545454;
   }
   @media screen and (max-width: 768px) {
+    .headingUseCase {
+      font-size: 30px !important;
+      line-height: 1.3em !important;
+    }
     .subheading {
       font-size: small;
+    }
+    .headingBg {
+      font-size: 35px;
     }
   }
 `;
@@ -258,10 +288,11 @@ export const SectionWrapper = styled.div`
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(1, 1fr);
     .subheading {
-      font-size: small;
+      font-size: 19px;
+      font-family: SF UI Text Regular;
     }
     .heading {
-      font-size: 1.3rem;
+      font-size: 26px !important;
     }
   }
 `;

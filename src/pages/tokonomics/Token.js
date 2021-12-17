@@ -1,4 +1,5 @@
 import React from "react";
+import { Image } from "../../components";
 import { Heading, Subheading } from "../../styles/section/Section.styled";
 import {
   Box,
@@ -38,7 +39,9 @@ const Token = tokenomics => {
                   ))}
                 </ColumWrapper>
               </Column>
-              <Column flex="0.4"></Column>
+              <Column flex="0.4">
+                <Image img={tokenomics.img} alt="vefi token" className="columnIcon" />
+              </Column>
             </Row>
           </RowContainer>
         </Container>

@@ -1,4 +1,4 @@
-import { Bitcoin, Binance, Pancakeswap, Solana, Whitepapper } from "../index";
+import { Bitcoin, Convexity, Haggle, Pinkswap, Tatswap, Whitepapper } from "../index";
 
 export const AboutUs = {
   AboutUs: {
@@ -29,16 +29,20 @@ export const Homedata = {
   buttonText: "Join Airdrop",
   brands: [
     {
-      name: "Binance",
-      image: Binance
+      name: "Covexity",
+      image: Convexity
     },
     {
-      name: "Pancakeswap",
-      image: Pancakeswap
+      name: "Tatswap",
+      image: Tatswap
     },
     {
-      name: "Solana",
-      image: Solana
+      name: "Haggle",
+      image: Haggle
+    },
+    {
+      name: "Pinkswap",
+      image: Pinkswap
     }
   ]
 };

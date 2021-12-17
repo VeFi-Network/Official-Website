@@ -64,6 +64,7 @@ export const CountdownHeading = styled.div`
   font-weight: ${({ bold }) => (bold ? "600" : "")};
   padding: 10px 0px;
   font-family: var(--fm-bold);
+  color: ${({ textColor }) => textColor || ""};
 `;
 
 export const CountdownBtn = styled.div`
