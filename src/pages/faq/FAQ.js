@@ -1,20 +1,15 @@
-import React, { useState } from 'react';
-import {
-  FaqContainer,
-  FaqTextWrapper,
-  Faquestion,
-  FaquestionContainer,
-} from '../../styles/faq/Faq.styled';
-import { Heading, Subheading } from '../../styles/section/Section.styled';
-import { Container, SectionWrapper } from '../../utility/GlobalStyle';
-import Box from '@mui/material/Box';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabPanel from '@mui/lab/TabPanel';
-import { Tabs } from '@mui/material';
+import React, { useState } from "react";
+import { FaqContainer, FaqTextWrapper, Faquestion, FaquestionContainer } from "../../styles/faq/Faq.styled";
+import { Heading, Subheading } from "../../styles/section/Section.styled";
+import { Container, SectionWrapper } from "../../utility/GlobalStyle";
+import Box from "@mui/material/Box";
+import Tab from "@mui/material/Tab";
+import TabContext from "@mui/lab/TabContext";
+import TabPanel from "@mui/lab/TabPanel";
+import { Tabs } from "@mui/material";
 
-const FAQ = (props) => {
-  const [value, setValue] = useState('1');
+const FAQ = props => {
+  const [value, setValue] = useState("1");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -28,19 +23,11 @@ const FAQ = (props) => {
               <Heading size="sm" bold className="faqheading">
                 {props.heading}
               </Heading>
-              <Subheading className="faqsubheading">
-                {props.subheading}
-              </Subheading>
+              <Subheading className="faqsubheading">{props.subheading}</Subheading>
             </FaqTextWrapper>
             <TabContext value={value}>
               <Box className="faqBox">
-                <Tabs
-                  value={value}
-                  onChange={handleChange}
-                  variant="scrollable"
-                  scrollButtons="auto"
-                  aria-label="faq"
-                >
+                <Tabs value={value} onChange={handleChange} variant="scrollable" scrollButtons="auto" aria-label="faq">
                   {props.tab.map(({ label, id }) => (
                     <Tab label={label} value={id} key={id} className="tab" />
                   ))}

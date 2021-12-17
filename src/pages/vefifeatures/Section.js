@@ -35,7 +35,7 @@ const Section = props => {
               </SectionItem>
             ))}
           </SectionWrapper>
-          <SectionHeading>
+          {/* <SectionHeading>
             <Heading
               style={{
                 font: " normal normal bold 24px/30px Gilroy ☞",
@@ -50,7 +50,7 @@ const Section = props => {
                 <li key={i}>{item}</li>
               ))}
             </ul>
-          </SectionHeading>
+          </SectionHeading> */}
         </Container>
       </SectionContainer>
     </>

@@ -4,11 +4,11 @@ export const AboutUs = {
   AboutUs: {
     id: "about",
     title: "About VEFI Network",
-    subtitle: "Vision And Mission",
+    subtitle: "Mission",
     buttonText: "Whitepaper",
     description: [
-      "VEFI is a New Generational High performance Blockchain based on a unique consensus algorithm. (V-DPoS).  A decentralized team works across two independent arms to ensure that VEFI stays true to its purpose of championing innovation in Blockchain.",
-      "The vision and mission is written below; “Improving the freedom of money globally through the integration of institutions, people groups and businesses into the Blockchain economy. Building and deploying innovative, cutting edge and scalable Blockchain solutions and as well, becoming Blockchain infrastructure and solutions providers”."
+      "VEFI Network is an ecosystem of blockchain pertinent products and services taking root in Africa with the intent of spreading its influence throughout the globe.",
+      "The mission of such grandiose idea is to improve the freedom of money globally through the integration of institutions, people groups and businesses into the blockchain ecosphere. Our intent is to build and deploy innovative, cutting edge and scalable blockchain solutions and as well, become a blockchain infrastructure and solutions provider."
     ],
 
     img: Bitcoin
@@ -25,7 +25,7 @@ export const Homedata = {
   id: "home",
   heading: "Changing The World's Future Through Blockchain.",
   subheading:
-    "we are building the fastest Blockchain platform which can process over 1 million transactions per second.",
+    "An ecosystem of blockchain-intrinsic projects. We're spearheading the mass adoption of the blockchain paradigm.",
   buttonText: "Join Airdrop",
   brands: [
     {
