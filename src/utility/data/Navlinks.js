@@ -22,9 +22,9 @@ export const NavLinks = [
   {
     label: "Contact",
     path: "contact"
-  },
-  {
-    label: "FAQ",
-    path: "faq"
   }
+  // {
+  //   label: "FAQ",
+  //   path: "faq"
+  // }
 ];
