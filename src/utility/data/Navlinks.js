@@ -12,17 +12,18 @@ export const NavLinks = [
     path: "token"
   },
   {
-    label: "Team",
-    path: "team"
-  },
-  {
     label: "Roadmap",
     path: "roadmap"
   },
   {
     label: "Contact",
     path: "contact"
+  },
+  {
+    label: "Team",
+    path: "team"
   }
+
   // {
   //   label: "FAQ",
   //   path: "faq"
