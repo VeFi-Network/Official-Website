@@ -26,9 +26,7 @@ const HeroSection = props => {
             <SectionColumn flex="0.6">
               <TextWrapper>
                 <Heading maxWidth="50ch">{props.heading}</Heading>
-                <Subheading mxWidth="50ch" size="md">
-                  {props.subheading}
-                </Subheading>
+                <Subheading mxWidth="50ch">{props.subheading}</Subheading>
                 <Link to="/">
                   <Button
                     border

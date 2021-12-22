@@ -3,11 +3,11 @@ import { Discord, Facebook, Instagram, Medium, Telegram, Twitter, Youtube } from
 export const Contactus = {
   id: "contact",
   title: "get in touch with us",
-  heading: "Ask questions in the chat section and check out our social media handles.",
+  heading: "Got any question you want to ask concerning the VEFI community?",
   subheading:
-    " Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua. Bibendum Est Ultricies Integer Quis. Iaculis Urna Id",
+    "Feel free to ask us anything you want to know about our community, we very much available to answer all your questions.",
   buttonText: "Send An Email to Vefi Network ",
-  url: "/",
+  url: "mailto:info@vefinetwork.org",
   socialMedia: [
     {
       title: "Facebook",

@@ -10,7 +10,7 @@ export const RoadmapData = {
     {
       title: "Phase 2",
       description: [
-        "Assembling the VEFI NETWORK core team members and moving to luanch of the ecosystem and commencement of product development."
+        "Assembling the VEFI NETWORK core team members and moving to launch of the ecosystem and commencement of product development."
       ]
     },
     {
@@ -23,10 +23,10 @@ export const RoadmapData = {
     {
       title: "Phase 4",
       description: [
-        "ICO stages for retail investores.",
-        "Contracting instituitional investors.",
+        "ICO stages for retail investors.",
+        "Contracting institutional investors.",
         "initial Liquidity Offering.",
-        "Products development in progress.",
+        "further product development",
         "Updated website and whitepaper."
       ]
     },
@@ -34,16 +34,16 @@ export const RoadmapData = {
       title: "Phase 5",
       description: [
         "Completion of VEFI Exchange and wallet MVP.",
-        "Luanching of VEFI Blockchain(VSC) whitepaper. VEFI Blockchain (VSC) is the final stage of development."
+        "Launching of VEFI Blockchain(VSC) whitepaper. VEFI Blockchain (VSC) is the final stage of development."
       ]
     },
     {
       title: "Phase 6",
-      description: ["Luanching of VEFI Exchange and wallet on Play store and Apple store."]
+      description: ["Launching of VEFI Exchange and wallet on Play store and Apple store."]
     },
     {
       title: "Phase 7",
-      description: ["Majore improvements and updates on VEFI Exchange and wallet features."]
+      description: ["Major improvements and updates on VEFI Exchange and wallet features."]
     },
     {
       title: "Phase 8",
