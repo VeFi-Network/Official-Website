@@ -4,7 +4,7 @@ export const Tokenomics = {
   id: "token",
   title: "Tokenomics",
   subtitle:
-    "The VEF coin will be timely burnt, repurchase by the ecosystem profit ,and burnt to reduce the supply.This deflationary mechanism to VEF supply incentivizes more token holders to stake, which results in increased network security. 50% of the total supply is allocated to ICO and liquidity pool. The token will be locked with key economic modalities to drive the token price, make it valuable and solid.",
+    "The VEF coin will be timely burnt, repurchase by the ecosystem profit ,and burnt to reduce the supply.This deflationary mechanism to VEF supply incentivizes more token holders to stake, which results in increased network security. 50% of the total supply is allocated to ICO and liquidity pool. The token will be locked with key economic modalities to drive the token price, making it valuable and solid.",
   img: VefiCoin,
   info: [
     {

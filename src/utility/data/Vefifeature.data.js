@@ -20,7 +20,7 @@ export const VefiFeatures = {
       title: "Blockchain",
       img: btc,
       description:
-        "A new generation high-performant smart contract based blockchain based on a unique consensus algorithm (V-DPoS) with the unique ability to process over 1 million + transactions per second with almost zero transaction fees at a near-instant processing time."
+        "A new generation high performance smart contract based blockchain based on a unique consensus algorithm (V-DPoS) with the unique ability to process over 1 million + transactions per second with almost zero transaction fees at a near-instant processing time."
     }
     // {
     //   title: 'Staking',

@@ -12,10 +12,6 @@ export const NavLinks = [
     path: "token"
   },
   {
-    label: "Team",
-    path: "team"
-  },
-  {
     label: "Roadmap",
     path: "roadmap"
   },
@@ -24,7 +20,12 @@ export const NavLinks = [
     path: "contact"
   },
   {
-    label: "FAQ",
-    path: "faq"
+    label: "Team",
+    path: "team"
   }
+
+  // {
+  //   label: "FAQ",
+  //   path: "faq"
+  // }
 ];

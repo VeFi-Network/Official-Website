@@ -1,4 +1,4 @@
-import { Bitcoin, Convexity, Haggle, Pinkswap, Tatswap, Whitepapper } from "../index";
+import { Bitcoin, Convexity, Haggle, Tatswap, Whitepapper } from "../index";
 
 export const AboutUs = {
   AboutUs: {
@@ -39,10 +39,10 @@ export const Homedata = {
     {
       name: "Haggle",
       image: Haggle
-    },
-    {
-      name: "Pinkswap",
-      image: Pinkswap
     }
+    // {
+    //   name: "Pinkswap",
+    //   image: Pinkswap
+    // }
   ]
 };

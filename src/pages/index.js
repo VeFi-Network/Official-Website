@@ -10,7 +10,7 @@ import {
   Contact,
   Footer,
   Roadmap,
-  FAQ,
+  //FAQ,
   TokenSalesInfo,
   Team
 } from "../components";
@@ -23,7 +23,7 @@ import {
   FooterData,
   Homedata,
   TeamMembers,
-  FrequentlyAskedQuestions,
+  // FrequentlyAskedQuestions,
   TokenInfo
 } from "../utility/data";
 import { RoadmapData } from "../utility/data/Roadmap.data";
@@ -48,7 +48,7 @@ const Home = () => {
       <Roadmap {...RoadmapData} />
       <Contact {...Contactus} />
       <Team {...TeamMembers} />
-      <FAQ {...FrequentlyAskedQuestions} />
+      {/* <FAQ {...FrequentlyAskedQuestions} /> */}
       <Footer {...FooterData} />
     </>
   );
