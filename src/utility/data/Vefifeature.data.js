@@ -20,7 +20,7 @@ export const VefiFeatures = {
       title: "Blockchain",
       img: btc,
       description:
-        "A new generation high performance smart contract based blockchain based on a unique consensus algorithm (V-DPoS) with the unique ability to process over 1 million + transactions per second with almost zero transaction fees at a near-instant processing time."
+        "Vefi smart chain is a new generation high performance blockchain that processes high volumes of transactions in few seconds with high scalability for DeFi, web 3.0, NFTs projects. Vefi blockchain unique concensus algorithm makes Vefi the fastest blockchain for multi-industrial application."
     }
     // {
     //   title: 'Staking',
