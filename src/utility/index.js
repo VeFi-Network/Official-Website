@@ -24,12 +24,22 @@ export { default as Pinkswap } from "../assets/brand/pinkswap.webp";
 export { default as VefiCoin } from "../assets/img/vefi_coin.webp";
 export { default as VefiCoinBg } from "../assets/img/vefi_coin_bg.webp";
 export { default as Tatswap } from "../assets/brand/tatswap.webp";
+export { default as bnb } from "../assets/img/bnb.png";
+export { default as wallet } from "../assets/img/wallet.png";
+export { default as logout } from "../assets/img/logout.png";
+export { default as arrow_down } from "../assets/img/arrow_down.png";
 export { Link as LinkRouter } from "react-router-dom";
 export { Link as LinkScroll } from "react-scroll";
 export { default as Kingsely } from "../assets/team/kingsley_victor.webp";
 export { default as Barinor } from "../assets/team/barinor_kue.webp";
 export { default as Bonaventure } from "../assets/team/bonaventure_pascal.webp";
 export { default as James } from "../assets/team/james_emmah.webp";
+export { default as Metamask } from "../assets/brand/metamask_1.png";
+export { default as Walletconnect } from "../assets/brand/wallet_connect.png";
+export { default as Safepal } from "../assets/brand/safe_pal.png";
+export { default as Trustwallet } from "../assets/brand/trust_wallet.png";
+export { default as Tokenpocket } from "../assets/brand/token_pocket.png";
+export { default as Mathwallet } from "../assets/brand/math_wallet.png";
 export { default as Whitepapper } from "../assets/docs/VEFI_WHITEPAPER.pdf";
 export {
   FaTimes,
@@ -43,4 +53,4 @@ export {
   FaArrowCircleUp
 } from "react-icons/fa";
 
-export { FiArrowRight, FiDownload, FiTwitter } from "react-icons/fi";
+export { FiArrowRight, FiDownload, FiTwitter, FiX } from "react-icons/fi";

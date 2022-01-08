@@ -60,6 +60,14 @@ html,body{
   font-size: 16px;
   font-family: "SF UI Text semibold","Inter",'Open Sans', sans-serif;
   background:#fff;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+  }
 }
 `;
 
@@ -170,6 +178,51 @@ export const ScrollToTopWrapper = styled.div`
     @media screen and (max-width: 768px) {
       margin-right: 0px;
     }
+  }
+`;
+export const Background = styled.div`
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+`;
+export const ModalWrapper = styled.div`
+  width: 100%;
+  max-width: ${props =>
+    props.mxWidth === "sm" ? "400px" : props.mxWidth === "md" ? "550px" : props.mxWidth === "lg" ? "800px" : "1000px"};
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  color: #0b131a;
+  position: relative;
+  z-index: 10;
+  overflow-y: scroll;
+  padding: 20px 30px;
+  border-radius: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  button {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 0px 20px;
   }
 `;
 export default GlobalStyle;

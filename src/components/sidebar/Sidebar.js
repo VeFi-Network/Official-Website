@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { openModal } from "../../redux/toggleSlice";
 import {
   SidebarContainer,
   Icon,
@@ -6,13 +8,18 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  SidebarBtnWrap,
-  SidebarBtn
+  SidebarBtnWrap
 } from "../../styles/navigation/sidebar/Sidebar.styled";
 import { NavLinks } from "../../utility/data/Navlinks";
 import { Button } from "../../utility/GlobalStyle";
 
 const Sidebar = ({ isOpen, toggle }) => {
+  const dispatch = useDispatch();
+  const [connected] = useState(false);
+
+  const handleConnect = () => {
+    dispatch(openModal());
+  };
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
@@ -27,11 +34,9 @@ const Sidebar = ({ isOpen, toggle }) => {
           ))}
         </SidebarMenu>
         <SidebarBtnWrap>
-          <SidebarBtn to="/connect">
-            <Button bgColor="var(--bg-blue)" fontColor="#fff" border>
-              Connect wallet
-            </Button>
-          </SidebarBtn>
+          <Button bgColor="var(--bg-blue)" fontColor="#fff" border onClick={connected ? "" : handleConnect}>
+            {connected ? "Wallet Connected" : "Connect Wallet"}
+          </Button>
         </SidebarBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

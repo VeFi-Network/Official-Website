@@ -16,3 +16,6 @@ export { default as TokenSalesInfo } from "../pages/tokensalesinfo/TokenSalesInf
 export { default as Countdown } from "../components/CountDown";
 export { default as Team } from "../pages/team/Team";
 export { default as Flag } from "../components/Flags";
+export { default as ConnectWallet } from "./modal/ConnectWallet";
+export { default as BuyNow } from "./modal/BuyNow";
+export { default as Input } from "./Input";

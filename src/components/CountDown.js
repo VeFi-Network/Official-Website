@@ -1,4 +1,5 @@
 import React from "react";
+import { useDispatch, useSelector } from "react-redux";
 import {
   CountdownContainer,
   CountdownProgressBar,
@@ -12,8 +13,19 @@ import {
 import LinearProgress from "@mui/material/LinearProgress";
 import { Button } from "./index";
 import { Heading } from "../styles/section/Section.styled";
+import { openConnectWalletModal, openModal } from "../redux/toggleSlice";
 
 const CountDown = ({ bg, border, bgColor, hoverBg, textBg }) => {
+  const { userConnected } = useSelector(state => state.modal);
+
+  const dispatch = useDispatch();
+
+  const handleBuyNow = () => {
+    dispatch(openConnectWalletModal());
+  };
+  const handleConnect = () => {
+    dispatch(openModal());
+  };
   return (
     <>
       <CountdownContainer>
@@ -54,7 +66,15 @@ const CountDown = ({ bg, border, bgColor, hoverBg, textBg }) => {
             </Timer>
           </CountdownTimerWrapper>
           <CountdownBtn>
-            <Button bgColor={bgColor} hoverBg={hoverBg} fontColor="#fff" bold border label="Buy on Pinkswap" />
+            <Button
+              bgColor={bgColor}
+              hoverBg={hoverBg}
+              fontColor="#fff"
+              bold
+              border
+              label="Buy on Pinkswap"
+              onClick={userConnected ? handleBuyNow : handleConnect}
+            />
           </CountdownBtn>
         </CountdownWrapper>
       </CountdownContainer>

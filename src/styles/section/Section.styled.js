@@ -70,6 +70,7 @@ export const Subheading = styled.p`
   }
 `;
 export const Link = styled(LinkRouter)``;
+export const LinkAnchor = styled.a``;
 export const TextWrapper = styled.div`
   ${Heading} {
     font: normal normal 800 60px/79px Gilroy ☞;
