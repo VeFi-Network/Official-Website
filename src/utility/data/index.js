@@ -8,3 +8,4 @@ export { Homedata } from "./Data";
 export { FrequentlyAskedQuestions } from "./Faq.data";
 export { TokenInfo } from "./TokenSales.Data";
 export { TeamMembers } from "./Team.data";
+export { WalletProvider } from "./WalletProvider.data";

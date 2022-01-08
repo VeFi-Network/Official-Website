@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import {
   Nav,
   NavbarContainer,
@@ -11,19 +12,27 @@ import {
 } from "../../styles/navigation/navbar/Navbar.styled";
 import { Logo, FaBars } from "../../utility";
 import { NavLinks as Navigation } from "../../utility/data/Navlinks";
-import { Flag, Image, Button } from "../../components";
-import { ConnectWallet } from "../../utility/function";
+import { Flag, Image, Button, ConnectWallet, BuyNow } from "../../components";
+import { openModal } from "../../redux/toggleSlice";
 
 const Navbar = ({ toggle }) => {
+  const { showConnectModal, showBuyNowModal } = useSelector(state => state.modal);
+  const dispatch = useDispatch();
+  const [connected] = useState(false);
+
+  const handleConnect = () => {
+    dispatch(openModal());
+  };
   return (
     <>
+      <ConnectWallet showConnectModal={showConnectModal} />
+      <BuyNow showBuyNowModal={showBuyNowModal} />
       <Nav>
         <NavbarContainer>
           <NavLogo to="/">
             <Image img={Logo} alt="Logo" />
             <Flag />
           </NavLogo>
-
           <MobileIcon onClick={toggle}>
             <FaBars className="icon" />
           </MobileIcon>
@@ -42,8 +51,8 @@ const Navbar = ({ toggle }) => {
               fontColor="#fff"
               border
               hoverBg="var(--bg-blue)"
-              label="Connect Wallet"
-              onClick={ConnectWallet}
+              label={connected ? "Wallet Connected" : "Connect Wallet"}
+              onClick={connected ? "" : handleConnect}
             />
           </NavBtn>
         </NavbarContainer>

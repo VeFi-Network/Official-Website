@@ -10,9 +10,9 @@ export const TeamMembers = {
       name: "James Emmanuel",
       role: "Founder/CEO",
       socialmedia: {
-        twitter: "https://www.twitter.com/",
-        linkedln: "https://www.linkedin.com/",
-        github: "https://github.com/"
+        twitter: "https://www.twitter.com/HighrankinEmmah/",
+        linkedln: "https://www.linkedin.com/in/jamesemmah",
+        github: ""
       },
       bio: ""
     },
