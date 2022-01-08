@@ -60,6 +60,7 @@ html,body{
   font-size: 16px;
   font-family: "SF UI Text semibold","Inter",'Open Sans', sans-serif;
   background:#fff;
+  overflow-x: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none; /* Firefox */
 

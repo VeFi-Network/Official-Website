@@ -43,7 +43,8 @@ export const ModalCloseWrapper = styled.div`
 export const ModalContent = styled.div`
   padding: 30px 30px 0px 30px;
   @media screen and (max-width: 768px) {
-    padding: 30px 5px 0px 5px;
+    padding: 30px 0px 0px 0px;
+    width: 100%;
   }
   width: 90%;
   margin: 0px auto;

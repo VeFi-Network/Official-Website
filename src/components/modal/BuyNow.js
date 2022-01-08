@@ -64,7 +64,7 @@ const BuyNow = () => {
                       onChange={e => setPay(e.target.value)}
                       placeholder="0.00"
                       autoComplete="off"
-                      maxLength="10"
+                      max="10"
                     />
                   </InputForm>
                 </FormWrapper>
