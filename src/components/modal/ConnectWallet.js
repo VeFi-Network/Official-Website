@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { useWeb3React } from "@web3-react/core";
 import { Image, Button } from "../index";
 import { WalletProvider } from "../../utility/data";
 import { FiX } from "../../utility";
@@ -13,13 +14,21 @@ import {
   WalletInfo
 } from "../../styles/modal/ConnectWallet.styled";
 import { closeModal } from "../../redux/toggleSlice";
+import { injectedConnector } from "../../web3/connectors";
 
 const ConnectWallet = () => {
   const { showConnectModal } = useSelector(state => state.modal);
   const dispatch = useDispatch();
+  const injectedWeb3 = useWeb3React();
 
   const handleCloseModal = () => {
     dispatch(closeModal());
+  };
+
+  const injectWeb3 = async () => {
+    if (!injectedWeb3.active) {
+      await injectedWeb3.activate(injectedConnector);
+    }
   };
 
   return (
@@ -35,14 +44,14 @@ const ConnectWallet = () => {
             </ModalHeadingContainer>
             <ModalContent>
               {WalletProvider.map((provider, i) => (
-                <WalletInfo key={i}>
-                  <Image img={provider.logo} alt="" />
+                <WalletInfo key={i} onClick={injectWeb3}>
+                  <Image img={provider.logo} alt={provider.name} />
                   <Subheading>{provider.name}</Subheading>
                 </WalletInfo>
               ))}
             </ModalContent>
             <ModalFooter>
-              <Subheading>Dont't have a crypto wallet yet?</Subheading>
+              <Subheading>Don't have a crypto wallet yet?</Subheading>
               <Button
                 bgColor="var(--bg-blue)"
                 style={{ border: "1px solid var(--bg-blue)" }}

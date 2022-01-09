@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { useWeb3React } from "@web3-react/core";
 import {
   Nav,
   NavbarContainer,
@@ -18,11 +19,14 @@ import { openModal } from "../../redux/toggleSlice";
 const Navbar = ({ toggle }) => {
   const { showConnectModal, showBuyNowModal } = useSelector(state => state.modal);
   const dispatch = useDispatch();
-  const [connected] = useState(false);
+  const web3 = useWeb3React();
 
   const handleConnect = () => {
     dispatch(openModal());
   };
+
+  const closeWeb3Connection = () => web3.deactivate();
+
   return (
     <>
       <ConnectWallet showConnectModal={showConnectModal} />
@@ -51,8 +55,8 @@ const Navbar = ({ toggle }) => {
               fontColor="#fff"
               border
               hoverBg="var(--bg-blue)"
-              label={connected ? "Wallet Connected" : "Connect Wallet"}
-              onClick={connected ? "" : handleConnect}
+              label={web3.active ? "Wallet Connected" : "Connect Wallet"}
+              onClick={web3.active ? closeWeb3Connection : handleConnect}
             />
           </NavBtn>
         </NavbarContainer>

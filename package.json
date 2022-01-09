@@ -12,6 +12,9 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/network-connector": "^6.1.9",
     "chart.js": "^3.6.0",
     "express": "^4.17.1",
     "framer-motion": "^5.3.3",
@@ -28,7 +31,8 @@
     "react-scroll": "^1.8.4",
     "redux": "^4.1.2",
     "styled-components": "^5.3.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "web3": "^1.6.1"
   },
   "scripts": {
     "start": "react-scripts start",

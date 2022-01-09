@@ -1,5 +1,7 @@
-import React from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useWeb3React } from "@web3-react/core";
 import {
   CountdownContainer,
   CountdownProgressBar,
@@ -14,11 +16,14 @@ import LinearProgress from "@mui/material/LinearProgress";
 import { Button } from "./index";
 import { Heading } from "../styles/section/Section.styled";
 import { openConnectWalletModal, openModal } from "../redux/toggleSlice";
+import { networkConnector } from "../web3/connectors";
 
 const CountDown = ({ bg, border, bgColor, hoverBg, textBg }) => {
   const { userConnected } = useSelector(state => state.modal);
-
+  const web3 = useWeb3React("networkProvider");
   const dispatch = useDispatch();
+
+  useEffect(async () => await web3.activate(networkConnector), []);
 
   const handleBuyNow = () => {
     dispatch(openConnectWalletModal());
