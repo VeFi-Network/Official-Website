@@ -25,6 +25,7 @@ export { default as VefiCoin } from "../assets/img/vefi_coin.webp";
 export { default as VefiCoinBg } from "../assets/img/vefi_coin_bg.webp";
 export { default as Tatswap } from "../assets/brand/tatswap.webp";
 export { default as bnb } from "../assets/img/bnb.png";
+export { default as vefi } from "../assets/img/vefi.png";
 export { default as wallet } from "../assets/img/wallet.png";
 export { default as logout } from "../assets/img/logout.png";
 export { default as arrow_down } from "../assets/img/arrow_down.png";

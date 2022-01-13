@@ -29,6 +29,10 @@ const ConnectWallet = () => {
     if (!injectedWeb3.active) {
       await injectedWeb3.activate(injectedConnector);
     }
+
+    if (showConnectModal) {
+      handleCloseModal();
+    }
   };
 
   return (
