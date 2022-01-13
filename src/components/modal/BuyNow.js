@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Image, Button, Input } from "../index";
-import { arrow_down, bnb, FiX, logout, wallet } from "../../utility";
+import Swal from "sweetalert2";
+import { useWeb3React } from "@web3-react/core";
+import { arrow_down, bnb, FiX, logout, wallet, vefi } from "../../utility";
 import { Heading, Subheading } from "../../styles/section/Section.styled";
 import { Background, ModalWrapper } from "../../utility/GlobalStyle";
 import {
@@ -17,14 +20,70 @@ import {
   WalletAddressWrapper
 } from "../../styles/modal/BuyNow.styled";
 import { closeConnectWalletModal } from "../../redux/toggleSlice";
+import { SEED_SALE } from "../../assets/contracts/addresses";
+import abi from "../../assets/contracts/SeedSaleABI.json";
 
 const BuyNow = () => {
   const { showBuyNowModal } = useSelector(state => state.modal);
   const dispatch = useDispatch();
+  const injectedWeb3 = useWeb3React();
+  const [contract, setContract] = useState(null);
   const [pay, setPay] = useState("");
+  const [receive, setReceive] = useState("");
+  const [account, setAccount] = useState("");
+  const [balance, setBalance] = useState(0);
+  const [rate, setRate] = useState(0);
+
   const handleCloseModal = () => {
     dispatch(closeConnectWalletModal());
   };
+
+  const initiateBuy = async () => {
+    try {
+      if (!injectedWeb3.active) {
+        throw new Error("Connect wallet first");
+      } else {
+        const _sent = await contract.methods.buyAndVest().send({
+          from: injectedWeb3.account ? injectedWeb3.account : "",
+          value: injectedWeb3.library.utils.toWei(parseFloat(pay || "0").toString()),
+          gas: injectedWeb3.library.utils.toWei("0.00003", "gwei")
+        });
+        Swal.fire({
+          title: "Transaction Successful",
+          html: `Transaction executed. <a href="https://bscscan.com/tx/${_sent.transactionHash}">View on explorer</a>`,
+          icon: "success",
+          confirmButtonText: "OK"
+        });
+      }
+    } catch (error) {
+      Swal.fire({
+        title: "Error!",
+        text: error.message,
+        icon: "error",
+        confirmButtonText: "OK"
+      });
+    }
+  };
+
+  useEffect(async () => {
+    setBalance(injectedWeb3.account ? await injectedWeb3.library.eth.getBalance(injectedWeb3.account) : 0);
+    setAccount(
+      injectedWeb3.account
+        ? injectedWeb3.account.slice(0, 2) + "..." + injectedWeb3.account.slice(37, injectedWeb3.account.length)
+        : ""
+    );
+    setContract(injectedWeb3.account ? new injectedWeb3.library.eth.Contract(abi, SEED_SALE) : null);
+  }, [injectedWeb3.active]);
+
+  useEffect(async () => {
+    setRate(contract ? (await contract.methods.getRate().call()) / 10 ** 18 : 0);
+  }, [contract]);
+
+  useEffect(() => {
+    const rec = parseFloat(pay.trim().length > 0 ? pay : "0") / rate;
+    setReceive(!isNaN(rec) ? rec.toPrecision(3) : "0.00");
+  }, [pay]);
+
   return (
     <>
       {showBuyNowModal && (
@@ -36,7 +95,7 @@ const BuyNow = () => {
                   <span>
                     <Image img={wallet} alt="wallet" />
                   </span>
-                  <span>0XDF..784</span>
+                  <span>{account.trim().length > 0 ? account : "No active account"}</span>
                   <span>
                     <Image img={logout} alt="wallet" />
                   </span>
@@ -51,7 +110,7 @@ const BuyNow = () => {
                 <FormWrapper>
                   <InputFormHeader>
                     <span>PAY</span>
-                    <span>Available: 0.001</span>
+                    <span>Available: {(balance / 10 ** 18).toPrecision(3)}</span>
                   </InputFormHeader>
                   <InputForm>
                     <Image img={bnb} alt="bnb" />
@@ -77,10 +136,10 @@ const BuyNow = () => {
                     <span>USD: 0.00</span>
                   </InputFormHeader>
                   <InputForm>
-                    <Image img={bnb} alt="bnb" />
+                    <Image img={vefi} alt="vefi" />
                     <span>VEF</span>
                     <span>(BSC)</span>
-                    <Input type="text" name="pay" value="" placeholder="0.00" readOnly autoComplete="off" />
+                    <Input type="text" name="receive" value={receive} placeholder="0.00" readOnly autoComplete="off" />
                   </InputForm>
                 </FormWrapper>
                 <ModalButtonWrapper>
@@ -89,6 +148,7 @@ const BuyNow = () => {
                     bgColor="var(--bg-green)"
                     style={{ border: "1px solid var(--bg-green)" }}
                     hoverColor="#fff"
+                    onClick={initiateBuy}
                   />
                 </ModalButtonWrapper>
               </ModalContent>

@@ -26,10 +26,10 @@ export const Homedata = {
   heading: "Changing The World's Future Through Blockchain.",
   subheading:
     "An ecosystem of blockchain-intrinsic projects. We're spearheading the mass adoption of the blockchain paradigm.",
-  buttonText: "Join Airdrop",
+  buttonText: "Join Telegram Group",
   brands: [
     {
-      name: "Covexity",
+      name: "Convexity",
       image: Convexity
     },
     {

@@ -29,7 +29,7 @@ export const Tokenomics = {
     },
     {
       title: "Contract Address",
-      label: "0x1515B7652185388925F5D8283496753883416f09"
+      label: "0x2029D75a293D87011F79265c6cbFaFFA47A9406C"
     },
     {
       title: "Token Pre-Sale",

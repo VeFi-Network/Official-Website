@@ -87,7 +87,7 @@ export const TokenSupply = {
       color: "#FFA448"
     },
     {
-      label: "Seed Sales",
+      label: "Seed Sale",
       value: "10%",
       height: "10%",
       margibBottom: "40px",

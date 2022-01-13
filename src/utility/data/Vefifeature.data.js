@@ -20,7 +20,7 @@ export const VefiFeatures = {
       title: "Blockchain",
       img: btc,
       description:
-        "Vefi smart chain is a new generation high performance blockchain that processes high volumes of transactions in few seconds with high scalability for DeFi, web 3.0, NFTs projects. Vefi blockchain unique concensus algorithm makes Vefi the fastest blockchain for multi-industrial application."
+        "Vefi Smartchain is a new generation high-performant blockchain which is aimed at the procession of high volumes of transactions in few seconds with high scalability for DeFi, Web 3.0 & NFTs. VeFi blockchain's unique concensus algorithm makes VeFi the fastest blockchain for multi-industrial application."
     }
     // {
     //   title: 'Staking',
