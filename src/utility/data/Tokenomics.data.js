@@ -2,9 +2,9 @@ import { VefiCoin } from "../index";
 
 export const Tokenomics = {
   id: "token",
-  title: "Tokenomics",
+  title: "Token Information",
   subtitle:
-    "The VEF token would be repurchased by the foundation's profit team and timely burned to imbue its value. This deflationary mechanism to VEF supply incentivizes more token holders to stake, which results in increased network security. 50% of the total supply is allocated to ICO and liquidity pool. The token will be locked with key economic modalities to drive the token price, making it valuable and solid.",
+    "The VEF token would be repurchased by the foundation's profit team and timely burned to imbue its value. This deflationary mechanism to VEF supply would allow more token holders to stake for profits. 56% of the total supply would be used in staking & rewards mechanism + liquidity mining.",
   img: VefiCoin,
   info: [
     {
@@ -32,8 +32,8 @@ export const Tokenomics = {
       label: "0x2029D75a293D87011F79265c6cbFaFFA47A9406C"
     },
     {
-      title: "Token Pre-Sale",
-      label: "100,000,000"
+      title: "Token Sale",
+      label: "35,000,000 VEF"
     },
     {
       title: "Token Hardcap",
