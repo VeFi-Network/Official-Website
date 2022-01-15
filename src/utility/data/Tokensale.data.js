@@ -1,22 +1,22 @@
 export const Tokensale = {
-  title: "Token Pre-sale Overview",
+  title: "Token Sales Overview",
   features: [
-    {
-      title: "Seed Sale",
-      description:
-        "The Seed Sale will be conducted at a rate of 0.03 USD = 1 VEF. The Seed Sale will also be conducted in ETH, BTC, and USD.",
-      color: "blue"
-    },
     {
       title: "Private Sale",
       description:
-        "The Seed Sale will be conducted at a rate of 0.04 USD = 1 VEF. The Seed Sale will also be conducted in ETH, BTC, and USD.   ",
+        "The private sale will be conducted at a rate of 0.08 USD = 1 VEF. The private sale would be conducted with BNB as means of purchase. The least amount that can be used in purchasing VEF token is 2 BNB.",
+      color: "blue"
+    },
+    {
+      title: "Initial Public Sale",
+      description:
+        "The initial public sale will also be conducted at a rate of 0.08 USD = 1 VEF. There is no limit to how much BNB can be deposited for purchase of VEF token.",
       color: "yellow"
     },
     {
-      title: "Public Sale",
+      title: "Grand Public Sale",
       description:
-        "The Seed Sale will be conducted at a rate of 0.05 USD = 1 VEF. The Seed Sale will also be conducted in ETH, BTC, and USD.   ",
+        "The grand public sale will be conducted at a rate of 0.1 USD = 1 VEF. BNB would also be required for purchase of VEF.",
       color: "orange"
     }
   ]

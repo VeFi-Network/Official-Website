@@ -98,6 +98,7 @@ export const BarValue = styled.div`
   position: absolute;
   bottom: 0;
   margin-bottom: ${({ marginBottom }) => marginBottom || ""};
+  font-size: 10px;
 `;
 export const BarBg = styled.div`
   background: ${({ bg }) => bg || ""};
