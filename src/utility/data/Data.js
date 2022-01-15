@@ -29,10 +29,6 @@ export const Homedata = {
   buttonText: "Join Telegram Group",
   brands: [
     {
-      name: "Convexity",
-      image: Convexity
-    },
-    {
       name: "Tatswap",
       image: Tatswap
     },
