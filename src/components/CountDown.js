@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useWeb3React } from "@web3-react/core";
 import {
   CountdownContainer,
@@ -17,8 +17,8 @@ import { Button } from "./index";
 import { Heading } from "../styles/section/Section.styled";
 import { openConnectWalletModal, openModal } from "../redux/toggleSlice";
 import { networkConnector } from "../web3/connectors";
-import { SEED_SALE } from "../assets/contracts/addresses";
-import abi from "../assets/contracts/SeedSaleABI.json";
+import { INITIAL_SALE } from "../assets/contracts/addresses";
+import abi from "../assets/contracts/InitialSaleABI.json";
 
 const CountDown = ({ bg, border, bgColor, hoverBg, textBg }) => {
   const injectedWeb3 = useWeb3React();
@@ -76,7 +76,7 @@ const CountDown = ({ bg, border, bgColor, hoverBg, textBg }) => {
 
   useEffect(() => {
     if (web3.active) {
-      setContract(new web3.library.eth.Contract(abi, SEED_SALE));
+      setContract(new web3.library.eth.Contract(abi, INITIAL_SALE));
     }
   }, [web3.active]);
 

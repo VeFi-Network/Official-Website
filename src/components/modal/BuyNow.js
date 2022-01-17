@@ -20,8 +20,8 @@ import {
   WalletAddressWrapper
 } from "../../styles/modal/BuyNow.styled";
 import { closeConnectWalletModal } from "../../redux/toggleSlice";
-import { SEED_SALE } from "../../assets/contracts/addresses";
-import abi from "../../assets/contracts/SeedSaleABI.json";
+import { INITIAL_SALE } from "../../assets/contracts/addresses";
+import abi from "../../assets/contracts/InitialSaleABI.json";
 
 const BuyNow = () => {
   const { showBuyNowModal } = useSelector(state => state.modal);
@@ -72,7 +72,7 @@ const BuyNow = () => {
         ? injectedWeb3.account.slice(0, 2) + "..." + injectedWeb3.account.slice(37, injectedWeb3.account.length)
         : ""
     );
-    setContract(injectedWeb3.account ? new injectedWeb3.library.eth.Contract(abi, SEED_SALE) : null);
+    setContract(injectedWeb3.account ? new injectedWeb3.library.eth.Contract(abi, INITIAL_SALE) : null);
   }, [injectedWeb3.active]);
 
   useEffect(async () => {
