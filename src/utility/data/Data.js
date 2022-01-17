@@ -1,4 +1,4 @@
-import { Bitcoin, Convexity, Haggle, Tatswap, Whitepapper } from "../index";
+import { Bitcoin, Haggle, Tatswap, Whitepapper } from "../index";
 
 export const AboutUs = {
   AboutUs: {

@@ -18,7 +18,6 @@ export { default as Instagram } from "../assets/brand/instagram.png";
 export { default as Discord } from "../assets/brand/discord.png";
 export { default as Telegram } from "../assets/brand/telegram.png";
 export { default as Youtube } from "../assets/brand/youtube.png";
-export { default as Convexity } from "../assets/brand/convexity.webp";
 export { default as Haggle } from "../assets/brand/haggle.webp";
 export { default as Pinkswap } from "../assets/brand/pinkswap.webp";
 export { default as VefiCoin } from "../assets/img/vefi_coin.webp";
