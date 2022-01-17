@@ -106,7 +106,7 @@ const BuyNow = () => {
               </HeadingWrapper>
               <ModalContent>
                 <Heading>Buy VEFI Token</Heading>
-                <Subheading>Minimum amount of BNB is 0.001 to participate for the presale</Subheading>
+                <Subheading>There is no limit to how much can BNB be deposited in the initial public sale.</Subheading>
                 <FormWrapper>
                   <InputFormHeader>
                     <span>PAY</span>

@@ -99,7 +99,7 @@ const CountDown = ({ bg, border, bgColor, hoverBg, textBg }) => {
         <CountdownWrapper bg={bg} border={border}>
           <CountdownTextWrapper>
             <CountdownHeading uppercase bold textColor={textBg}>
-              Join Seed Sale
+              Join Initial Public Sale
             </CountdownHeading>
             <CountdownHeading bold sm>
               TOTAL VEF BOUGHT: {totalTokensBought.toFixed(0)}/{totalTokensAvailable.toFixed(0)}
@@ -116,7 +116,7 @@ const CountDown = ({ bg, border, bgColor, hoverBg, textBg }) => {
             />
           </CountdownProgressBar>
           <CountdownTextWrapper>
-            <Heading fontColor="#fff">Seed Sale Begins In</Heading>
+            <Heading fontColor="#fff">Initial Public Sale Begins In</Heading>
           </CountdownTextWrapper>
           <CountdownTimerWrapper>
             <Timer>
